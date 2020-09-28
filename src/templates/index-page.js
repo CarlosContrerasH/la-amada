@@ -5,6 +5,33 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import video from "../img/mainBG.mp4"
+import { useScrollPercentage } from 'react-scroll-percentage'
+ 
+const Hero = () => {
+  const [ref, percentage] = useScrollPercentage({
+    /* Optional options */
+    threshold: 0,
+  })
+ 
+  return (
+
+<div className="hero" >
+ 
+  <div className="screen first"><span>aqui va la costa</span></div>
+  <div className="screen second" ref={ref}><span>aqui va el depa</span></div>
+  <video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} style={percentage<.5?{transform:"translateY("+ (percentage.toPrecision(2)) * 200+"%)"}:{transform:"translateY(100%)"}}/>
+</div>
+
+
+
+
+
+ 
+  )
+}
+
+
 
 export const IndexPageTemplate = ({
   image,
@@ -16,6 +43,9 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
+
+<Hero/>
+
     <div
       className="full-width-image margin-top-0"
       style={{
