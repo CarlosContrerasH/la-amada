@@ -7,6 +7,8 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import video from "../img/mainBG.mp4"
 import { useScrollPercentage } from 'react-scroll-percentage'
+
+import Form from "../components/contact-form"
  
 const Hero = () => {
   const [ref, percentage] = useScrollPercentage({
@@ -33,6 +35,7 @@ const Hero = () => {
 
 
 
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -54,6 +57,8 @@ export const IndexPageTemplate = ({
   <button className='outlined-button'>Lorem Ipsum</button>
   <button className="flat-button"> Lorem Ipsum</button>
 </div>
+<Form/>
+
     <div
       className="full-width-image margin-top-0"
       style={{

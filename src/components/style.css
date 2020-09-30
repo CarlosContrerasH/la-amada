@@ -1,3 +1,13 @@
+@keyframes fade-from-left {
+    from {transform:translateX(-30%);opacity:0;}
+    to {transform:translateX(-0%);opacity:1;}
+  }
+
+  @keyframes fade-from-bottom {
+    from {transform:translateY(30%);opacity:0;}
+    to {transform:translateX(-0%);opacity:1;}
+  }
+
 :root{
 --accent:#4A7871;
 --light:#DDD3CA;
@@ -65,10 +75,118 @@ bottom:100vh;
 .ejemplos{
     
 }
-
-.ejemplos ~ *{
+/*CONTACT FORM*/
+.form-wrapper ~ *{
     display: none;
 }
+.form-wrapper{
+    background-color: var(--accent);
+    display: grid;
+    place-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin:2em;
+}
+form label{
+    position: relative;
+    margin-bottom: 1em;
+
+}
+
+form label>span{
+    color:var(--light);
+    position: absolute;
+    left:-1em;
+    top:0;
+    display: block;
+    line-height: 2em;
+    height: 2em;
+    transform-origin: 0%;
+    transition:.2s transform ease-in;
+    
+}
+form label>span>span{
+    opacity:0;
+    display: block;
+    
+}
+.visible form label>span>span{
+   
+    animation: fade-from-left .3s both;
+}
+
+form label input{
+    transform-origin: 0%;
+    transform:scalex(0);
+    height: 2em;
+    color:var(--light);
+    background-color: transparent;
+border:none;
+border-bottom:solid 1px var(--light);
+transition: .3s transform ease-out;
+}
+
+.visible form label input{
+    transform:scaleX(1);
+    transition: .3s transform ease-out;
+}
+.visible form label:nth-child(2) input{
+     transition-delay: .2s;
+}
+
+.visible form label:nth-child(3) input{
+    transition-delay: .4s;
+}
+
+.visible form label:nth-child(2)>span>span{
+    animation-delay: .2s;
+}
+
+.visible form label:nth-child(3)>span>span{
+    animation-delay: .4s;
+}
+form label input.filled~span,
+form label input:focus~span{
+  
+    transform:scale(.5) translate(0,-70%);
+    transition:.2s transform ease-in;
+}
+
+form  input.outlined-button{
+    opacity:0;
+
+}
+ 
+.visible form  input.outlined-button{
+    
+    animation: fade-from-bottom .3s both ease-in;
+    animation-delay:.3s;
+}
+/*
+ Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border:none;
+    border-bottom:solid 1px var(--light);
+  -webkit-text-fill-color: var(--light);
+  -webkit-box-shadow: 0 0 0px 1000px var(--accent) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+/*CONTACT FORM*/
+
+
+
 
 
 
