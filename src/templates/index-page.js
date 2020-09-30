@@ -45,7 +45,15 @@ export const IndexPageTemplate = ({
   <div>
 
 <Hero/>
-
+<div className="ejemplos">
+  <h1>Lorem Ipsum Dolor Sit Amet</h1>
+  <h2>Lorem Ipsum Dolor Sit Amet</h2>
+  <h3>Lorem Ipsum Dolor Sit Amet</h3>
+  <h4>Lorem Ipsum Dolor Sit Amet</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+  <button className='outlined-button'>Lorem Ipsum</button>
+  <button className="flat-button"> Lorem Ipsum</button>
+</div>
     <div
       className="full-width-image margin-top-0"
       style={{
