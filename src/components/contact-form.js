@@ -29,15 +29,17 @@ const Form = () => {
     
         <input  type="text" name="name" onChange={(e) => checkInputValue(e)}  /> <span>  <span>Nombre:</span></span> 
       </label>
+
+      <label  >
+     
+     <input type="tel" name="phone" onChange={(e) => checkInputValue(e)} /><span>  <span>Telefono:</span></span> 
+   </label>
+
       <label  >
      
         <input type="text" name="mail" onChange={(e) => checkInputValue(e)} /><span>  <span>Mail:</span></span> 
       </label>
-      <label  >
-     
-        <input type="tel" name="phone" onChange={(e) => checkInputValue(e)} /><span>  <span>Telefono:</span></span> 
-      </label>
-      <input type="submit" value="Submit" className="outlined-button light"/>
+      <input type="submit" value="Hacer Cita" className="outlined-button light"/>
     </form>
     </div>  );
 }
