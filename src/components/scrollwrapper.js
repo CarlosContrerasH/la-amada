@@ -10,7 +10,7 @@ const ScrollWrapper = (props) => {
         /* Optional options */
         threshold: 0,
       })
-    return (<div  ref={ref} className ={percentage>.25?"visible component "+ props.classes:"component "+ props.classes}>
+    return (<div  ref={ref} className ={percentage>.25?"visible component "+ (props.classes?props.classes:""):"component "+  (props.classes?props.classes:"")}>
       
   {props.children}
     </div>  );

@@ -11,10 +11,11 @@ import { useScrollPercentage } from 'react-scroll-percentage'
 import Form from "../components/contact-form"
 import ScrollWrapper from "../components/scrollwrapper"
 import {HandleImages} from "../components/handleImages"
+import SimpleSlider from "../components/simpleSlider"
 
-
+let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/> ]
  
-
+let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
 
 const Hero = () => {
     const [ref, percentage] = useScrollPercentage({
@@ -97,8 +98,7 @@ class IndexPage extends React.Component{
             </span>
             <div className="col-wrapper">
             <div className="left-col">
-             
- <HandleImages name="beach"/>
+            <SimpleSlider slides={playaSlider}/>
             </div>
             <div className="right-col">
             <p>Exclusiva comunidad turístico residencial cerrada de
@@ -143,7 +143,7 @@ class IndexPage extends React.Component{
             <ScrollWrapper >
             
             <div>
-            <HandleImages name="beach"/>
+            <SimpleSlider slides={bigSlider}/>
             <button className="flat-button sand-button centered-button">Ver Galeria</button>
            </div>
             </ScrollWrapper>
