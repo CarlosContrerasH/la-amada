@@ -6,6 +6,7 @@ import logo from '../img/logo.svg'
 import { HandleImages } from "../components/handleImages"
 import Swipe from 'react-easy-swipe';
 
+import ScrollWrapper from "../components/scrollwrapper"
 import pin from "../img/location-pin.svg"
 import Logo from "./logo"
 const SimpleSlider = class extends React.Component {
@@ -81,11 +82,11 @@ const SimpleSlider = class extends React.Component {
                 onSwipeStart={this.onSwipeStart}
                 onSwipeMove={this.onSwipeMove}
                 onSwipeEnd={this.onSwipeEnd}>
-                <div className="slides-wrapper">
+                <div className="fancy-wrapper">
 
                     {this.props.slides.map((slide, index) => {
 
-                    return <div key={index} className="fancy-slide" id={index == this.state.active ? "active" : ""}>{slide}<h3 className="fancy-title"> {this.props.titles[index]}</h3></div>;
+                    return <ScrollWrapper><div key={index} className="fancy-slide" id={index == this.state.active ? "active" : ""}>{slide}<h3 className="fancy-title"> {this.props.titles[index]}</h3></div></ScrollWrapper>;
                     })}
 
 

@@ -14,10 +14,11 @@ import {HandleImages} from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
 import FancySlider from "../components/fancySlider"
 
+let fancySlider =[ <HandleImages name="residencesGal1"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
 let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/> ]
  
 let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
-let slideTitles=[<span>Tres <br/><span className='sub'>Recámaras</span></span>,"Cuatro Recámaras","Dos Recámaras"]
+let slideTitles=[<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
 
 const Hero = () => {
     const [ref, percentage] = useScrollPercentage({
@@ -91,11 +92,11 @@ class IndexPage extends React.Component{
               </div>
               </ScrollWrapper>
             
-              <ScrollWrapper classes="bg-sand">
+              <ScrollWrapper classes="bg-sand fancy">
             
             <div>
          <h3>Nuestras Residencias</h3>
-         <FancySlider slides={playaSlider} titles={slideTitles}/>
+         <FancySlider slides={fancySlider} titles={slideTitles}/>
             </div>
             </ScrollWrapper>
           
