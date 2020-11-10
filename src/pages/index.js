@@ -12,10 +12,12 @@ import Form from "../components/contact-form"
 import ScrollWrapper from "../components/scrollwrapper"
 import {HandleImages} from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
+import FancySlider from "../components/fancySlider"
 
 let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/> ]
  
 let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
+let slideTitles=[<span>Tres <br/><span className='sub'>Recámaras</span></span>,"Cuatro Recámaras","Dos Recámaras"]
 
 const Hero = () => {
     const [ref, percentage] = useScrollPercentage({
@@ -82,14 +84,21 @@ class IndexPage extends React.Component{
               </span>
             
               <div className="video-wrapper">
-              <iframe src="https://player.vimeo.com/video/336812660?title=0&byline=0&portrait=0"   frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-             
+              
+              <iframe   src="https://www.youtube.com/embed/if0hZ_LxUWA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <button className="flat-button sand-button centered-button">Ver Mas</button>
+              <button className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
               </div>
               </ScrollWrapper>
             
+              <ScrollWrapper classes="bg-sand">
             
+            <div>
+         <h3>Nuestras Residencias</h3>
+         <FancySlider slides={playaSlider} titles={slideTitles}/>
+            </div>
+            </ScrollWrapper>
+          
             <ScrollWrapper>
             
             <div>
@@ -101,6 +110,7 @@ class IndexPage extends React.Component{
             <SimpleSlider slides={playaSlider}/>
             </div>
             <div className="right-col">
+                <HandleImages name="logopm"/>
             <p>Exclusiva comunidad turístico residencial cerrada de
             376 hectáreas ubicada al norte de la ciudad de
             
@@ -115,7 +125,7 @@ class IndexPage extends React.Component{
             </div>
             </ScrollWrapper>
             
-              <ScrollWrapper classes="bg-sand">
+             { /*<ScrollWrapper classes="bg-sand">
             
               <div>
               <span className="wrapped-header">
@@ -128,7 +138,7 @@ class IndexPage extends React.Component{
               </div>
               
               </div>
-              </ScrollWrapper>
+        </ScrollWrapper>*/}
 
               <ScrollWrapper classes="blurb">
             
@@ -144,7 +154,7 @@ class IndexPage extends React.Component{
             
             <div>
             <SimpleSlider slides={bigSlider}/>
-            <button className="flat-button sand-button centered-button">Ver Galeria</button>
+            <button className="flat-button sand-button centered-button"  style={{marginTop:"3em"}}>Ver Galeria</button>
            </div>
             </ScrollWrapper>
             <Form/>

@@ -18,6 +18,13 @@ beach: file(relativePath: { eq: "beach.jpeg" }) {
   }
 
 
+  logopm: file(relativePath: { eq: "logo-playa-muejeres.png" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
 
  
   playaGal1: file(relativePath: { eq: "SLIDER PLAYA MUJERES/PLAYAMUJERES-1.png" }) {
@@ -75,6 +82,9 @@ beach: file(relativePath: { eq: "beach.jpeg" }) {
 
     
     beach: <Img alt="Badge" fluid={data.beach.childImageSharp.fluid} />,
+
+    logopm: <Img alt="Playa Mujeres" fluid={data.logopm.childImageSharp.fluid} />,
+
     playaGal1: <Img alt="Pool" fluid={data.playaGal1.childImageSharp.fluid} />,
     playaGal2: <Img alt="Pool" fluid={data.playaGal2.childImageSharp.fluid} />,
      

@@ -28,6 +28,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-easy-swipe": "^0.0.21",
     "react-helmet": "^6.0.0",
     "react-scroll-percentage": "^4.2.0",
     "uuid": "^7.0.0"
