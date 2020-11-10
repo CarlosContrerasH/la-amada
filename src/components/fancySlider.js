@@ -25,8 +25,8 @@ const SimpleSlider = class extends React.Component {
         var temp = parseInt(document.getElementsByClassName('in-screen')[0].id,10);
          
         var element = document.getElementById((temp-1).toString())
- 
-       if(element){ element.scrollIntoView({behavior: "smooth"})
+        console.log(temp,element)
+       if(element){ element.scrollIntoView({behavior: "smooth", block: "end"})
      }
      }
   
@@ -34,6 +34,7 @@ const SimpleSlider = class extends React.Component {
        var temp = parseInt(document.getElementsByClassName('in-screen')[0].id,10);
         
        var element = document.getElementById((temp+1).toString())
+       console.log(temp, element)
 
       if(element){ element.scrollIntoView({behavior: "smooth"})
     }

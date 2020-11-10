@@ -739,6 +739,7 @@ letter-spacing: .25em;
     height: 100%;
     width: 100% !important;
     margin:0 !important;
+    min-height: calc(100vh - 240px);
     
 }
 
