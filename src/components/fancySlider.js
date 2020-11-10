@@ -78,10 +78,7 @@ const SimpleSlider = class extends React.Component {
 
     render() {
         return (
-            <Swipe
-                onSwipeStart={this.onSwipeStart}
-                onSwipeMove={this.onSwipeMove}
-                onSwipeEnd={this.onSwipeEnd}>
+            
                 <div className="fancy-wrapper">
 
                     {this.props.slides.map((slide, index) => {
@@ -93,7 +90,7 @@ const SimpleSlider = class extends React.Component {
 
                  
 
-                </div>  </Swipe>
+                </div>   
         )
     }
 }

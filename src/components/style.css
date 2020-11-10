@@ -42,8 +42,8 @@
 --dark:#293D3A;
 }
 
-html{
-    scroll-snap-type: y proximity;
+html.snap{
+    scroll-snap-type: y mandatory;
 }
  
  body{

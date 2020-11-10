@@ -42,6 +42,33 @@ const Hero = () => {
    
     )
   }
+
+
+
+  const ResWrapper = (props) => {
+
+    const [ref, percentage] = useScrollPercentage({
+    
+      threshold: 0,
+    })
+
+    if( percentage > .25 && percentage < .85 ){
+
+        console.log('snap',  document.body.parentNode)
+          document.body.parentNode.classList.add('snap')
+    }
+    else{
+        document.body.parentNode.classList.remove('snap')
+    }
+    
+    return (<div ref={ref} className={percentage > .35 ? "visible component " + (props.classes ? props.classes : "") : "component " + (props.classes ? props.classes : "")}>
+      {
+  
+      
+     }
+      {props.children}
+    </div>);
+  }
   
 
 class IndexPage extends React.Component{  
@@ -92,13 +119,13 @@ class IndexPage extends React.Component{
               </div>
               </ScrollWrapper>
             
-              <ScrollWrapper classes="bg-sand fancy">
+              <ResWrapper classes="bg-sand fancy">
             
             <div>
          <h3>Nuestras Residencias</h3>
          <FancySlider slides={fancySlider} titles={slideTitles}/>
             </div>
-            </ScrollWrapper>
+            </ResWrapper>
           
             <ScrollWrapper>
             
