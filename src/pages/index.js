@@ -55,10 +55,12 @@ const Hero = () => {
     if( percentage > .25 && percentage < .85 ){
 
         console.log('snap',  document.body.parentNode)
-          document.body.parentNode.classList.add('snap')
+         try{ document.body.parentNode.classList.add('snap')}
+         catch{}
     }
     else{
-        document.body.parentNode.classList.remove('snap')
+      try{  document.body.parentNode.classList.remove('snap')}
+      catch{}
     }
     
     return (<div ref={ref} className={percentage > .35 ? "visible component " + (props.classes ? props.classes : "") : "component " + (props.classes ? props.classes : "")}>
