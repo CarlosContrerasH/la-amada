@@ -54,7 +54,7 @@ const Hero = () => {
 
     if( percentage > .25 && percentage < .85 ){
 
-        console.log('snap',  document.body.parentNode)
+        
          try{ document.body.parentNode.classList.add('snap')}
          catch{}
     }
@@ -125,7 +125,7 @@ class IndexPage extends React.Component{
             
             <div>
          <h3>Nuestras Residencias</h3>
-         <FancySlider slides={fancySlider} titles={slideTitles}/>
+              <FancySlider slides={fancySlider} titles={slideTitles}/>
             </div>
             </ResWrapper>
           

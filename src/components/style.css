@@ -742,6 +742,59 @@ letter-spacing: .25em;
     
 }
 
+
+.fancy button.prev{
+    position: sticky;
+    left:1em;
+    top:50%;
+}
+.fancy button.next:after{
+    content:" ";
+    border-bottom: solid 2px var(--dark-green);
+    border-left: solid 2px var(--dark-green);
+    width:20px;
+    height:20px;
+    display: block;
+    transform-origin: center;
+   margin:auto;transform: rotate(-45deg);
+}
+
+.fancy button.prev:after{
+    content:" ";
+    border-top: solid 2px var(--dark-green);
+    border-right: solid 2px var(--dark-green);
+    width:20px;
+    height:20px;
+    display: block;
+   margin:auto;
+   transform-origin: center;
+   transform: translateY(60%) rotate(-45deg)  ;
+}
+
+
+.fancy button.next{
+    position: sticky;
+    margin: 0 1em 0 auto;
+    display: block;
+    top:50%;
+}
+.fancy button.prev,.fancy button.next{
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: var(--dark-green);
+    text-transform: uppercase;
+    font-style: italic;pointer-events: none;
+    opacity: 0;
+    transition: .3s opacity;
+    z-index: 2;
+}
+.snap .fancy button.prev, .snap .fancy button.next{
+    opacity: 1;
+    pointer-events: all;
+    transition: .3s opacity;
+}
  
 .fancy-slide .gatsby-image-wrapper{
     height: 100%;
@@ -752,6 +805,17 @@ letter-spacing: .25em;
     transition: .3s clip-path ease-out, .3s transform ease-out;
 }
 
+ 
+.fancy-slide button{
+    margin-top: 2em;
+    opacity: 0;
+    transition: .3s opacity;
+    
+}
+.fancy-wrapper .in-screen .fancy-slide button{
+opacity: 1;
+transition: .3s opacity;
+}
 .fancy-wrapper .in-screen .fancy-slide .gatsby-image-wrapper{
    
     clip-path: inset(0% 0% 0% 0%);

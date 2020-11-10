@@ -18,79 +18,46 @@ const SimpleSlider = class extends React.Component {
             prevpos:0
 
         }
-        this.onSwipeMove = this.onSwipeMove.bind(this);
-        this.onSwipeEnd = this.onSwipeEnd.bind(this)
+       
     }
 
+    handlePrev() {
+        var temp = parseInt(document.getElementsByClassName('in-screen')[0].id,10);
+         
+        var element = document.getElementById((temp-1).toString())
+ 
+       if(element){ element.scrollIntoView({behavior: "smooth"})
+     }
+     }
+  
+    handleNext() {
+       var temp = parseInt(document.getElementsByClassName('in-screen')[0].id,10);
+        
+       var element = document.getElementById((temp+1).toString())
 
-    handleIncrease() {
-        this.setState({
-            active: this.state.active + 1
-        })
+      if(element){ element.scrollIntoView({behavior: "smooth"})
     }
-    handleDecrease() {
-        this.setState({
-            active: this.state.active - 1
-        })
-    }
-
-    handleButtonClick(e) {
-        this.setState({
-            active: e
-        })
     }
  
-    onSwipeStart(event) {
-        // console.log('Start swiping...', event);
-    }
 
-    onSwipeMove(position, event) {
-
-        this.setState({
-           
-            position:position.x,
-
-        })
-
-
-        // console.log(`Moved ${position.x} pixels horizontally`, event);
-        // console.log(`Moved ${position.y} pixels vertically`, event);
-    }
-
-    onSwipeEnd(event) {
-        if(this.state.position<0&&this.state.active<this.props.slides.length-1){
-            this.handleIncrease();
-            
-            this.setState({
-                position:0
-            })
-
-         }
-    if(this.state.position>0 && this.state.active >0){
-        this.handleDecrease();
-      
-        this.setState({
-            position:0
-        })
-    
-    }
-    }
+ 
 
     render() {
         return (
-            
+            <>
+            <button className='prev' onClick={()=>{this.handlePrev()}}>prev</button>   <button className='next' onClick={()=>{this.handleNext()}}>next</button>   
                 <div className="fancy-wrapper">
 
                     {this.props.slides.map((slide, index) => {
 
-                    return <ScrollWrapper><div key={index} className="fancy-slide" id={index == this.state.active ? "active" : ""}>{slide}<h3 className="fancy-title"> {this.props.titles[index]}</h3></div></ScrollWrapper>;
+                    return <ScrollWrapper id={index}><div key={index} className="fancy-slide"  >{slide}<h3 className="fancy-title"> {this.props.titles[index]}</h3>    <button className="flat-button sand-button centered-button"  >Ver Mas</button></div></ScrollWrapper>;
                     })}
 
 
 
                  
 
-                </div>   
+                </div>   </>
         )
     }
 }
