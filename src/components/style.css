@@ -17,7 +17,7 @@
     from {transform: scale(1.1);}
     to {transform: scale(1);}
   }
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400&display=swap');
 
 
   @font-face {
@@ -41,14 +41,16 @@
 --light-sand:#DDD3CA40;
 --dark:#293D3A;
 }
-
+html{
+    max-width: 100vw;
+}
 html.snap{
     scroll-snap-type: y mandatory;
 }
  
  body{
   
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
  
 
     margin:0;
@@ -569,7 +571,7 @@ select:-webkit-autofill:focus {
 
 .outlined-button{
     text-transform: uppercase;
-    cursor:pointer;
+    cursor:poRoboto;
     border: solid 2px var(--dark-green);
     background-color: transparent;
     color:var(--dark-green);
@@ -602,7 +604,7 @@ select:-webkit-autofill:focus {
 }
 .flat-button{
     
-    cursor:pointer;
+    cursor:poRoboto;
     border: solid 2px var(--dark-green);
     background-color: var(--dark-green);
     color:var(--sand);
@@ -683,7 +685,7 @@ transform:translateX(-50%);
     border-radius: 100%;
     background: #00000055;
     transition: .3s background;
-    cursor: pointer;
+    cursor: poRoboto;
 }
 .slider-buttons button.active{
      
@@ -720,6 +722,9 @@ letter-spacing: .25em;
     /*height: calc(100vh - 294px);*/
     
 
+    max-width: 100vw;
+    /*overflow-x: hidden;*/
+
 }
 .fancy-wrapper>div{
 
@@ -735,12 +740,13 @@ letter-spacing: .25em;
 }
 .fancy-slide{
     scroll-snap-align:center;
-
+position: relative;
     height: 100%;
     width: 100% !important;
     margin:0 !important;
-    min-height: calc(100vh - 240px);
-    
+    max-height: calc(100vh - 240px);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -780,20 +786,20 @@ letter-spacing: .25em;
     top:50%;
 }
 .fancy button.prev,.fancy button.next{
-    cursor: pointer;
+    cursor: poRoboto;
     text-align: center;
     border: none;
     background: transparent;
     color: var(--dark-green);
     text-transform: uppercase;
-    font-style: italic;pointer-events: none;
+    font-style: italic;poRoboto-events: none;
     opacity: 0;
     transition: .3s opacity;
     z-index: 2;
 }
 .snap .fancy button.prev, .snap .fancy button.next{
     opacity: 1;
-    pointer-events: all;
+    poRoboto-events: all;
     transition: .3s opacity;
 }
  
@@ -807,13 +813,13 @@ letter-spacing: .25em;
 }
 
  
-.fancy-slide button{
+.fancy-slide~button{
     margin-top: 2em;
     opacity: 0;
     transition: .3s opacity;
     
 }
-.fancy-wrapper .in-screen .fancy-slide button{
+.fancy-wrapper .in-screen .fancy-slide ~button{
 opacity: 1;
 transition: .3s opacity;
 }
@@ -934,7 +940,7 @@ form label input {
     .fancy button.prev:after,.fancy button.next:after{
         border-color: var(--sand);
     }
-
+.fancy-slide{overflow: hidden;}
     .blurb{
         padding-bottom: 2em;
     }

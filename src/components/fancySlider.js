@@ -14,49 +14,82 @@ const SimpleSlider = class extends React.Component {
         super(props)
         this.state = {
             active: 0,
-            position:0,
-            prevpos:0
+            position: 0,
+            prevpos: 0
 
         }
-       
+this.handleScroll = this.handleScroll.bind(this);
     }
 
     handlePrev() {
-        var temp = parseInt(document.getElementsByClassName('in-screen')[0].id,10);
-         
-        var element = document.getElementById((temp-1).toString())
-        console.log(temp,element)
-       if(element){ element.scrollIntoView({behavior: "smooth", block: "end"})
-     }
-     }
-  
-    handleNext() {
-       var temp = parseInt(document.getElementsByClassName('in-screen')[0].id,10);
+        var temp = parseInt(document.getElementsByClassName('in-screen')[0].id, 10);
+
+        var element = document.getElementById((temp - 1).toString())
+   
         
-       var element = document.getElementById((temp+1).toString())
-       console.log(temp, element)
-
-      if(element){ element.scrollIntoView({behavior: "smooth"})
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "end" });
+            this.setState({
+                active:temp-1
+            })
+        }
+        console.log(this.state.active)
     }
-    }
- 
 
- 
+    handleNext() {
+        var temp = parseInt(document.getElementsByClassName('in-screen')[0].id, 10);
+
+        var element = document.getElementById((temp + 1).toString())
+
+   
+    
+
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+            this.setState({
+                active:temp+1
+            })
+        }
+        console.log(this.state.active)
+    }
+
+
+    handleScroll(){
+var temp =0;
+        if(document.getElementsByClassName('in-screen')[0]){
+           temp = parseInt(document.getElementsByClassName('in-screen')[0].id, 10);
+           
+        }
+
+        this.setState(
+            { active:temp},()=>{console.log("scroll",this.state.active)}
+         )
+       
+    }
+componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll);
+}
+componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll);
+}
 
     render() {
         return (
             <>
-            <button className='prev' onClick={()=>{this.handlePrev()}}>prev</button>   <button className='next' onClick={()=>{this.handleNext()}}>next</button>   
+                <button  className='prev' onClick={() => { this.handlePrev() }}>prev</button>   <button   className='next' onClick={() => { this.handleNext() }}>next</button>
                 <div className="fancy-wrapper">
 
                     {this.props.slides.map((slide, index) => {
 
-                    return <ScrollWrapper id={index}><div key={index} className="fancy-slide"  >{slide}<h3 className="fancy-title"> {this.props.titles[index]}</h3>    <button className="flat-button sand-button centered-button"  >Ver Mas</button></div></ScrollWrapper>;
+                        return <ScrollWrapper id={index}><div key={index} className="fancy-slide"  >{slide}<h3 className="fancy-title"> {this.props.titles[index]}</h3>  </div>
+                        
+                        
+                        <button className="flat-button sand-button centered-button"  >Ver Mas</button></ScrollWrapper>;
                     })}
 
 
 
-                 
+
 
                 </div>   </>
         )
