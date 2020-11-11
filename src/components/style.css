@@ -799,7 +799,7 @@ letter-spacing: .25em;
  
 .fancy-slide .gatsby-image-wrapper{
     height: 100%;
-    width: min(400px,100%);
+    width: min(600px,100%);
     margin:auto;
     clip-path: inset(20% 20% 20% 20%);
      transform:scale(1.1);
@@ -885,6 +885,10 @@ transition: .3s opacity;
     margin:1em;
     
 }
+
+.blurb .script{
+    font-size: 1.7em;
+}
 form {
    
     margin: 3em;
@@ -895,14 +899,47 @@ form label input {
 }
 
     .component>div{
-        --margin:1em;
+        --margin:0;
+        margin-bottom: 2em;
+        width:100%;
     }
 
 
 
     .wrapped-header{
       font-size:1.5em;
-         margin: 1em 0 1em 0;
+         margin: 1em ;
 }
+.fancy-title{
+    font-size: 3.6em ;
+    mix-blend-mode: normal;
+}
+ }
 
+
+ @media (max-width: 500px) {
+  
+    .fancy-title{
+        font-size: 2.6em ;
+        mix-blend-mode: normal;
+    }
+     
+
+
+    .fancy button.prev,.fancy button.next{
+       
+        color: var(--sand);
+        
+    }
+    .fancy button.prev:after,.fancy button.next:after{
+        border-color: var(--sand);
+    }
+
+    .blurb{
+        padding-bottom: 2em;
+    }
+    .blurb .script{
+        font-size: .7em;
+    }
+    .blurb h2 span:nth-child(3){font-size: .3em;}
  }
