@@ -62,7 +62,7 @@ html.snap{
      display:flex;
      flex-direction: column;
 position:sticky;
-z-index: 1;
+z-index: 3;
 top:0;left:0;
    
  }
@@ -573,7 +573,7 @@ select:-webkit-autofill:focus {
 
 .outlined-button{
     text-transform: uppercase;
-    cursor:poRoboto;
+    cursor:pointer;
     border: solid 2px var(--dark-green);
     background-color: transparent;
     color:var(--dark-green);
@@ -606,7 +606,7 @@ select:-webkit-autofill:focus {
 }
 .flat-button{
     
-    cursor:poRoboto;
+    cursor:pointer;
     border: solid 2px var(--dark-green);
     background-color: var(--dark-green);
     color:var(--sand);
@@ -677,6 +677,7 @@ select:-webkit-autofill:focus {
     bottom:2em;
 left:50%;
 transform:translateX(-50%);
+
 }
 
 .slider-buttons button{
@@ -687,7 +688,7 @@ transform:translateX(-50%);
     border-radius: 100%;
     background: #00000055;
     transition: .3s background;
-    cursor: poRoboto;
+    cursor: pointer;
 }
 .slider-buttons button.active{
      
@@ -788,20 +789,20 @@ position: relative;
     top:50%;
 }
 .fancy button.prev,.fancy button.next{
-    cursor: poRoboto;
+    cursor: pointer;
     text-align: center;
     border: none;
     background: transparent;
     color: var(--dark-green);
     text-transform: uppercase;
-    font-style: italic;poRoboto-events: none;
+    font-style: italic;pointer-events: none;
     opacity: 0;
     transition: .3s opacity;
     z-index: 2;
 }
 .snap .fancy button.prev, .snap .fancy button.next{
     opacity: 1;
-    poRoboto-events: all;
+    pointer-events: all;
     transition: .3s opacity;
 }
  
