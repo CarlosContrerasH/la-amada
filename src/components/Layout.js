@@ -20,6 +20,8 @@ const Layout = class extends React.Component {
   handleLanguageChange(){
     this.setState({
       eng:!this.state.eng
+    },()=>{
+      console.log(this.state.eng)
     })
   }
 

@@ -139,7 +139,7 @@ overflow: hidden;
 bottom:100vh;
     left:0;
     width:100vw;
-    height: 200vh;
+    height: 200%;
     z-index: -1;
     object-fit:cover;
 }

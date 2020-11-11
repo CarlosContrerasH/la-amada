@@ -72,7 +72,7 @@ const Navbar = class extends React.Component {
 
               <label>
           
-          <select value={this.state.language} onChange={this.props.langToggle}>
+          <select value={this.props.eng?"Eng":"Esp"} onChange={()=>this.props.langToggle()}>
             <option value="Eng">Eng</option>
             <option value="Esp">Esp</option>
             
