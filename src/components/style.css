@@ -103,7 +103,11 @@ nav svg{
     margin: 0 ;
     width:auto;
 }
- 
+ nav select{
+     color:var(--sand);
+    background:transparent;
+    border:none;
+ }
 
  nav ul{list-style: none;}
  nav li{

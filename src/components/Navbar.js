@@ -11,6 +11,7 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
+      language:this.props.eng?"Eng":"Esp"
     }
   }
 
@@ -66,6 +67,18 @@ const Navbar = class extends React.Component {
               <li> <Link className="navbar-item" to="/contact/examples">
                 Form Examples
               </Link></li>
+
+              <li>
+
+              <label>
+          
+          <select value={this.state.language} onChange={this.props.langToggle}>
+            <option value="Eng">Eng</option>
+            <option value="Esp">Esp</option>
+            
+          </select>
+        </label>
+              </li>
 
             </ul>
 
