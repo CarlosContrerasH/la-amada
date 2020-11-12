@@ -7,7 +7,7 @@ import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import video from "../img/mainBG.mp4"
 import { useScrollPercentage } from 'react-scroll-percentage'
-
+import Logo from "../components/logo"
 import Form from "../components/contact-form"
 import ScrollWrapper from "../components/scrollwrapper"
 import {HandleImages} from "../components/handleImages"
@@ -30,8 +30,8 @@ const Hero = () => {
   
   <div className="hero" >
    
-    <div className="screen first"><span>aqui va la costa</span></div>
-    <div className="screen second" ref={ref}><span>aqui va el depa</span></div>
+    <div className="screen first"><div><Logo/><h3>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h3></div></div>
+    <div className="screen second" ref={ref}></div>
     <video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} style={percentage<.5?{transform:"translateY("+ (percentage.toPrecision(2)) * 200+"%)"}:{transform:"translateY(100%)"}}/>
   </div>
   
@@ -110,7 +110,7 @@ class IndexPage extends React.Component{
             
               <div>
               <span className="wrapped-header">
-             <h2> Amenidades <br/>Exclusivas</h2> 
+             <h2> {this.props.eng?<>Exclusive <br/>Amenities</>:<>Amenidades <br/>Exclusivas</>}</h2> 
               </span>
             
               <div className="video-wrapper">

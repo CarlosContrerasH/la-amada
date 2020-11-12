@@ -116,7 +116,7 @@ nav svg{
      margin-left: 1em;
      font-weight: 300;
  }
-nav li a{
+nav li a, nav li{
 color:var(--sand);
 text-decoration: none;
 }
@@ -136,7 +136,8 @@ overflow: hidden;
 
 .hero video{
     position: absolute;
-bottom:100vh;
+    bottom: calc(100vh - 104px);
+
     left:0;
     width:100vw;
     height: 200%;
@@ -144,32 +145,42 @@ bottom:100vh;
     object-fit:cover;
 }
 
+.hero svg{
+    fill:var(--dark-green);
+}
+.hero h3{
+    color:var(--dark-green);
+    font-style: italic;
+    font-size: 1.5em;
+}
+
 .screen{
     position: relative;
     background: #00000044;
-    height: 100vh;
+    height: calc(100vh - 104px);
     width:100vw;
      
      
 }
 
 .screen.first{
-   display:grid;
-   place-items: center;
+    display:flex;
+   justify-content: center;
+   align-items: flex-end;
 }
 
 .screen.second{
-    display:grid;
-   place-items: center;
+    display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  
 }
 
-.ejemplos{
-    
+.screen.first>div, .screen.second>div {
+margin:2em;
 }
 
-footer *{
-     
-}
+ 
 footer>div:first-child{
     background: var(--dark-green);
     display:flex;
@@ -897,6 +908,14 @@ button.for-mobile{
 
 }
  @media (max-width: 800px) {
+
+    .hero video{
+        position: absolute;
+        bottom: calc(100vh - 50px);}
+.screen{
+    position: relative;
+    background: #00000044;
+    height: calc(100vh - 50px);}
      nav .nav{
          padding: 0;
          justify-content: flex-start;

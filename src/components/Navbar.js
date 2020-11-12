@@ -50,7 +50,7 @@ const Navbar = class extends React.Component {
           </div>
           <div >
             <ul>
-              <li>
+             { /*<li>
                 <Link className="navbar-item" to="/about">
                   About
               </Link> </li>
@@ -66,7 +66,14 @@ const Navbar = class extends React.Component {
               </Link></li>
               <li> <Link className="navbar-item" to="/contact/examples">
                 Form Examples
-              </Link></li>
+             </Link></li>*/}
+             <li>AMENIDADES</li>
+             <li>RESIDENCIAS</li>
+             <li>UBICAION</li>
+             <li>GALERIA</li>
+             <li>CONOCENOS</li>
+             <li>INVIERTE</li>
+             <li>BLOG</li>
 
               <li>
 

@@ -6,6 +6,7 @@ import './all.sass'
 import './style.css'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import { element } from 'prop-types'
 
 const Layout = class extends React.Component {
   constructor(props) {
@@ -27,11 +28,20 @@ const Layout = class extends React.Component {
 
 
   render() {
+
+    let elements = React.Children.toArray(this.props.children);
+   
+var temp =[];
+    for(var i =0;i<elements.length;i++){
+      temp[i]=React.cloneElement(elements[i], { eng: this.state.eng })
+    }
+
+    console.log(temp)
     return (
     <div>
     
       <Navbar langToggle={this.handleLanguageChange} eng={this.state.eng}/>
-      <div>{this.props.children}</div>
+      <div>{temp}</div>
       <Footer />
     </div>
   )
