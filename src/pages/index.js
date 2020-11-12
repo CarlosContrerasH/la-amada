@@ -20,7 +20,7 @@ let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGa
 let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
 let slideTitles=[<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
 
-const Hero = () => {
+const Hero = (props) => {
     const [ref, percentage] = useScrollPercentage({
       /* Optional options */
       threshold: 0.0,
@@ -30,7 +30,7 @@ const Hero = () => {
   
   <div className="hero" >
    
-    <div className="screen first"><div><Logo/><h3>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h3></div></div>
+    <div className="screen first"><div><Logo/>{props.eng?<h3>ONLY CONDO IN PLAYA MUJERES, CANCUN.</h3>:<h3>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h3>}</div></div>
     <div className="screen second" ref={ref}></div>
     <video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} style={percentage<.5?{transform:"translateY("+ (percentage.toPrecision(2)) * 200+"%)"}:{transform:"translateY(100%)"}}/>
   </div>
@@ -42,6 +42,87 @@ const Hero = () => {
    
     )
   }
+
+
+  const Amenidades = (props) => {
+ 
+   
+    return (
+  
+      <ScrollWrapper>
+            
+      <div>
+      <span className="wrapped-header">
+     <h2> {props.eng?<>Exclusive <br/>Amenities</>:<>Amenidades <br/>Exclusivas</>}</h2> 
+      </span>
+    
+      <div className="video-wrapper">
+      
+      <iframe   src="https://www.youtube.com/embed/if0hZ_LxUWA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <button className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+      </div>
+      </ScrollWrapper>
+
+  
+   
+    )
+  }
+
+
+
+  const Residences = (props) => {
+  
+   
+    return (
+      <ResWrapper classes="bg-sand fancy">
+            
+      <div>
+   <h3>{props.eng?"Our Residences":"Nuestras Residencias"}</h3>
+        <FancySlider slides={fancySlider} titles={slideTitles}/>
+      </div>
+      </ResWrapper>
+     
+   
+    )
+  }
+
+
+
+  const PlayaMujeres = (props) => {
+  
+   
+    return (
+       
+      <ScrollWrapper>
+            
+      <div>
+      <span className="wrapped-header">
+      <h2> {props.eng?<>Playa Mujeres<br/><span className="sub">Master Condo</span></>:<>Playa Mujeres<br/><span className="sub">Condominio Maestro</span></>}</h2> 
+      </span>
+      <div className="col-wrapper">
+      <div className="left-col">
+      <SimpleSlider slides={playaSlider}/>
+      </div>
+      <div className="right-col">
+          <HandleImages name="logopm"/>
+     {props.eng?<p>Texto en Ingles</p> :<p>Exclusiva comunidad turístico residencial cerrada de
+      376 hectáreas ubicada al norte de la ciudad de
+      
+      Cancún, donde el cuidado y el respeto por la natu-
+      raleza del entorno hacen de este desarrollo un lugar
+      
+      mágico que permite la convivencia, privacidad y
+      conectividad que tanto deseas.</p>
+     } <button className="flat-button sand-button ">{props.eng?"Ver Mas":"See More"}</button>
+      </div></div>
+      
+      </div>
+      </ScrollWrapper>
+   
+    )
+  }
+
 
 
 
@@ -106,54 +187,11 @@ class IndexPage extends React.Component{
               <button className="flat-button"> Lorem Ipsum</button>
             </div>*/}
             
-            <ScrollWrapper>
+          <Amenidades/>
             
-              <div>
-              <span className="wrapped-header">
-             <h2> {this.props.eng?<>Exclusive <br/>Amenities</>:<>Amenidades <br/>Exclusivas</>}</h2> 
-              </span>
-            
-              <div className="video-wrapper">
-              
-              <iframe   src="https://www.youtube.com/embed/if0hZ_LxUWA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <button className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
-              </div>
-              </ScrollWrapper>
-            
-              <ResWrapper classes="bg-sand fancy">
-            
-            <div>
-         <h3>Nuestras Residencias</h3>
-              <FancySlider slides={fancySlider} titles={slideTitles}/>
-            </div>
-            </ResWrapper>
+   <Residences/>
           
-            <ScrollWrapper>
-            
-            <div>
-            <span className="wrapped-header">
-            <h2> Playa Mujeres<br/><span className="sub">Condominio Maestro</span></h2> 
-            </span>
-            <div className="col-wrapper">
-            <div className="left-col">
-            <SimpleSlider slides={playaSlider}/>
-            </div>
-            <div className="right-col">
-                <HandleImages name="logopm"/>
-            <p>Exclusiva comunidad turístico residencial cerrada de
-            376 hectáreas ubicada al norte de la ciudad de
-            
-            Cancún, donde el cuidado y el respeto por la natu-
-            raleza del entorno hacen de este desarrollo un lugar
-            
-            mágico que permite la convivencia, privacidad y
-            conectividad que tanto deseas.</p>
-            <button className="flat-button sand-button ">Ver Mas</button>
-            </div></div>
-            
-            </div>
-            </ScrollWrapper>
+          <PlayaMujeres/>
             
              { /*<ScrollWrapper classes="bg-sand">
             
