@@ -134,7 +134,7 @@ text-decoration: none;
 overflow: hidden;
 }
 
-.hero video{
+.hero video, .hero .bg-wrapper{
     position: absolute;
     bottom: calc(100vh - 104px);
 
@@ -143,6 +143,7 @@ overflow: hidden;
     height: 200%;
     z-index: -1;
     object-fit:cover;
+    transition: .3s transform ease-out;
 }
 
 .hero svg{
@@ -156,7 +157,7 @@ overflow: hidden;
 
 .screen{
     position: relative;
-    background: #00000044;
+ 
     height: calc(100vh - 104px);
     width:100vw;
      

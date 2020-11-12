@@ -17,6 +17,15 @@ beach: file(relativePath: { eq: "beach.jpeg" }) {
     }
   }
 
+depas:file(relativePath: { eq: "FOTO-HEADER-HOME.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
 
   logopm: file(relativePath: { eq: "logo-playa-muejeres.png" }) {
     childImageSharp {
@@ -118,6 +127,11 @@ beach: file(relativePath: { eq: "beach.jpeg" }) {
 
     
     beach: <Img alt="Badge" fluid={data.beach.childImageSharp.fluid} />,
+
+       
+    depas: <Img alt="Badge" fluid={data.depas.childImageSharp.fluid} />,
+
+    
 
     logopm: <Img alt="Playa Mujeres" fluid={data.logopm.childImageSharp.fluid} />,
 
