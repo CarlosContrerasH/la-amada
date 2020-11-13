@@ -132,29 +132,44 @@ text-decoration: none;
      
     position: relative;
 overflow: hidden;
+z-index: 0;
 }
 
+.hero~.component{
+    position: relative;
+    background: white;
+    z-index: 1;
+}
+.hero .logo-wrapper{
+    position: fixed;
+top:50vh;
+left:50%;
+transform:translateX(-50%)
+}
   .hero .bg-wrapper{
     position: absolute;
-   bottom:0;
+   bottom:calc(100vh - 104px);
 
     left:0;
     width:100vw;
-    height: 200vh;
+    height: auto;
     z-index: -1;
-    object-fit:cover;
-    transition: .3s transform ease-out;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .bg-wrapper .gatsby-image-wrapper{
-    position: absolute;
-    top: 0vh;
-    left: 0;
+   
+    
+    height: 100vh;
+     
 
 }
 
 .bg-wrapper video{
 top:100vh;
+height: 100vh;
 width: 100vw;
 }
 
@@ -296,7 +311,7 @@ footer li{
     height: 100%;
 }
 
-.bg-sand{
+.component.bg-sand{
     background: var(--light-sand);
 
 }
@@ -474,7 +489,7 @@ span.script{
 }
 
 
-.blurb{
+.component.blurb{
     background: var(--dark-green);
    
    
@@ -1005,7 +1020,7 @@ button.for-mobile{
         bottom: calc(100vh - 50px);}
 .screen{
     position: relative;
-    background: #00000044;
+  
     height: calc(100vh - 50px);}
      nav .nav{
          padding: 0;
