@@ -32,8 +32,9 @@ const Hero = (props) => {
    
     <div className="screen first"><div><Logo/>{props.eng?<h3>ONLY CONDO IN PLAYA MUJERES, CANCUN.</h3>:<h3>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h3>}</div></div>
     <div className="screen second" ref={ref}></div>
-    <div className="bg-wrapper" style={percentage<.5?{transform:"translateY("+ (percentage.toPrecision(2)) * 200+"%)"}:{transform:"translateY(100%)"}}> 
+    <div className="bg-wrapper" style={{}/*percentage<.5?{transform:"translateY("+ (percentage.toPrecision(2)) * 200+"%)"}:{transform:"translateY(100%)"}*/}> 
     <HandleImages name="depas"/>
+    <video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} />
     </div>
     {/*<video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} style={percentage<.5?{transform:"translateY("+ (percentage.toPrecision(2)) * 200+"%)"}:{transform:"translateY(100%)"}}/>*/}
   </div>
