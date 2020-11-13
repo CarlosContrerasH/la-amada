@@ -228,7 +228,7 @@ class IndexPage extends React.Component{
             <button className="flat-button sand-button centered-button"  style={{marginTop:"3em"}}>Ver Galeria</button>
            </div>
             </ScrollWrapper>
-            <Form/>
+           
              
             </Layout> )}      
 

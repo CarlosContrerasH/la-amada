@@ -27,6 +27,36 @@ depas:file(relativePath: { eq: "FOTO-HEADER-HOME.jpg" }) {
 
 
 
+
+playa:file(relativePath: { eq: "AMENIDADES/HEADER-AMENIDADES.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+tenis:file(relativePath: { eq: "AMENIDADES/LA.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+
+
   logopm: file(relativePath: { eq: "logo-playa-muejeres.png" }) {
     childImageSharp {
   
@@ -127,9 +157,12 @@ depas:file(relativePath: { eq: "FOTO-HEADER-HOME.jpg" }) {
 
     
     beach: <Img alt="Badge" fluid={data.beach.childImageSharp.fluid} />,
-
+     
+    playa: <Img alt="La Amada" fluid={data.playa.childImageSharp.fluid} />,
        
-    depas: <Img alt="Badge" fluid={data.depas.childImageSharp.fluid} />,
+    depas: <Img alt="La Amada" fluid={data.depas.childImageSharp.fluid} />,
+    tenis: <Img alt="Tenis" fluid={data.tenis.childImageSharp.fluid} />,
+    bicis: <Img alt="Bicicletas" fluid={data.bicis.childImageSharp.fluid} />,
 
     
 

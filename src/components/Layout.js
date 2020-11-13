@@ -7,7 +7,7 @@ import './style.css'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import { element } from 'prop-types'
-
+import Form from "./contact-form"
 const Layout = class extends React.Component {
   constructor(props) {
     super(props)
@@ -42,6 +42,7 @@ var temp =[];
     
       <Navbar langToggle={this.handleLanguageChange} eng={this.state.eng}/>
       <div>{temp}</div>
+      <Form/>
       <Footer />
     </div>
   )

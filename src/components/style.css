@@ -296,7 +296,7 @@ footer li{
 }
 .left-col,.right-col{
     width: calc(50% - 2em);
-
+position: relative;
     margin:1em;
     
 }
@@ -328,6 +328,57 @@ transition: .3s opacity, .3s transform;
 .right-col .gatsby-image-wrapper{
     
     width: 15em;
+
+    
+}
+.col-wrapper.amenidades{
+    margin:0;
+    width: 100%;
+}
+
+.col-wrapper.amenidades .logo{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    background-color: rgba(83, 30, 30, .5);
+}
+
+
+.col-wrapper.amenidades .left-col{
+
+    transform:translateX(-30%);opacity:0;
+    transition: .3s opacity, .3s transform;
+
+}
+
+.visible  .col-wrapper.amenidades  .left-col{
+   
+    transform:translateX(0%);opacity:1;
+    transition: .3s opacity, .3s transform;
+}
+
+.col-wrapper.amenidades .left-col .logo svg{
+    fill:var(--sand)
+}
+
+.col-wrapper.amenidades .left-col .logo svg, .col-wrapper.amenidades .right-col .logo *{
+    width: 15em !important;
+    object-fit: contain !important;
+}
+
+.col-wrapper.amenidades .left-col, .col-wrapper.amenidades .right-col{
+    width:50%;
+    margin:0;
+}
+
+.col-wrapper.amenidades .right-col .gatsby-image-wrapper{
+    
+    width: 100%;
 
     
 }
@@ -445,7 +496,36 @@ span.script{
 /*Components*/
 
 
+/*AMENIDADES*/
 
+.header-amenidades{
+    position: absolute;
+    top:20%;
+    left: 50%;
+    z-index: 1;
+    transform:translate(-50%, 0)
+ 
+}
+
+.header-amenidades h1, .header-amenidades .script{
+    color:var(--sand);
+    font-weight: lighter;
+}
+
+.header-amenidades .script{
+    display: inline-block;
+    margin-left: 1em;
+   
+}
+
+.full{
+    position: relative;
+    margin:0 !important;
+    width:100% !important;
+}
+
+
+/*AMENIDADES*/
 
 
 
@@ -465,9 +545,7 @@ span.script{
 
 
 /*CONTACT FORM*/
-.form-wrapper ~ *{
-    display: none;
-}
+ 
 .form-wrapper{
     background-color: var(--dark-green);
     display: grid;
