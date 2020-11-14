@@ -62,7 +62,7 @@ var temp =0;
         }
 
         this.setState(
-            { active:temp},()=>{console.log("scroll",this.state.active)}
+            { active:temp}
          )
        
     }

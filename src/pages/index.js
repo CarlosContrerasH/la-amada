@@ -20,6 +20,10 @@ let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGa
 let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
 let slideTitles=[<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
 
+ function regresator(e){
+   return e
+ }
+
 const Hero = (props) => {
     const [ref, percentage] = useScrollPercentage({
       /* Optional options */
@@ -28,17 +32,20 @@ const Hero = (props) => {
    
     return (
   
-  <div className="hero" >
+  <div className="hero">
    <div className="logo-wrapper"><Logo/>{props.eng?<h3>ONLY CONDO IN PLAYA MUJERES, CANCUN.</h3>:<h3>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h3>}</div>
     <div className="screen first"></div>
-    <div className="screen second" ref={ref}></div>
-    <div className="bg-wrapper" style={percentage<.5?{transform:"translateY("+ (percentage.toPrecision(2)) * 200+"%)"}:{transform:"translateY(100%)"}} >
-      {console.log("!", percentage)} 
+    <div className="screen second" ref={ref} ></div>
+    <div className="bg-wrapper" style={{transform:"translateY(min("+ (percentage.toPrecision(2)) * 200+"%,50%))"}} >
+      {console.log("!", percentage,regresator(percentage),Math.round(percentage*400)) } 
       <div>
     <HandleImages name="depas"/>
     <video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} /></div>
     </div>
-    {/*<video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} style={percentage<.5?{transform:"translateY("+ (percentage.toPrecision(2)) * 200+"%)"}:{transform:"translateY(100%)"}}/>*/}
+    {/*
+    
+    style={{bottom:"max(calc(100vh - 102px - "+ Math.round(percentage*400)+ "vh),-100vh)"}}
+    <video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} style={percentage<.5?{transform:"translateY("+ (percentage.toPrecision(2)) * 200+"%)"}:{transform:"translateY(100%)"}}/>*/}
   </div>
   
   
@@ -139,7 +146,7 @@ const Hero = (props) => {
       threshold: 0,
     })
 
-    if( percentage > .25 && percentage < .65 ){
+    if( percentage > .25 && percentage < .75 ){
 
         
          try{ document.body.parentNode.classList.add('snap')}

@@ -147,8 +147,8 @@ left:50%;
 transform:translateX(-50%)
 }
   .hero .bg-wrapper{
-    position: absolute;
-   bottom:calc(100vh - 104px);
+    position: fixed;
+   bottom:0;
 
     left:0;
     width:100vw;
@@ -1019,7 +1019,9 @@ button.for-mobile{
 
 }
  @media (max-width: 800px) {
-
+    .hero .logo-wrapper {
+        width:80vw;
+    }
 
     .hero .bg-wrapper {
         position: absolute;
@@ -1127,6 +1129,15 @@ form label input {
     font-size: 3.6em ;
     mix-blend-mode: normal;
 }
+
+
+.slider-buttons button {
+    width:22px;
+    height:22px;
+}
+
+
+
  }
 
 
