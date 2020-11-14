@@ -139,7 +139,7 @@ const Hero = (props) => {
       threshold: 0,
     })
 
-    if( percentage > .25 && percentage < .85 ){
+    if( percentage > .25 && percentage < .65 ){
 
         
          try{ document.body.parentNode.classList.add('snap')}
