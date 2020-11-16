@@ -31,7 +31,7 @@ import FancySlider from "../components/fancySlider"
         
     <HandleImages name="playa"/>
     </div>
-    <div><p>{props.eng?"english":"espanol"}</p></div>
+    <div><p>{props.eng==true?"english":"espanol"}</p></div>
         </div>
         </ScrollWrapper>
      

@@ -33,11 +33,11 @@ const Hero = (props) => {
     return (
   
   <div className="hero">
-   <div className="logo-wrapper"><Logo/>{props.eng?<h3>ONLY CONDO IN PLAYA MUJERES, CANCUN.</h3>:<h3>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h3>}</div>
+   <div className="logo-wrapper"><Logo/>{props.eng==true?<h3>ONLY CONDO IN PLAYA MUJERES, CANCUN.</h3>:<h3>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h3>}</div>
     <div className="screen first"></div>
     <div className="screen second" ref={ref} ></div>
     <div className="bg-wrapper" style={{transform:"translateY(min("+ (percentage.toPrecision(2)) * 200+"%,50%))"}} >
-      {console.log("!", percentage,regresator(percentage),Math.round(percentage*400)) } 
+   
       <div>
     <HandleImages name="depas"/>
     <video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} /></div>
@@ -66,7 +66,7 @@ const Hero = (props) => {
             
       <div>
       <span className="wrapped-header">
-     <h2> {props.eng?<>Exclusive <br/>Amenities</>:<>Amenidades <br/>Exclusivas</>}</h2> 
+     <h2> {props.eng==true?<>Exclusive <br/>Amenities</>:<>Amenidades <br/>Exclusivas</>}</h2> 
       </span>
     
       <div className="video-wrapper">
@@ -91,7 +91,7 @@ const Hero = (props) => {
       <ResWrapper classes="bg-sand fancy">
             
       <div>
-   <h3>{props.eng?"Our Residences":"Nuestras Residencias"}</h3>
+   <h3>{props.eng==true?"Our Residences":"Nuestras Residencias"}</h3>
         <FancySlider slides={fancySlider} titles={slideTitles}/>
       </div>
       </ResWrapper>
@@ -111,7 +111,7 @@ const Hero = (props) => {
             
       <div>
       <span className="wrapped-header">
-      <h2> {props.eng?<>Playa Mujeres<br/><span className="sub">Master Condo</span></>:<>Playa Mujeres<br/><span className="sub">Condominio Maestro</span></>}</h2> 
+      <h2> {props.eng==true?<>Playa Mujeres<br/><span className="sub">Master Condo</span></>:<>Playa Mujeres<br/><span className="sub">Condominio Maestro</span></>}</h2> 
       </span>
       <div className="col-wrapper">
       <div className="left-col">
@@ -119,7 +119,7 @@ const Hero = (props) => {
       </div>
       <div className="right-col">
           <HandleImages name="logopm"/>
-     {props.eng?<p>Texto en Ingles</p> :<p>Exclusiva comunidad turístico residencial cerrada de
+     {props.eng==true?<p>Texto en Ingles</p> :<p>Exclusiva comunidad turístico residencial cerrada de
       376 hectáreas ubicada al norte de la ciudad de
       
       Cancún, donde el cuidado y el respeto por la natu-
@@ -127,7 +127,7 @@ const Hero = (props) => {
       
       mágico que permite la convivencia, privacidad y
       conectividad que tanto deseas.</p>
-     } <button className="flat-button sand-button ">{props.eng?"Ver Mas":"See More"}</button>
+     } <button className="flat-button sand-button ">{props.eng==true?"Ver Mas":"See More"}</button>
       </div></div>
       
       </div>

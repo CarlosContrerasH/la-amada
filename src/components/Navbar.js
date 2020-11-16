@@ -11,7 +11,8 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
-      language:this.props.eng?"Eng":"Esp"
+      eng:this.props.eng
+     
     }
   }
 
@@ -78,8 +79,10 @@ const Navbar = class extends React.Component {
               <li>
 
               <label>
-          
-          <select value={this.props.eng?"Eng":"Esp"} onChange={()=>this.props.langToggle()}>
+           {console.log('nav', this.props.eng)}
+          <select value={this.props.eng ?"Eng":"Esp"} onChange={(event)=>{
+           if( event.target.value!==this.props.eng){this.props.langToggle()}
+            }}>
             <option value="Eng">Eng</option>
             <option value="Esp">Esp</option>
             

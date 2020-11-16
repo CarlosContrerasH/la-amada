@@ -12,41 +12,66 @@ const Layout = class extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-    eng:false
-      
+      eng: false
+
     }
-    this.handleLanguageChange=this.handleLanguageChange.bind(this)
+    this.handleLanguageChange = this.handleLanguageChange.bind(this)
   }
 
-  handleLanguageChange(){
+  handleLanguageChange() {
     this.setState({
-      eng:!this.state.eng
-    },()=>{
-      console.log(this.state.eng)
+      eng: !this.state.eng
+    }, () => {
+      // Save data to sessionStorage
+      sessionStorage.setItem('eng', this.state.eng);
     })
+  }
+
+  componentDidMount() {
+
+
+    // Get saved data from sessionStorage
+    let data = sessionStorage.getItem('eng');
+  
+
+
+    if (data) {
+      this.setState({
+        eng: data=="true"?true:false
+      }, () => {
+        // Save data to sessionStorage
+        sessionStorage.setItem('eng', data);
+        console.log('mount', data, this.state.eng);
+      })
+    }
+
+
+
+
+
   }
 
 
   render() {
 
     let elements = React.Children.toArray(this.props.children);
-   
-var temp =[];
-    for(var i =0;i<elements.length;i++){
-      temp[i]=React.cloneElement(elements[i], { eng: this.state.eng })
+
+    var temp = [];
+    for (var i = 0; i < elements.length; i++) {
+      temp[i] = React.cloneElement(elements[i], { eng: this.state.eng })
     }
 
-    console.log(temp)
+
     return (
-    <div>
-    
-      <Navbar langToggle={this.handleLanguageChange} eng={this.state.eng}/>
-      <div>{temp}</div>
-      <Form/>
-      <Footer />
-    </div>
-  )
-}
+      <div>
+
+        <Navbar langToggle={this.handleLanguageChange} eng={this.state.eng} />
+        <div>{temp}</div>
+        <Form />
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default Layout
