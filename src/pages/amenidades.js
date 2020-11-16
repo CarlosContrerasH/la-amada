@@ -11,6 +11,7 @@ import {HandleImages} from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
 import FancySlider from "../components/fancySlider"
 
+import { Link } from 'gatsby'
  
  
  
@@ -26,7 +27,7 @@ import FancySlider from "../components/fancySlider"
 
     <div >
     <span className="header-amenidades">
-  <h1><span>NUESTRAS</span><br/><span className="script">amenidades</span></h1></span>
+  <h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>NUESTRAS</span><br/><span  style={{marginLeft:"1.5em"}}className="script">amenidades</span></h1></span>
  
         
     <HandleImages name="playa"/>
@@ -49,18 +50,18 @@ import FancySlider from "../components/fancySlider"
         <ScrollWrapper>
 
 <div className="col-wrapper amenidades">
-      <div className="left-col">
+<Link to="/amenidades/tenis" className="left-col" >  
 
           <div className="logo">   <Logo /></div>
       <div className="bg">  <HandleImages name="tenis"/></div>
         
-          </div>
+         </Link>
 
- <div className="right-col">
+          <Link to="/amenidades/tenis" className="right-col" >   
  <div className="logo"> <HandleImages name="logopm"/></div>
      <div className="bg">
  <HandleImages name="bicis"/></div>
-          </div>
+         </Link>
             </div>
             </ScrollWrapper>
  
@@ -80,7 +81,7 @@ import FancySlider from "../components/fancySlider"
   <div>
       <div>
       <span className="wrapped-header">
-  <h2><span>250 METROS DE </span><br/><span className="script">frente a Playa</span><br/><span>Y MAS AMENIDADES DE LUJO TE ESPERAN</span></h2></span>
+  <h2><span  >250 METROS DE </span><br/><span className="script">frente a Playa</span><br/><span >Y MAS AMENIDADES DE LUJO TE ESPERAN.</span></h2></span>
   <button className="outlined-button light">  Hacer Cita</button>
   </div></div>
   </ScrollWrapper>

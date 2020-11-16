@@ -17,7 +17,7 @@
     from {transform: scale(1.1);}
     to {transform: scale(1);}
   }
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400&display=swap');
 
 
   @font-face {
@@ -381,16 +381,16 @@ transition: .3s opacity, .3s transform;
 }
 
 
-.col-wrapper.amenidades .left-col{
-
-    transform:translateX(-30%);opacity:0;
-    transition: .3s opacity, .3s transform;
+.col-wrapper.amenidades .left-col, .col-wrapper.amenidades .right-col{
+transform: translateY(0);
+    opacity:0;
+    transition: .3s opacity
 
 }
 
-.visible  .col-wrapper.amenidades  .left-col{
+.visible  .col-wrapper.amenidades  .left-col, .visible  .col-wrapper.amenidades  .right-col{
    
-    transform:translateX(0%);opacity:1;
+     opacity:1;
     transition: .3s opacity, .3s transform;
 }
 
@@ -400,11 +400,13 @@ transition: .3s opacity, .3s transform;
 
 .col-wrapper.amenidades .left-col .logo svg, .col-wrapper.amenidades .right-col .logo *{
     width: 15em !important;
+ 
     object-fit: contain !important;
 }
 
 .col-wrapper.amenidades .left-col, .col-wrapper.amenidades .right-col{
     width:50%;
+    overflow: hidden;
     margin:0;
 }
 
@@ -414,6 +416,20 @@ transition: .3s opacity, .3s transform;
 
     
 }
+
+.col-wrapper.amenidades .left-col .gatsby-image-wrapper, .col-wrapper.amenidades .right-col .gatsby-image-wrapper{
+    transform:scale(1);
+    transition: .3s transform ease-out;
+}
+
+
+
+.col-wrapper.amenidades .left-col:hover .gatsby-image-wrapper, .col-wrapper.amenidades .right-col:hover .gatsby-image-wrapper{
+    transform:scale(1.1);
+    transition: .3s transform ease-out;
+}
+
+
 
 .wrapped-header{
     display:block;
@@ -517,14 +533,63 @@ span.script{
 .blurb>div>div{
     text-align: center;
 }
-.blurb h2 span:nth-child(3){
-    font-size: .5em;
-    font-weight: 200;
-    letter-spacing: .2em;
+.blurb.home h2 span:nth-child(3){
     font-style: italic;
-    margin:1em;
-    display: inline-block
+
+font-weight: 200;}
+
+.blurb.amenidades h2 span:first-child{
+    font-weight:200;
+    letter-spacing:.1em;
+    font-style:italic;
+    display: inline-block;
+         width: 100%;
+         text-align: left;
 }
+
+.blurb.amenidades h2 span:nth-child(3){
+     margin:0 0 0 2em;
+}
+
+.blurb.amenidades h2 span:nth-child(5)
+{  width: 100%;
+    text-align: right;
+    font-style:italic;
+    display: inline-block;
+    font-weight:200;
+    font-size:.75em;
+     display:block;
+      margin:2em 0 ;
+    }
+
+
+    @media (max-width: 627px) {
+        .blurb.amenidades h2 span:first-child{
+            font-size: .75em;
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+            
+        }
+        
+        .blurb.amenidades h2 span:nth-child(3){
+           
+            display: inline-block;
+            text-align: right;
+            width: 100%;
+            margin:0;
+            font-size: 1em;
+        }
+        
+        .blurb.amenidades h2 span:nth-child(5)
+        {font-size: .5em;
+            
+            }
+
+
+    }
+
+ 
 /*Components*/
 
 
@@ -1082,6 +1147,11 @@ nav>div{
     flex-direction: column-reverse;
 }
 
+.col-wrapper.amenidades {
+  
+    flex-direction: row;
+}
+
 .left-col,.right-col{
     width: calc(100vw - 2em);
 
@@ -1089,7 +1159,7 @@ nav>div{
     
 }
 
-.blurb .script{
+.blurb.home .script{
     font-size: 1.7em;
 }
 form {
@@ -1138,6 +1208,14 @@ form label input {
 
 
 
+.col-wrapper.amenidades .left-col .logo svg, .col-wrapper.amenidades .right-col .logo *{
+    width: 9em !important;
+ 
+    object-fit: contain !important;
+}
+ 
+
+
  }
 
 
@@ -1162,8 +1240,8 @@ form label input {
     .blurb{
         padding-bottom: 2em;
     }
-    .blurb .script{
+    .blurb.home .script{
         font-size: .7em;
     }
-    .blurb h2 span:nth-child(3){font-size: .3em;}
+    .blurb.home h2 span:nth-child(3){font-size: .3em;}
  }

@@ -221,7 +221,7 @@ class IndexPage extends React.Component{
               </div>
         </ScrollWrapper>*/}
 
-              <ScrollWrapper classes="blurb">
+              <ScrollWrapper classes="blurb home">
             
             <div>
                 <div>
