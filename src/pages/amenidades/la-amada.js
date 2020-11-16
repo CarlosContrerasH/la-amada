@@ -14,7 +14,17 @@ import FancySlider from "../../components/fancySlider"
 import { Link } from 'gatsby'
  
   
-let bigSlider =[ <><HandleImages name="homeGal1"/><HandleImages name="homeGal1"/></>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
+let bigSlider =[ <><HandleImages name="amenidadesA1Icon"/><HandleImages name="amenidadesA1"/></>,
+<><HandleImages name="amenidadesA2Icon"/><HandleImages name="amenidadesA2"/></>,
+<><HandleImages name="amenidadesA3Icon"/><HandleImages name="amenidadesA3"/></>,
+<><HandleImages name="amenidadesA4Icon"/><HandleImages name="amenidadesA4"/></>,
+<><HandleImages name="amenidadesA5Icon"/><HandleImages name="amenidadesA5"/></>,
+<><HandleImages name="amenidadesA6Icon"/><HandleImages name="amenidadesA6"/></>,
+<><HandleImages name="amenidadesA7Icon"/><HandleImages name="amenidadesA7"/></>,
+<><HandleImages name="amenidadesA8Icon"/><HandleImages name="amenidadesA8"/></>,
+<><HandleImages name="amenidadesA9Icon"/><HandleImages name="amenidadesA9"/></>,
+<><HandleImages name="amenidadesA10Icon"/><HandleImages name="amenidadesA10"/></>,
+<><HandleImages name="amenidadesA11Icon"/><HandleImages name="amenidadesA11"/></>,]
  
 
  

@@ -1235,6 +1235,17 @@ form label input {
  }
 
 
+ .playa .slide .gatsby-image-wrapper:first-child{
+     height:6em !important;
+ }
+ .playa .slide .gatsby-image-wrapper:first-child *{
+     object-fit:contain !important;
+ }
+ .playa .slides-wrapper {
+    
+    height: calc(100vh - 104px)
+     
+}
  .playa .back{text-align: center;
     cursor: pointer;
 margin-top: 2em;
@@ -1251,6 +1262,8 @@ display: flex;
 .playa a{
     text-decoration: none;
 }
+
+
  .playa .back>span{
     display: block;
     width:30px;
