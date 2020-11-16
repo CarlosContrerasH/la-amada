@@ -50,14 +50,14 @@ import { Link } from 'gatsby'
         <ScrollWrapper>
 
 <div className="col-wrapper amenidades">
-<Link to="/amenidades/tenis" className="left-col" >  
+<Link to="/amenidades/la-amada" className="left-col" >  
 
           <div className="logo">   <Logo /></div>
       <div className="bg">  <HandleImages name="tenis"/></div>
         
          </Link>
 
-          <Link to="/amenidades/tenis" className="right-col" >   
+          <Link to="/amenidades/playa" className="right-col" >   
  <div className="logo"> <HandleImages name="logopm"/></div>
      <div className="bg">
  <HandleImages name="bicis"/></div>

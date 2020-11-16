@@ -36,7 +36,7 @@ const Hero = (props) => {
    <div className="logo-wrapper"><Logo/>{props.eng==true?<h3>ONLY CONDO IN PLAYA MUJERES, CANCUN.</h3>:<h3>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h3>}</div>
     <div className="screen first"></div>
     <div className="screen second" ref={ref} ></div>
-    <div className="bg-wrapper" style={{transform:"translateY(min("+ (percentage.toPrecision(2)) * 200+"%,50%))"}} >
+    <div className="bg-wrapper" style={{transform:"translateY(min("+ (percentage.toPrecision(2)) * 200+"%,var(--transformHero)))"}} >
    
       <div>
     <HandleImages name="depas"/>
