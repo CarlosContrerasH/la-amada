@@ -13,8 +13,7 @@ import FancySlider from "../../components/fancySlider"
 
 import { Link } from 'gatsby'
  
-  
-let bigSlider =[ <><HandleImages name="amenidadesA1Icon"/><HandleImages name="amenidadesA1"/></>,
+let grid =[ <></>,
 <><HandleImages name="amenidadesA2Icon"/><HandleImages name="amenidadesA2"/></>,
 <><HandleImages name="amenidadesA3Icon"/><HandleImages name="amenidadesA3"/></>,
 <><HandleImages name="amenidadesA4Icon"/><HandleImages name="amenidadesA4"/></>,
@@ -25,6 +24,12 @@ let bigSlider =[ <><HandleImages name="amenidadesA1Icon"/><HandleImages name="am
 <><HandleImages name="amenidadesA9Icon"/><HandleImages name="amenidadesA9"/></>,
 <><HandleImages name="amenidadesA10Icon"/><HandleImages name="amenidadesA10"/></>,
 <><HandleImages name="amenidadesA11Icon"/><HandleImages name="amenidadesA11"/></>,]
+   
+
+
+let bigSlider =[ <HandleImages name="amenidadesH1"/>,
+<HandleImages name="amenidadesH2"/>,
+ <HandleImages name="amenidadesH3"/>,]
  
 
  
@@ -36,15 +41,94 @@ let bigSlider =[ <><HandleImages name="amenidadesA1Icon"/><HandleImages name="am
     
         <ScrollWrapper classes="bg-sand playa">
             
-        <div>
-        <SimpleSlider slides={bigSlider}/>
-        <span className="wrapped-header playa">
-      <h2> {props.eng==true?<>Exclusive Beach<br/><span className="sub">Beachfront Residences</span></>:<>Playa Exclusiva<br/><span className="sub">Residenceias Frente a Playa</span></>}</h2> 
-      </span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
        
-      <Link to="/amenidades"  ><button className="back"><span><span className="arrow-back"></span></span><br/>{props.eng?"Back":"Regresar"}</button></Link>
+        <SimpleSlider slides={bigSlider}/>
+      
+        </ScrollWrapper>
+       
+  
+   
+    )
+  }
+
+
+  const Blurb = (props) => {
+ 
+   
+    return (
+  
+    
+        <ScrollWrapper  >
+            
+       
+       <div className="centered">
+         <h3>Conoce las exclusivas amenidades de uso exclusivo para residentes e invitados</h3>
        </div>
+      
+        </ScrollWrapper>
+       
+  
+   
+    )
+  }
+
+
+  const Grid = (props) => {
+ 
+   
+    return (
+  
+    
+        <ScrollWrapper  >
+            
+       
+       <div className="amenidades-grid">
+         <div className="grid-element">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA1Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA1"/>
+         </div>
+
+         <div className="grid-element big">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA2Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA2"/>
+         </div>
+         
+         <div className="grid-element big">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA3Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA3"/>
+         </div>
+
+         <div className="grid-element ">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA4Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA4"/>
+         </div>
+
+         <div className="grid-element ">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA5Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA5"/>
+         </div>
+
+         <div className="grid-element big">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA6Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA6"/>
+         </div>
+
+         <div className="grid-element big">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA7Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA7"/>
+         </div>
+
+         <div className="grid-element ">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA8Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA8"/>
+         </div>
+
+         <div className="grid-element small">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA9Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA9"/>
+         </div>
+
+         <div className="grid-element small">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA10Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA10"/>
+         </div>
+
+         <div className="grid-element small">
+        <div className="icon-wrapper"><HandleImages name="amenidadesA11Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA11"/>
+         </div>
+
+       </div>
+      
         </ScrollWrapper>
        
   
@@ -76,7 +160,8 @@ class Amenidades extends React.Component{
         
            <Layout>
  <Slider/>
-             
+ <Blurb/>
+          <Grid/>   
             </Layout> )}      
 
 

@@ -25,6 +25,28 @@ depas:file(relativePath: { eq: "FOTO-HEADER-HOME.jpg" }) {
   }
 }
 
+amenidadesH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/AMENIDADES-HEADER-1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+amenidadesH2:file(relativePath: { eq: "AMENIDADES/LA AMADA/AMENIDADES-HEADER-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+amenidadesH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/AMENIDADES-HEADER-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
 
 amenidadesA1:file(relativePath: { eq: "AMENIDADES/LA AMADA/AREAS-VERDES.png" }) {
   childImageSharp {
@@ -326,6 +348,9 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
     tenis: <Img alt="Tenis" fluid={data.tenis.childImageSharp.fluid} />,
     bicis: <Img alt="Bicicletas" fluid={data.bicis.childImageSharp.fluid} />,
 
+amenidadesH1:<Img alt="Amenidades" fluid={data.amenidadesA1.childImageSharp.fluid} />,
+amenidadesH2:<Img alt="Amenidades" fluid={data.amenidadesA2.childImageSharp.fluid} />,
+amenidadesH3:<Img alt="Amenidades" fluid={data.amenidadesA3.childImageSharp.fluid} />,
 
     amenidadesA1:<Img alt="Amenidades" fluid={data.amenidadesA1.childImageSharp.fluid} />,
     amenidadesA2:<Img alt="Amenidades" fluid={data.amenidadesA2.childImageSharp.fluid} />,

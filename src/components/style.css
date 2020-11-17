@@ -1235,12 +1235,8 @@ form label input {
  }
 
 
- .playa .slide .gatsby-image-wrapper:first-child{
-     height:6em !important;
- }
- .playa .slide .gatsby-image-wrapper:first-child *{
-     object-fit:contain !important;
- }
+ 
+ 
  .playa .slides-wrapper {
     
     height: calc(100vh - 104px)
@@ -1291,6 +1287,62 @@ display: flex;
     border-left: solid 2px var(--dark-green);
 }
 
+
+
+.amenidades-grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw !important;
+    margin:0 !important;
+}
+
+.amenidades-grid .grid-element{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    position: relative;
+}
+
+.amenidades-grid .grid-element.big{
+    width: calc(100vw - (100vw / 3));
+    
+}
+.amenidades-grid .grid-element .icon-wrapper{
+    position: absolute !important;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    
+}
+.amenidades-grid .grid-element:after{
+    content:"";
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(83, 30, 30, .5)
+} 
+
+
+
+
+.amenidades-grid .grid-element .icon-wrapper .gatsby-image-wrapper{
+    height: 3em;
+    width: 3em;
+    margin:auto;
+}
+.amenidades-grid .grid-element .gatsby-image-wrapper:nth-child(2){
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+ 
 
 
  @media (max-width: 500px) {
