@@ -39,7 +39,7 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
     return (
   
     
-        <ScrollWrapper classes="bg-sand playa">
+        <ScrollWrapper classes="   amenidades-header">
             
        
         <SimpleSlider slides={bigSlider}/>
@@ -83,58 +83,58 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
             
         
        <div className="amenidades-grid">
-       <ScrollWrapper  classes="grid-element">    <Link to="/" >     <div  >
+       <ScrollWrapper  classes="grid-element">    <Link to="/amenidades/la-amada/playa" >     <div  >
 
 
        <div className="icon-wrapper"><HandleImages name="amenidadesA9Icon"/><span>Playa</span></div> <HandleImages name="amenidadesA9"/>
       
          </div></Link></ScrollWrapper>
 
-         <ScrollWrapper classes="grid-element big" >  <Link to="/" >    <div >
+         <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/la-amada/beachclub-restaurant" >    <div >
         <div className="icon-wrapper"><HandleImages name="amenidadesA3Icon"/><span>Beachclub Restaurant</span></div> <HandleImages name="amenidadesA2"/>
          </div></Link></ScrollWrapper>
          
-         <ScrollWrapper classes="grid-element big" >  <Link to="/" >     <div >
+         <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/la-amada/beachclub" >     <div >
         <div className="icon-wrapper"><HandleImages name="amenidadesA2Icon"/><span>Beachclub</span></div> <HandleImages name="amenidadesA3"/>
          </div></Link></ScrollWrapper>
 
-         <ScrollWrapper classes="grid-element " >  <Link to="/" >    <div >
+         <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/rooftop-albercas" >    <div >
          <div className="icon-wrapper"><HandleImages name="amenidadesA10Icon"/><span>Rooftops y Albercas</span></div> <HandleImages name="amenidadesA10"/>
       
          </div></Link></ScrollWrapper>
 
-         <ScrollWrapper  classes="grid-element ">  <Link to="/" >    <div >
+         <ScrollWrapper  classes="grid-element ">  <Link to="/amenidades/la-amada/yoga" >    <div >
          <div className="icon-wrapper"><HandleImages name="amenidadesA11Icon"/><span>Salon de Yoga</span></div> <HandleImages name="amenidadesA11"/>
       
          </div></Link></ScrollWrapper>
 
-         <ScrollWrapper  classes="grid-element big">  <Link to="/" >      <div >
+         <ScrollWrapper  classes="grid-element big">  <Link to="/amenidades/la-amada/canchas" >      <div >
          <div className="icon-wrapper"><HandleImages name="amenidadesA4Icon"/><span>Canchas</span></div> <HandleImages name="amenidadesA4"/>
   
 
          </div></Link></ScrollWrapper>
 
-         <ScrollWrapper  classes="grid-element big">  <Link to="/" >     <div >
+         <ScrollWrapper  classes="grid-element big">  <Link to="/amenidades/la-amada/market" >     <div >
          <div className="icon-wrapper"><HandleImages name="amenidadesA8Icon"/><span>Market Deli</span></div> <HandleImages name="amenidadesA8"/>
 
          </div></Link></ScrollWrapper>
 
-         <ScrollWrapper classes="grid-element " >  <Link to="/" >     <div >
+         <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/ludoteca" >     <div >
          <div className="icon-wrapper"><HandleImages name="amenidadesA7Icon"/><span>Ludoteca y Kids Club</span></div> <HandleImages name="amenidadesA7"/>
  
          </div></Link></ScrollWrapper>
 
-         <ScrollWrapper  classes="grid-element small">  <Link to="/" >     <div >
+         <ScrollWrapper  classes="grid-element small">  <Link to="/amenidades/la-amada/gym" >     <div >
          <div className="icon-wrapper"><HandleImages name="amenidadesA5Icon"/><span>Gym</span></div> <HandleImages name="amenidadesA5"/>
        
          </div></Link></ScrollWrapper>
 
-         <ScrollWrapper  classes="grid-element small">  <Link to="/" >     <div >
+         <ScrollWrapper  classes="grid-element small">  <Link to="/amenidades/la-amada/lobby" >     <div >
          <div className="icon-wrapper"><HandleImages name="amenidadesA6Icon"/><span>Lobby, Motor Lobby Y Concierge</span></div> <HandleImages name="amenidadesA6"/>
    
          </div></Link></ScrollWrapper>
 
-           <ScrollWrapper classes="grid-element small" >  <Link to="/" >    <div  >
+           <ScrollWrapper classes="grid-element small" >  <Link to="/amenidades/la-amada/areas-verdes" >    <div  >
            <div className="icon-wrapper"><HandleImages name="amenidadesA1Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA1"/>
       
          </div></Link></ScrollWrapper>
@@ -142,6 +142,33 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
        </div>
        
   
+   
+    )
+  }
+
+
+
+
+  const SingleCol = (props) => {
+  
+   
+    return (
+   
+        <ScrollWrapper classes="single">
+
+<div className="col-wrapper amenidades">
+ 
+
+          <Link to="/amenidades/playa"   >   
+ <div className="logo"> <HandleImages name="logopm"/></div>
+     <div className="bg">
+ <HandleImages name="bicis"/></div>
+         </Link>
+
+         <button className="flat-button sand-button centered-button" style={{margin:"3em 0"}}>Ver Mas</button>
+            </div>
+            </ScrollWrapper>
+ 
    
     )
   }
@@ -171,7 +198,8 @@ class Amenidades extends React.Component{
            <Layout>
  <Slider/>
  <Blurb/>
-          <Grid/>   
+          <Grid/>  
+          <SingleCol/> 
             </Layout> )}      
 
 
