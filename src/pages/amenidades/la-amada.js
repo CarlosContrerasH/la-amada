@@ -79,57 +79,67 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
     return (
   
     
-        <ScrollWrapper  >
+      
             
-       
+        
        <div className="amenidades-grid">
-         <div className="grid-element">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA1Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA1"/>
-         </div>
+       <ScrollWrapper  classes="grid-element">    <Link to="/" >     <div  >
 
-         <div className="grid-element big">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA2Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA2"/>
-         </div>
+
+       <div className="icon-wrapper"><HandleImages name="amenidadesA9Icon"/><span>Playa</span></div> <HandleImages name="amenidadesA9"/>
+      
+         </div></Link></ScrollWrapper>
+
+         <ScrollWrapper classes="grid-element big" >  <Link to="/" >    <div >
+        <div className="icon-wrapper"><HandleImages name="amenidadesA3Icon"/><span>Beachclub Restaurant</span></div> <HandleImages name="amenidadesA2"/>
+         </div></Link></ScrollWrapper>
          
-         <div className="grid-element big">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA3Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA3"/>
-         </div>
+         <ScrollWrapper classes="grid-element big" >  <Link to="/" >     <div >
+        <div className="icon-wrapper"><HandleImages name="amenidadesA2Icon"/><span>Beachclub</span></div> <HandleImages name="amenidadesA3"/>
+         </div></Link></ScrollWrapper>
 
-         <div className="grid-element ">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA4Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA4"/>
-         </div>
+         <ScrollWrapper classes="grid-element " >  <Link to="/" >    <div >
+         <div className="icon-wrapper"><HandleImages name="amenidadesA10Icon"/><span>Rooftops y Albercas</span></div> <HandleImages name="amenidadesA10"/>
+      
+         </div></Link></ScrollWrapper>
 
-         <div className="grid-element ">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA5Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA5"/>
-         </div>
+         <ScrollWrapper  classes="grid-element ">  <Link to="/" >    <div >
+         <div className="icon-wrapper"><HandleImages name="amenidadesA11Icon"/><span>Salon de Yoga</span></div> <HandleImages name="amenidadesA11"/>
+      
+         </div></Link></ScrollWrapper>
 
-         <div className="grid-element big">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA6Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA6"/>
-         </div>
+         <ScrollWrapper  classes="grid-element big">  <Link to="/" >      <div >
+         <div className="icon-wrapper"><HandleImages name="amenidadesA4Icon"/><span>Canchas</span></div> <HandleImages name="amenidadesA4"/>
+  
 
-         <div className="grid-element big">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA7Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA7"/>
-         </div>
+         </div></Link></ScrollWrapper>
 
-         <div className="grid-element ">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA8Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA8"/>
-         </div>
+         <ScrollWrapper  classes="grid-element big">  <Link to="/" >     <div >
+         <div className="icon-wrapper"><HandleImages name="amenidadesA8Icon"/><span>Market Deli</span></div> <HandleImages name="amenidadesA8"/>
 
-         <div className="grid-element small">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA9Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA9"/>
-         </div>
+         </div></Link></ScrollWrapper>
 
-         <div className="grid-element small">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA10Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA10"/>
-         </div>
+         <ScrollWrapper classes="grid-element " >  <Link to="/" >     <div >
+         <div className="icon-wrapper"><HandleImages name="amenidadesA7Icon"/><span>Ludoteca y Kids Club</span></div> <HandleImages name="amenidadesA7"/>
+ 
+         </div></Link></ScrollWrapper>
 
-         <div className="grid-element small">
-        <div className="icon-wrapper"><HandleImages name="amenidadesA11Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA11"/>
-         </div>
+         <ScrollWrapper  classes="grid-element small">  <Link to="/" >     <div >
+         <div className="icon-wrapper"><HandleImages name="amenidadesA5Icon"/><span>Gym</span></div> <HandleImages name="amenidadesA5"/>
+       
+         </div></Link></ScrollWrapper>
+
+         <ScrollWrapper  classes="grid-element small">  <Link to="/" >     <div >
+         <div className="icon-wrapper"><HandleImages name="amenidadesA6Icon"/><span>Lobby, Motor Lobby Y Concierge</span></div> <HandleImages name="amenidadesA6"/>
+   
+         </div></Link></ScrollWrapper>
+
+           <ScrollWrapper classes="grid-element small" >  <Link to="/" >    <div  >
+           <div className="icon-wrapper"><HandleImages name="amenidadesA1Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA1"/>
+      
+         </div></Link></ScrollWrapper>
 
        </div>
-      
-        </ScrollWrapper>
        
   
    
