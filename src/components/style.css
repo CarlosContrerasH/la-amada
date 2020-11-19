@@ -1232,6 +1232,8 @@ display: flex;
     height: 100%;
     background:rgba(83, 30, 30, .5);
     pointer-events: none;
+    opacity:1;
+    transition:.3s opacity;
 } 
 
 
@@ -1253,6 +1255,12 @@ display: flex;
 .amenidades-grid .grid-element:hover .gatsby-image-wrapper:nth-child(2){
     transform:scale(1.1);
     transition: .3s transform ease-out;
+}
+
+
+.amenidades-grid .grid-element:hover:after, .amenidades-grid .grid-element:hover .icon-wrapper {
+    opacity:0;
+    transition:.3s opacity;
 }
 
 
