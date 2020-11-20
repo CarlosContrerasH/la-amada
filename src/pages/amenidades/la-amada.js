@@ -10,6 +10,17 @@ import ScrollWrapper from "../../components/scrollwrapper"
 import {HandleImages} from "../../components/handleImages"
 import SimpleSlider from "../../components/simpleSlider"
 import FancySlider from "../../components/fancySlider"
+import aVerdes from "../../img/AMENIDADES/LA AMADA/ICONOS/AREAS-VERDES.svg"
+import bClub from "../../img/AMENIDADES/LA AMADA/ICONOS/BEACHCLUB-01.svg"
+import canchas from "../../img/AMENIDADES/LA AMADA/ICONOS/CANCHAS.svg"
+import concierge from "../../img/AMENIDADES/LA AMADA/ICONOS/CONCIERGE.svg"
+import gym from "../../img/AMENIDADES/LA AMADA/ICONOS/GYM-01.svg"
+import ludoteca from "../../img/AMENIDADES/LA AMADA/ICONOS/LUDOTECA-01.svg"
+import deli from "../../img/AMENIDADES/LA AMADA/ICONOS/MARKET-DELI-01.svg"
+import playa from "../../img/AMENIDADES/LA AMADA/ICONOS/PLAYA-01.svg"
+import rest from "../../img/AMENIDADES/LA AMADA/ICONOS/RESTAURANTE-01.svg"
+import roof from "../../img/AMENIDADES/LA AMADA/ICONOS/ROOFTOPS-ALBERCAS-01.svg"
+import yoga from "../../img/AMENIDADES/LA AMADA/ICONOS/SALON-DE-YOGA-01.svg"
 
 import { Link } from 'gatsby'
  
@@ -86,56 +97,56 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
        <ScrollWrapper  classes="grid-element">    <Link to="/amenidades/la-amada/playa" >     <div  >
 
 
-       <div className="icon-wrapper"><HandleImages name="amenidadesA9Icon"/><span>Playa</span></div> <HandleImages name="amenidadesA9"/>
+       <div className="icon-wrapper"><img alt="Playa" src={playa}/><span>Playa</span></div> <HandleImages name="amenidadesA9"/>
       
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/la-amada/beachclub-restaurant" >    <div >
-        <div className="icon-wrapper"><HandleImages name="amenidadesA3Icon"/><span>Beachclub Restaurant</span></div> <HandleImages name="amenidadesA2"/>
+        <div className="icon-wrapper"><img alt="Beachclub Restaurant" src={rest} style={{width:"6em",height:"6em"}}/><span>Beachclub Restaurant</span></div> <HandleImages name="amenidadesA2"/>
          </div></Link></ScrollWrapper>
          
          <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/la-amada/beachclub" >     <div >
-        <div className="icon-wrapper"><HandleImages name="amenidadesA2Icon"/><span>Beachclub</span></div> <HandleImages name="amenidadesA3"/>
+        <div className="icon-wrapper"><img alt="Beachclub" src={bClub}/><span>Beachclub</span></div> <HandleImages name="amenidadesA3"/>
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/rooftop-albercas" >    <div >
-         <div className="icon-wrapper"><HandleImages name="amenidadesA10Icon"/><span>Rooftops y Albercas</span></div> <HandleImages name="amenidadesA10"/>
+         <div className="icon-wrapper"><img alt="Rooftops y Albercas" src={roof}/><span>Rooftops y Albercas</span></div> <HandleImages name="amenidadesA10"/>
       
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element ">  <Link to="/amenidades/la-amada/yoga" >    <div >
-         <div className="icon-wrapper"><HandleImages name="amenidadesA11Icon"/><span>Salon de Yoga</span></div> <HandleImages name="amenidadesA11"/>
+         <div className="icon-wrapper"><img alt="Yoga" src={yoga}/><span>Salon de Yoga</span></div> <HandleImages name="amenidadesA11"/>
       
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element big">  <Link to="/amenidades/la-amada/canchas" >      <div >
-         <div className="icon-wrapper"><HandleImages name="amenidadesA4Icon"/><span>Canchas</span></div> <HandleImages name="amenidadesA4"/>
+         <div className="icon-wrapper"><img alt="Canchas" src={canchas}/><span>Canchas</span></div> <HandleImages name="amenidadesA4"/>
   
 
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element big">  <Link to="/amenidades/la-amada/market" >     <div >
-         <div className="icon-wrapper"><HandleImages name="amenidadesA8Icon"/><span>Market Deli</span></div> <HandleImages name="amenidadesA8"/>
+         <div className="icon-wrapper"><img alt="Marklet Deli" src={deli} style={{width:"6em",height:"6em"}}/><span>Market Deli</span></div> <HandleImages name="amenidadesA8"/>
 
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/ludoteca" >     <div >
-         <div className="icon-wrapper"><HandleImages name="amenidadesA7Icon"/><span>Ludoteca y Kids Club</span></div> <HandleImages name="amenidadesA7"/>
+         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>Ludoteca y Kids Club</span></div> <HandleImages name="amenidadesA7"/>
  
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element small">  <Link to="/amenidades/la-amada/gym" >     <div >
-         <div className="icon-wrapper"><HandleImages name="amenidadesA5Icon"/><span>Gym</span></div> <HandleImages name="amenidadesA5"/>
+         <div className="icon-wrapper"><img alt="Gym" src={gym}/><span>Gym</span></div> <HandleImages name="amenidadesA5"/>
        
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element small">  <Link to="/amenidades/la-amada/lobby" >     <div >
-         <div className="icon-wrapper"><HandleImages name="amenidadesA6Icon"/><span>Lobby, Motor Lobby Y Concierge</span></div> <HandleImages name="amenidadesA6"/>
+         <div className="icon-wrapper"><img alt="Lobby" src={concierge}/><span>Lobby, Motor Lobby Y Concierge</span></div> <HandleImages name="amenidadesA6"/>
    
          </div></Link></ScrollWrapper>
 
            <ScrollWrapper classes="grid-element small" >  <Link to="/amenidades/la-amada/areas-verdes" >    <div  >
-           <div className="icon-wrapper"><HandleImages name="amenidadesA1Icon"/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA1"/>
+           <div className="icon-wrapper"><img alt="Areas Verdes" src={aVerdes}/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA1"/>
       
          </div></Link></ScrollWrapper>
 

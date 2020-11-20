@@ -127,6 +127,10 @@ amenidadesA11:file(relativePath: { eq: "AMENIDADES/LA AMADA/SALON-DE-YOGA.png" }
   }
 }
 
+
+
+
+
 amenidadesA1Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/AREAS-VERDES-ICON.png" }) {
   childImageSharp {
 

@@ -23,15 +23,45 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div>
+
+
+
+            <div className="icon-wrapper">
+ 
+ 
+ <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
+      viewBox="0 0 150 150" enable-background="new 0 0 150 150" >
+
+
+<g>
+	<g>
+		<path fill="#FFFFFF" d="M70.7,36.8c-22.8,0-41.2,18.4-41.2,41.2s18.4,41.2,41.2,41.2s41.2-18.4,41.2-41.2S93.4,36.8,70.7,36.8z
+			 M44.9,52.9C53,58.7,57.8,68,57.8,78c0,10-4.8,19.3-12.9,25.1C31.3,89.1,31.3,66.9,44.9,52.9z M70.7,114c-7.9,0-15.6-2.6-21.9-7.4
+			C57.8,99.8,63,89.2,63,78c0-11.2-5.2-21.8-14.2-28.6c12.9-10,30.9-10,43.8,0C76.8,61.5,73.8,84.2,85.9,100
+			c1.9,2.5,4.2,4.8,6.7,6.7C86.3,111.5,78.6,114.1,70.7,114z M96.4,103.1L96.4,103.1C82.6,93.2,79.3,74,89.2,60.2
+			c2-2.8,4.4-5.3,7.3-7.3C110.1,66.9,110.1,89.2,96.4,103.1z"/>
+	</g>
+</g>
+ </svg>
+ 
+ 
+                 
+                 <span>
+                     
+                  Multipurpose Courts
+                     
+                     </span></div> 
+
+
                 <HandleImages name="amenidadesA4" />
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
-                    multipurpose courts
+                    Multipurpose courts
                     
                     <br /><span className="sub">
                         
-                        Subtitle
+                    Paddel, Tennis, BasketBall
                         
                         </span></> : <>
                         
@@ -39,7 +69,7 @@ const Slider = (props) => {
 
                     <br /><span className="sub">
                         
-                        Residencias Frente a Playa
+                    Paddel, Tennis, BasketBall y más
                         
                         </span></>}</h2>
                 </span>
