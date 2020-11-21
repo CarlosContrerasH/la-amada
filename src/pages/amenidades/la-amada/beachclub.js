@@ -13,6 +13,9 @@ import { Link } from 'gatsby'
 
 
 
+let playaSlider =[ <HandleImages name="beachH1"/>, <HandleImages name="beachH2"/>, <HandleImages name="beachH3"/>, <HandleImages name="beachH4"/>]
+
+
 
 const Slider = (props) => {
 
@@ -62,7 +65,7 @@ const Slider = (props) => {
 
 
 
-                <HandleImages name="amenidadesA3" />
+                     <SimpleSlider slides={playaSlider}/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>Beachclub  <br /><span className="sub">5,500 sqf private luxury beach club</span></> : <>Beachclub <br /><span className="sub">Ideal para pasar el día en familia y amigos</span></>}</h2>
                 </span>

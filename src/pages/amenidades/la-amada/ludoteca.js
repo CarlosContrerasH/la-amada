@@ -12,6 +12,8 @@ import SimpleSlider from "../../../components/simpleSlider"
 import { Link } from 'gatsby'
 
 
+let playaSlider =[ <HandleImages name="ludotecaH1"/>, <HandleImages name="ludotecaH2"/>, <HandleImages name="ludotecaH3"/> ]
+
 
 
 const Slider = (props) => {
@@ -61,7 +63,7 @@ const Slider = (props) => {
                  Kids Club 
                      
                      </span></div> 
-                <HandleImages name="amenidadesA7" />
+                     <SimpleSlider slides={playaSlider}/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     

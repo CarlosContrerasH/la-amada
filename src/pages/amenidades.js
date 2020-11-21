@@ -32,7 +32,14 @@ import { Link } from 'gatsby'
         
     <HandleImages name="playa"/>
     </div>
-    <div><p>{props.eng==true?"english":"espanol"}</p></div>
+
+    <div className="component">
+    <div className="centered">{props.eng==true?
+    
+    <><p>Surrounded by white sands, tropical rainforest, archeological sites, lagoons, mangroves, and turquoise waters, and only 10 minutes away from downtown Cancun, lies Playa Mujeres, an exclusive tourist destination in the Mexican Caribbean that hosts more than 8,200 hotel rooms and luxurious residences, which makes it the region that boasts the greatest growth in the state.</p><p>Its amenities offer unique resort experiences that will transform each one of your days into unforgettable moments that will last forever.</p></>
+
+
+    :<><p>Entre arena blanca, selva tropical, zonas arqueológicas, laguna, manglar, mar turquesa y a 10 minutos del centro de Cancún, surge Playa Mujeres, exclusivo destino turístico en la zona del Caribe Mexicano que alberga más de 8,200 cuartos en lujosos centros de hospedaje, lo cual lo convierte en el lugar de mayor crecimiento del estado.</p><p>Las amenidades que lo componen ofrecen experiencias únicas de un resort, que te esperan para hacer cada uno de tus días momentos memorables que perdurarán por siempre.</p></>}</div></div>
         </div>
         </ScrollWrapper>
      

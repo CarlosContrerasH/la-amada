@@ -93,7 +93,7 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
       
             
         
-       <div className="amenidades-grid">
+       <div className="amenidades-grid amada">
        <ScrollWrapper  classes="grid-element">    <Link to="/amenidades/la-amada/playa" >     <div  >
 
 

@@ -6,12 +6,12 @@ import Layout from '../../../components/Layout'
 
 import ScrollWrapper from "../../../components/scrollwrapper"
 import { HandleImages } from "../../../components/handleImages"
- 
+import SimpleSlider from "../../../components/simpleSlider"
 
  
 import { Link } from 'gatsby'
 
- 
+let playaSlider =[ <HandleImages name="playaH1"/>, <HandleImages name="playaH2"/>,, <HandleImages name="playaH3"/>, <HandleImages name="playaH4"/> ]
 
 
 const Slider = (props) => {
@@ -59,7 +59,7 @@ const Slider = (props) => {
 
                 
                 <span>Playa</span></div> 
-                <HandleImages name="amenidadesA9" />
+                <SimpleSlider slides={playaSlider}/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>Exclusive Beach<br /><span className="sub">275 linear yards of white sandy beach</span></> : <>250 metros lineales de frente de playa<br /><span className="sub">Residencias Frente a Playa</span></>}</h2>
                 </span>

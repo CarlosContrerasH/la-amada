@@ -48,6 +48,354 @@ amenidadesH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/AMENIDADES-HEADER-3.j
 }
 
 
+
+amenidadespH1:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADES-PLAYAMUJERES.png" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+amenidadespH2:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADES-PLAYAMUJERES-2.png" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+amenidadespH3:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADES-PLAYAMUJERES-3.png" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+playaH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/HEADER-PLAYA1.jpg"}) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+playaH2:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/HEADER-PLAYA2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+playaH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/HEADER-PLAYA3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+playaH4:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/BEACHCLUB-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+
+resH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/RESTAURANT/RESTAURANTE.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+resH2:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/RESTAURANT/RESTAURANTE-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+ 
+resH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/RESTAURANT/RESTAURANTE-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+beachH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCLUB-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+beachH2:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCLUB-4.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+ 
+beachH3:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCLUB-5.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+beachH4:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCLUB-6.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+
+roofH1:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/ROOFTOPS-ALBERCAS/ROOFTOP-1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+roofH2:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/ROOFTOPS-ALBERCAS/ROOFTOP-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+ 
+
+roofH3:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/ROOFTOPS-ALBERCAS/ROOFTOP.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+ 
+yogaH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/SALON DE YOGA/YOGA-1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+yogaH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/SALON DE YOGA/YOGA-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+ 
+yogaH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/SALON DE YOGA/YOGA-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+ 
+
+canchaH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/CANCHAS/CANCHAS-1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+canchaH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/CANCHAS/CANCHAS-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+canchaH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/CANCHAS/CANCHAS-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+
+marketH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/MARKET DELI/MARKET-DELI1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+marketH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/MARKET DELI/MARKET-DELI2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+marketH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/MARKET DELI/MARKET-DELI3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+ludotecaH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/LUDOTECA/LUDOTECA-1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+ludotecaH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/LUDOTECA/LUDOTECA-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+ludotecaH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/LUDOTECA/KIDSCLUB-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+gymH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+gymH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+gymH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+bikeH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/CICLOPISTA/HEADER-CICLOPISTA.JPG" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+golfH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/CAMPO DE GOLF/HEADER-PCAMPO-DE-GOLF.JPG" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+marinaH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/MARINA/HEADER-MARINA.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+seguridadH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/SEGURIDAD/SEGURIDAD.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+helipuertoH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/HELIPUERTO/HELIPUERTO.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+delfinesH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/DELFINARIO/HEADER-DELFINARIO.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+vecinosH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/VECINOS/HEADER-VECINOS.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+spaH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/SPA/HEADER-SPA.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+ 
+ 
+
+
+
+
+
+
+
 amenidadesA1:file(relativePath: { eq: "AMENIDADES/LA AMADA/AREAS-VERDES.png" }) {
   childImageSharp {
 
@@ -131,78 +479,57 @@ amenidadesA11:file(relativePath: { eq: "AMENIDADES/LA AMADA/SALON-DE-YOGA.png" }
 
 
 
-amenidadesA1Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/AREAS-VERDES-ICON.png" }) {
+
+amenidadesP1:file(relativePath: { eq: "AMENIDADES/PLAYA/CAMPO-DE-GOLF.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-
-amenidadesA3Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/BEACHCLUB-REST-ICON.png" }) {
+amenidadesP2:file(relativePath: { eq: "AMENIDADES/PLAYA/CICLOPISTA.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-amenidadesA2Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/BEACHCLUB-ICON.png" }) {
+amenidadesP3:file(relativePath: { eq: "AMENIDADES/PLAYA/DELFINARIO.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-amenidadesA4Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/CANCHAS-ICON.png" }) {
+amenidadesP4:file(relativePath: { eq: "AMENIDADES/PLAYA/HELIPUERTO.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-amenidadesA5Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/GYM-ICON.png" }) {
+amenidadesP5:file(relativePath: { eq: "AMENIDADES/PLAYA/MARINA.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-amenidadesA6Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/LOBBY-CONCIERGE-MOTTORLOBBY-ICON.png" }) {
+amenidadesP6:file(relativePath: { eq: "AMENIDADES/PLAYA/SEGURIDAD.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-amenidadesA7Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/LUDOTECA-ICON.png" }) {
+amenidadesP7:file(relativePath: { eq: "AMENIDADES/PLAYA/SPA.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-amenidadesA8Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/MARKET-DELI-ICONO.png" }) {
-  childImageSharp {
-
-    fluid {
-      ...GatsbyImageSharpFluid_withWebp }
-  }
-}
-amenidadesA9Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/icono-playa.png" }) {
-  childImageSharp {
-
-    fluid {
-      ...GatsbyImageSharpFluid_withWebp }
-  }
-}
-amenidadesA10Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/ROOFTOPS-ALBERCAS-ICON.png" }) {
-  childImageSharp {
-
-    fluid {
-      ...GatsbyImageSharpFluid_withWebp }
-  }
-}
-amenidadesA11Icon:file(relativePath: { eq: "AMENIDADES/LA AMADA/ICONOS/SALON-DE-YOGA-ICON.png" }) {
+amenidadesP8:file(relativePath: { eq: "AMENIDADES/PLAYA/VECINOS-GALARDONADOS.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -356,6 +683,63 @@ amenidadesH1:<Img alt="Amenidades" fluid={data.amenidadesA1.childImageSharp.flui
 amenidadesH2:<Img alt="Amenidades" fluid={data.amenidadesA2.childImageSharp.fluid} />,
 amenidadesH3:<Img alt="Amenidades" fluid={data.amenidadesA3.childImageSharp.fluid} />,
 
+amenidadespH1:<Img alt="Amenidades" fluid={data.amenidadespH1.childImageSharp.fluid} />,
+amenidadespH2:<Img alt="Amenidades" fluid={data.amenidadespH2.childImageSharp.fluid} />,
+amenidadespH3:<Img alt="Amenidades" fluid={data.amenidadespH3.childImageSharp.fluid} />,
+
+
+
+playaH1:<Img alt="Amenidades" fluid={data.playaH1.childImageSharp.fluid} />,
+playaH2:<Img alt="Amenidades" fluid={data.playaH2.childImageSharp.fluid} />,
+playaH3:<Img alt="Amenidades" fluid={data.playaH3.childImageSharp.fluid} />,
+playaH4:<Img alt="Amenidades" fluid={data.playaH4.childImageSharp.fluid} />,
+
+resH1:<Img alt="Amenidades" fluid={data.resH1.childImageSharp.fluid} />,
+resH2:<Img alt="Amenidades" fluid={data.resH2.childImageSharp.fluid} />,
+resH3:<Img alt="Amenidades" fluid={data.resH3.childImageSharp.fluid} />,
+
+beachH1:<Img alt="Amenidades" fluid={data.beachH1.childImageSharp.fluid} />,
+beachH2:<Img alt="Amenidades" fluid={data.beachH2.childImageSharp.fluid} />,
+beachH3:<Img alt="Amenidades" fluid={data.beachH3.childImageSharp.fluid} />,
+beachH4:<Img alt="Amenidades" fluid={data.beachH4.childImageSharp.fluid} />,
+
+roofH1:<Img alt="Amenidades" fluid={data.roofH1.childImageSharp.fluid} />,
+roofH2:<Img alt="Amenidades" fluid={data.roofH2.childImageSharp.fluid} />,
+roofH3:<Img alt="Amenidades" fluid={data.roofH3.childImageSharp.fluid} />,
+
+yogaH1:<Img alt="Amenidades" fluid={data.yogaH1.childImageSharp.fluid} />,
+yogaH2:<Img alt="Amenidades" fluid={data.yogaH2.childImageSharp.fluid} />,
+yogaH3:<Img alt="Amenidades" fluid={data.yogaH3.childImageSharp.fluid} />,
+
+canchaH1:<Img alt="Amenidades" fluid={data.canchaH1.childImageSharp.fluid} />,
+canchaH2:<Img alt="Amenidades" fluid={data.canchaH2.childImageSharp.fluid} />,
+canchaH3:<Img alt="Amenidades" fluid={data.canchaH3.childImageSharp.fluid} />,
+
+marketH1:<Img alt="Amenidades" fluid={data.marketH1.childImageSharp.fluid} />,
+marketH2:<Img alt="Amenidades" fluid={data.marketH2.childImageSharp.fluid} />,
+marketH3:<Img alt="Amenidades" fluid={data.marketH3.childImageSharp.fluid} />,
+ 
+ludotecaH1:<Img alt="Amenidades" fluid={data.ludotecaH1.childImageSharp.fluid} />,
+ludotecaH2:<Img alt="Amenidades" fluid={data.ludotecaH2.childImageSharp.fluid} />,
+ludotecaH3:<Img alt="Amenidades" fluid={data.ludotecaH3.childImageSharp.fluid} />,
+ 
+gymH1:<Img alt="Amenidades" fluid={data.gymH1.childImageSharp.fluid} />,
+gymH2:<Img alt="Amenidades" fluid={data.gymH2.childImageSharp.fluid} />,
+gymH3:<Img alt="Amenidades" fluid={data.gymH3.childImageSharp.fluid} />,
+
+
+ bikeH1:<Img alt="Amenidades" fluid={data.bikeH1.childImageSharp.fluid} />,
+ golfH1:<Img alt="Amenidades" fluid={data.golfH1.childImageSharp.fluid} />,
+ marinaH1:<Img alt="Amenidades" fluid={data.marinaH1.childImageSharp.fluid} />,
+ seguridadH1:<Img alt="Amenidades" fluid={data.seguridadH1.childImageSharp.fluid} />,
+helipuertoH1:<Img alt="Amenidades" fluid={data.helipuertoH1.childImageSharp.fluid} />,
+
+delfinesH1:<Img alt="Amenidades" fluid={data.delfinesH1.childImageSharp.fluid} />,
+vecinosH1:<Img alt="Amenidades" fluid={data.vecinosH1.childImageSharp.fluid} />,
+spaH1:<Img alt="Amenidades" fluid={data.spaH1.childImageSharp.fluid} />,
+
+
+
     amenidadesA1:<Img alt="Amenidades" fluid={data.amenidadesA1.childImageSharp.fluid} />,
     amenidadesA2:<Img alt="Amenidades" fluid={data.amenidadesA2.childImageSharp.fluid} />,
     amenidadesA3:<Img alt="Amenidades" fluid={data.amenidadesA3.childImageSharp.fluid} />,
@@ -368,18 +752,16 @@ amenidadesH3:<Img alt="Amenidades" fluid={data.amenidadesA3.childImageSharp.flui
     amenidadesA10:<Img alt="Amenidades" fluid={data.amenidadesA10.childImageSharp.fluid} />,
     amenidadesA11:<Img alt="Amenidades" fluid={data.amenidadesA11.childImageSharp.fluid} />,
 
-amenidadesA1Icon:<Img alt="Amenidades" fluid={data.amenidadesA1Icon.childImageSharp.fluid} />,
-amenidadesA2Icon:<Img alt="Amenidades" fluid={data.amenidadesA2Icon.childImageSharp.fluid} />,
-amenidadesA3Icon:<Img alt="Amenidades" fluid={data.amenidadesA3Icon.childImageSharp.fluid} />,
-amenidadesA4Icon:<Img alt="Amenidades" fluid={data.amenidadesA4Icon.childImageSharp.fluid} />,
-amenidadesA5Icon:<Img alt="Amenidades" fluid={data.amenidadesA5Icon.childImageSharp.fluid} />,
-amenidadesA6Icon:<Img alt="Amenidades" fluid={data.amenidadesA6Icon.childImageSharp.fluid} />,
-amenidadesA7Icon:<Img alt="Amenidades" fluid={data.amenidadesA7Icon.childImageSharp.fluid} />,
-amenidadesA8Icon:<Img alt="Amenidades" fluid={data.amenidadesA8Icon.childImageSharp.fluid} />,
-amenidadesA9Icon:<Img alt="Amenidades" fluid={data.amenidadesA9Icon.childImageSharp.fluid} />,
-amenidadesA10Icon:<Img alt="Amenidades" fluid={data.amenidadesA10Icon.childImageSharp.fluid} />,
-amenidadesA11Icon:<Img alt="Amenidades" fluid={data.amenidadesA11Icon.childImageSharp.fluid} />,
-        
+
+    amenidadesP1:<Img alt="Amenidades" fluid={data.amenidadesP1.childImageSharp.fluid} />,
+    amenidadesP2:<Img alt="Amenidades" fluid={data.amenidadesP2.childImageSharp.fluid} />,
+    amenidadesP3:<Img alt="Amenidades" fluid={data.amenidadesP3.childImageSharp.fluid} />,
+    amenidadesP4:<Img alt="Amenidades" fluid={data.amenidadesP4.childImageSharp.fluid} />,
+    amenidadesP5:<Img alt="Amenidades" fluid={data.amenidadesP5.childImageSharp.fluid} />,
+    amenidadesP6:<Img alt="Amenidades" fluid={data.amenidadesP6.childImageSharp.fluid} />,
+    amenidadesP7:<Img alt="Amenidades" fluid={data.amenidadesP7.childImageSharp.fluid} />,
+    amenidadesP8:<Img alt="Amenidades" fluid={data.amenidadesP8.childImageSharp.fluid} />,
+
 
     logopm: <Img alt="Playa Mujeres" fluid={data.logopm.childImageSharp.fluid} />,
 
