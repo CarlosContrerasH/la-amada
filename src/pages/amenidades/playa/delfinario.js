@@ -81,7 +81,7 @@ const Slider = (props) => {
                 <>
                 
 
-                Located within the luxurious Dreams Playa Mujeres Golf & Spa Resort.  Surrounded by white beaches, the clear waters of the Caribbean Sea and the best facilities, this habitat offers the wonderful experience of  interacting with dolphins in a 100% natural habitat.  
+                Located within the luxurious <a href="https://www.delphinusworld.com.mx/donde-nadar-con-delfines-en-cancun/delphinus-playa-mujeres" target="blank">Dreams Playa Mujeres Golf & Spa Resort.</a>  Surrounded by white beaches, the clear waters of the Caribbean Sea and the best facilities, this habitat offers the wonderful experience of  interacting with dolphins in a 100% natural habitat.  
 
 
 
@@ -89,7 +89,7 @@ const Slider = (props) => {
                 :
                 
                 <>
-                Nuestro hábitat se encuentra en un área aun virgen y en pleno desarrollo, que forma parte del espacio continental del municipio de Isla Mujeres y se localiza dentro del lujoso hotel Dreams Playa Mujeres Golf & Spa Resort.  </>
+                Nuestro hábitat se encuentra en un área aun virgen y en pleno desarrollo, que forma parte del espacio continental del municipio de Isla Mujeres y se localiza dentro del lujoso hotel <a href="https://www.delphinusworld.com.mx/donde-nadar-con-delfines-en-cancun/delphinus-playa-mujeres" target="blank">Dreams Playa Mujeres Golf & Spa Resort.</a></>
                 }
 
 

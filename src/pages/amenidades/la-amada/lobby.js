@@ -53,18 +53,18 @@ const Slider = (props) => {
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
-                        GYM 
+                        Motor Lobby, LOBBY & Concierge  
                     
                     <br /><span className="sub">
                         
-                   Equipped with the latest gym equipment
+                  Premium service for residents
                         
                         </span></> : <>
                         
-                        Gimnasio La Amada 
+                        Motor Lobby, LOBBY & Concierge  
                     <br /><span className="sub">
                         
-                   Único residencial con un equipamento de alto nivel
+         Servicio premium para residentes
                         
                         </span></>}</h2>
                 </span>

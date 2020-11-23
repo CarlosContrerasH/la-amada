@@ -69,7 +69,7 @@ const Slider = (props) => {
 
                     <br /><span className="sub">
                         
-                  subtittulo
+                  Único residencial con un equipamento de alto nivel
                         
                         </span></>}</h2>
                 </span>

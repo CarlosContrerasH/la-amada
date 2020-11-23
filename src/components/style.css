@@ -1318,15 +1318,27 @@ margin: 2em;
 }
 
 
+.centered p{
+    margin:2em;
+}
+
+
+
 .logo-vecinos{
     display: flex;
     flex-wrap: wrap;
 }
 
 .logo-vecinos img{
-    width:min(100%, 200px);
+    width: calc((100% / 7) - 2em);
+    margin: 1em;
     object-fit: contain;
 }
+
+.ciclopista-pre+.gatsby-image-wrapper *{
+    object-position: top center !important;
+}
+
 
  @media (max-width: 500px) {
   
@@ -1367,6 +1379,12 @@ margin: 2em;
         width:80vw;
     }
 
+    .logo-vecinos img{
+        width: calc((100% / 2) - 2em);
+        margin: 1em;
+        object-fit: contain;
+    }
+
     .hero .bg-wrapper {
         position: absolute;
         bottom: calc(100vh - 50px);}
@@ -1381,7 +1399,9 @@ margin: 2em;
          padding: 0;
          justify-content: flex-start;
      }
- 
+     .amenidad-detalle .icon-wrapper{
+         margin-top: 2em;
+     }
      
 nav ul{
     display: none;
@@ -1480,6 +1500,11 @@ form label input {
 }
 
 
+.header-amenidades{
+    top:10%;
+    font-size: .75em;
+}
+
 .slider-buttons button {
     width:22px;
     height:22px;
@@ -1540,7 +1565,7 @@ form label input {
     order: 8;
   
 }
-.amenidades-grid.amada .amada.grid-element:nth-child(9){
+.amenidades-grid.amada .grid-element:nth-child(9){
     order: 5;
   
 }

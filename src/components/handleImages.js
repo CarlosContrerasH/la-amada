@@ -679,9 +679,9 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
     tenis: <Img alt="Tenis" fluid={data.tenis.childImageSharp.fluid} />,
     bicis: <Img alt="Bicicletas" fluid={data.bicis.childImageSharp.fluid} />,
 
-amenidadesH1:<Img alt="Amenidades" fluid={data.amenidadesA1.childImageSharp.fluid} />,
-amenidadesH2:<Img alt="Amenidades" fluid={data.amenidadesA2.childImageSharp.fluid} />,
-amenidadesH3:<Img alt="Amenidades" fluid={data.amenidadesA3.childImageSharp.fluid} />,
+amenidadesH1:<Img alt="Amenidades" fluid={data.amenidadesH1.childImageSharp.fluid} />,
+amenidadesH2:<Img alt="Amenidades" fluid={data.amenidadesH2.childImageSharp.fluid} />,
+amenidadesH3:<Img alt="Amenidades" fluid={data.amenidadesH3.childImageSharp.fluid} />,
 
 amenidadespH1:<Img alt="Amenidades" fluid={data.amenidadespH1.childImageSharp.fluid} />,
 amenidadespH2:<Img alt="Amenidades" fluid={data.amenidadespH2.childImageSharp.fluid} />,

@@ -86,7 +86,7 @@ const Slider = (props) => {
                 
                 <>
                 
-                "The V&V Marina has direct access to the Caribbean Sea, and is the largest yet in Cancún, offering 176 slips to receive luxurious super-yachts of up to 200 feet.
+                "<a href="https://www.marinavv.com/" target="_blank">The V&V Marina</a> has direct access to the Caribbean Sea, and is the largest yet in Cancún, offering 176 slips to receive luxurious super-yachts of up to 200 feet.
 It is one of a kind in the area and has customs, immigration, and fuel services, as well as dry dock."
 
 
@@ -96,7 +96,7 @@ It is one of a kind in the area and has customs, immigration, and fuel services,
                 :
                 
                 <>
-               Con acceso directo al Mar Caribe se encuentra la marina V&V. La marina más grande de Cancún que ofrece 176 posiciones para recibir mega yates hasta de 200 pies; única en la zona, cuenta con servicio de aduana, migración, combustible y marina seca.
+               Con acceso directo al Mar Caribe se encuentra la <a href="https://www.marinavv.com/" target="_blank">marina V&V</a>. La marina más grande de Cancún que ofrece 176 posiciones para recibir mega yates hasta de 200 pies; única en la zona, cuenta con servicio de aduana, migración, combustible y marina seca.
                 </>
                 }
 

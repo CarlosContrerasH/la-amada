@@ -8,13 +8,13 @@ import ScrollWrapper from "../../../components/scrollwrapper"
 import { HandleImages } from "../../../components/handleImages"
 import SimpleSlider from "../../../components/simpleSlider"
 
-import atelier from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/atelier-playa-mujeres-color-logo.webp"
-import beloved from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/beloved-playa-mujeres-color-logo.webp"
-import dreams from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/dreams-playa-mujeres-color-logo.webp"
-import estudio from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/estudio-playa-mujeres-color-logo.webp"
-import excellence from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/excellence-playa-mujeres-color-logo.webp"
-import finest from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/finest-resort-color-logo.webp"
-import secrets from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/secrets-playa-mujeres-golf-spa-resort-color-logo.webp"
+import atelier from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/ATELIER.svg"
+import beloved from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/BELOVED.svg"
+import dreams from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/DREAMS.svg"
+import estudio from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/estudio.webp"
+import excellence from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/EXCELLENCE.svg"
+import finest from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/FINEST.svg"
+import secrets from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINOS/SECRETS.svg"
 
 
 
@@ -108,13 +108,17 @@ for nature lovers.
                 
                 <>
         <div className="logo-vecinos">
-            <img alt="logo" src={atelier}/>
-            <img alt="logo" src={beloved}/>
-            <img alt="logo" src={dreams}/>
-            <img alt="logo" src={estudio}/>
+         
             <img alt="logo" src={excellence}/>
             <img alt="logo" src={finest}/>
+            <img alt="logo" src={beloved}/>
+            <img alt="logo" src={atelier}/>
             <img alt="logo" src={secrets}/>
+            <img alt="logo" src={dreams}/>
+            
+            <img alt="logo" src={estudio}/>
+          
+           
             </div>  </>
                 }
 

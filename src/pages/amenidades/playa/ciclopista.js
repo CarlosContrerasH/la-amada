@@ -61,7 +61,8 @@ const Slider = (props) => {
                  Bike & Running Path
                      
                      </span></div> 
-                     <HandleImages name="bikeH1"/>
+                     <span className="ciclopista-pre"></span>
+                    <HandleImages classes="ciclopista" name="bikeH1"/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
