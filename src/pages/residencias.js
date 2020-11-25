@@ -7,6 +7,10 @@ import Layout from '../components/Layout'
 
 import { useScrollPercentage } from 'react-scroll-percentage'
 import FancySlider from "../components/fancySlider"
+import lock from "../img/RESIDENCIAS/features/LOCK-OFF.svg"
+import mar from "../img/RESIDENCIAS/features/VISTA-MARINA.svg"
+import playa from "../img/RESIDENCIAS/features/VISTA-PLAYA.svg"
+import reserva from "../img/RESIDENCIAS/features/VISTA-RESERVA.svg"
 
 let fancySlider =[ <HandleImages name="residencesGal1"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
  
@@ -74,47 +78,144 @@ return(    <div className="centered">
    return( <div class="slidecontainer">
       
     <input onChange={(event)=>props.change(event.target.value)} value={props.precio} type="range" min="1" max="4"   class="slider" id="myRange"/>
- <span>precio:{props.precio}</span>
+<div class={"pos"+props.precio}><span >precio:{props.precio}</span></div> 
   </div>)
  }
 
 
  const Residencia1 = (props) =>{
-    return( <div onClick={()=>props.click("1")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
+    return( <div id="r1" onClick={()=>props.click("1")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
    <h2>Una Recámara</h2>
    <div className="content">
    <h3>Desde 570,000 USD</h3>
-   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3></div>
+   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3>
+   
+      
+   <div className="icons-wrapper">
+
+       <div>
+<img alt="lock" src={lock}/>
+<span>Lock-off</span></div>
+
+<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>
+
+<div><img alt="lock" src={playa}/><span>Marinafront residences</span></div>
+
+<div><img alt="lock" src={reserva}/><span>Vista<br/> a la reserve</span></div>
+
+   </div>
+   <HandleImages name="unaRecamara"/>
+   <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+
+   
+   </div>
    </div>)
   }
 
   const Residencia2 = (props) =>{
-    return( <div onClick={()=>props.click("2")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
+    return( <div id="r2"  onClick={()=>props.click("2")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
    <h2>Dos Recámaras</h2>
    <div className="content">
    <h3>Desde 570,000 USD</h3>
-   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3></div>
+   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3>
+   
+         
+   <div className="icons-wrapper">
+
+       <div>
+<img alt="lock" src={lock}/>
+<span>Lock-off</span></div>
+
+<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>
+
+<div><img alt="lock" src={playa}/><span>Marinafront residences</span></div>
+
+<div><img alt="lock" src={reserva}/><span>Vista<br/> a la reserve</span></div>
+
+   </div>
+   <HandleImages name="dosRecamaras"/>
+   <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+
+   </div>
    </div>)
   }
 
   const Residencia3 = (props) =>{
-    return( <div  onClick={()=>props.click("3")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
+    return( <div  id="r3"  onClick={()=>props.click("3")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
    <h2>Tres Recámaras</h2>
    <div className="content">
    <h3>Desde 570,000 USD</h3>
-   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3></div>
+   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3> 
+      
+   <div className="icons-wrapper">
+
+<div>
+<img alt="lock" src={lock}/>
+<span>Lock-off</span></div>
+
+<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>
+
+<div><img alt="lock" src={playa}/><span>Marinafront residences</span></div>
+
+<div><img alt="lock" src={reserva}/><span>Vista<br/> a la reserve</span></div>
+
+</div>
+<HandleImages name="tresRecamaras"/>
+<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+</div>
    </div>)
   }
 
   const Residencia4 = (props) =>{
-    return( <div  onClick={()=>props.click("4")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
+    return( <div  id="r4"  onClick={()=>props.click("4")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
    <h2>Cuatro Recámaras</h2>
    <div className="content">
    <h3>Desde 570,000 USD</h3>
-   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3></div>
+   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3> 
+      
+   <div className="icons-wrapper">
+
+<div>
+<img alt="lock" src={lock}/>
+<span>Lock-off</span></div>
+
+<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>
+
+<div><img alt="lock" src={playa}/><span>Marinafront residences</span></div>
+
+<div><img alt="lock" src={reserva}/><span>Vista<br/> a la reserve</span></div>
+
+</div>
+<HandleImages name="cuatroRecamaras"/>
+<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+</div>
    </div>)
   }
 
+
+  const Buttons = (props) =>{
+    return(  <div className="residencias-buttons-wrapper bg-sand">
+          <button  onClick={()=>{props.click("1");document.getElementById("r1").scrollIntoView();}}>
+              <span>1</span>
+              <span>Recámaras</span>
+          </button>
+
+          <button onClick={()=>{props.click("2");document.getElementById("r2").scrollIntoView();}}>
+              <span>2</span>
+              <span>Recámaras</span>
+          </button>
+
+          <button onClick={()=>{props.click("3");document.getElementById("r3").scrollIntoView();}}>
+              <span>3</span>
+              <span>Recámaras</span>
+          </button>
+
+          <button onClick={()=>{props.click("4");document.getElementById("r4").scrollIntoView();}}>
+              <span>4</span>
+              <span>Recámaras</span>
+          </button>
+      </div>)
+  }
 
 class Residencias extends React.Component {
 
@@ -207,7 +308,7 @@ this.handleRange=this.handleRange.bind(this)
 <Residencia2 expanded={this.state.expanded2} click={this.handleExpand}/>
 <Residencia3 expanded={this.state.expanded3} click={this.handleExpand}/>
 <Residencia4 expanded={this.state.expanded4} click={this.handleExpand}/>
-
+<Buttons click={this.handleRange}/>
             </Layout>)
     }
 

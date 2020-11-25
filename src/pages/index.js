@@ -73,7 +73,7 @@ const Hero = (props) => {
       
       <iframe   src="https://www.youtube.com/embed/if0hZ_LxUWA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <button className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+      <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
       </div>
       </ScrollWrapper>
 

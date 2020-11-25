@@ -75,8 +75,40 @@ amenidadespH3:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADE
 
 
 
+unaRecamara:file(relativePath: { eq: "RESIDENCIAS/UNA-RECAMARAS.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
 
 
+dosRecamaras:file(relativePath: { eq: "RESIDENCIAS/DOS-RECAMARAS.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+tresRecamaras:file(relativePath: { eq: "RESIDENCIAS/TRES-RECAMARAS.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+cuatroRecamaras:file(relativePath: { eq: "RESIDENCIAS/CUATRO-RECAMARAS.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
 
 
 
@@ -687,6 +719,11 @@ amenidadespH1:<Img alt="Amenidades" fluid={data.amenidadespH1.childImageSharp.fl
 amenidadespH2:<Img alt="Amenidades" fluid={data.amenidadespH2.childImageSharp.fluid} />,
 amenidadespH3:<Img alt="Amenidades" fluid={data.amenidadespH3.childImageSharp.fluid} />,
 
+
+unaRecamara:<Img alt="Una Recamara" fluid={data.unaRecamara.childImageSharp.fluid} />,
+dosRecamaras:<Img alt="Dos Recamaras" fluid={data.dosRecamaras.childImageSharp.fluid} />,
+tresRecamaras:<Img alt="Tres Recamaras" fluid={data.tresRecamaras.childImageSharp.fluid} />,
+cuatroRecamaras:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras.childImageSharp.fluid} />,
 
 
 playaH1:<Img alt="Amenidades" fluid={data.playaH1.childImageSharp.fluid} />,

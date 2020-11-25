@@ -320,7 +320,7 @@ footer li{
     height: 100%;
 }
 
-.component.bg-sand{
+ .bg-sand{
     background: var(--light-sand);
 
 }
@@ -1339,31 +1339,221 @@ margin: 2em;
     object-position: top center !important;
 }
 
-.residencia-accordeon h2::after{
-content:"";
-display: inline-block;
-width: 15px;
-height: 15px;
- transform:rotate(45deg);
-display: inline-block;
-border-top: solid 2px var(--dark-green);
-border-left: solid 2px var(--dark-green);
+
+.slidecontainer{
+    margin: 1em auto 4em;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+     
+}
+.slidecontainer input{
+    width: 100%;
+    -webkit-appearance: none;
+    background:var(--dark-green);
+    border-radius: 1em;
 }
 
 
-.residencia-accordeon.expanded h2::after{
-    transform:rotate(-135deg);
+.slidecontainer input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: var(--sand);
+    cursor: pointer;
+  }
+  
+  .slidecontainer input::-moz-range-thumb {
+    width: 25px;
+    border-radius: 100%;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
 
+.slidecontainer>div{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    transform:translateX(0);
+    transition: .3s transform ease-out;
+}
+.slidecontainer span{
+    pointer-events: none;
+    position: relative;
+    border:solid 2px var(--dark-green);
+    color:var(--dark-green);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding:.5em 1.5em;
+    border-radius: 2em;
+ top:1em;
+ transform:translateX(calc(-50% + 12.5px))
+    
+    
+}
+.slidecontainer span:before{
+    content:"";
+    display: block;
+    position: absolute;
+    bottom:100%;
+    left:calc(50% - 1px);
+    width:2px;
+    height: 2em;
+    background-color: var(--dark-green);
+}
+.slidecontainer .pos2{
+    transform:translateX(calc((100% / 3) - 8.5px));
+    transition: .3s transform ease-out;
+}
+
+.slidecontainer .pos3{
+    transform:translateX(   calc( ((100% / 3) * 2 ) - 15.5px )     );
+    transition: .3s transform ease-out;
+}
+.slidecontainer .pos4{
+    transform:translateX(calc(100% - 25px));
+    transition: .3s transform ease-out;
+}
+.residencia-accordeon {
+    margin: 1em auto;
+    max-width: 800px;
+}
+
+
+.residencia-accordeon h2{
+    display: flex;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 300;
+    padding:1em 0 0;
+    margin: 0;
+    border-top: solid 1px var(--dark-green);
+    
+}
+.residencia-accordeon h2::after{
+content:"";
+display: inline-block;
+width: 25px;
+height: 25px;
+ transform:rotate(0deg);
+display: inline-block;
+ transition:.3s transform;
+margin: 0 1em 0 auto;
+background: url("../img/RESIDENCIAS/flecha-expand.svg");
+}
+.residencia-accordeon *{
+    color: var(--dark-green);
+    text-transform:uppercase;
+}
+
+.residencia-accordeon.expanded h2::after{
+    transform:rotate(-180deg);
+
+    transition:.3s transform;
 }
 
 
 .residencia-accordeon .content{
-    height: 0;
+    max-height: 0;
+    font-weight: 300;
+    letter-spacing: .1em;
     overflow: hidden;
+    transition: .3s max-height ease-out;
 }
 
 .residencia-accordeon.expanded .content{
-height: auto;
+max-height: 890px;
+transition: .6s max-height ease-out;
+ 
+}
+
+
+.residencia-accordeon .icons-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin:1em 0 2em;
+}
+
+.residencia-accordeon .icons-wrapper img{
+width:6em
+}
+
+
+.residencia-accordeon .icons-wrapper>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width:20ch;
+  width: 25%;
+}
+
+.residencia-accordeon .icons-wrapper>div span{
+    text-align: center;
+    margin: 0;
+    text-transform: initial;
+    display: flex;
+    align-items: center;
+    height: 2.6em;
+    font-style: italic;
+}
+
+.residencia-accordeon:last-child{
+    margin-bottom: 2em;
+} 
+
+
+
+.residencias-buttons-wrapper{
+    margin:2em 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2em;
+}
+
+
+.residencias-buttons-wrapper button{
+    margin:1em;
+    border:none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.residencias-buttons-wrapper button>span:first-child{
+    display: block;
+    margin:0 auto .5em;
+    border:solid 1px var(--dark-green);
+  width:35px;
+  line-height: 35px;
+  height:35px;
+    border-radius: 100%;
+    color:var(--dark-green);
+    font-size: 1.5em;
+    font-weight: bold;
+
+transition: .3s background, .3s color;
+}
+
+
+.residencias-buttons-wrapper button:hover>span:first-child{
+background: var(--dark-green);
+color: var(--sand);
+transition: .3s background, .3s color;
+}
+
+
+
+.residencias-buttons-wrapper button>span:nth-child(2){
+    color:var(--dark-green);
+    
+    font-weight: bold;
+    text-transform: uppercase;
+
 }
 
  @media (max-width: 500px) {
