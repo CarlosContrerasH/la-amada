@@ -108,7 +108,7 @@ return(    <div className="centered">
 
   const Residencia4 = (props) =>{
     return( <div  onClick={()=>props.click("4")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
-   <h2>Cuatro Recámara</h2>
+   <h2>Cuatro Recámaras</h2>
    <div className="content">
    <h3>Desde 570,000 USD</h3>
    <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3></div>
