@@ -1339,6 +1339,32 @@ margin: 2em;
     object-position: top center !important;
 }
 
+.residencia-accordeon h2::after{
+content:"";
+display: inline-block;
+width: 15px;
+height: 15px;
+ transform:rotate(45deg);
+display: inline-block;
+border-top: solid 2px var(--dark-green);
+border-left: solid 2px var(--dark-green);
+}
+
+
+.residencia-accordeon.expanded h2::after{
+    transform:rotate(-135deg);
+
+}
+
+
+.residencia-accordeon .content{
+    height: 0;
+    overflow: hidden;
+}
+
+.residencia-accordeon.expanded .content{
+height: auto;
+}
 
  @media (max-width: 500px) {
   
@@ -1366,6 +1392,8 @@ margin: 2em;
     }
     .blurb.home h2 span:nth-child(3){font-size: .3em;}
  }
+
+
 
 
 
