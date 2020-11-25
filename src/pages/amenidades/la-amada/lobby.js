@@ -57,7 +57,7 @@ const Slider = (props) => {
                     
                     <br /><span className="sub">
                         
-                  Premium service for residents
+                    Premium service for residents only
                         
                         </span></> : <>
                         

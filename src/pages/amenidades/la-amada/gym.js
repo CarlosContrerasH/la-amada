@@ -57,11 +57,11 @@ const Slider = (props) => {
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
-                        HEALTHCLUB
+                        GYM
                     
                     <br /><span className="sub">
                         
-                    subtitle
+                    Equipped with the latest gym equipment
                         
                         </span></> : <>
                         

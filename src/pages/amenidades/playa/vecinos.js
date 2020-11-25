@@ -116,7 +116,7 @@ for nature lovers.
             <img alt="logo" src={secrets}/>
             <img alt="logo" src={dreams}/>
             
-            <img alt="logo" src={estudio}/>
+             
           
            
             </div>  </>
