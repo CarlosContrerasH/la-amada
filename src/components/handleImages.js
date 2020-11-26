@@ -661,6 +661,25 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
   }
 
 
+map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+
+  floorPlan1: file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/PLANO-3-REC.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
+
 
 
 
@@ -724,6 +743,11 @@ unaRecamara:<Img alt="Una Recamara" fluid={data.unaRecamara.childImageSharp.flui
 dosRecamaras:<Img alt="Dos Recamaras" fluid={data.dosRecamaras.childImageSharp.fluid} />,
 tresRecamaras:<Img alt="Tres Recamaras" fluid={data.tresRecamaras.childImageSharp.fluid} />,
 cuatroRecamaras:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras.childImageSharp.fluid} />,
+
+
+map:<Img alt="Map" fluid={data.map.childImageSharp.fluid} />,
+floorPlan1:<Img alt="Floor Plan" fluid={data.floorPlan1.childImageSharp.fluid} />,
+
 
 
 playaH1:<Img alt="Amenidades" fluid={data.playaH1.childImageSharp.fluid} />,

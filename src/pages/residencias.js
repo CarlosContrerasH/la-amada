@@ -68,7 +68,8 @@ const Residences = (props) => {
                  
        
 return(    <div className="centered">
-    <h3>Conoce nuestras residencias disponibles desde:</h3>
+    <h3>{props.eng==true?"Meet our luxury, move-in ready homes now available starting from:":"Conoce nuestras lujosas residencias, disponibles desde: "}		
+		</h3>
   </div>)
  }
 
@@ -77,31 +78,31 @@ return(    <div className="centered">
  const Range = (props) =>{
    return( <div class="slidecontainer">
       
-    <input onChange={(event)=>props.change(event.target.value)} value={props.precio} type="range" min="1" max="4"   class="slider" id="myRange"/>
-<div class={"pos"+props.precio}><span >precio:{props.precio}</span></div> 
+    <input onChange={(event)=>props.change(event.target.value)} value={props.precio} type="range" min="1" max="5"   class="slider" id="myRange"/>
+<div class={"pos"+props.precio}><span >{props.precio==1?"$380,000.00 USD":props.precio==2?"$555,000.00 USD":props.precio==3?"$875,000.00 USD":"$1780, 000.00 USD"}</span></div> 
   </div>)
  }
 
 
  const Residencia1 = (props) =>{
     return( <div id="r1" onClick={()=>props.click("1")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
-   <h2>Una Recámara</h2>
+ <h2>{props.eng==true?"One Bedrooms": "Una Recámara"} </h2>
    <div className="content">
-   <h3>Desde 570,000 USD</h3>
-   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3>
+   <h3>{props.eng==true?"From": "Desde"} $380,000.00 USD</h3>
+   <h3>{props.eng==true?"Move-in ready units with features:":"Unidades disponibles de entrega inmediata con características:"}</h3>
    
       
    <div className="icons-wrapper">
 
-       <div>
+     { /* <div>
 <img alt="lock" src={lock}/>
 <span>Lock-off</span></div>
 
-<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>
+     <div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
 
-<div><img alt="lock" src={playa}/><span>Marinafront residences</span></div>
+<div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
-<div><img alt="lock" src={reserva}/><span>Vista<br/> a la reserve</span></div>
+<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
 
    </div>
    <HandleImages name="unaRecamara"/>
@@ -114,24 +115,23 @@ return(    <div className="centered">
 
   const Residencia2 = (props) =>{
     return( <div id="r2"  onClick={()=>props.click("2")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
-   <h2>Dos Recámaras</h2>
+  <h2>{props.eng==true?"Two Bedrooms": "Dos Recámaras"} </h2>
    <div className="content">
-   <h3>Desde 570,000 USD</h3>
-   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3>
+   <h3>{props.eng==true?"From": "Desde"} $555,000.00 USD</h3>
+   <h3>{props.eng==true?"Move-in ready units with features:":"Unidades disponibles de entrega inmediata con características:"}</h3>
+
    
          
    <div className="icons-wrapper">
 
-       <div>
+ 
+<div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
+
+<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
+
+<div>
 <img alt="lock" src={lock}/>
 <span>Lock-off</span></div>
-
-<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>
-
-<div><img alt="lock" src={playa}/><span>Marinafront residences</span></div>
-
-<div><img alt="lock" src={reserva}/><span>Vista<br/> a la reserve</span></div>
-
    </div>
    <HandleImages name="dosRecamaras"/>
    <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
@@ -142,23 +142,22 @@ return(    <div className="centered">
 
   const Residencia3 = (props) =>{
     return( <div  id="r3"  onClick={()=>props.click("3")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
-   <h2>Tres Recámaras</h2>
+   <h2>{props.eng==true?"Three Bedrooms": "Tres Recámaras"} </h2>
    <div className="content">
-   <h3>Desde 570,000 USD</h3>
-   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3> 
+   <h3>{props.eng==true?"From": "Desde"} $875,000.00 USD</h3>
+   <h3>{props.eng==true?"Move-in ready units with features:":"Unidades disponibles de entrega inmediata con características:"}</h3>
+ 
       
    <div className="icons-wrapper">
+
+ 
+   <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
+
+<div><img alt="Beachfront Residences" src={playa}/>{props.eng==true?<span>Beachfront<br/>Residences</span>: <span>Vista<br/> al mar</span>}</div>
 
 <div>
 <img alt="lock" src={lock}/>
 <span>Lock-off</span></div>
-
-<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>
-
-<div><img alt="lock" src={playa}/><span>Marinafront residences</span></div>
-
-<div><img alt="lock" src={reserva}/><span>Vista<br/> a la reserve</span></div>
-
 </div>
 <HandleImages name="tresRecamaras"/>
 <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
@@ -170,20 +169,22 @@ return(    <div className="centered">
     return( <div  id="r4"  onClick={()=>props.click("4")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
    <h2>Cuatro Recámaras</h2>
    <div className="content">
-   <h3>Desde 570,000 USD</h3>
-   <h3>Unidades disponibles de entrega inmediata con caracteristicas:</h3> 
+   <h3>{props.eng==true?"From": "Desde"} $1,150,000.00 USD</h3>
+   <h3>{props.eng==true?"Move-in ready units with features:":"Unidades disponibles de entrega inmediata con características:"}</h3>
+ 
       
    <div className="icons-wrapper">
 
-<div>
-<img alt="lock" src={lock}/>
-<span>Lock-off</span></div>
+ 
+ 
+   <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
-<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>
+ 
+<div><img alt="Beachfront Residences" src={playa}/>{props.eng==true?<span>Beachfront<br/>Residences</span>: <span>Vista<br/> al mar</span>}</div>
 
-<div><img alt="lock" src={playa}/><span>Marinafront residences</span></div>
 
-<div><img alt="lock" src={reserva}/><span>Vista<br/> a la reserve</span></div>
+<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
+
 
 </div>
 <HandleImages name="cuatroRecamaras"/>
