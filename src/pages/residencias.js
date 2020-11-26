@@ -196,25 +196,25 @@ return(    <div className="centered">
 
   const Buttons = (props) =>{
     return(  <div className="residencias-buttons-wrapper bg-sand">
-          <button  onClick={()=>{props.click("1");document.getElementById("r1").scrollIntoView();}}>
+       <Link to="/residencias/una-recamara">  <button  onClick={()=>{props.click("1");document.getElementById("r1").scrollIntoView();}}>
               <span>1</span>
               <span>Recámaras</span>
-          </button>
+          </button></Link> 
 
-          <button onClick={()=>{props.click("2");document.getElementById("r2").scrollIntoView();}}>
+          <Link to="/residencias/dos-recamaras">    <button onClick={()=>{props.click("2");document.getElementById("r2").scrollIntoView();}}>
               <span>2</span>
               <span>Recámaras</span>
-          </button>
+          </button></Link> 
 
-          <button onClick={()=>{props.click("3");document.getElementById("r3").scrollIntoView();}}>
+          <Link to="/residencias/tres-recamaras">      <button onClick={()=>{props.click("3");document.getElementById("r3").scrollIntoView();}}>
               <span>3</span>
               <span>Recámaras</span>
-          </button>
+          </button></Link> 
 
-          <button onClick={()=>{props.click("4");document.getElementById("r4").scrollIntoView();}}>
+          <Link to="/residencias/cuatro-recamara">    <button onClick={()=>{props.click("4");document.getElementById("r4").scrollIntoView();}}>
               <span>4</span>
               <span>Recámaras</span>
-          </button>
+          </button></Link> 
       </div>)
   }
 
