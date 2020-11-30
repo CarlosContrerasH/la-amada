@@ -1362,7 +1362,7 @@ margin: 2em;
 .slidecontainer input{
     width: 100%;
     -webkit-appearance: none;
-    background:var(--dark-green);
+    background:var(--sand);
     border-radius: 1em;
 }
 
@@ -1373,7 +1373,7 @@ margin: 2em;
     width: 25px;
     height: 25px;
     border-radius: 100%;
-    background: var(--sand);
+    background: var(--dark-green);
     cursor: pointer;
   }
   
@@ -1780,7 +1780,9 @@ text-transform: uppercase;
 .map-wrapper svg>path{
     fill:none;
 }
-
+.map-wrapper svg  g{
+    cursor: pointer;
+} 
 
 .map-wrapper svg  g path:nth-child(1){
 

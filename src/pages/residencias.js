@@ -270,7 +270,7 @@ this.handleRange=this.handleRange.bind(this)
         if(e==3){
             this.setState({
                 precio:e,
-                expanded1:true,
+                expanded1:false,
                 expanded2:true,
                 expanded3:true,
                 expanded4:false,
@@ -282,8 +282,8 @@ this.handleRange=this.handleRange.bind(this)
         if(e==4){
             this.setState({
                 precio:e,
-                expanded1:true,
-                expanded2:true,
+                expanded1:false,
+                expanded2:false,
                 expanded3:true,
                 expanded4:true
             })
