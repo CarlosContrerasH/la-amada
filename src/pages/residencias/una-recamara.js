@@ -22,7 +22,9 @@ import vivienda from "../../img/RESIDENCIAS/1 RECAMARA/ICONOS-CARACTERISTICAS/ME
 import salaComedor from "../../img/RESIDENCIAS/1 RECAMARA/ICONOS-CARACTERISTICAS/SALA-COMEDOR.svg"
 
 
+import SimpleSlider from "../../components/simpleSlider"
 
+let bigSlider =[ <HandleImages name="unaRecamara1"/>, <HandleImages name="unaRecamara2"/>, <HandleImages name="unaRecamara3"/>, <HandleImages name="unaRecamara4"/>]
 
 let iniciales=["BW","BC","SC","RT","RT","C","MD","SY","G","KC","SE","L","CP","CP","VV","KP","S","H","F","BW","BW","P","P","KZ","AV","AV","SC","CM","F","A6","A1","A3","A4","A5", "A7","A2","E"]
 
@@ -1194,7 +1196,7 @@ const Imagen = (props) => {
     return (
          
 <div className="single-image">
-            <HandleImages name="unaRecamara"/></div>
+<SimpleSlider slides={bigSlider}/></div>
         
      )
 }

@@ -83,6 +83,35 @@ unaRecamara:file(relativePath: { eq: "RESIDENCIAS/UNA-RECAMARAS.jpg" }) {
   }
 }
 
+unaRecamara1:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/GALERIA-FOTOS-1REC/UNA-RECAMARA-GALERIA1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+unaRecamara2:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/GALERIA-FOTOS-1REC/UNA-RECAMARA-GALERIA2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+unaRecamara3:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/GALERIA-FOTOS-1REC/UNA-RECAMARA-GALERIA3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+unaRecamara4:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/GALERIA-FOTOS-1REC/UNA-RECAMARA-GALERIA4.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
 
 dosRecamaras:file(relativePath: { eq: "RESIDENCIAS/DOS-RECAMARAS.jpg" }) {
   childImageSharp {
@@ -91,6 +120,48 @@ dosRecamaras:file(relativePath: { eq: "RESIDENCIAS/DOS-RECAMARAS.jpg" }) {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
+
+
+dosRecamaras1:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+dosRecamaras2:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+dosRecamaras3:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+dosRecamaras4:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-4.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+dosRecamaras5:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-5.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
 
 
 tresRecamaras:file(relativePath: { eq: "RESIDENCIAS/TRES-RECAMARAS.jpg" }) {
@@ -102,7 +173,43 @@ tresRecamaras:file(relativePath: { eq: "RESIDENCIAS/TRES-RECAMARAS.jpg" }) {
 }
 
 
-cuatroRecamaras:file(relativePath: { eq: "RESIDENCIAS/CUATRO-RECAMARAS.jpg" }) {
+ 
+tresRecamaras1:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+tresRecamaras2:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+tresRecamaras3:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+tresRecamaras4:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-4.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+tresRecamaras5:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-5.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+tresRecamaras6:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-6.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -110,6 +217,50 @@ cuatroRecamaras:file(relativePath: { eq: "RESIDENCIAS/CUATRO-RECAMARAS.jpg" }) {
   }
 }
 
+
+
+cuatroRecamaras:file(relativePath: { eq: "RESIDENCIAS/CUATRO-RECAMARAS.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+cuatroRecamaras1:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+cuatroRecamaras2:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+cuatroRecamaras3:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+cuatroRecamaras4:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-4.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+cuatroRecamaras5:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-5.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
 
 
 
@@ -740,9 +891,34 @@ amenidadespH3:<Img alt="Amenidades" fluid={data.amenidadespH3.childImageSharp.fl
 
 
 unaRecamara:<Img alt="Una Recamara" fluid={data.unaRecamara.childImageSharp.fluid} />,
+unaRecamara1:<Img alt="Una Recamara" fluid={data.unaRecamara1.childImageSharp.fluid} />,
+unaRecamara2:<Img alt="Una Recamara" fluid={data.unaRecamara2.childImageSharp.fluid} />,
+unaRecamara3:<Img alt="Una Recamara" fluid={data.unaRecamara3.childImageSharp.fluid} />,
+unaRecamara4:<Img alt="Una Recamara" fluid={data.unaRecamara4.childImageSharp.fluid} />,
+
 dosRecamaras:<Img alt="Dos Recamaras" fluid={data.dosRecamaras.childImageSharp.fluid} />,
+dosRecamaras1:<Img alt="Dos Recamaras" fluid={data.dosRecamaras1.childImageSharp.fluid} />,
+dosRecamaras2:<Img alt="Dos Recamaras" fluid={data.dosRecamaras2.childImageSharp.fluid} />,
+dosRecamaras3:<Img alt="Dos Recamaras" fluid={data.dosRecamaras3.childImageSharp.fluid} />,
+dosRecamaras4:<Img alt="Dos Recamaras" fluid={data.dosRecamaras4.childImageSharp.fluid} />,
+dosRecamaras5:<Img alt="Dos Recamaras" fluid={data.dosRecamaras5.childImageSharp.fluid} />,
+
 tresRecamaras:<Img alt="Tres Recamaras" fluid={data.tresRecamaras.childImageSharp.fluid} />,
+tresRecamaras1:<Img alt="Tres Recamaras" fluid={data.tresRecamaras1.childImageSharp.fluid} />,
+tresRecamaras2:<Img alt="Tres Recamaras" fluid={data.tresRecamaras2.childImageSharp.fluid} />,
+tresRecamaras3:<Img alt="Tres Recamaras" fluid={data.tresRecamaras3.childImageSharp.fluid} />,
+tresRecamaras4:<Img alt="Tres Recamaras" fluid={data.tresRecamaras4.childImageSharp.fluid} />,
+tresRecamaras5:<Img alt="Tres Recamaras" fluid={data.tresRecamaras5.childImageSharp.fluid} />,
+tresRecamaras6:<Img alt="Tres Recamaras" fluid={data.tresRecamaras6.childImageSharp.fluid} />,
+
+
+
 cuatroRecamaras:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras.childImageSharp.fluid} />,
+cuatroRecamaras1:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras1.childImageSharp.fluid} />,
+cuatroRecamaras2:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras2.childImageSharp.fluid} />,
+cuatroRecamaras3:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras3.childImageSharp.fluid} />,
+cuatroRecamaras4:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras4.childImageSharp.fluid} />,
+cuatroRecamaras5:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras5.childImageSharp.fluid} />,
 
 
 map:<Img alt="Map" fluid={data.map.childImageSharp.fluid} />,

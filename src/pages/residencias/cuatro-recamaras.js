@@ -21,6 +21,9 @@ import terraza from "../../img/RESIDENCIAS/1 RECAMARA/ICONOS-CARACTERISTICAS/MET
 import vivienda from "../../img/RESIDENCIAS/1 RECAMARA/ICONOS-CARACTERISTICAS/METROS-CUADRADOS.svg"
 import salaComedor from "../../img/RESIDENCIAS/1 RECAMARA/ICONOS-CARACTERISTICAS/SALA-COMEDOR.svg"
 
+import SimpleSlider from "../../components/simpleSlider"
+
+let bigSlider =[ <HandleImages name="cuatroRecamaras1"/>, <HandleImages name="cuatroRecamaras2"/>, <HandleImages name="cuatroRecamaras3"/>, <HandleImages name="cuatroRecamaras4"/>, <HandleImages name="cuatroRecamaras5"/>]
 
 
 
@@ -1204,7 +1207,7 @@ const Imagen = (props) => {
     return (
          
 <div className="single-image">
-            <HandleImages name="unaRecamara"/></div>
+<SimpleSlider slides={bigSlider}/></div>
         
      )
 }
