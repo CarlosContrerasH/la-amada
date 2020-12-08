@@ -90,15 +90,25 @@ const Features = (props) => {
                     <div><img alt="Dormitorio Principal" src={dormP} /><span>41M<sup>2</sup></span><span>441FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
-                    <h4>M<sup>2</sup> Vivienda</h4>
-                    <div><img alt="Sala Comedor" src={vivienda} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                <h4>{props.eng?"Bedroom 2":"Dormitorio 2"}</h4>
+                    <div><img alt="Sala Comedor" src={dorm2} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
                 </div>
-           
-               
             </div>
 
             <div className="col">
             <div className="feature">
+                    <h4>Dormitorio 3</h4>
+                    <div><img alt="Sala Comedor" src={dorm3} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                </div>
+                <div className="feature">
+                    <h4>Habitación de Servicio</h4>
+                    <div><img alt="Sala Comedor" src={lavado} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                </div>
+                <div className="feature">
+                    <h4>M<sup>2</sup> Vivienda</h4>
+                    <div><img alt="Sala Comedor" src={vivienda} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                </div>
+                <div className="feature">
                 <h4>M<sup>2</sup> Terraza</h4>
                     <div><img alt="Sala Comedor" src={salaComedor} /><span>46M<sup>2</sup></span><span>495FT<sup>2</sup></span></div>
                 </div>
@@ -106,9 +116,9 @@ const Features = (props) => {
      
         </div>
         <div className="buttons">
-                <button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
+                <button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>Decargar Plano PDF</button>
 
-                <button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
+                <button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>Tour Virtual</button>
 
             </div>
 
@@ -1201,12 +1211,12 @@ const Imagen = (props) => {
 
 const Buttons = (props) =>{
     return(  <div className="residencias-buttons-wrapper bg-sand">
-      <Link to="/residencias/una-recamara">  <button  className="active" >
+      <Link to="/residencias/una-recamara">  <button  >
               <span>1</span>
               <span>Recámaras</span>
           </button></Link> 
 
-          <Link to="/residencias/dos-recamaras">    <button >
+          <Link to="/residencias/dos-recamaras">    <button className="active"   >
               <span>2</span>
               <span>Recámaras</span>
           </button></Link> 
