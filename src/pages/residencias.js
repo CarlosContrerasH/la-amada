@@ -211,7 +211,7 @@ return(    <div className="centered">
               <span>Recámaras</span>
           </button></Link> 
 
-          <Link to="/residencias/cuatro-recamara">    <button onClick={()=>{props.click("4");document.getElementById("r4").scrollIntoView();}}>
+          <Link to="/residencias/cuatro-recamaras">    <button onClick={()=>{props.click("4");document.getElementById("r4").scrollIntoView();}}>
               <span>4</span>
               <span>Recámaras</span>
           </button></Link> 
