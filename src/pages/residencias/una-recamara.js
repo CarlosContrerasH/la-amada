@@ -28,11 +28,30 @@ let bigSlider =[ <HandleImages name="unaRecamara1"/>, <HandleImages name="unaRec
 
 let iniciales=["BW","BC","SC","RT","RT","C","MD","SY","G","KC","SE","L","CP","CP","VV","KP","S","H","F","BW","BW","P","P","KZ","AV","AV","SC","CM","F","A6","A1","A3","A4","A5", "A7","A2","E"]
 
-let descriptions=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Yoga Salon","Gym","Kids Club","Event's Room","Resident's Lounge","Bike & Running Path","Bike & Running Path","V&V Marina Marina","Kayac & Paddel Board","Spa","Heliport","Viewpoint","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Green Areas","Green Areas","Sales Center","Multipurpose Courts<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court","Lighthouse","Marina View","Beachfront View","Beachfront View","Beachfront View","Beachfront View<br/>Marina View", "Marina View","Beachfront View","Marina View<br/>Lagoon View"]
+let descriptions=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Yoga Salon","Gym","Kids Club","Event's Room","Resident's Lounge","Bike & Running Path","Bike & Running Path","V&V Marina Marina","Kayac & Paddel Board","Spa","Heliport","Viewpoint","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Green Areas","Green Areas","Sales Center",
+<span>Multipurpose Courts<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court</span>,
+
+"Lighthouse","Marina View","Beachfront View","Beachfront View","Beachfront View",
+
+<span>Beachfront View<br/>Marina View</span>,
+
+"Marina View","Beachfront View",
+
+<span>Marina View<br/>Lagoon View</span>]
 
 
-let descripciones=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Salón de Yoga","Gym","Kids Club","Salón de Eventos","Ludoteca","Ciclopista","Ciclopista","Marina V&V Marina","Kayac & Paddel Board","Spa","Helipuerto","Mirador","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Áreas Verdes","Áreas Verdes","Sales Center","Canchas Multiuso<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court","Faro","Vista a la Marina","Vista al Mar","Vista al Mar","Vista al Mar","Vista al Mar<br/>Vista a la Marina", "Vista a la Marina","Vista al mar","Vista a la Marina<br/>Vista a la Laguna"]
+let descripciones=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Salón de Yoga","Gym","Kids Club","Salón de Eventos","Ludoteca","Ciclopista","Ciclopista","Marina V&V Marina","Kayac & Paddel Board","Spa","Helipuerto","Mirador","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Áreas Verdes","Áreas Verdes","Sales Center",
 
+<span>Canchas Multiuso<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court</span>,
+
+"Faro","Vista a la Marina","Vista al Mar","Vista al Mar","Vista al Mar",
+
+<span>Vista al Mar<br/>Vista a la Marina</span>,
+
+"Vista a la Marina","Vista al mar",
+
+
+<span>Vista a la Marina<br/>Vista a la Laguna</span>]
 
 
 
@@ -40,7 +59,7 @@ let descripciones=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","C
 const Detalle = (props) => {
     return (<div className={"residencia-accordeon expanded detalle"}>
 
-        <h2>Una Recámara</h2>
+        <h2>{props.eng?"One Bedroom":"Una Recámara"}</h2>
         <div className="content">
             <h3>{props.eng?"From $380,000.00 USD":"Desde $380,000.00 USD"}</h3>
 <h3>{props.eng?"These one-bedroom homes offer an outstanding opportunity for a value conscious purchaser or savvy investor.		":"Nuestra unidad de una habitación es una gran oportunidad de inversión.		"}</h3>
@@ -1205,7 +1224,7 @@ const Buttons = (props) =>{
     return(  <div className="residencias-buttons-wrapper bg-sand">
       <Link to="/residencias/una-recamara">  <button  className="active" >
               <span>1</span>
-              <span>Recámaras</span>
+              <span>Recámara</span>
           </button></Link> 
 
           <Link to="/residencias/dos-recamaras">    <button >

@@ -29,35 +29,54 @@ let bigSlider =[ <HandleImages name="tresRecamaras1"/>, <HandleImages name="tres
 
 let iniciales=["BW","BC","SC","RT","RT","C","MD","SY","G","KC","SE","L","CP","CP","VV","KP","S","H","F","BW","BW","P","P","KZ","AV","AV","SC","CM","F","A6","A1","A3","A4","A5", "A7","A2","E"]
 
-let descriptions=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Yoga Salon","Gym","Kids Club","Event's Room","Resident's Lounge","Bike & Running Path","Bike & Running Path","V&V Marina Marina","Kayac & Paddel Board","Spa","Heliport","Viewpoint","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Green Areas","Green Areas","Sales Center","Multipurpose Courts<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court","Lighthouse","Marina View","Beachfront View","Beachfront View","Beachfront View","Beachfront View<br/>Marina View", "Marina View","Beachfront View","Marina View<br/>Lagoon View"]
+let descriptions=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Yoga Salon","Gym","Kids Club","Event's Room","Resident's Lounge","Bike & Running Path","Bike & Running Path","V&V Marina Marina","Kayac & Paddel Board","Spa","Heliport","Viewpoint","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Green Areas","Green Areas","Sales Center",
+<span>Multipurpose Courts<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court</span>,
+
+"Lighthouse","Marina View","Beachfront View","Beachfront View","Beachfront View",
+
+<span>Beachfront View<br/>Marina View</span>,
+
+"Marina View","Beachfront View",
+
+<span>Marina View<br/>Lagoon View</span>]
 
 
-let descripciones=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Salón de Yoga","Gym","Kids Club","Salón de Eventos","Ludoteca","Ciclopista","Ciclopista","Marina V&V Marina","Kayac & Paddel Board","Spa","Helipuerto","Mirador","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Áreas Verdes","Áreas Verdes","Sales Center","Canchas Multiuso<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court","Faro","Vista a la Marina","Vista al Mar","Vista al Mar","Vista al Mar","Vista al Mar<br/>Vista a la Marina", "Vista a la Marina","Vista al mar","Vista a la Marina<br/>Vista a la Laguna"]
+let descripciones=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Salón de Yoga","Gym","Kids Club","Salón de Eventos","Ludoteca","Ciclopista","Ciclopista","Marina V&V Marina","Kayac & Paddel Board","Spa","Helipuerto","Mirador","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Áreas Verdes","Áreas Verdes","Sales Center",
+
+<span>Canchas Multiuso<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court</span>,
+
+"Faro","Vista a la Marina","Vista al Mar","Vista al Mar","Vista al Mar",
+
+<span>Vista al Mar<br/>Vista a la Marina</span>,
+
+"Vista a la Marina","Vista al mar",
 
 
+<span>Vista a la Marina<br/>Vista a la Laguna</span>]
 
 
 
 const Detalle = (props) => {
     return (<div className={"residencia-accordeon expanded detalle"}>
 
-        <h2>Una Recámara</h2>
+       
+<h2>{props.eng?"Three Bedrooms":"Tres Recámaras"}</h2>
         <div className="content">
-            <h3>{props.eng?"From $380,000.00 USD":"Desde $380,000.00 USD"}</h3>
-<h3>{props.eng?"These one-bedroom homes offer an outstanding opportunity for a value conscious purchaser or savvy investor.		":"Nuestra unidad de una habitación es una gran oportunidad de inversión.		"}</h3>
+            <h3>{props.eng?"From $875,000.00 USD":"Desde $380Desde $875,000.00 USD"}</h3>
+<h3>{props.eng?"Walk straight to the beach club from your ground floor, ocean facing home.		":"Nuestra unidad de tres recámaras es una gran oportunidad de inversión."}</h3>
 
             <div className="icons-wrapper">
 
-{ /* <div>
-<img alt="lock" src={lock}/>
-<span>Lock-off</span></div>
+{ /* 
 
 <div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
 
 <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
 <div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
-
+<div>
+<img alt="lock" src={lock}/>
+<span>Lock-off</span></div>
 </div>
 
 
@@ -71,7 +90,7 @@ const Detalle = (props) => {
 const FloorPlan = (props) => {
     return (<div className="bg-sand floor-plan">
 
-        <HandleImages name="floorPlan1" />
+        <HandleImages name="floorPlan3" />
     </div>)
 }
 
@@ -82,38 +101,38 @@ const Features = (props) => {
             <div className="col">
                 <div className="feature">
                     <h4>{props.eng?"Living Room":"Sala Comedor"}</h4>
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>47M<sup>2</sup></span><span>506FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>55M<sup>2</sup></span><span>592FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                     <h4>{props.eng?"Kitchen":"Cocina"}</h4>
-                    <div><img alt="Cocina" src={cocina} /><span>8M<sup>2</sup></span><span>86FT<sup>2</sup></span></div>
+                    <div><img alt="Cocina" src={cocina} /><span>21M<sup>2</sup></span><span>226FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                     <h4>{props.eng?"Master Bedroom":"Dormitorio Principal"}</h4>
-                    <div><img alt="Dormitorio Principal" src={dormP} /><span>41M<sup>2</sup></span><span>441FT<sup>2</sup></span></div>
+                    <div><img alt="Dormitorio Principal" src={dormP} /><span>52M<sup>2</sup></span><span>559FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                 <h4>{props.eng?"Bedroom 2":"Dormitorio 2"}</h4>
-                    <div><img alt="Sala Comedor" src={dorm2} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={dorm2} /><span>38M<sup>2</sup></span><span>409FT<sup>2</sup></span></div>
                 </div>
             </div>
 
             <div className="col">
             <div className="feature">
                     <h4>Dormitorio 3</h4>
-                    <div><img alt="Sala Comedor" src={dorm3} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={dorm3} /><span>26M<sup>2</sup></span><span>280FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                     <h4>Habitación de Servicio</h4>
-                    <div><img alt="Sala Comedor" src={lavado} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={lavado} /><span>8M<sup>2</sup></span><span>861FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                     <h4>M<sup>2</sup> Vivienda</h4>
-                    <div><img alt="Sala Comedor" src={vivienda} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={vivienda} /><span>351M<sup>2</sup></span><span>1,151.57FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                 <h4>M<sup>2</sup> Terraza</h4>
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>46M<sup>2</sup></span><span>495FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>72M<sup>2</sup></span><span>236.22FT<sup>2</sup></span></div>
                 </div>
             </div>
      
@@ -1216,7 +1235,7 @@ const Buttons = (props) =>{
     return(  <div className="residencias-buttons-wrapper bg-sand">
       <Link to="/residencias/una-recamara">  <button  >
               <span>1</span>
-              <span>Recámaras</span>
+              <span>Recámara</span>
           </button></Link> 
 
           <Link to="/residencias/dos-recamaras">    <button  >
@@ -1282,7 +1301,7 @@ mapa:31
         return (
 
             <Layout>
-                <div className="detalle-hero"> <HandleImages name="unaRecamara" /></div>
+                <div className="detalle-hero"> <HandleImages name="tresRecamaras" /></div>
                 <Detalle />
                 <FloorPlan />
                 <Features />

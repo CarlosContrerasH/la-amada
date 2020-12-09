@@ -29,35 +29,53 @@ let bigSlider =[ <HandleImages name="cuatroRecamaras1"/>, <HandleImages name="cu
 
 let iniciales=["BW","BC","SC","RT","RT","C","MD","SY","G","KC","SE","L","CP","CP","VV","KP","S","H","F","BW","BW","P","P","KZ","AV","AV","SC","CM","F","A6","A1","A3","A4","A5", "A7","A2","E"]
 
-let descriptions=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Yoga Salon","Gym","Kids Club","Event's Room","Resident's Lounge","Bike & Running Path","Bike & Running Path","V&V Marina Marina","Kayac & Paddel Board","Spa","Heliport","Viewpoint","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Green Areas","Green Areas","Sales Center","Multipurpose Courts<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court","Lighthouse","Marina View","Beachfront View","Beachfront View","Beachfront View","Beachfront View<br/>Marina View", "Marina View","Beachfront View","Marina View<br/>Lagoon View"]
+let descriptions=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Yoga Salon","Gym","Kids Club","Event's Room","Resident's Lounge","Bike & Running Path","Bike & Running Path","V&V Marina Marina","Kayac & Paddel Board","Spa","Heliport","Viewpoint","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Green Areas","Green Areas","Sales Center",
+<span>Multipurpose Courts<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court</span>,
+
+"Lighthouse","Marina View","Beachfront View","Beachfront View","Beachfront View",
+
+<span>Beachfront View<br/>Marina View</span>,
+
+"Marina View","Beachfront View",
+
+<span>Marina View<br/>Lagoon View</span>]
 
 
-let descripciones=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Salón de Yoga","Gym","Kids Club","Salón de Eventos","Ludoteca","Ciclopista","Ciclopista","Marina V&V Marina","Kayac & Paddel Board","Spa","Helipuerto","Mirador","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Áreas Verdes","Áreas Verdes","Sales Center","Canchas Multiuso<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court","Faro","Vista a la Marina","Vista al Mar","Vista al Mar","Vista al Mar","Vista al Mar<br/>Vista a la Marina", "Vista a la Marina","Vista al mar","Vista a la Marina<br/>Vista a la Laguna"]
+let descripciones=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Salón de Yoga","Gym","Kids Club","Salón de Eventos","Ludoteca","Ciclopista","Ciclopista","Marina V&V Marina","Kayac & Paddel Board","Spa","Helipuerto","Mirador","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Áreas Verdes","Áreas Verdes","Sales Center",
 
+<span>Canchas Multiuso<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court</span>,
+
+"Faro","Vista a la Marina","Vista al Mar","Vista al Mar","Vista al Mar",
+
+<span>Vista al Mar<br/>Vista a la Marina</span>,
+
+"Vista a la Marina","Vista al mar",
+
+
+<span>Vista a la Marina<br/>Vista a la Laguna</span>]
 
 
 
 
 const Detalle = (props) => {
     return (<div className={"residencia-accordeon expanded detalle"}>
-
-        <h2>Una Recámara</h2>
+<h2>{props.eng?"Four Bedrooms":"Cuatro Recámaras"}</h2>
         <div className="content">
-            <h3>{props.eng?"From $380,000.00 USD":"Desde $380,000.00 USD"}</h3>
-<h3>{props.eng?"These one-bedroom homes offer an outstanding opportunity for a value conscious purchaser or savvy investor.		":"Nuestra unidad de una habitación es una gran oportunidad de inversión.		"}</h3>
+            <h3>{props.eng?"From Desde $1,150,000.00 USD":"Desde $1,150,000.00 USD"}</h3>
+<h3>{props.eng?"This new layout boasts 4 spacious bedrooms, each with an ensuite bath and generous closet, as well as an oversized living area, a den/office with private door, and an additional guest bath. A well-appointed kitchen with Miele appliances and conveniently located service quarters off one of the home’s 3 terraces make this a residence that’s perfect for entertaining.":"Nuestra unidad de cuatro habitaciones es una gran oportunidad de inversión.."}</h3>
 
             <div className="icons-wrapper">
 
-{ /* <div>
-<img alt="lock" src={lock}/>
-<span>Lock-off</span></div>
+{ /* 
 
 <div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
 
 <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
 <div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
-
+<div>
+<img alt="lock" src={lock}/>
+<span>Lock-off</span></div>
 </div>
 
 
@@ -71,7 +89,7 @@ const Detalle = (props) => {
 const FloorPlan = (props) => {
     return (<div className="bg-sand floor-plan">
 
-        <HandleImages name="floorPlan1" />
+        <HandleImages name="floorPlan4" />
     </div>)
 }
 
@@ -1216,7 +1234,7 @@ const Buttons = (props) =>{
     return(  <div className="residencias-buttons-wrapper bg-sand">
       <Link to="/residencias/una-recamara">  <button  >
               <span>1</span>
-              <span>Recámaras</span>
+              <span>Recámara</span>
           </button></Link> 
 
           <Link to="/residencias/dos-recamaras">    <button   >
@@ -1282,7 +1300,7 @@ mapa:31
         return (
 
             <Layout>
-                <div className="detalle-hero"> <HandleImages name="unaRecamara" /></div>
+                <div className="detalle-hero"> <HandleImages name="cuatroRecamaras" /></div>
                 <Detalle />
                 <FloorPlan />
                 <Features />

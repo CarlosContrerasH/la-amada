@@ -830,6 +830,34 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
     }
   }
 
+  
+
+  floorPlan2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/PLANO-2REC.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
+
+  floorPlan3: file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/PLANO-3-REC.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
+
+  floorPlan4: file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/PLANO-4-REC.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
 
 
 
@@ -923,6 +951,9 @@ cuatroRecamaras5:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras5.childI
 
 map:<Img alt="Map" fluid={data.map.childImageSharp.fluid} />,
 floorPlan1:<Img alt="Floor Plan" fluid={data.floorPlan1.childImageSharp.fluid} />,
+floorPlan2:<Img alt="Floor Plan" fluid={data.floorPlan2.childImageSharp.fluid} />,
+floorPlan3:<Img alt="Floor Plan" fluid={data.floorPlan3.childImageSharp.fluid} />,
+floorPlan4:<Img alt="Floor Plan" fluid={data.floorPlan4.childImageSharp.fluid} />,
 
 
 
