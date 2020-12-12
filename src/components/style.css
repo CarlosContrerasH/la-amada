@@ -498,6 +498,7 @@ margin:2em;
 
 .wrapped-header .sub{
     font-size: .5em;
+    display: inherit;
 }
 
 .visible .wrapped-header{
@@ -531,6 +532,11 @@ margin:2em;
     transform-origin: 100% center;
     transition: .6s transform;
 
+}
+
+
+.wrapped-header.ubicacion:after{
+    display:none;
 }
 
 .visible .wrapped-header:before, .visible .wrapped-header:after{
@@ -650,12 +656,26 @@ font-weight: 200;}
  
 }
 
+.header-ubicacion{
+    position: absolute;
+    top:5%;
+    left: 50%;
+    z-index: 1;
+    transform:translate(-50%, 0)
+ 
+}
+
 .header-amenidades h1, .header-amenidades .script{
     color:var(--sand);
     font-weight: lighter;
 }
 
-.header-amenidades .script{
+.header-ubicacion h1, .header-ubicacion .script{
+    color:var(--dark-green);
+    font-weight: lighter;
+}
+
+.header-amenidades .script, .header-ubicacion .script{
     display: inline-block;
     margin-left: 1em;
    
@@ -1101,11 +1121,13 @@ transition: .3s opacity;
 .fancy-title .sub{
     font-weight: 200;
     font-size: .9em;
+    line-height: .9em;
     letter-spacing: initial;
     transform: translateX(50%);
     display: inline-block;
     opacity:0;
     transition: .3s transform ease-out, .3s opacity;
+    
 }
 
 .fancy-wrapper .in-screen .fancy-title span{
@@ -1949,8 +1971,46 @@ fill:#2A5268;
 
 
 
+.centered.ubicacion{
+display: flex;
+align-items: center;
+flex-direction: column;
+margin:0;
+width:100%
+  }
 
- 
+  .centered.ubicacion *{color:var(--dark-green)}
+  .centered.ubicacion>*{line-height: initial; max-width: 500px; text-align: center;color:var(--dark-green)}
+  .circle-map{
+      border-radius: 100%;
+      width:min(500px, calc(100vw - 2em)) !important;
+      height: min(500px, calc(100vw - 2em)) ;
+      padding:1em;
+      display: inline-block;
+      position: relative;
+      margin-top: 0 !important;
+  }
+.circle-map::before{
+    content: "";
+    position: absolute;
+    top: 0;
+   left:250px;
+   transform: translateX(-50%);
+    width: 200vw;
+    height: 50%;
+    background: var(--light-sand);
+}
+  .circle-map>div{
+      height: min(500px, calc(100vw - 2em)) ;
+      width: min(500px, calc(100vw - 2em)) ;
+      border-radius: 100%;
+  }
+
+  .google-map{
+      display:block;
+      width:min(800px,100%);
+      margin: 0 auto 4em;
+  }
 
 
  @media (max-width: 500px) {

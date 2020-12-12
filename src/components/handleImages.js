@@ -25,6 +25,87 @@ depas:file(relativePath: { eq: "FOTO-HEADER-HOME.jpg" }) {
   }
 }
 
+
+
+
+ubicacionHeader:file(relativePath: { eq: "UBICACION/HEADER.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+
+recomendacion1:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ARRECIFES.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+recomendacion2:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/CHICHEN-ITZA.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+recomendacion3:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/FOOD.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+recomendacion4:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/GOLF.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+recomendacion5:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ISLA-MUJERES.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+recomendacion6:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/PESCA.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+recomendacion7:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SHOPPING.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+recomendacion8:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SPA.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+recomendacion9:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/YUCATAN.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+
+
+
 amenidadesH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/AMENIDADES-HEADER-1.jpg" }) {
   childImageSharp {
 
@@ -908,6 +989,18 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
     depas: <Img alt="La Amada" fluid={data.depas.childImageSharp.fluid} />,
     tenis: <Img alt="Tenis" fluid={data.tenis.childImageSharp.fluid} />,
     bicis: <Img alt="Bicicletas" fluid={data.bicis.childImageSharp.fluid} />,
+
+    ubicacionHeader: <Img alt="Ubicacion" fluid={data.ubicacionHeader.childImageSharp.fluid} />,
+    recomendacion1: <Img alt="Arrecifes" fluid={data.recomendacion1.childImageSharp.fluid} />,
+    recomendacion2: <Img alt="Chichen-Itza" fluid={data.recomendacion2.childImageSharp.fluid} />,
+    recomendacion3: <Img alt="Food" fluid={data.recomendacion3.childImageSharp.fluid} />,
+    recomendacion4: <Img alt="Golf" fluid={data.recomendacion4.childImageSharp.fluid} />,
+    recomendacion5: <Img alt="Isla-Mujeres" fluid={data.recomendacion5.childImageSharp.fluid} />,
+    recomendacion6: <Img alt="Pesca" fluid={data.recomendacion6.childImageSharp.fluid} />,
+    recomendacion7: <Img alt="Shopping" fluid={data.recomendacion7.childImageSharp.fluid} />,
+    recomendacion8: <Img alt="Spa" fluid={data.recomendacion8.childImageSharp.fluid} />,
+    recomendacion9: <Img alt="Yucatan" fluid={data.recomendacion9.childImageSharp.fluid} />,
+
 
 amenidadesH1:<Img alt="Amenidades" fluid={data.amenidadesH1.childImageSharp.fluid} />,
 amenidadesH2:<Img alt="Amenidades" fluid={data.amenidadesH2.childImageSharp.fluid} />,

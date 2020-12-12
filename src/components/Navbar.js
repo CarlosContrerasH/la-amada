@@ -70,7 +70,7 @@ const Navbar = class extends React.Component {
              </Link></li>*/}
            <li>   <Link to="/amenidades">AMENIDADES</Link></li>
              <li> <Link to="/residencias">RESIDENCIAS</Link></li>
-             <li>UBICACIÓN</li>
+             <li> <Link to="/ubicacion">UBICACIÓN</Link></li>
              <li>GALERIA</li>
              <li>CONOCENOS</li>
              <li>INVIERTE</li>
