@@ -8,6 +8,8 @@ import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import { element } from 'prop-types'
 import Form from "./contact-form"
+import Scroll from "./scroll"
+
 const Layout = class extends React.Component {
   constructor(props) {
     super(props)
@@ -66,6 +68,7 @@ const Layout = class extends React.Component {
       <div>
 
         <Navbar langToggle={this.handleLanguageChange} eng={this.state.eng} />
+        <Scroll/>
         <div>{temp}</div>
         <Form />
         <Footer />
