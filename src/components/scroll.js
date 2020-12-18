@@ -33,7 +33,7 @@ componentWillUnmount(){
 handleScroll=()=>{
   
    this.setState({
-        visible:window.scrollY===0?true:false
+        visible:window.scrollY==0?false:true
     },()=>{ console.log(this.state.visible,window.scrollY)})
 }
 
