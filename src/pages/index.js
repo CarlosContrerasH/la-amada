@@ -14,11 +14,13 @@ import {HandleImages} from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
 import FancySlider from "../components/fancySlider"
 
-let fancySlider =[ <HandleImages name="residencesGal1"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
-let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/> ]
+let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="residencesGal1"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
+let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/>,<HandleImages name="amenidadespH1" />,
+<HandleImages name="amenidadespH2" />,
+<HandleImages name="amenidadespH3" /> ]
  
 let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
-let slideTitles=[<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
+let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
 
  function regresator(e){
    return e
@@ -128,7 +130,7 @@ const Hero = (props) => {
       
       mágico que permite la convivencia, privacidad y
       conectividad que tanto deseas.</p>
-     } <button className="flat-button sand-button ">{props.eng==true?"Ver Mas":"See More"}</button>
+     } <Link to="/amenidades/playa"><button className="flat-button sand-button ">{props.eng==true?"Ver Mas":"See More"}</button></Link>
       </div></div>
       
       </div>
@@ -158,7 +160,7 @@ const Hero = (props) => {
       catch{}
     }
     
-    return (<div ref={ref} className={percentage > .35 ? "visible component " + (props.classes ? props.classes : "") : "component " + (props.classes ? props.classes : "")}>
+    return (<div ref={ref} className={percentage > .15 && percentage< .85? "visible test component " + (props.classes ? props.classes : "") : "component " + (props.classes ? props.classes : "")}>
       {
   
       
@@ -205,6 +207,15 @@ class IndexPage extends React.Component{
             
    <Residences/>
           
+   <ScrollWrapper classes="blurb home">
+            
+            <div>
+                <div>
+                <span className="wrapped-header">
+            <h2><span className="script">Conoce nuestro Proyecto</span><br/><span>Desde 380,000 USD</span></h2></span>
+            <button className="outlined-button light">  Hacer Cita</button>
+            </div></div>
+            </ScrollWrapper>
           <PlayaMujeres/>
             
              { /*<ScrollWrapper classes="bg-sand">
@@ -222,15 +233,6 @@ class IndexPage extends React.Component{
               </div>
         </ScrollWrapper>*/}
 
-              <ScrollWrapper classes="blurb home">
-            
-            <div>
-                <div>
-                <span className="wrapped-header">
-            <h2><span className="script">Conoce nuestro Proyecto</span><br/><span>Desde 380,000 USD</span></h2></span>
-            <button className="outlined-button light">  Hacer Cita</button>
-            </div></div>
-            </ScrollWrapper>
 
             <ScrollWrapper >
             

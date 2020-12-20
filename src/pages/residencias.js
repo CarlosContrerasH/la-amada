@@ -12,12 +12,12 @@ import mar from "../img/RESIDENCIAS/features/VISTA-MARINA.svg"
 import playa from "../img/RESIDENCIAS/features/VISTA-PLAYA.svg"
 import reserva from "../img/RESIDENCIAS/features/VISTA-RESERVA.svg"
 
-let fancySlider =[ <HandleImages name="residencesGal1"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
+let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="residencesGal1"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
  
 
 
 
-let slideTitles=[<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
+let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
 
 
  
@@ -78,7 +78,7 @@ return(    <div className="centered">
  const Range = (props) =>{
    return( <div class="slidecontainer">
       
-    <input onChange={(event)=>props.change(event.target.value)} value={props.precio} type="range" min="1" max="5"   class="slider" id="myRange"/>
+    <input onChange={(event)=>props.change(event.target.value)} value={props.precio} type="range" min="1" max="4"   class="slider" id="myRange"/>
 <div class={"pos"+props.precio}><span >{props.precio==1?"$380,000.00 USD":props.precio==2?"$555,000.00 USD":props.precio==3?"$875,000.00 USD":"$1780, 000.00 USD"}</span></div> 
   </div>)
  }
@@ -194,6 +194,38 @@ return(    <div className="centered">
   }
 
 
+
+  const Residencia5 = (props) =>{
+    return( <div  id="r4"  onClick={()=>props.click("4")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
+   <h2>Penthouse</h2>
+   <div className="content">
+   <h3>{props.eng==true?"From": "Desde"} $1,150,000.00 USD</h3>
+   <h3>{props.eng==true?"Move-in ready units with features:":"Unidades disponibles de entrega inmediata con características:"}</h3>
+ 
+      
+   <div className="icons-wrapper">
+
+ 
+ 
+   <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
+
+ 
+<div><img alt="Beachfront Residences" src={playa}/>{props.eng==true?<span>Beachfront<br/>Residences</span>: <span>Vista<br/> al mar</span>}</div>
+
+
+<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
+
+
+</div>
+<HandleImages name="cuatroRecamaras"/>
+<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+</div>
+   </div>)
+  }
+
+
+
+
   const Buttons = (props) =>{
     return(  <div className="residencias-buttons-wrapper bg-sand">
        <Link to="/residencias/una-recamara">  <button  onClick={()=>{props.click("1");document.getElementById("r1").scrollIntoView();}}>
@@ -229,6 +261,7 @@ class Residencias extends React.Component {
       expanded2:false,
       expanded3:false,
       expanded4:false,
+      expanded5:false,
       precio:1
         }
 
@@ -251,6 +284,7 @@ this.handleRange=this.handleRange.bind(this)
                 expanded2:false,
                 expanded3:false,
                 expanded4:false,
+                expanded5:false,
             })
     
         }
@@ -263,6 +297,7 @@ this.handleRange=this.handleRange.bind(this)
                 expanded2:true,
                 expanded3:false,
                 expanded4:false,
+                expanded5:false,
             })
     
         }
@@ -273,7 +308,8 @@ this.handleRange=this.handleRange.bind(this)
                 expanded1:false,
                 expanded2:true,
                 expanded3:true,
-                expanded4:false,
+                expanded4:true,
+                expanded5:false,
             })
     
         }
@@ -285,7 +321,8 @@ this.handleRange=this.handleRange.bind(this)
                 expanded1:false,
                 expanded2:false,
                 expanded3:true,
-                expanded4:true
+                expanded4:true,
+                expanded5:true,
             })
     
         }
@@ -309,6 +346,7 @@ this.handleRange=this.handleRange.bind(this)
 <Residencia2 expanded={this.state.expanded2} click={this.handleExpand}/>
 <Residencia3 expanded={this.state.expanded3} click={this.handleExpand}/>
 <Residencia4 expanded={this.state.expanded4} click={this.handleExpand}/>
+<Residencia5 expanded={this.state.expanded5} click={this.handleExpand}/>
 <Buttons click={this.handleRange}/>
             </Layout>)
     }

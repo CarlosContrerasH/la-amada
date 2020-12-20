@@ -10,7 +10,7 @@ import ScrollWrapper from "../components/scrollwrapper"
 import { HandleImages } from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
 import FancySlider from "../components/fancySlider"
-
+import map from "../img/UBICACION/MAPA-CANCUN.svg"
 import { Link } from 'gatsby'
 
 let playaSlider = [<HandleImages name="recomendacion1" />, <HandleImages name="recomendacion2" />, <HandleImages name="recomendacion3" />, <HandleImages name="recomendacion4" />, <HandleImages name="recomendacion5" />, <HandleImages name="recomendacion6" />, <HandleImages name="recomendacion7" />, <HandleImages name="recomendacion8" />, <HandleImages name="recomendacion9" />]
@@ -125,7 +125,7 @@ DEL CENTRO DE CANCÚN</span>
                 <button class="outlined-button" style={{margin:"1em"}}>DESCARGAR MASTER PLAN</button>
             </div>
             <div className="bg-sand circle-map">
-            <HandleImages name="ubicacionHeader" />
+          <img src={map}/>
     </div>
             <div className="centered ubicacion">
                 <span className="script">Lo mejor del Caribe Mexicano

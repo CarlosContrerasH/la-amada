@@ -176,7 +176,7 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
  <HandleImages name="bicis"/></div>
          </Link>
 
-         <button className="flat-button sand-button centered-button" style={{margin:"3em 0"}}>Ver Mas</button>
+       
             </div>
             </ScrollWrapper>
  

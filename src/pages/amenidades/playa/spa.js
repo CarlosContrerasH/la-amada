@@ -107,7 +107,7 @@ Screen reader support enabled.
 
                 </p>
 
-                <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "Back" : "Regresar"}</button></Link>
+                <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
             </div>
         </ScrollWrapper>
 

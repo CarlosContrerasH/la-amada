@@ -843,7 +843,13 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
-
+  logopmb: file(relativePath: { eq: "logo-playa-muejeres-bco.png" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
  
 
   playaGal1: file(relativePath: { eq: "SLIDER PLAYA MUJERES/PLAYAMUJERES-1.png" }) {
@@ -1124,7 +1130,10 @@ spaH1:<Img alt="Amenidades" fluid={data.spaH1.childImageSharp.fluid} />,
     amenidadesP8:<Img alt="Amenidades" fluid={data.amenidadesP8.childImageSharp.fluid} />,
 
 
+
     logopm: <Img alt="Playa Mujeres" fluid={data.logopm.childImageSharp.fluid} />,
+
+    logopmb: <Img alt="Playa Mujeres" fluid={data.logopmb.childImageSharp.fluid} />,
 
     residencesGal1: <Img alt="Dos Cuartos" fluid={data.residencesGal1.childImageSharp.fluid} />,
     residencesGal2: <Img alt="Dos Cuartos" fluid={data.residencesGal2.childImageSharp.fluid} />,

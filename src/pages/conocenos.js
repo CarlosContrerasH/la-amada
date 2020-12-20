@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-import Layout from '../../../components/Layout'
+import Layout from '../components/Layout'
 
 
-import ScrollWrapper from "../../../components/scrollwrapper"
-import { HandleImages } from "../../../components/handleImages"
-import SimpleSlider from "../../../components/simpleSlider"
+import ScrollWrapper from "../components/scrollwrapper"
+import { HandleImages } from "../components/handleImages"
+import SimpleSlider from "../components/simpleSlider"
 
 
 import { Link } from 'gatsby'
@@ -17,6 +17,66 @@ import { Link } from 'gatsby'
 let playaSlider =[ <HandleImages name="ludotecaH1"/>, <HandleImages name="ludotecaH2"/>, <HandleImages name="ludotecaH3"/> ]
 
 
+
+const ConocenosHero = ()=>{
+return(
+    <div className="conocenos-hero bg-sand">
+        <div>
+
+            <HandleImages name="amenidadesA1" />
+
+            <div>
+                <span className="">
+                    <h1><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>NUESTRO</span><br /><span style={{ marginLeft: "1.5em" }} className="script">equipo</span></h1></span>
+                    <p>Conoce a los encargados de darle vida y promoción a nuestro proyecto</p>
+                    </div>
+                   
+        </div>
+    </div>
+)    
+}
+
+
+const Equipo = ()=>{
+  return(   <ScrollWrapper classes="equipo">
+      <span className="wrapped-header playa">
+    <h2>
+    
+        Equipo<br/>La Amada
+    
+    <br /><span className="sub" style={{fontStyle:"italic",fontWeight:"200",letterSpacing:".1em"}}>
+        
+Un equipo contrsuido por los mejores
+        
+        </span></h2>
+        
+</span>
+
+<p>Nuestro residencial se caracteriza por su privilegiada ubicaion..</p>
+<div className="personas-wrapper">
+    <div className="persona">
+    <HandleImages name="ludotecaH2"/>
+    <span>nombre</span><br/>
+    <span>puesto</span>
+    </div>
+    <div className="persona">
+    <HandleImages name="ludotecaH2"/>
+    <span>nombre</span><br/>
+    <span>puesto</span>
+    </div>
+    <div className="persona">
+    <HandleImages name="ludotecaH2"/>
+    <span>nombre</span><br/>
+    <span>puesto</span>
+    </div>
+    <div className="persona">
+    <HandleImages name="ludotecaH2"/>
+    <span>nombre</span><br/>
+    <span>puesto</span>
+    </div>
+</div>
+</ScrollWrapper>)
+}
 
 const Slider = (props) => {
 
@@ -127,7 +187,8 @@ class Amenidades extends React.Component {
         return (
 
             <Layout>
-                <Slider />
+             <ConocenosHero/>
+             <Equipo/>
 
             </Layout>)
     }

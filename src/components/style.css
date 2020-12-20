@@ -45,7 +45,7 @@ html{
     max-width: 100vw;
 }
 html.snap{
-    scroll-snap-type: y mandatory;
+    /*scroll-snap-type: y mandatory;*/
 }
  
  body{
@@ -575,7 +575,7 @@ margin:2em;
 span.script{
     font-family: 'RedVelvet', cursive;
     text-transform: initial;
-    color:var(--dark);
+    color:var(--dark-green);
     font-size: 2em;
     line-height: 0;
     position: relative;
@@ -713,6 +713,7 @@ font-weight: 200;}
     position: relative;
     margin:0 !important;
     width:100% !important;
+    max-height: calc(90vh - 8em);
 }
 
 
@@ -1086,7 +1087,10 @@ position: relative;
     transition: .3s opacity;
     z-index: 2;
 }
-.snap .fancy button.prev, .snap .fancy button.next{
+
+
+/*.snap .fancy button.prev, .snap .fancy button.next{*/
+.visible.fancy button.prev, .visible.fancy button.next{
     opacity: 1;
     pointer-events: all;
     transition: .3s opacity;
@@ -1183,7 +1187,8 @@ button.for-mobile{
 
 
 .amenidad-detalle>div{
-    margin-top: calc(var(--margin) / 2);
+    margin: calc(var(--margin) / 2) 0 0 0;
+    width: 100%;
 }
  
  
@@ -1207,6 +1212,8 @@ display: flex;
 }
 .amenidad-detalle a{
     text-decoration: none;
+    display: block;
+    margin: 0px 0 2em 4em;
 }
 
 
@@ -1334,6 +1341,21 @@ display: flex;
 .amenidad-detalle>div> .gatsby-image-wrapper{
     max-height: 70vh;
 }
+
+.amenidad-detalle .wrapped-header{
+    margin-left:2em;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+
+
+.amenidad-detalle p{
+    margin-left:4em;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+ 
+
 .amenidad-detalle .icon-wrapper{
     
    
@@ -1421,7 +1443,7 @@ margin: 2em;
 
 .slidecontainer input[value="2"] {
    
-    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 26%, var(--sand) 26%,var(--sand) 100%) ;
+    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 33.3%, var(--sand) 33.3%,var(--sand) 100%) ;
 
     
      
@@ -1430,7 +1452,7 @@ margin: 2em;
 
 .slidecontainer input[value="3"] {
    
-    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 51%,var(--sand) 51%,var(--sand) 100%) ;
+    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 66.6%,var(--sand) 66.6%,var(--sand) 100%) ;
 
     
      
@@ -1438,7 +1460,7 @@ margin: 2em;
 
 .slidecontainer input[value="4"] {
    
-    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 76%,var(--sand) 76%,var(--sand) 100%) ;
+    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 100%) ;
 
     
     
@@ -1497,16 +1519,16 @@ position: relative;
     background-color: var(--dark-green);
 }
 .slidecontainer .pos2{
-    transform:translateX(calc((100% / 4) - 5.5px));
+    transform:translateX(calc((100% / 3) - 8.5px));
     transition: .3s transform ease-out;
 }
 
 .slidecontainer .pos3{
-    transform:translateX(   calc( ((100% / 4) * 2 ) - 12.5px )     );
+    transform:translateX(   calc( ((100% / 3) * 2 ) - 16.5px )     );
     transition: .3s transform ease-out;
 }
 .slidecontainer .pos4{
-    transform:translateX(   calc( ((100% / 4) * 3 ) - 18.5px )    );
+    transform:translateX(   calc( (100% - 24.5px ) )   );
     transition: .3s transform ease-out;
 }
 .residencia-accordeon {
@@ -2029,10 +2051,11 @@ width:100%
     height: 50%;
     background: var(--light-sand);
 }
-  .circle-map>div{
+  .circle-map>img{
       height: min(500px, calc(100vw - 2em)) ;
       width: min(500px, calc(100vw - 2em)) ;
       border-radius: 100%;
+      position:relative;
   }
 
   .google-map{
@@ -2040,6 +2063,39 @@ width:100%
       width:min(800px,100%);
       margin: 0 auto 4em;
   }
+
+
+  .conocenos-hero{
+    padding: 2em;
+  }
+
+
+
+  .conocenos-hero *{
+    color:var(--dark-green)
+  }
+
+
+  .conocenos-hero>div{
+    display: flex;
+    
+      width:100%;
+    
+  }
+.conocenos-hero>div>div{
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1em;
+}
+
+.conocenos-hero .gatsby-image-wrapper{
+    width:60%;
+    max-height: 50vh;
+
+}
+
 
 
  @media (max-width: 500px) {
@@ -2080,7 +2136,29 @@ width:100%
 
 
 
+.equipo{
 
+    display: block;
+    width:calc(100% - 4em);
+    padding:2em;
+}
+.personas-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.persona{
+    color: var(--dark-green);
+}
+.persona .gatsby-image-wrapper{
+    height: 8em;
+    width: 8em;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 1em;
+
+}
 
  @media (max-width: 800px) {
 

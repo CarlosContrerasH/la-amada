@@ -111,7 +111,7 @@ Para los que piensan en La Amada como una inversión, tenemos un equipo experto 
 
                 </p>
 
-                <Link to="/amenidades/la-amada"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "Back" : "Regresar"}</button></Link>
+                <Link to="/amenidades/la-amada"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
             </div>
         </ScrollWrapper>
 

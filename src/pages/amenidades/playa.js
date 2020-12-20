@@ -161,7 +161,7 @@ const SingleCol = (props) => {
           <HandleImages name="tenis"/></div>
         </Link>
 
-        <button className="flat-button sand-button centered-button" style={{ margin: "3em 0" }}>Ver Mas</button>
+      
       </div>
     </ScrollWrapper>
 
