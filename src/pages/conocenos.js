@@ -96,7 +96,7 @@ const Equipo = (props)=>{
  const Asociados =(props)=>{
    return( 
 
-    <ScrollWrapper classes="asociados bg-sand">
+    <ScrollWrapper classes="asociados bg-sand ">
     <span className="wrapped-header playa">
   <h2>
   {props.eng==true?

@@ -42,7 +42,7 @@ handleScroll=()=>{
         return (
             <>
 
-         <img className={"scrolldown "+(this.state.visible?"fade":"")}src={scroll}/>
+         <img className={"scrolldown "+(this.state.visible?"fade ":"")}src={scroll}/>
          </>)
     }
 
