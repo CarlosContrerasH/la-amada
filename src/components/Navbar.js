@@ -99,7 +99,7 @@ const Navbar = class extends React.Component {
              <li> <Link to="/residencias">RESIDENCIAS</Link></li>
              <li> <Link to="/ubicacion">UBICACIÓN</Link></li>
              <li>GALERIA</li>
-             <li>CONOCENOS</li>
+             <li> <Link to="/conocenos">CONOCENOS</Link></li>
              <li>INVIERTE</li>
              <li>BLOG</li>
 

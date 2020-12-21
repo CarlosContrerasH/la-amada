@@ -25,6 +25,41 @@ depas:file(relativePath: { eq: "FOTO-HEADER-HOME.jpg" }) {
   }
 }
 
+persona1:file(relativePath: { eq: "conocenos/EJEMPLO-HOMBRE.png" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+persona2:file(relativePath: { eq: "conocenos/EJEMPLO-MUJER.png" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+
+conocenos1:file(relativePath: { eq: "conocenos/FOTO-EJEMPLO-HEADER.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+conocenos2:file(relativePath: { eq: "conocenos/FOTO-INVIERTE.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
 
 
 
@@ -996,6 +1031,13 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
     tenis: <Img alt="Tenis" fluid={data.tenis.childImageSharp.fluid} />,
     bicis: <Img alt="Bicicletas" fluid={data.bicis.childImageSharp.fluid} />,
 
+
+    persona1: <Img alt="Miembro del Equipo" fluid={data.persona1.childImageSharp.fluid} />,
+    persona2: <Img alt="Miembro del Equipo" fluid={data.persona2.childImageSharp.fluid} />,
+
+
+
+
     ubicacionHeader: <Img alt="Ubicacion" fluid={data.ubicacionHeader.childImageSharp.fluid} />,
     recomendacion1: <Img alt="Arrecifes" fluid={data.recomendacion1.childImageSharp.fluid} />,
     recomendacion2: <Img alt="Chichen-Itza" fluid={data.recomendacion2.childImageSharp.fluid} />,
@@ -1145,8 +1187,18 @@ spaH1:<Img alt="Amenidades" fluid={data.spaH1.childImageSharp.fluid} />,
      
     homeGal1: <Img alt="Pool" fluid={data.homeGal1.childImageSharp.fluid} />,
     homeGal2: <Img alt="Badge" fluid={data.homeGal2.childImageSharp.fluid} />,
-    homeGal3: <Img alt="Badge" fluid={data.homeGal3.childImageSharp.fluid} />
+    homeGal3: <Img alt="Badge" fluid={data.homeGal3.childImageSharp.fluid} />,
+
+
+    conocenos1: <Img alt="La Amada" fluid={data.conocenos1.childImageSharp.fluid} />,
+
+
+    conocenos2: <Img alt="La Amada" fluid={data.conocenos2.childImageSharp.fluid} />,
   
+  
+
+
+
   
   }
 

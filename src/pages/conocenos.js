@@ -7,7 +7,8 @@ import Layout from '../components/Layout'
 import ScrollWrapper from "../components/scrollwrapper"
 import { HandleImages } from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
-
+import promecap from "../img/conocenos/PROMECAP-LOGO.svg"
+import hamak from "../img/conocenos/HAMAK-HOTELS-LOGO.svg"
 
 import { Link } from 'gatsby'
 
@@ -18,17 +19,21 @@ let playaSlider =[ <HandleImages name="ludotecaH1"/>, <HandleImages name="ludote
 
 
 
-const ConocenosHero = ()=>{
+const ConocenosHero = (props)=>{
 return(
     <div className="conocenos-hero bg-sand">
         <div>
 
-            <HandleImages name="amenidadesA1" />
+            <HandleImages name="conocenos1" />
 
             <div>
                 <span className="">
-                    <h1><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>NUESTRO</span><br /><span style={{ marginLeft: "1.5em" }} className="script">equipo</span></h1></span>
-                    <p>Conoce a los encargados de darle vida y promoción a nuestro proyecto</p>
+                {props.eng==true?<h1><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>Our</span><br /><span style={{ marginLeft: "1.5em" }} className="script">Team</span></h1>:<h1><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>NUESTRO</span><br /><span style={{ marginLeft: "1.5em" }} className="script">equipo</span></h1>}
+                    </span>
+                    {props.eng==true?
+                      <p>Meet those in charge of giving life and promotion to our project.             </p>
+                      :  <p>Conoce a los encargados de darle vida y promoción a nuestro proyecto</p>}
+                  
                     </div>
                    
         </div>
@@ -37,40 +42,50 @@ return(
 }
 
 
-const Equipo = ()=>{
+const Equipo = (props)=>{
   return(   <ScrollWrapper classes="equipo">
       <span className="wrapped-header playa">
     <h2>
+
+    {props.eng==true?
+                   <> La Amada's<br/>Team</>
+                      :  <> Equipo<br/>La Amada</>}
     
-        Equipo<br/>La Amada
+    
     
     <br /><span className="sub" style={{fontStyle:"italic",fontWeight:"200",letterSpacing:".1em"}}>
-        
-Un equipo contrsuido por los mejores
+    {props.eng==true?
+                  "a team built by the best  "
+                      :  "Un equipo contrsuido por los mejores"}
+
         
         </span></h2>
         
 </span>
+{props.eng==true?
+                 <p>Our residential is characterized by its prime location and luxurious amenities, but this would not be possible without the great team behind this great project. Meet our team in the sales and project management area, a team that we are undoubtedly proud to be part of.
+                 </p>
+                      :  <p>Nuestro residencial se caracteriza por su privilegiada ubicación y por sus lujosas amenidades, pero esto no sería posible sin el grandioso equipo que está detrás de este gran proyecto. Conoce a nuestro equipo de trabajo en el área de ventas y administración de proyecto, un equipo que sin lugar a dudas estamos orgullosos de formar parte de él.</p>}
 
-<p>Nuestro residencial se caracteriza por su privilegiada ubicaion..</p>
+
 <div className="personas-wrapper">
     <div className="persona">
-    <HandleImages name="ludotecaH2"/>
+   <div className="mug"><HandleImages name="persona1"/></div> 
     <span>nombre</span><br/>
     <span>puesto</span>
     </div>
     <div className="persona">
-    <HandleImages name="ludotecaH2"/>
+    <div className="mug"><HandleImages name="persona2"/></div> 
     <span>nombre</span><br/>
     <span>puesto</span>
     </div>
     <div className="persona">
-    <HandleImages name="ludotecaH2"/>
+    <div className="mug"><HandleImages name="persona1"/></div> 
     <span>nombre</span><br/>
     <span>puesto</span>
     </div>
     <div className="persona">
-    <HandleImages name="ludotecaH2"/>
+    <div className="mug"><HandleImages name="persona2"/></div> 
     <span>nombre</span><br/>
     <span>puesto</span>
     </div>
@@ -78,95 +93,55 @@ Un equipo contrsuido por los mejores
 </ScrollWrapper>)
 }
 
-const Slider = (props) => {
+ const Asociados =(props)=>{
+   return( 
+
+    <ScrollWrapper classes="asociados bg-sand">
+    <span className="wrapped-header playa">
+  <h2>
+  {props.eng==true?
+                  "Associates "
+                      :  "Asociados"}
+
+  
+  <br /><span className="sub" style={{fontStyle:"italic",fontWeight:"200",letterSpacing:".1em"}}>
+  {props.eng==true?
+                  "Our pillars of growth and positioning are supported by two great Mexican companies: "
+                      :  "  Nuestros pilares de crecimiento y posicionamiento están sustentados por dos grandes empresas mexicanas: "}
+      </span></h2>
+      
+</span>
+<div className="asociado">
+<a href="https://www.promecapac.com/" target="_blank"><div className="logo"><img src={promecap}/></div> </a>
+
+{props.eng==true?
+                    <p>Hotelera Marina, S.A. de C.V. is the developer at La Amada. Hotelera Marina is an affiliate of Promecap Capital de Desarrollo, S.A. de C.V.  Promecap discovers value and manages investments for private and institutional clients in Mexico and abroad. Through its affiliation with Hotelera Marina, Promecap is able to provide stable guidance and a long-term vision to the community at La Amada.
+                    </p>
+                      :   <p>Hotelera Marina, S.A. de C.V. es el desarrollador de La Amada y es socio de Promecap Capital de Desarrollo, S.A. de C.V. Esta última se dedica a descubrir valor y administrar inversiones para clientes privados e instituciones en México y el extranjero. A través de su afiliación con Hotelera Marina, Promecap otorga una dirección estable y visión a largo plazo para la comunidad de La Amada.</p>}
+  
+</div>
+<div className="asociado">
+<a href="https://www.hamakhotels.com/home" target="_blank"><div className="logo"><img src={hamak}/></div> </a>
+
+{props.eng==true?
+                    <p>Hamak Hotels is an expert at creating lifelong memories. Hamak manages the renovation and amenity improvements at the La Amada Residences.  Hamak designs and operates some of the premier hotel and resort experiences in Latin America. Whether designing new resorts or managing existing hotel operations, Hamak focuses on top tier quality guest experiences.
+                    </p>
+                      :   <p>Hamak Hotels es experto creando recuerdos para toda la vida. Hamak administra la renovación, así como las mejoras de las instalaciones del residencial La Amada. Hamak diseña y opera varios hoteles Premier y experiencias tipo resort en Latinoamérica. Tanto en el diseño de nuevos resorts como en la administración de hoteles. El enfoque de Hamak está en brindar experiencias de lujo. 
+                      </p>}
+</div>
 
 
-    return (
+</ScrollWrapper>
+   )
+ }
 
+ const FullImage=()=>{
+     return(
+         <HandleImages name="conocenos2"/>
+     )
+ }
 
-        <ScrollWrapper classes="bg-sand amenidad-detalle">
-
-            <div>
-            <div className="icon-wrapper">
- 
- 
- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
-      viewBox="0 0 150 150" enable-background="new 0 0 150 150" >
- 
- 
- 
-<path fill="#FFFFFF" d="M109.9,33.2c-0.2-1.1-1.1-1.9-2.2-2c-10.8-1.3-20.8-1-29.6,0.9c-11.3,2.5-21,7.7-28.8,15.6
-	c-12.2,12.2-12.2,32,0,44.2c1.2,1.2,2.4,2.2,3.7,3.2V117c0,1.4,1.2,2.6,2.6,2.6s2.6-1.2,2.6-2.6V98.1c4.1,1.9,8.5,2.9,13.1,2.9
-	c8.4,0,16.2-3.2,22.1-9.1c9.2-9.2,7.3-21.9,6.7-29c-1-10.9-1.8-20.3,8.6-26.9C109.6,35.4,110.1,34.3,109.9,33.2z M52.9,51.4
-	c9.2-9.2,21.2-14.4,35.7-15.5c-6.2,3-12.3,7.5-17.5,13C60.8,59.7,54.6,73.6,53.2,88.5C42.8,78.4,42.6,61.7,52.9,51.4L52.9,51.4z
-	 M94.9,63.3c0.8,9.3,1.6,18.1-5.2,24.9c-4.9,4.9-11.4,7.6-18.4,7.6c-4.7,0-9.2-1.2-13.1-3.5c0.5-14.9,6.4-29,16.7-39.8
-	c4.7-5,10.2-9.1,16-11.9c2.8-1.4,5.6-2.4,8.4-3.1c-2.1,2.6-3.4,5.6-4.2,9.1C93.9,51.9,94.4,57.7,94.9,63.3L94.9,63.3z"/>
- 
- </svg>
-                 
-                 <span>
-                     
-                 GREEN AREAS
-                     
-                     </span></div> 
-
-                <HandleImages name="amenidadesA1" />
-                <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>
-                    
-                        Green areas
-                    
-                    <br /><span className="sub">
-                        
-                Disconnect in your own place
-                        
-                        </span></> : <>
-                        
-                        Áreas verdes   
-
-                    <br /><span className="sub">
-                        
-                   Envueltos en la naturaleza y selva maya
-                        
-                        </span></>}</h2>
-                </span>
-                <p>
-
-                {props.eng == true ?
-                
-                <>
-                
-            <strong>  MORE THAN A PLACE TO LIVE</strong>  <br/><br/>
-
-Go deep into a natural world where the mundane becomes extraordinary, time stops and each moment is worth treasuring. 
-<br/><br/>
-In this space of natural connection, harmony with the environment will lead you to love life and truly live the La Amada experience.
-             
-                    </>
-                :
-                
-                <>
-             
-             
-             <strong>    MAS QUE UN LUGAR PARA VIVIR </strong>  Adéntrate en un mundo natural donde lo cotidiano se vuelve extraordinario, el tiempo se detiene y atesoras cada momento de tu día.  Un espacio de conexión natural donde la armonía con el entorno te lleva a amar la vida y vivir La Amada.
-                </>
-                }
-
-
-                </p>
-
-                <Link to="/amenidades/la-amada"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
-            </div>
-        </ScrollWrapper>
-
-
-
-    )
-}
-
-
-
-class Amenidades extends React.Component {
+class Conocenos extends React.Component {
 
 
 
@@ -189,7 +164,8 @@ class Amenidades extends React.Component {
             <Layout>
              <ConocenosHero/>
              <Equipo/>
-
+<Asociados/>
+<FullImage/>
             </Layout>)
     }
 
@@ -197,4 +173,4 @@ class Amenidades extends React.Component {
 
 }
 
-export default Amenidades
+export default Conocenos

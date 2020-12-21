@@ -2136,7 +2136,7 @@ width:100%
 
 
 
-.equipo{
+.equipo, .asociados{
 
     display: block;
     width:calc(100% - 4em);
@@ -2156,8 +2156,54 @@ width:100%
     width: 8em;
     border-radius: 100%;
     overflow: hidden;
-    margin-bottom: 1em;
+    
 
+}
+
+.persona .mug{ height: 8em;
+    width: 8em;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 1em;}
+
+
+.asociados .wrapped-header::before,
+.asociados .wrapped-header::after{
+display: none;
+}
+.asociado {
+    margin: 0 auto 4em !important;
+    max-width: 80ch;}
+
+    .asociado::before {
+        
+
+        content:"";
+        display: block;
+        margin-bottom:1em;
+        width: 6ch;
+        height: 2px;
+        background: var(--dark-green);
+         
+        transform-origin: 0% center;
+        transition: .6s transform;
+    
+    }
+
+
+
+
+ 
+.asociado .logo img{
+    height: 3em;
+    width:auto;
+    display: inline-block;
+    
+}
+
+
+.asociado .logo .gatsby-image-wrapper *{
+    object-fit: contain !important;
 }
 
  @media (max-width: 800px) {
