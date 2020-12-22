@@ -25,6 +25,9 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div>
+
+			<div className="amenidades-top">
+                    <Link to="/amenidades/la-amada/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
             <div className="icon-wrapper">
  
  
@@ -285,7 +288,10 @@ const Slider = (props) => {
  
  
                  
-                 <span>Beachclub</span></div> 
+                 <span>Beachclub</span></div>   
+				 
+				  <Link to="/amenidades/la-amada/beachclub"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
+                </div>
 				 <SimpleSlider slides={playaSlider}/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>Mar y Aroma Beachclub Restaurant <br /><span className="sub">By Chef Octavio Santiago</span></> : <>Mar y Aroma Beachclub Restaurant <br /><span className="sub">By Chef Octavio Santiago</span></> }</h2>

@@ -23,6 +23,8 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div>
+<div className="amenidades-top">
+            <Link to="/amenidades/la-amada/areas-verdes"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
             <div className="icon-wrapper">
  
  
@@ -58,7 +60,8 @@ const Slider = (props) => {
 
 
                 
-                <span>Playa</span></div> 
+                <span>Playa</span></div>             <Link to="/amenidades/la-amada/beachclub-restaurant"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
+                </div>
                 <SimpleSlider slides={playaSlider}/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>Exclusive Beach<br /><span className="sub">275 linear yards of white sandy beach</span></> : <>250 metros lineales de frente de playa<br /><span className="sub">Residencias Frente a Playa</span></>}</h2>

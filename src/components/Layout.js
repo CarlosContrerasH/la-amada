@@ -69,7 +69,7 @@ const Layout = class extends React.Component {
 
         <Navbar langToggle={this.handleLanguageChange} eng={this.state.eng} />
         <Scroll/>
-        <div>{temp}</div>
+        {temp}
         <Form />
         <Footer />
       </div>

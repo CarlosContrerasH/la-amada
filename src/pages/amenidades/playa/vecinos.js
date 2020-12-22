@@ -34,7 +34,8 @@ const Slider = (props) => {
 
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
-            <div>
+            <div><div className="amenidades-top">
+                    <Link to="/amenidades/playa/delfinario"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
             <div className="icon-wrapper">
 
 
@@ -68,6 +69,9 @@ const Slider = (props) => {
                  Playa Mujeres Resorts  
                      
                      </span></div> 
+                     		                          
+                     <Link to="/amenidades/playa/spa"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
+                </div>
                      <HandleImages name="vecinosH1"/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>

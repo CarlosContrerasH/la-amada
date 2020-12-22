@@ -23,7 +23,8 @@ const Slider = (props) => {
 
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
-            <div>
+            <div> <div className="amenidades-top">
+                    <Link to="/amenidades/playa/golf"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
             <div className="icon-wrapper">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
 	 viewBox="0 0 165.1 130.9" enable-background="new 0 0 165.1 130.9" >
@@ -60,6 +61,10 @@ const Slider = (props) => {
                  V&V Marina  
                      
                      </span></div> 
+
+                                     
+                     <Link to="/amenidades/playa/seguridad"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
+                </div>
                      <HandleImages name="marinaH1"/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>

@@ -24,7 +24,8 @@ const Slider = (props) => {
 
             <div>
 
-
+            <div className="amenidades-top">
+                    <Link to="/amenidades/la-amada/gym"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
             <div className="icon-wrapper">
  
  
@@ -47,7 +48,8 @@ const Slider = (props) => {
                      
                      </span></div> 
 
-
+                     <Link to="/amenidades/la-amada/areas-verdes"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
+                </div>
 
                 <HandleImages name="amenidadesA6" />
                 <span className="wrapped-header playa">

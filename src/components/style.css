@@ -716,7 +716,20 @@ font-weight: 200;}
     max-height: calc(90vh - 8em);
 }
 
+.amenidades-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.amenidades-top a{
+    margin:1em !important;
+    text-decoration: none;
+}
+
+.amenidades-top button{
+    margin:0!important;
+}
 /*AMENIDADES*/
 
 
@@ -1210,7 +1223,7 @@ display: flex;
     font-style: italic;
     font-weight: 200;
 }
-.amenidad-detalle a{
+.amenidad-detalle>div> a{
     text-decoration: none;
     display: block;
     margin: 0px 0 2em 4em;
@@ -1242,6 +1255,16 @@ display: flex;
     display: inline-block;
     border-top: solid 2px var(--dark-green);
     border-left: solid 2px var(--dark-green);
+}
+
+
+.arrow{
+    width:15px;
+    height:15px;
+    transform:translateX(-20%) rotate(45deg);
+    display: inline-block;
+    border-top: solid 2px var(--dark-green);
+    border-right: solid 2px var(--dark-green);
 }
 
 
@@ -1367,7 +1390,7 @@ display: flex;
     font-weight: 300; display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2em;
+    margin: 1em;
     font-style: italic;
     
     
@@ -1724,11 +1747,13 @@ transition: .3s background, .3s color;
     
 }
 .floor-plan .gatsby-image-wrapper{
-    width: min(700px, calc(100% - 6em));
+    width: calc(100% - 6em);
     margin: 3em;
 
 }
-
+.floor-plan>div:nth-child(1){
+    display: none;
+}
 
 .features{
     padding-top: 2em;
@@ -2207,6 +2232,7 @@ display: none;
 }
 
 .invierte-hero{
+    position: relative;
     max-height: 80vh;
     overflow: hidden;
 }
@@ -2219,7 +2245,7 @@ height: 100%;
 .invierte-heading{
     position: absolute;
     top:20%;
-    left:40%;
+    left:50%;
     color:var(--dark-green)
 }
 
@@ -2227,13 +2253,14 @@ height: 100%;
 .invierte-two-col{
     padding:2em;
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
  
 }
 
 .invierte-two-col>div{
 
-    max-width: min(674px, 100%);
+    max-width: min(474px, 100%);
     
 }
 
@@ -2276,6 +2303,97 @@ justify-content: center;
 .invierte-icons-wrapper .icons .icon-wrapper img{
     width:5em;
 }
+.two-pic {
+    padding:2em;
+}
+
+.two-pic>div{
+    max-width: 1200px;
+    margin:auto;
+     
+}
+.two-pic .pic{
+    width:100%;
+}
+.two-pic .pic .gatsby-image-wrapper{
+    width: min(650px,100%);
+}
+.two-pic .pic:nth-child(1){
+  
+}
+.two-pic .pic:nth-child(2) .gatsby-image-wrapper{
+  margin:0 0 0 auto;
+}
+
+
+
+
+@media (min-width: 800px) {
+    .two-pic .pic:nth-child(1){
+  transform: translateY(10%);
+    }
+    .two-pic .pic:nth-child(2) .gatsby-image-wrapper{
+        transform: translateY(-10%);
+    }
+}
+
+
+
+
+
+
+
+.invierte-centered{
+    text-align: center;
+    color: var(--dark-green);
+}
+
+.invierte-centered h3{
+    font-family: 'RedVelvet', cursive;
+    text-transform: initial;
+    color: var(--dark-green);
+    font-size: 2em;
+ 
+}
+
+.text-pic{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   padding:2em;
+}
+.text-pic>div{
+    width: min(500px,100%);
+}
+
+.text-pic h3{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 200;
+    color: var(--dark-green);
+    letter-spacing: 0.1em;
+}
+
+.text-pic p{
+    margin-left: 2em;
+}
+
+
+
+.invierte-buttons{
+ background: var(--dark-green);
+ padding:2em;   
+ display: grid;
+ place-items: center;
+}
+.invierte-buttons>div{
+    display: inline;
+}
+
+.invierte-buttons button{
+    margin: 1em;
+}
+
 
  @media (max-width: 800px) {
 
@@ -2369,6 +2487,12 @@ nav>div{
 .blurb.home .script{
     font-size: 1.7em;
 }
+
+
+
+
+
+
 form {
    
     margin: 3em;
@@ -2417,7 +2541,6 @@ form label input {
     width:22px;
     height:22px;
 }
-
 
 
 .col-wrapper.amenidades .left-col .logo svg, .col-wrapper.amenidades .right-col .logo *{
@@ -2504,5 +2627,24 @@ form label input {
 }
 
 
+.floor-plan>div:nth-child(1){
+    display: block;
+}
+.floor-plan>div:nth-child(2){
+    display: none;
+}
+
+
+.invierte-heading{
+    position: absolute;
+    bottom:10%;
+    top:auto;
+   right:10%;
+   left:auto;
+    color:var(--dark-green)
+}
+.invierte-heading h1{
+    font-size: 1.3em;
+}
 
  }

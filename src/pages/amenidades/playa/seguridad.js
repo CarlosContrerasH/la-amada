@@ -24,6 +24,8 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div>
+            <div className="amenidades-top">
+                    <Link to="/amenidades/playa/marina"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
             <div className="icon-wrapper">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
 	 viewBox="0 0 165.1 130.9" enable-background="new 0 0 165.1 130.9" >
@@ -49,6 +51,9 @@ const Slider = (props) => {
                  Gated Community 
                      
                      </span></div> 
+                                              
+                     <Link to="/amenidades/playa/helipuerto"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
+                </div>
                      <HandleImages name="seguridadH1"/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>

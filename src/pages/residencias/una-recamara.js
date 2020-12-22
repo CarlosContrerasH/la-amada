@@ -90,6 +90,7 @@ const FloorPlan = (props) => {
     return (<div className="bg-sand floor-plan">
 
         <HandleImages name="floorPlan1" />
+		<HandleImages name="floorPlan1h" />
     </div>)
 }
 

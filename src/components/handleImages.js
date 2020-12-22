@@ -944,7 +944,15 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
 
 
 
-  floorPlan1: file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/PLANO-3-REC.jpg" }) {
+  floorPlan1: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/PLANO-1-REC.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
+  floorPlan1h: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/1-RECAMARA-HORIZONTAL.png" }) {
     childImageSharp {
   
       fluid {
@@ -955,6 +963,13 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
   
 
   floorPlan2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/PLANO-2REC.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+  floorPlan2h: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/2-RECAMARA-HORIZONTAL.jpg" }) {
     childImageSharp {
   
       fluid {
@@ -972,7 +987,7 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
   }
 
 
-  floorPlan4: file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/PLANO-4-REC.jpg" }) {
+  floorPlan3h: file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/3-RECAMARA-HORIZONTAL.jpg" }) {
     childImageSharp {
   
       fluid {
@@ -981,6 +996,21 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
   }
 
 
+  floorPlan4: file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/PLANO-4-REC.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
+  floorPlan4h: file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/4-RECAMARA-HORIZONTAL.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
 
 
 
@@ -1012,6 +1042,34 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
     }
   }
 
+ invierteHeader: file(relativePath: { eq: "invierte/INVERSION-HEADER.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+  invierte1: file(relativePath: { eq: "invierte/INVERSION-1.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+  invierte2: file(relativePath: { eq: "invierte/INVERSION-2.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+  invierte3: file(relativePath: { eq: "invierte/INVERSION-3.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
 
 
   }`)
@@ -1021,7 +1079,11 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
   const images = {
 
 
+    invierteHeader: <Img alt="Badge" fluid={data.invierteHeader.childImageSharp.fluid} />,
 
+    invierte1: <Img alt="Badge" fluid={data.invierte1.childImageSharp.fluid} />,
+    invierte2: <Img alt="Badge" fluid={data.invierte2.childImageSharp.fluid} />,
+    invierte3: <Img alt="Badge" fluid={data.invierte3.childImageSharp.fluid} />,
     
     beach: <Img alt="Badge" fluid={data.beach.childImageSharp.fluid} />,
      
@@ -1092,9 +1154,13 @@ cuatroRecamaras5:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras5.childI
 
 map:<Img alt="Map" fluid={data.map.childImageSharp.fluid} />,
 floorPlan1:<Img alt="Floor Plan" fluid={data.floorPlan1.childImageSharp.fluid} />,
+floorPlan1h:<Img alt="Floor Plan" fluid={data.floorPlan1h.childImageSharp.fluid} />,
 floorPlan2:<Img alt="Floor Plan" fluid={data.floorPlan2.childImageSharp.fluid} />,
+floorPlan2h:<Img alt="Floor Plan" fluid={data.floorPlan2h.childImageSharp.fluid} />,
 floorPlan3:<Img alt="Floor Plan" fluid={data.floorPlan3.childImageSharp.fluid} />,
+floorPlan3h:<Img alt="Floor Plan" fluid={data.floorPlan3h.childImageSharp.fluid} />,
 floorPlan4:<Img alt="Floor Plan" fluid={data.floorPlan4.childImageSharp.fluid} />,
+floorPlan4h:<Img alt="Floor Plan" fluid={data.floorPlan4h.childImageSharp.fluid} />,
 
 
 
