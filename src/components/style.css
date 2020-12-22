@@ -2206,6 +2206,77 @@ display: none;
     object-fit: contain !important;
 }
 
+.invierte-hero{
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+.invierte-hero .gatsby-image-wrapper{
+height: 100%;
+}
+
+
+.invierte-heading{
+    position: absolute;
+    top:20%;
+    left:40%;
+    color:var(--dark-green)
+}
+
+
+.invierte-two-col{
+    padding:2em;
+display: flex;
+justify-content: center;
+ 
+}
+
+.invierte-two-col>div{
+
+    max-width: min(674px, 100%);
+    
+}
+
+
+.invierte-icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+    align-items: center;
+
+}
+
+.invierte-icons-wrapper h3{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
+
+.invierte-icons-wrapper .icons{
+    display: flex;
+    flex-wrap: wrap;
+    color:var(--dark-green);
+    width: min(800px, 100%);
+    margin: auto;
+    justify-content: center;
+}
+
+.invierte-icons-wrapper .icons .icon-wrapper{
+   width:96px;
+   margin:2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.invierte-icons-wrapper .icons .icon-wrapper img{
+    width:5em;
+}
+
  @media (max-width: 800px) {
 
     :root{
