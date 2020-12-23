@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'La Amada',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'ONLY CONDO IN PLAYA MUJERES, CANCUN.| ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.',
+      image:'FOTO-HEADER-HOME.jpg',
+      url:'https://la-amada.comß'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

@@ -9,6 +9,7 @@ import { withPrefix } from 'gatsby'
 import { element } from 'prop-types'
 import Form from "./contact-form"
 import Scroll from "./scroll"
+import Seo from "./seo" 
 
 const Layout = class extends React.Component {
   constructor(props) {
@@ -66,7 +67,7 @@ const Layout = class extends React.Component {
 
     return (
       <div>
-
+<Seo title={this.props.title} description={this.props.description}/>
         <Navbar langToggle={this.handleLanguageChange} eng={this.state.eng} />
         <Scroll/>
         {temp}

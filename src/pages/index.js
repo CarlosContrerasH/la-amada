@@ -190,7 +190,7 @@ class IndexPage extends React.Component{
 
         return (
         
-           <Layout>
+           <Layout  >
 
             <Hero/>
             {/*<div className="ejemplos">
