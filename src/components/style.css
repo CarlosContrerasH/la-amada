@@ -13,6 +13,13 @@
   }
 
 
+  @keyframes galout {
+    from {clip-path:inset(0 0 0 0) ;}
+    to{clip-path:inset(0 100% 0 0) ;}
+  }
+
+
+
   @keyframes scale-down {
     from {transform: scale(1.1);}
     to {transform: scale(1);}
@@ -2393,6 +2400,77 @@ justify-content: center;
 .invierte-buttons button{
     margin: 1em;
 }
+
+.galeria{
+    display: flex;
+    height: 85vh;
+}
+.galeria>div{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+.galeria .prev, .galeria .next{
+    width:10%;
+    position: relative;
+    z-index:1;
+    cursor: pointer;
+}
+
+.galeria .prev{
+    transform-origin: left;
+    transform: scale(1.3);
+}
+
+.galeria .next{
+    transform-origin: right;
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+.galeria .main{
+    width:80%;
+    position: relative;
+    z-index: 0;
+   
+     
+}
+
+.galeria  .gatsby-image-wrapper{
+width:100%;
+}
+.galeria .prev .gatsby-image-wrapper{
+  
+  min-height: 33%;
+    animation: galout .3s  ease-out  reverse both;
+
+}
+
+.galeria .main .gatsby-image-wrapper{
+  
+height:calc(100% - 4em);
+margin:2em 0;
+    animation: galout .3s  ease-out .2s reverse both;
+
+}
+
+.galeria .next .gatsby-image-wrapper{
+    min-height: 33%;
+  
+    animation: galout .3s  ease-out .4s reverse both;
+
+}
+
 
 
  @media (max-width: 800px) {
