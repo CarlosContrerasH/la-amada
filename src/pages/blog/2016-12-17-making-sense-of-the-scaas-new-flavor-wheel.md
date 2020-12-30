@@ -1,33 +1,22 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
-date: 2016-12-17T15:04:10.000Z
+title: LA AMADA FEATURED IN MARIN MAGAZINE
+date: 2019-09-27T14:04:00.000Z
+description: " "
 featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+featuredimage: /img/la-amada-marin-magazine-playa-mujeres-resort-homes-for-sale-980x677.jpg
 tags:
   - flavor
   - tasting
 ---
-![flavor wheel](/img/flavor_wheel.jpg)
+![flavor wheel](/img/la-amada-marin-magazine-playa-mujeres-resort-homes-for-sale-980x677.jpg)
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+Marin Magazine shone a spotlight on La Amada in a piece about second home ownership at vacation destinations. Weighing the practical advantages and intangible value of owning a second home in paradise, the San Francisco-based luxury lifestyle publication lauded La Amada as a top “tropical adventure spot” popular with their affluent readership.
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+The feature, titled [4 Getaway Destinations that Are Perfect for a Second Home](https://www.marinmagazine.com/4-locations-that-make-a-great-getaway-for-a-second-home/), highlights La Amada’s enviable location in Playa Mujeres:
 
-## What the updates mean to you
+> *Swaying palm trees, gentle lapping turquoise waters, a white sand beach speckled with palapas — this place has all the trappings of a luxury resort, but even better, it’s your second home. Located half an hour north of the Cancun airport, close enough to the action yet out of the fray, the La Amada Residences within the gated community of Playa Mujeres is a secluded playground in one of the most idyllic settings in the region.*
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+Glowing praise was also given to La Amada’s beautifully designed Residences, proximity to ocean adventures, Greg Norman-designed golf course, deepwater marina ,and “robust” array of amenities that have been augmented by our recent $8M renovation.
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
-
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
-
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
-
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+Read the full article online at [MarinMagazine.com](https://www.marinmagazine.com/4-locations-that-make-a-great-getaway-for-a-second-home/).
