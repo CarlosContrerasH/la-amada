@@ -73,42 +73,42 @@ ubicacionHeader:file(relativePath: { eq: "UBICACION/HEADER.jpg" }) {
 
 
 
-recomendacion1:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ARRECIFES.jpg" }) {
+recomendacion4:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ARRECIFES.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion2:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/CHICHEN-ITZA.jpg" }) {
+recomendacion3:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/CHICHEN-ITZA.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion3:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/FOOD.jpg" }) {
+recomendacion9:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/FOOD.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion4:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/GOLF.jpg" }) {
+recomendacion6:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/GOLF.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion5:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ISLA-MUJERES.jpg" }) {
+recomendacion1:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ISLA-MUJERES.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion6:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/PESCA.jpg" }) {
+recomendacion5:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/PESCA.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -129,7 +129,7 @@ recomendacion8:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SPA.jpg
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion9:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/YUCATAN.jpg" }) {
+recomendacion2:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/YUCATAN.jpg" }) {
   childImageSharp {
 
     fluid {

@@ -986,6 +986,26 @@ transform:translateX(-50%);
 
 }
 
+
+.slider-buttons.recomendaciones{
+    position:absolute;
+    z-index: 1;
+    bottom:2em;
+left:50%;
+transform:translateX(-50%);
+
+}
+
+.slider-buttons.recomendaciones {
+    position: absolute;
+    z-index: 1;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
 .slider-buttons button{
     border:none;
     width:16px;
@@ -2362,7 +2382,10 @@ justify-content: center;
     font-size: 2em;
  
 }
-
+.invierte-centered p{
+    max-width: 75ch;
+    margin: 1em auto 2em;
+}
 .text-pic{
     display: flex;
     justify-content: center;
@@ -2382,7 +2405,7 @@ justify-content: center;
 }
 
 .text-pic p{
-    margin-left: 2em;
+    margin:1em 1em 1em 2em;
 }
 
 
