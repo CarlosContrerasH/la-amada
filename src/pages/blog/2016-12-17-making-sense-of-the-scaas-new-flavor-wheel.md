@@ -9,8 +9,6 @@ tags:
   - flavor
   - tasting
 ---
-![flavor wheel](/img/la-amada-marin-magazine-playa-mujeres-resort-homes-for-sale-980x677.jpg)
-
 Marin Magazine shone a spotlight on La Amada in a piece about second home ownership at vacation destinations. Weighing the practical advantages and intangible value of owning a second home in paradise, the San Francisco-based luxury lifestyle publication lauded La Amada as a top “tropical adventure spot” popular with their affluent readership.
 
 The feature, titled [4 Getaway Destinations that Are Perfect for a Second Home](https://www.marinmagazine.com/4-locations-that-make-a-great-getaway-for-a-second-home/), highlights La Amada’s enviable location in Playa Mujeres:
