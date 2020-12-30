@@ -101,7 +101,7 @@ const Navbar = class extends React.Component {
              <li> <Link to="/galeria">GALERIA</Link></li>
              <li> <Link to="/conocenos">CONOCENOS</Link></li>
              <li> <Link to="/invierte"> inversión</Link></li>
-             <li>BLOG</li>
+             <li> <Link to="/blog"> EDITORIAL</Link></li>
 
               <li>
 
