@@ -2557,8 +2557,9 @@ padding:2em;
  
 
 .post-content{
-    width:min(60ch,100%);
+    width:min(60ch,calc(100% - 4em));
     margin: auto;
+    margin-bottom: 4em;
 }
 
 
