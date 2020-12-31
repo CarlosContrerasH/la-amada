@@ -14,7 +14,7 @@ import {HandleImages} from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
 import FancySlider from "../components/fancySlider"
 
-let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="residencesGal1"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
+let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="dosRecamaras"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
 let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/>,<HandleImages name="amenidadespH1" />,
 <HandleImages name="amenidadespH2" />,
 <HandleImages name="amenidadespH3" /> ]
