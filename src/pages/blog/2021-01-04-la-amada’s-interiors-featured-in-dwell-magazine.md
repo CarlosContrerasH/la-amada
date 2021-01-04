@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: LA AMADA’S INTERIORS FEATURED IN DWELL MAGAZINE
-date: 2021-01-04T13:48:30.089Z
+date: 2018-03-01T13:48:00.000Z
 description: " "
 featuredpost: false
 featuredimage: /img/dwell-magazine-la-amada-playa-mujeres-homes-for-sale-cancun-condos-1080x675.jpg
