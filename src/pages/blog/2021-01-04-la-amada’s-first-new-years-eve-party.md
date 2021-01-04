@@ -1,12 +1,27 @@
 ---
 templateKey: blog-post
-title: LA AMADA’S FIRST NEW YEARS EVE PARTY
+title: "MI CASA, SU CASA: MODERN LUXURY FEATURES LA AMADA"
 date: 2019-01-12T13:08:00.000Z
-description: >+2
-   La Amada’s residents and friends gathered on New Year’s Eve to celebrate the coming New Year together. We enjoyed champagne and local seafood under the stars at our beautiful new beach club. It was a great opportunity to see some old friends and make new ones together with our families. We suspect this party was the first in what will become a New Year’s Eve tradition at La Amada in the future.
+description: >-
+  Modern Luxury Magazine featured La Amada, celebrating our “relaxed, luxurious
+  atmosphere”. Find your local edition here:
 
+
+  Modern Luxury Houston (pg. 114): https://digital.modernluxury.com/publication/?i=538701&ver=html5&p=133
+
+  Modern Luxury Dallas (pg. 132): https://digital.modernluxury.com/publication/?i=536399&ver=html5&p=134
+
+  Modern Luxury Scottsdale (pg. 116): https://digital.modernluxury.com/publication/?i=536573&ver=html5&p=118
+
+  Modern Luxury Angeleno (pg. 114): https://digital.modernluxury.com/publication/?i=536572&ver=html5&p=116
+
+  Modern Luxury Las Vegas (pg. 108): https://digital.modernluxury.com/publication/?i=538691&ver=html5&p=110
+
+  Modern Luxury Chicago (pg. 110): https://digital.modernluxury.com/publication/?i=537934&ver=html5&p=110
+
+  Modern Luxury San Diego (pg. 106): https://digital.modernluxury.com/publication/?i=538562&ver=html5&p=108
 featuredpost: false
-featuredimage: /img/new-years-eve-la-amada-4.jpg
+featuredimage: /img/2018-12-17_16-25-53-749x675.jpg
 tags:
   - flavor
   - tasting
