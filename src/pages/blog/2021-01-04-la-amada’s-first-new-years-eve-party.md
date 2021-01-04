@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "MI CASA, SU CASA: MODERN LUXURY FEATURES LA AMADA"
-date: 2019-01-12T13:08:00.000Z
+date: 2018-12-03T13:08:00.000Z
 description: >-
   Modern Luxury Magazine featured La Amada, celebrating our “relaxed, luxurious
   atmosphere”. Find your local edition here:
