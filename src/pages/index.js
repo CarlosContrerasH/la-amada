@@ -18,6 +18,7 @@ let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="dosRec
 let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/>,<HandleImages name="amenidadespH1" />,
 <HandleImages name="amenidadespH2" />,
 <HandleImages name="amenidadespH3" /> ]
+let slideLinks = ["/residencias/una-recamara/","/residencias/dos-recamaras/","/residencias/tres-recamaras/","/residencias/cuatro-recamaras/"]
  
 let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
 let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
@@ -76,7 +77,7 @@ const Hero = (props) => {
       
       <iframe   src="https://www.youtube.com/embed/if0hZ_LxUWA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+      <Link style={{textDecoration:"none"}}to="/amenidades"> <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
       </div>
       </ScrollWrapper>
 
@@ -95,7 +96,7 @@ const Hero = (props) => {
             
       <div>
    <h3>{props.eng==true?"Our Residences":"Nuestras Residencias"}</h3>
-        <FancySlider slides={fancySlider} titles={slideTitles}/>
+        <FancySlider slides={fancySlider} titles={slideTitles} links={slideLinks}/>
       </div>
       </ResWrapper>
      
@@ -122,15 +123,8 @@ const Hero = (props) => {
       </div>
       <div className="right-col">
           <HandleImages name="logopm"/>
-     {props.eng==true?<p>Texto en Ingles</p> :<p>Exclusiva comunidad turístico residencial cerrada de
-      376 hectáreas ubicada al norte de la ciudad de
-      
-      Cancún, donde el cuidado y el respeto por la natu-
-      raleza del entorno hacen de este desarrollo un lugar
-      
-      mágico que permite la convivencia, privacidad y
-      conectividad que tanto deseas.</p>
-     } <Link to="/amenidades/playa"><button className="flat-button sand-button ">{props.eng==true?"Ver Mas":"See More"}</button></Link>
+     {props.eng==true?<p>Texto en Ingles</p> :<p>Entre arena blanca, selva tropical, zonas arqueológicas, laguna, manglar, mar turquesa y a 10 minutos del centro de Cancún, surge Playa Mujeres, exclusivo destino turístico en la zona del Caribe Mexicano que alberga más de 8,200 cuartos en lujosos centros de hospedaje, lo cual lo convierte en el lugar de mayor crecimiento del estado.Exclusiva comunidad turístico residencial cerrada de 376 hectáreas ubicada al norte de la ciudad de Cancún, donde el cuidado y el respeto por la naturaleza del entorno hacen de este desarrollo un lugar mágico que permite la convivencia, privacidad y conectividad que tanto deseas.</p>
+     } <Link to="/amenidades/playa"><button className="flat-button sand-button ">{props.eng==true?"See More":"Ver Mas"}</button></Link>
       </div></div>
       
       </div>
@@ -238,7 +232,7 @@ class IndexPage extends React.Component{
             
             <div>
             <SimpleSlider slides={bigSlider}/>
-            <button className="flat-button sand-button centered-button"  style={{marginTop:"3em"}}>Ver Galeria</button>
+            <Link style={{textDecoration:"none"}} to="/galeria"> <button className="flat-button sand-button centered-button"  style={{marginTop:"3em"}}>Ver Galeria</button></Link>
            </div>
             </ScrollWrapper>
            

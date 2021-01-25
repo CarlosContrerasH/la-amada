@@ -379,6 +379,15 @@ cuatroRecamaras5:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS
 }
 
 
+penthouse:file(relativePath: { eq: "RESIDENCIAS/PH.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
 
 
 
@@ -731,7 +740,7 @@ amenidadesA5:file(relativePath: { eq: "AMENIDADES/LA AMADA/GYM.png" }) {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-amenidadesA6:file(relativePath: { eq: "AMENIDADES/LA AMADA/LOBBY.png" }) {
+amenidadesA6:file(relativePath: { eq: "AMENIDADES/LA AMADA/motor-lobby.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -1150,7 +1159,7 @@ cuatroRecamaras2:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras2.childI
 cuatroRecamaras3:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras3.childImageSharp.fluid} />,
 cuatroRecamaras4:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras4.childImageSharp.fluid} />,
 cuatroRecamaras5:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras5.childImageSharp.fluid} />,
-
+penthouse:<Img alt="Penthouse" fluid={data.penthouse.childImageSharp.fluid} />,
 
 map:<Img alt="Map" fluid={data.map.childImageSharp.fluid} />,
 floorPlan1:<Img alt="Floor Plan" fluid={data.floorPlan1.childImageSharp.fluid} />,

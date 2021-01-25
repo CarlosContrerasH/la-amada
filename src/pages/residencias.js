@@ -15,7 +15,8 @@ import reserva from "../img/RESIDENCIAS/features/VISTA-RESERVA.svg"
 let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="residencesGal1"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
  
 
-
+let slideLinks = ["/residencias/una-recamara/","/residencias/dos-recamaras/","/residencias/tres-recamaras/","/residencias/cuatro-recamaras/"]
+ 
 
 let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
 
@@ -29,7 +30,7 @@ const Residences = (props) => {
             
       <div>
    <h3>{props.eng==true?"Our Residences":"Nuestras Residencias"}</h3>
-        <FancySlider slides={fancySlider} titles={slideTitles}/>
+        <FancySlider slides={fancySlider} titles={slideTitles} links={slideLinks}/>
       </div>
       </ResWrapper>
      
@@ -196,10 +197,10 @@ return(    <div className="centered">
 
 
   const Residencia5 = (props) =>{
-    return( <div  id="r4"  onClick={()=>props.click("4")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
+    return( <div  id="r4"  onClick={()=>props.click("5")} class={"residencia-accordeon "+ (props.expanded?"expanded":"")}>
    <h2>Penthouse</h2>
    <div className="content">
-   <h3>{props.eng==true?"From": "Desde"} $1,150,000.00 USD</h3>
+   <h3>{props.eng==true?"From": "Desde"} $1,780,000.00 USD</h3>
    <h3>{props.eng==true?"Move-in ready units with features:":"Unidades disponibles de entrega inmediata con características:"}</h3>
  
       
@@ -217,7 +218,7 @@ return(    <div className="centered">
 
 
 </div>
-<HandleImages name="cuatroRecamaras"/>
+<HandleImages name="penthouse"/>
 <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
 </div>
    </div>)

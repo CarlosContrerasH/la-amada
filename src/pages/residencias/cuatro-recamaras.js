@@ -1082,7 +1082,7 @@ const Map = (props) => {
 </g>
 
 <g>
-<circle    className="map-click" id={props.active==31?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}} cx="508.1" cy="417.4" r="21.9"/>
+<circle    className="map-click" id={props.active==30?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}} cx="508.1" cy="417.4" r="21.9"/>
 	<circle className="st1" cx="508.1" cy="417.4" r="41.9"/>
 	<path className="st6" d="M525,417.4c0,9.6-7.8,17.3-17.3,17.3c-9.6,0-17.3-7.8-17.3-17.3c0-9.6,7.8-17.3,17.3-17.3
 		C517.2,400,525,407.8,525,417.4"/>
@@ -1093,7 +1093,7 @@ const Map = (props) => {
 	</g>
 </g>
 <g>
-<circle    className="map-click" id={props.active==32?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1);handleActive(event)}}  cx="272.9" cy="431.6" r="21.9"/>
+<circle    className="map-click" id={props.active==31?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1);handleActive(event)}}  cx="272.9" cy="431.6" r="21.9"/>
 	<circle className="st1" cx="272.9" cy="431.6" r="41.9"/>
 	<path className="st7" d="M272.9,448.5c-9.3,0-16.9-7.6-16.9-16.9c0-9.3,7.6-16.9,16.9-16.9c9.3,0,16.9,7.6,16.9,16.9
 		C289.8,440.9,282.2,448.5,272.9,448.5z"/>
@@ -1109,7 +1109,7 @@ const Map = (props) => {
 	</g>
 </g>
 <g>
-<circle    className="map-click" id={props.active==33?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}} cx="426.9" cy="477.5" r="21.9"/>
+<circle    className="map-click" id={props.active==32?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}} cx="426.9" cy="477.5" r="21.9"/>
 	<circle className="st1" cx="426.9" cy="477.5" r="41.9"/>
 	<path className="st6" d="M444.2,477.5c0,9.6-7.8,17.3-17.3,17.3c-9.6,0-17.3-7.8-17.3-17.3c0-9.6,7.8-17.3,17.3-17.3
 		C436.4,460.1,444.2,467.9,444.2,477.5"/>
@@ -1129,7 +1129,7 @@ const Map = (props) => {
 	</g>
 </g>
 <g>
-<circle    className="map-click" id={props.active==34?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}} cx="321.4" cy="513.8" r="21.9"/>
+<circle    className="map-click" id={props.active==33?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}} cx="321.4" cy="513.8" r="21.9"/>
 	<circle className="st1" cx="321.4" cy="513.8" r="41.9"/>
 	<path className="st6" d="M338.4,513c0,9.6-7.8,17.3-17.3,17.3c-9.6,0-17.3-7.8-17.3-17.3c0-9.6,7.8-17.3,17.3-17.3
 		C330.6,495.6,338.4,503.4,338.4,513"/>
@@ -1140,7 +1140,7 @@ const Map = (props) => {
 	</g>
 </g>
 <g>
-<circle    className="map-click" id={props.active==35?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1);handleActive(event)}} cx="544.9" cy="498.8" r="21.9"/>
+<circle    className="map-click" id={props.active==34?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1);handleActive(event)}} cx="544.9" cy="498.8" r="21.9"/>
 	<circle className="st1" cx="544.9" cy="498.8" r="41.9"/>
 	<path className="st6" d="M562.1,498.8c0,9.6-7.8,17.3-17.3,17.3c-9.6,0-17.3-7.8-17.3-17.3c0-9.6,7.8-17.3,17.3-17.3
 		C554.3,481.5,562.1,489.2,562.1,498.8"/>
@@ -1155,7 +1155,7 @@ const Map = (props) => {
 	</g>
 </g>
 <g>
-<circle    className="map-click" id={props.active==36?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}}  cx="466.7" cy="550.9" r="21.9"/>
+<circle    className="map-click" id={props.active==35?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}}  cx="466.7" cy="550.9" r="21.9"/>
 	<circle className="st1" cx="466.7" cy="550.9" r="41.9"/>
 	<path className="st6" d="M484.1,550.9c0,9.6-7.8,17.3-17.3,17.3c-9.6,0-17.3-7.8-17.3-17.3c0-9.6,7.8-17.3,17.3-17.3
 		C476.3,533.6,484.1,541.3,484.1,550.9"/>
@@ -1173,7 +1173,7 @@ const Map = (props) => {
 	</g>
 </g>
 <g>
-<circle    className="map-click" id={props.active==37?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}} cx="331.4" cy="595.4" r="21.9"/>
+<circle    className="map-click" id={props.active==36?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}} cx="331.4" cy="595.4" r="21.9"/>
 	<circle className="st1" cx="331.4" cy="595.4" r="41.9"/>
 	<path className="st6" d="M347.9,595.4c0,9.6-7.8,17.3-17.3,17.3c-9.6,0-17.3-7.8-17.3-17.3c0-9.6,7.8-17.3,17.3-17.3
 		C340.2,578.1,347.9,585.8,347.9,595.4"/>

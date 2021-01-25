@@ -124,7 +124,7 @@ const Grid = (props) => {
       </div></Link></ScrollWrapper>
 
       <ScrollWrapper classes="grid-element big">  <Link to="/amenidades/playa/vecinos" >     <div >
-        <div className="icon-wrapper"><img alt="Vecinos Galardonados" src={vecinos} /><span>{props.eng == true ? "VECINOS GALARDONADOS" : "VECINOS GALARDONADOS"}</span></div> <HandleImages name="amenidadesP8" />
+        <div className="icon-wrapper"><img alt="Vecinos Galardonados" src={vecinos} /><span>{props.eng == true ? "Luxury Hotels as Neighbors" : "Nuestros vecinos, Hoteles de Lujo"}</span></div> <HandleImages name="amenidadesP8" />
 
       </div></Link></ScrollWrapper>
 
@@ -158,7 +158,7 @@ const SingleCol = (props) => {
         <Link to="/amenidades/la-amada"   >
           <div className="logo"> <Logo/></div>
           <div className="bg">
-          <HandleImages name="tenis"/></div>
+          <HandleImages name="amenidadesA10"/></div>
         </Link>
 
       
