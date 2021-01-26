@@ -27,7 +27,7 @@ const Navbar = class extends React.Component {
         <div className="first">
           <span>More than a place to live!</span>
           <div>
-            <svg x="0px" y="0px" viewBox="0 0 27.6 40.1" >
+          <Link to="/ubicacion"> <svg x="0px" y="0px" viewBox="0 0 27.6 40.1" >
 
 
               <g>
@@ -38,8 +38,8 @@ const Navbar = class extends React.Component {
                 <path   d="M13.8,18.2c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S16.9,18.2,13.8,18.2z M13.8,9.4
 		c-1.7,0-3.1,1.4-3.1,3.1s1.4,3.1,3.1,3.1s3.1-1.4,3.1-3.1S15.5,9.4,13.8,9.4z"/>
               </g>
-            </svg>
-            <button className="outlined-button ">  Hacer Cita</button></div>
+            </svg></Link> 
+            <a href="#form">  <button className="outlined-button ">  {this.props.eng ?"Make an Appointment":"Hacer Cita"}</button></a></div>
         </div>
         <div className="nav">
           <button className='for-mobile' onClick={(event)=>{event.target.parentNode.classList.toggle('open')}}>≡</button>
@@ -95,18 +95,18 @@ const Navbar = class extends React.Component {
               <li> <Link className="navbar-item" to="/contact/examples">
                 Form Examples
              </Link></li>*/}
-           <li>   <Link to="/amenidades">AMENIDADES</Link></li>
-             <li> <Link to="/residencias">RESIDENCIAS</Link></li>
-             <li> <Link to="/ubicacion">UBICACIÓN</Link></li>
-             <li> <Link to="/galeria">GALERIA</Link></li>
-             <li> <Link to="/conocenos">Conócenos </Link></li>
-             <li> <Link to="/invierte"> inversión</Link></li>
-             <li> <Link to="/blog"> EDITORIAL</Link></li>
+           <li>   <Link to="/amenidades">{this.props.eng ?"Amenities":"AMENIDADES"} </Link></li>
+             <li> <Link to="/residencias">{this.props.eng ?"Residences ":"RESIDENCIAS"} </Link></li>
+             <li> <Link to="/ubicacion">{this.props.eng ?"Location":"UBICACIÓN"} </Link></li>
+             <li> <Link to="/galeria">GALERIA </Link></li>
+             <li> <Link to="/conocenos">{this.props.eng ?"Our Team":"Conócenos"} </Link></li>
+             <li> <Link to="/invierte"> {this.props.eng ?"Investment":"inversión"} </Link></li>
+             <li> <Link to="/blog"> EDITORIAL </Link></li>
 
               <li>
 
               <label>
-           {console.log('nav', this.props.eng)}
+          
           <select value={this.props.eng ?"Eng":"Esp"} onChange={(event)=>{
            if( event.target.value!==this.props.eng){this.props.langToggle()}
             }}>
@@ -121,7 +121,7 @@ const Navbar = class extends React.Component {
 
           </div>
           <div className="for-mobile">
-            <svg x="0px" y="0px" viewBox="0 0 27.6 40.1" >
+          <Link to="/ubicacion">    <svg x="0px" y="0px" viewBox="0 0 27.6 40.1" >
 
 
               <g>
@@ -132,8 +132,8 @@ const Navbar = class extends React.Component {
                 <path   d="M13.8,18.2c-3.1,0-5.6-2.5-5.6-5.6s2.5-5.6,5.6-5.6s5.6,2.5,5.6,5.6S16.9,18.2,13.8,18.2z M13.8,9.4
 		c-1.7,0-3.1,1.4-3.1,3.1s1.4,3.1,3.1,3.1s3.1-1.4,3.1-3.1S15.5,9.4,13.8,9.4z"/>
               </g>
-            </svg>
-            <button className="outlined-button light">  Hacer Cita</button></div>
+            </svg></Link>
+           <a href="#form"> <button className="outlined-button light"> {this.props.eng ?"Make an Appointment":"Hacer Cita"}</button></a></div>
         </div>
       </nav>
     )

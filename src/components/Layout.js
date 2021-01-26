@@ -69,7 +69,7 @@ const Layout = class extends React.Component {
       <div>
 <Seo title={this.props.title} description={this.props.description}/>
         <Navbar langToggle={this.handleLanguageChange} eng={this.state.eng} />
-        <Scroll/>
+       { this.props.scroll==false?"":<Scroll/>}
         {temp}
         <Form />
         <Footer />

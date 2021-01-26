@@ -63,7 +63,7 @@ let bigSlider =[ <HandleImages name="invierteHeader"/>,
 <HandleImages name="cuatroRecamaras4"/>,
 <HandleImages name="cuatroRecamaras5"/>,
 
-
+/*
 <HandleImages name="map"/>,
 <HandleImages name="floorPlan1"/>,
 <HandleImages name="floorPlan1h"/>,
@@ -72,7 +72,7 @@ let bigSlider =[ <HandleImages name="invierteHeader"/>,
 <HandleImages name="floorPlan3"/>,
 <HandleImages name="floorPlan3h"/>,
 <HandleImages name="floorPlan4"/>,
-<HandleImages name="floorPlan4h"/>,
+<HandleImages name="floorPlan4h"/>,*/
 
 
 
@@ -267,7 +267,7 @@ this.setState({
 
         return (
 
-            <Layout>
+            <Layout scroll={false}>
                  <Swipe
                 onSwipeStart={this.onSwipeStart}
                 onSwipeMove={this.onSwipeMove}

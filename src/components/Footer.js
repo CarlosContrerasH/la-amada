@@ -9,7 +9,7 @@ import social from "../img/social.svg"
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer  >
+      <footer >
 
         <div>
           <div >
@@ -22,7 +22,7 @@ const Footer = class extends React.Component {
 MÉXICO</span>
           </div>
           <div >
-            <a title="facebook" href="https://facebook.com">
+            <a title="llamada" href="tel:998 313 3667">
               <span className="row">       <img
                 src={phone}
                 alt="Phone"
@@ -30,7 +30,7 @@ MÉXICO</span>
               />998 313 3667</span>
             </a>
 
-            <a title="instagram" href="https://instagram.com">
+            <a title="ventas" href="mailto:ventas@laamada.com">
               <span className="row">  <img
                 src={mail}
                 alt="Mail"
@@ -38,46 +38,23 @@ MÉXICO</span>
               />ventas@laamada.com </span>
             </a>
 
-            <a title="instagram" href="https://instagram.com">
+            <span >
               <span className="row">  <img
                 src={social}
                 alt="Social Media"
                 style={{ width: '2em', height: '2em' }}
               />@laamada_residences</span>
-            </a>
+            </span>
           </div>
           <div >
             <ul className="menu-list">
-              <li>
-                <Link to="/" className="navbar-item">
-                  Home
-                      </Link>
-              </li>
-              <li>
-                <Link className="navbar-item" to="/about">
-                  About
-                      </Link>
-              </li>
-              <li>
-                <Link className="navbar-item" to="/products">
-                  Products
-                      </Link>
-              </li>
-              <li>
-                <Link className="navbar-item" to="/contact/examples">
-                  Form Examples
-                      </Link>
-              </li>
-              <li>
-                <a
-                  className="navbar-item"
-                  href="/admin/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Admin
-                      </a>
-              </li>
+            <li>   <Link to="/amenidades">{this.props.eng ?"Amenities":"AMENIDADES"} </Link></li>
+             <li> <Link to="/residencias">{this.props.eng ?"Residences ":"RESIDENCIAS"} </Link></li>
+             <li> <Link to="/ubicacion">{this.props.eng ?"Location":"UBICACIÓN"} </Link></li>
+             <li> <Link to="/galeria">GALERIA </Link></li>
+             <li> <Link to="/conocenos">{this.props.eng ?"Our Team":"Conócenos"} </Link></li>
+             <li> <Link to="/invierte"> {this.props.eng ?"Investment":"inversión"} </Link></li>
+             <li> <Link to="/blog"> EDITORIAL </Link></li>
             </ul>
           </div>
 

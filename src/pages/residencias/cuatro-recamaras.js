@@ -27,7 +27,7 @@ let bigSlider =[ <HandleImages name="cuatroRecamaras1"/>, <HandleImages name="cu
 
 
 
-let iniciales=["BW","BC","SC","RT","RT","C","MD","SY","G","KC","SE","L","CP","CP","VV","KP","S","H","F","BW","BW","P","P","KZ","AV","AV","SC","CM","F","A6","A1","A3","A4","A5", "A7","A2","E"]
+let iniciales=["BW","BC","SC","RT","RT","C","MD","SY","G","KC","SE","L","CP","CP","VV","KP","S","H","F","BW","BW","P","P","KZ","AV","AV","SC","CM","F","A1","A2","A3","A4","A5","A6","A7","E"]
 
 let descriptions=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Yoga Salon","Gym","Kids Club","Event's Room","Resident's Lounge","Bike & Running Path","Bike & Running Path","V&V Marina Marina","Kayac & Paddel Board","Spa","Heliport","Viewpoint","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Green Areas","Green Areas","Sales Center",
 <span>Multipurpose Courts<br/>Paddel Tennis<br/>Tennis<br/>Basketball court<br/>Futball court</span>,
@@ -36,7 +36,7 @@ let descriptions=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Co
 
 <span>Beachfront View<br/>Marina View</span>,
 
-"Marina View","Beachfront View",
+"Marina View","Marina View",
 
 <span>Marina View<br/>Lagoon View</span>]
 
@@ -49,7 +49,7 @@ let descripciones=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","C
 
 <span>Vista al Mar<br/>Vista a la Marina</span>,
 
-"Vista a la Marina","Vista al mar",
+"Vista a la Marina","Vista a la Marina",
 
 
 <span>Vista a la Marina<br/>Vista a la Laguna</span>]
@@ -90,6 +90,7 @@ const FloorPlan = (props) => {
     return (<div className="bg-sand floor-plan">
 
         <HandleImages name="floorPlan4" />
+		<HandleImages name="floorPlan4h" />
     </div>)
 }
 
@@ -182,7 +183,7 @@ const Map = (props) => {
  
 <rect className="st0" width="763.5" height="1104.7" fill="none"/>
 <g>
-<circle    className="map-click" id={props.active==1?"active":""}    onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}}     cx="231.6" cy="311.7" r="21.9"/>
+<circle    className="map-click" id={props.active==1?"active":""}    onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1);handleActive(event)}}     cx="231.6" cy="311.7" r="21.9"/>
 	<circle className="st1" cx="231.6" cy="311.7" r="41.9"/>
 	<g>
 		<g>
@@ -782,7 +783,7 @@ const Map = (props) => {
 		</g>
 		<g>
 			<path className="st2" d="M572.6,321.9c-1.7,0-3.1-1.4-3.1-3.1v-13.4c0-1.7,1.4-3.1,3.1-3.1h13.5c1.7,0,3.1,1.4,3.1,3.1v13.4
-				c0,1.7-1.4,3.1-3.1,3.1H572.6z"/>
+				c0,1.7-1.4,3.1-3.1,3.1H572.6z"/>v
 		</g>
 		<g>
 			<path className="st3" d="M577.2,311.7c0.2-0.1,0.3-0.3,0.3-0.4l-0.7-2.2l0.6-0.2l-0.3,2.7c-0.1,0.8,0.3,1.2,0.4,1.4l2.7,2.4l-0.7,3.3
@@ -1184,6 +1185,16 @@ const Map = (props) => {
 	</g>
 </g>
 
+<g>
+	<circle  className="map-click" id={props.active==37?"active":""}  onClick={(event)=>{props.click(getIndex(event.target.parentNode)-1)}}   cx="152.8" cy="934.7" r="21.9"/>
+	<circle  className="st1"   cx="152.8" cy="934.7"  r="41.9"/>
+	<path fill="#2A5268" d="M169.5,934.3c0,9.6-7.8,17.3-17.3,17.3c-9.6,0-17.3-7.8-17.3-17.3c0-9.6,7.8-17.3,17.3-17.3
+		C161.7,917,169.5,924.8,169.5,934.3"/>
+	<g>
+	<path class="st3" d="M151.6,935.7v3.8h4.8v2.3h-7.3v-14.1h7v2.3h-4.5v3.6h3.8v2.2H151.6z"/>
+	</g>
+</g>
+ 
 
 </svg>
 
@@ -1264,7 +1275,7 @@ class Residencias extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-mapa:31
+mapa:30
         }
 
 
