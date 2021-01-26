@@ -39,7 +39,7 @@ const Form = () => {
      
         <input type="text" name="mail" onChange={(e) => checkInputValue(e)} /><span>  <span>Mail:</span></span> 
       </label>
-      <input type="submit" value="Hacer Cita" className="outlined-button light"/>
+      <button type="submit" value="Hacer Cita" className="outlined-button light"/>
     </form>
     </div>  );
 }
