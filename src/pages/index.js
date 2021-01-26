@@ -13,6 +13,7 @@ import ScrollWrapper from "../components/scrollwrapper"
 import {HandleImages} from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
 import FancySlider from "../components/fancySlider"
+import video2 from "../img/video.mp4"
 
 let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="dosRecamaras"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
 let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/>,<HandleImages name="amenidadespH1" />,
@@ -71,12 +72,15 @@ const Hero = (props) => {
       <div>
       <span className="wrapped-header">
      <h2> {props.eng==true?<>Exclusive <br/>Amenities</>:<>Amenidades <br/>Exclusivas</>}</h2> 
-      </span>
-    
-      <div className="video-wrapper">
-      
-      <iframe   src="https://www.youtube.com/embed/if0hZ_LxUWA?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      </span><div className="video-wrapper">
+    {props.video? 
+    <video  style={{width:"100%"}}controls autoPlay>
+  <source src={video2} type="video/mp4"/>
+   
+  
+</video>
+       :<div onClick={()=>props.handleVideo()}><HandleImages name="depas" /></div>}</div>
+     
       <Link style={{textDecoration:"none"}}to="/amenidades"> <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
       </div>
       </ScrollWrapper>
@@ -173,12 +177,17 @@ class IndexPage extends React.Component{
       this.state = {
         trailerLightbox: false,
         calendlyLightbox: false,
+        video:false
       }
     
     
     
     }  
-
+handleVideo=()=>{
+  this.setState({
+    video:true
+  })
+}
 
     render(){
 
@@ -197,7 +206,7 @@ class IndexPage extends React.Component{
               <button className="flat-button"> Lorem Ipsum</button>
             </div>*/}
             
-          <Amenidades/>
+          <Amenidades video={this.state.video} handleVideo={this.handleVideo}/>
             
    <Residences/>
           

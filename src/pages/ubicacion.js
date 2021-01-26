@@ -12,6 +12,17 @@ import RecSlider from "../components/slider-recomendaciones"
 import FancySlider from "../components/fancySlider"
 import map from "../img/UBICACION/MAPA-CANCUN.svg"
 import { Link } from 'gatsby'
+import lock from "../img/RESIDENCIAS/features/LOCK-OFF.svg"
+import mar from "../img/RESIDENCIAS/features/VISTA-MARINA.svg"
+
+import delfinario from "../img/UBICACION/ICONOS/ICON-DELFINARIO.svg"
+import golf from "../img/UBICACION/ICONOS/ICON-GOLF.svg"
+import hotels from "../img/UBICACION/ICONOS/ICON-HOTELS.svg"
+import marina from "../img/UBICACION/ICONOS/ICON-MARINA.svg"
+import pm from "../img/UBICACION/ICONOS/ICON-PM.svg"
+
+
+
 
 let playaSlider = [<HandleImages name="recomendacion1" />, <HandleImages name="recomendacion2" />, <HandleImages name="recomendacion3" />, <HandleImages name="recomendacion4" />, <HandleImages name="recomendacion5" />, <HandleImages name="recomendacion6" />, <HandleImages name="recomendacion7" />, <HandleImages name="recomendacion8" />, <HandleImages name="recomendacion9" />]
 
@@ -103,6 +114,58 @@ const Slider = (props) => {
 }
 
 
+const Mapa = (props) => {
+
+
+    return (
+       <div className="icons-map-wrapper">
+           <div className="top">
+           <div className="icons-wrapper">
+
+{ /* 
+
+<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
+
+<div><img alt="Marinafront view" src={pm}/><span>Entrada principal Playa Mujeres Resort & Golf</span></div>
+
+<div><img alt="Lagoon View" src={marina}/><span>V&V Marina</span></div>
+
+<div><img alt="Lagoon View" src={delfinario}/><span>Delfinario Playa Mujeres</span></div>
+
+
+<div><img alt="Lagoon View" src={golf}/><span>Casa Club Playa Mujeres Golf Club</span></div>
+
+
+<div><img alt="Lagoon View" src={hotels}/><span>Resorts y Hoteles</span></div>
+
+ 
+</div>
+           </div>
+           <div className="left"><HandleImages name="mapa"/></div>
+           <div className="right"><ul>
+               <li><span>1</span><span>Entrada Principal / Main Entrance <br/>Playa Mujeres Resort & Golf</span></li>
+               <li><span>2</span><span>V&V Marina</span></li>
+               <li><span>3</span><span>Hotel Paradisus Playa Mujeres</span></li>
+               <li><span>4</span><span>LA AMADA RESIDENCES</span></li>
+               <li><span>5</span><span>The Beloved Hotel & Spa</span></li>
+               <li><span>6</span><span>Hotel Excellence</span></li>
+               <li><span>7</span><span>Hotel Finest</span></li>
+               <li><span>8</span><span>Hotel Fiesta Americana Aqua</span></li>
+               <li><span>9</span><span>Hotel Atelier</span></li>
+               <li><span>10</span><span>Naa'y Estate Homes Community</span></li>
+               <li><span>11</span><span>Hotel Dreams Playa Mujeres</span></li>
+               <li><span>12</span><span>Hotel Secrets Playa Mujeres</span></li>
+               <li><span>13</span><span>Hotel Grand Palladium</span></li>
+               <li><span>14</span><span>Playa Mujeres Golf Club</span></li>
+               </ul></div>
+       </div>
+
+
+    )
+}
+
+
+
 
 const CircleMap = (props) => {
 
@@ -169,6 +232,7 @@ class Amenidades extends React.Component {
             <Layout>
                 <Header />
                 <TwoCol />
+                <Mapa/>
                 <iframe className="google-map" src="https://www.google.com/maps/d/u/0/embed?mid=1fkjdrh3vtDKWr5k5ziWeFSrsiqg9pd3_" height="480"></iframe>
                 <CircleMap />
               <Slider/>

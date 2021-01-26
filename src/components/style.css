@@ -345,7 +345,7 @@ footer li{
 
 .video-wrapper{
     width:100%;
-    padding-bottom: 56.25%;
+  
     clip-path: inset(100% 100% 100% 100%);
     position: relative;
     transition: .3s clip-path ease-out;
@@ -1675,32 +1675,33 @@ transition: .6s max-height ease-out;
 }
 
 
-.residencia-accordeon .icons-wrapper{
+.residencia-accordeon .icons-wrapper, .icons-map-wrapper .icons-wrapper{
     display: flex;
     justify-content: space-around;
     margin:1em 0 2em;
 }
 
-.residencia-accordeon .icons-wrapper img{
+.residencia-accordeon .icons-wrapper img, .icons-map-wrapper .icons-wrapper img{
 width:6em
 }
 
 
-.residencia-accordeon .icons-wrapper>div {
+.residencia-accordeon .icons-wrapper>div, .icons-map-wrapper .icons-wrapper>div {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width:20ch;
   width: 25%;
+  margin: .5em;
 }
 
-.residencia-accordeon .icons-wrapper>div span{
+.residencia-accordeon .icons-wrapper>div span, .icons-map-wrapper .icons-wrapper>div span{
     text-align: center;
     margin: 0;
     text-transform: initial;
     display: flex;
     align-items: center;
-    height: 2.6em;
+    
     font-style: italic;
 }
 
@@ -2090,6 +2091,69 @@ width:100%
 
   .centered.ubicacion *{color:var(--dark-green)}
   .centered.ubicacion>*{line-height: initial; max-width: 500px; text-align: center;color:var(--dark-green)}
+  
+  
+  
+ .icons-map-wrapper{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .icons-map-wrapper .top{
+     width:100%;
+ }
+
+
+ .icons-map-wrapper .top .icons-wrapper{
+     color:var(--dark-green);
+     flex-wrap: wrap;
+     padding:1em;
+ }
+ .icons-map-wrapper .left{
+     min-width:50%;
+     flex:1;
+   
+     padding:1em;
+ }
+
+ .icons-map-wrapper .right{
+     padding:1em;
+ }
+
+ .icons-map-wrapper .right ul{
+     list-style: none;
+     margin:0;
+     padding:0;
+ }
+ .icons-map-wrapper .right ul li{
+     margin:0 0 1em 0;
+     display: flex;
+     align-items: center;
+     color:var(--dark-green);
+ }
+ .icons-map-wrapper .right ul li span:first-child{
+     background-color: var(--sand);
+     
+     color:var(--dark-green);
+     margin:0 1em 0 0;
+     height: 1.5em;
+     width:1.5em;
+     display: inline-block;
+     line-height: 1.5em;
+     text-align: center;
+     border-radius: 100%;
+ }
+  
+ @media (max-width: 880px) {
+    .icons-map-wrapper{
+        flex-direction: column;
+    }
+    .icons-map-wrapper>div{
+        width: calc(100% - 2em);
+    }
+ }
+  
+  
   .circle-map{
       border-radius: 100%;
       width:min(500px, calc(100vw - 2em)) !important;

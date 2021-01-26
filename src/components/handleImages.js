@@ -951,6 +951,14 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
   }
 }
 
+mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
 
 
   floorPlan1: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/PLANO-1-REC.jpg" }) {
@@ -1162,6 +1170,8 @@ cuatroRecamaras5:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras5.childI
 penthouse:<Img alt="Penthouse" fluid={data.penthouse.childImageSharp.fluid} />,
 
 map:<Img alt="Map" fluid={data.map.childImageSharp.fluid} />,
+mapa:<Img alt="Map" fluid={data.mapa.childImageSharp.fluid} />,
+
 floorPlan1:<Img alt="Floor Plan" fluid={data.floorPlan1.childImageSharp.fluid} />,
 floorPlan1h:<Img alt="Floor Plan" fluid={data.floorPlan1h.childImageSharp.fluid} />,
 floorPlan2:<Img alt="Floor Plan" fluid={data.floorPlan2.childImageSharp.fluid} />,
