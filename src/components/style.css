@@ -222,12 +222,28 @@ object-position: bottom;
     font-style: italic;
     font-size: 1.5em;
 }
-
+.vid-click{
+    position: relative;
+    cursor: pointer;
+}
+.play-icon{
+    position: absolute;
+    top:calc(50% - 4em);
+    left:calc(50% - 4em);
+    width:8em;
+    transform: scale(1);
+    transition: .3s transform ease-out;
+}
+.vid-click:hover .play-icon{
+    transform: scale(1.1);
+    transition: .3s transform ease-out;
+}
 .screen{
     position: relative;
  
     height: calc(100vh - 104px);
     width:100vw;
+    
      
      
 }
@@ -999,6 +1015,26 @@ transform:translateX(-50%);
 left:50%;
 transform:translateX(-50%);
 
+}
+
+button.arrow-button{
+    cursor: pointer;
+    border:none;
+    background: transparent;
+    color: var(--dark-green);
+    font-size: 1.5em;
+    transform:translate(0);
+    transition: .5s transform ease-out;
+}
+
+
+button.arrow-button:nth-of-type(1):hover{
+    transform: translateX(20%);
+    transition: .3s transform ease-out;
+}
+button.arrow-button:nth-of-type(2):hover{
+    transform: translateX(-20%);
+    transition: .3s transform ease-out;
 }
 
 .slider-buttons.recomendaciones {
@@ -2080,6 +2116,22 @@ fill:#2A5268;
 }
 
 
+ 
+
+
+.single-wide.ubicacion .wrapped-header{
+    margin:0
+}
+
+.recomendacion.right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 3em;
+    align-items: flex-start;
+}
+
+ 
 
 .centered.ubicacion{
 display: flex;
@@ -2776,7 +2828,10 @@ form label input {
         margin-bottom: 2em;
         width:100vw;
     }
-
+    .single-wide.ubicacion{
+        margin:1em;
+        width: calc(100% - 2em);
+    }
 
 
     .wrapped-header{

@@ -8,7 +8,13 @@ export function HandleImages(name){
 
   const data = useStaticQuery(graphql`
   query {
- 
+    video:file(relativePath: { eq: "VIDEO.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
 beach: file(relativePath: { eq: "beach.jpeg" }) {
     childImageSharp {
   
@@ -1094,6 +1100,7 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
 
    
   const images = {
+  video: <Img alt="Video" fluid={data.video.childImageSharp.fluid} />,
 
 
     invierteHeader: <Img alt="Badge" fluid={data.invierteHeader.childImageSharp.fluid} />,

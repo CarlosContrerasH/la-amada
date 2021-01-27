@@ -71,13 +71,13 @@ const Detalle = (props) => {
 { /* 
 
 <div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
-
-<div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
-
 <div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
+<div><img alt="Marinafront view" src={mar}/><span>{props.eng?"Marinafront view":"Vista a la Marina"}</span></div>
+
+
 <div>
-<img alt="lock" src={lock}/>
-<span>Lock-off</span></div>
+<img alt="Beachfront view" src={playa}/>
+<span>{props.eng?"Beachfront view":"Frente a Playa"}</span></div>
 </div>
 
 

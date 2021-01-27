@@ -79,7 +79,21 @@ const Hero = (props) => {
    
   
 </video>
-       :<div onClick={()=>props.handleVideo()}><HandleImages name="depas" /></div>}</div>
+       :<div onClick={()=>props.handleVideo()} className="vid-click">
+         
+         <HandleImages name="video" />      
+ <svg  className="play-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 viewBox="0 0 372.4 369.9" enable-background="new 0 0 372.4 369.9"  >
+<g>
+	<polygon fill="#DDD3CA" points="307.6,189.1 226.3,235.4 145,281.7 145.6,188.1 146.1,94.5 226.9,141.8 	"/>
+	<path fill="#DDD3CA" d="M189.3,347.9c-89.5,0-162.4-72.8-162.4-162.4S99.8,23.1,189.3,23.1c89.5,0,162.4,72.8,162.4,162.4
+		S278.8,347.9,189.3,347.9z M189.3,30.1c-85.7,0-155.4,69.7-155.4,155.4c0,85.7,69.7,155.4,155.4,155.4
+		c85.7,0,155.4-69.7,155.4-155.4C344.7,99.8,275,30.1,189.3,30.1z"/>
+</g>
+</svg>
+
+         
+        </div>}</div>
      
       <Link style={{textDecoration:"none"}}to="/amenidades"> <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
       </div>

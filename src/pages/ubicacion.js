@@ -64,8 +64,8 @@ const TwoCol = (props) => {
     return (
 
         <ScrollWrapper>
-            <div className="col-wrapper ubicacion">
-                <div className="left-col">
+            <div className="single-wide ubicacion">
+                <div  >
                     <span className="wrapped-header ubicacion">
                         <h2> {props.eng == true ? <>EXCLUSIVENESS<br/>IN EVERY CORNER<br /><span className="sub">WE ARE THE ONLY RESIDENCES<br/>
 INSIDE PLAYA MUJERES
@@ -76,12 +76,12 @@ DENTRO DE PLAYA MUJERES</span></>}</h2>
                 </div>
 
 
-             {props.eng?   <div className="right-col">
+             {props.eng?   <div  >
                     <p>There is a place that meets all the expectations that you have been looking for in your daily life or when on vacation. Peaceful moments, family time, security, and privacy; these are just some of the experiences that can be found when living at La Amada.</p><p>
                     With a surface area of 13 acres, La Amada features 215 luxurious apartments with 1, 2, 3, or 4 bedrooms distributed throughout 8 buildings, with either beach-front, ocean, marina, or natural reserve views. They have been carefully planned, with spacious bedrooms, ample terraces and covered parking, designed taking care of every single detail, while offering spaces to share, create, and build new memories that you will treasure forever.
 </p><p>
                         Conoce las áreas que nos rodean:</p>
-                </div>:  <div className="right-col">
+                </div>:  <div  >
                     <p>Existe un lugar que sin duda reúne todas las expectativas que buscas en tu vida diaria
 o para vacacionar; momentos de tranquilidad, convivencia familiar, seguridad y privacidad; son solo algunos de los sentimientos que te ofrecemos al vivir en La Amada.</p><p>
                         Con una superficie de terreno de 5.2 hectáreas, La Amada cuenta con 215 lujosos departamentos de 1, 2, 3 y 4 recámaras distribuidos en 8 edificios, en la playa, con vista
