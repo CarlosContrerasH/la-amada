@@ -24,7 +24,8 @@ const Form = () => {
       })
     return (<div  ref={ref} className ={percentage>.25?"visible form-wrapper":"form-wrapper"}>
         
-    <form id="form"  name="contact" method="POST" data-netlify="true">
+    <form id="form"  name="contact" method="POST"  data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact" />
       <label >
     
         <input  type="text" name="name" onChange={(e) => checkInputValue(e)}  /> <span>  <span>Nombre:</span></span> 
