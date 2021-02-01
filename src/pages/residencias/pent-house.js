@@ -21,10 +21,11 @@ import terraza from "../../img/RESIDENCIAS/1 RECAMARA/ICONOS-CARACTERISTICAS/MET
 import vivienda from "../../img/RESIDENCIAS/1 RECAMARA/ICONOS-CARACTERISTICAS/METROS-CUADRADOS.svg"
 import salaComedor from "../../img/RESIDENCIAS/1 RECAMARA/ICONOS-CARACTERISTICAS/SALA-COMEDOR.svg"
 
-
 import SimpleSlider from "../../components/simpleSlider"
 
-let bigSlider =[ <HandleImages name="dosRecamaras1"/>, <HandleImages name="dosRecamaras2"/>, <HandleImages name="dosRecamaras3"/>, <HandleImages name="dosRecamaras4"/>, <HandleImages name="dosRecamaras5"/>]
+let bigSlider =[ <HandleImages name="penthouse1"/>, <HandleImages name="penthouse2"/>, <HandleImages name="penthouse3"/>, <HandleImages name="penthouse4"/>, <HandleImages name="penthouse5"/>]
+
+
 
 let iniciales=["BW","BC","SC","RT","RT","C","MD","SY","G","KC","SE","L","CP","CP","VV","KP","S","H","F","BW","BW","P","P","KZ","AV","AV","SC","CM","F","A1","A2","A3","A4","A5","A6","A7","E"]
 
@@ -56,31 +57,23 @@ let descripciones=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","C
 
 
 
-
 const Detalle = (props) => {
     return (<div className={"residencia-accordeon expanded detalle"}>
-
-<h2>{props.eng?"Two Bedrooms":"Dos Recámaras"}</h2>
+<h2>{props.eng?"Penthouse":"Penthouse"}</h2>
         <div className="content">
-            <h3>{props.eng?"From $555,000.00 USD":"Desde $555,000.00 USD"}</h3>
-<h3>{props.eng?"Enjoy a view of the marina from an expansive terrace in these two bedroom homes. These two-bedroom homes offer an outstanding opportunity for a value conscious purchaser or savvy investor.":"Nuestra unidad de dos habitaciones es una gran oportunidad de inversión."}</h3>
+            <h3>{props.eng?"From $1,780,000.00 USD":"Desde $1,780,000.00 USD"}</h3>
+<h3>{props.eng?"Our penthouse with private terrace and ocean view, is the best opportunity to invest.":"Nuestro penthouse con terraza privada y vista al mar es la mejor oprtunidad para invertir."}</h3>
 
             <div className="icons-wrapper">
 
 
+<div><img alt="Marinafront view" src={mar}/><span>{props.eng?"Marinafront view":"Vista a la Marina"}</span></div>
 
-{/*<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
-
+<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
 <div>
 <img alt="lock" src={lock}/>
 <span>Lock-off</span></div>
-<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
-
-
-<div><img alt="Marinafront view" src={mar}/><span>{props.eng?"Marinafront view":"Vista a la Marina"}</span></div>
-
  
-
 </div>
 
 
@@ -94,8 +87,8 @@ const Detalle = (props) => {
 const FloorPlan = (props) => {
     return (<div className="bg-sand floor-plan">
 
-        <HandleImages name="floorPlan2" />
-		<HandleImages name="floorPlan2h" />
+        <HandleImages name="floorPlan4" />
+		<HandleImages name="floorPlan4h" />
     </div>)
 }
 
@@ -106,11 +99,11 @@ const Features = (props) => {
             <div className="col">
                 <div className="feature">
                     <h4>{props.eng?"Living Room":"Sala Comedor"}</h4>
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>29M<sup>2</sup></span><span>31FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>47M<sup>2</sup></span><span>506FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                     <h4>{props.eng?"Kitchen":"Cocina"}</h4>
-                    <div><img alt="Cocina" src={cocina} /><span>23M<sup>2</sup></span><span>247FT<sup>2</sup></span></div>
+                    <div><img alt="Cocina" src={cocina} /><span>8M<sup>2</sup></span><span>86FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                     <h4>{props.eng?"Master Bedroom":"Dormitorio Principal"}</h4>
@@ -118,31 +111,34 @@ const Features = (props) => {
                 </div>
                 <div className="feature">
                 <h4>{props.eng?"Bedroom 2":"Dormitorio 2"}</h4>
-                    <div><img alt="Sala Comedor" src={dorm2} /><span>29M<sup>2</sup></span><span>312FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={dorm2} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
                 </div>
             </div>
 
             <div className="col">
-         
+            <div className="feature">
+			<h4>{props.eng?"Bedroom 3":"Dormitorio 3"}</h4>
+                    <div><img alt="Sala Comedor" src={dorm3} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                </div>
                 <div className="feature">
 				{props.eng? <h4>House Keeping Bedroom</h4>:    <h4>Habitación de Servicio</h4>}
-                    <div><img alt="Sala Comedor" src={lavado} /><span>8M<sup>2</sup></span><span>86FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={lavado} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
 				{props.eng? <h4>M<sup>2</sup> Housing</h4>:    <h4>M<sup>2</sup> Vivienda</h4>}
-                    <div><img alt="Sala Comedor" src={vivienda} /><span>180M<sup>2</sup></span><span>1,937FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={vivienda} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
 				{props.eng? <h4>M<sup>2</sup> Porching</h4>: <h4>M<sup>2</sup> Terraza</h4>}
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>40M<sup>2</sup></span><span>430FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>46M<sup>2</sup></span><span>495FT<sup>2</sup></span></div>
                 </div>
             </div>
      
         </div>
         <div className="buttons">
-        <button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
+		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
 
-                <button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
+<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
             </div>
 
     </div>)
@@ -1210,7 +1206,7 @@ const Map = (props) => {
 </div>
 
 <div className="map-content">
-
+ 
 {props.eng?<h4>	Know the exact location of your Next Home</h4>:  <h4>Conoce la Ubicación Exacta de tu <span>Próximo Hogar</span></h4>}
 	{props.eng? <h5>Residences at:</h5>: <h5>Residencias en Edificio:</h5>}
     <div>
@@ -1250,7 +1246,7 @@ const Buttons = (props) =>{
               <span>{props.eng?"Bedroom":"Récamara"}</span>
           </button></Link> 
 
-          <Link to="/residencias/dos-recamaras">    <button className="active"   >
+          <Link to="/residencias/dos-recamaras">    <button   >
               <span>2</span>
               <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
@@ -1260,12 +1256,12 @@ const Buttons = (props) =>{
               <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
 
-          <Link to="/residencias/cuatro-recamaras">    <button >
+          <Link to="/residencias/cuatro-recamaras">    <button  >
               <span>4</span>
               <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
 
-		  <Link to="/residencias/cuatro-recamaras">    <button   >
+          <Link to="/residencias/cuatro-recamaras">    <button  className="active" >
               <span>PH</span>
               <span>Penthouse</span>
           </button></Link> 
@@ -1318,7 +1314,7 @@ mapa:30
         return (
 
             <Layout>
-                <div className="detalle-hero"> <HandleImages name="dosRecamaras" /></div>
+                <div className="detalle-hero"> <HandleImages name="penthouse" /></div>
                 <Detalle />
                 <FloorPlan />
                 <Features />

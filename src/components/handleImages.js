@@ -409,6 +409,48 @@ penthouse:file(relativePath: { eq: "RESIDENCIAS/PH.jpg" }) {
   }
 }
 
+penthouse1:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/ph1.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+penthouse2:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+penthouse3:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH3.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+penthouse4:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH4.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+penthouse5:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH5.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
 
 
 
@@ -1192,7 +1234,13 @@ cuatroRecamaras2:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras2.childI
 cuatroRecamaras3:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras3.childImageSharp.fluid} />,
 cuatroRecamaras4:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras4.childImageSharp.fluid} />,
 cuatroRecamaras5:<Img alt="Cuatro Recamaras" fluid={data.cuatroRecamaras5.childImageSharp.fluid} />,
+
 penthouse:<Img alt="Penthouse" fluid={data.penthouse.childImageSharp.fluid} />,
+penthouse1:<Img alt="Penthouse" fluid={data.penthouse1.childImageSharp.fluid} />,
+penthouse2:<Img alt="Penthouse" fluid={data.penthouse2.childImageSharp.fluid} />,
+penthouse3:<Img alt="Penthouse" fluid={data.penthouse3.childImageSharp.fluid} />,
+penthouse4:<Img alt="Penthouse" fluid={data.penthouse4.childImageSharp.fluid} />,
+penthouse5:<Img alt="Penthouse" fluid={data.penthouse5.childImageSharp.fluid} />,
 
 map:<Img alt="Map" fluid={data.map.childImageSharp.fluid} />,
 mapa:<Img alt="Map" fluid={data.mapa.childImageSharp.fluid} />,

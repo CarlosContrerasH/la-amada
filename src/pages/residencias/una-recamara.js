@@ -1251,6 +1251,12 @@ const Buttons = (props) =>{
               <span>4</span>
               <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
+
+
+		  <Link to="/residencias/cuatro-recamaras">    <button   >
+              <span>PH</span>
+              <span>Penthouse</span>
+          </button></Link> 
       </div>)
   }
 
