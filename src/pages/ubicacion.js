@@ -80,7 +80,7 @@ DENTRO DE PLAYA MUJERES</span></>}</h2>
                     <p>There is a place that meets all the expectations that you have been looking for in your daily life or when on vacation. Peaceful moments, family time, security, and privacy; these are just some of the experiences that can be found when living at La Amada.</p><p>
                     With a surface area of 13 acres, La Amada features 215 luxurious apartments with 1, 2, 3, or 4 bedrooms distributed throughout 8 buildings, with either beach-front, ocean, marina, or natural reserve views. They have been carefully planned, with spacious bedrooms, ample terraces and covered parking, designed taking care of every single detail, while offering spaces to share, create, and build new memories that you will treasure forever.
 </p><p>
-                        Conoce las áreas que nos rodean:</p>
+                        Discover our surrounding areas:</p>
                 </div>:  <div  >
                     <p>Existe un lugar que sin duda reúne todas las expectativas que buscas en tu vida diaria
 o para vacacionar; momentos de tranquilidad, convivencia familiar, seguridad y privacidad; son solo algunos de los sentimientos que te ofrecemos al vivir en La Amada.</p><p>
@@ -126,36 +126,36 @@ const Mapa = (props) => {
 
 <div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
 
-<div><img alt="Marinafront view" src={pm}/><span>Entrada principal Playa Mujeres Resort & Golf</span></div>
+<div><img alt="Marinafront view" src={pm}/><span>{props.eng == true ? "Main entrance Playa Mujeres Resort & Golf":"Entrada principal Playa Mujeres Resort & Golf"}</span></div>
 
 <div><img alt="Lagoon View" src={marina}/><span>V&V Marina</span></div>
 
-<div><img alt="Lagoon View" src={delfinario}/><span>Delfinario Playa Mujeres</span></div>
+<div><img alt="Lagoon View" src={delfinario}/><span>{props.eng == true ? "Dolphinarium Playa Mujeres":"Delfinario Playa Mujeres"}</span></div>
 
 
-<div><img alt="Lagoon View" src={golf}/><span>Casa Club Playa Mujeres Golf Club</span></div>
+<div><img alt="Lagoon View" src={golf}/><span>{props.eng == true ? "Club-House Playa Mujeres Golf Club":"Casa Club Playa Mujeres Golf Club"}</span></div>
 
 
-<div><img alt="Lagoon View" src={hotels}/><span>Resorts y Hoteles</span></div>
+<div><img alt="Lagoon View" src={hotels}/><span>{props.eng == true ? "Resorts & Hotels":"Resorts y Hoteles"}</span></div>
 
  
 </div>
            </div>
            <div className="left"><HandleImages name="mapa"/></div>
            <div className="right"><ul>
-               <li><span>1</span><span>Entrada Principal / Main Entrance <br/>Playa Mujeres Resort & Golf</span></li>
+               <li><span>1</span><span>{props.eng == true ?<>Main Entrance Playa Mujeres Resort & Golf</>:<>Entrada Principal Playa Mujeres Resort & Golf</>}</span></li>
                <li><span>2</span><span>V&V Marina</span></li>
-               <li><span>3</span><span>Hotel Paradisus Playa Mujeres</span></li>
+               <li><span>3</span><span>{props.eng == true ?"Paradisus Playa Mujeres Hotel":"Hotel Paradisus Playa Mujeres"}</span></li>
                <li><span>4</span><span>LA AMADA RESIDENCES</span></li>
                <li><span>5</span><span>The Beloved Hotel & Spa</span></li>
-               <li><span>6</span><span>Hotel Excellence</span></li>
-               <li><span>7</span><span>Hotel Finest</span></li>
-               <li><span>8</span><span>Hotel Fiesta Americana Aqua</span></li>
-               <li><span>9</span><span>Hotel Atelier</span></li>
+               <li><span>6</span><span>{props.eng == true ?"Excellence Hotel ":"Hotel Excellence"}</span></li>
+               <li><span>7</span><span>{props.eng == true ?"Finest Hotel ":"Hotel Finest"}</span></li>
+               <li><span>8</span><span>{props.eng == true ?"Fista Americana Aqua Hotel ":"Hotel Fiesta Americana Aqua"}</span></li>
+               <li><span>9</span><span>{props.eng == true ?"Atelier Studio Hotel ":"Hotel Atelier"}</span></li>
                <li><span>10</span><span>Naa'y Estate Homes Community</span></li>
-               <li><span>11</span><span>Hotel Dreams Playa Mujeres</span></li>
-               <li><span>12</span><span>Hotel Secrets Playa Mujeres</span></li>
-               <li><span>13</span><span>Hotel Grand Palladium</span></li>
+               <li><span>11</span><span>{props.eng == true ?"Dreams Playa Mujeres Hotel  ":"Hotel Dreams Playa Mujeres"}</span></li>
+               <li><span>12</span><span>{props.eng == true ?"Secrets Playa Mujeres Hotel  ":"Hotel Secrets Playa Mujeres"}</span></li>
+               <li><span>13</span><span>{props.eng == true ?"Grand Palladium Hotel ":"Hotel Grand Palladium"}</span></li>
                <li><span>14</span><span>Playa Mujeres Golf Club</span></li>
                </ul></div>
        </div>
@@ -176,9 +176,10 @@ const CircleMap = (props) => {
 
 
             <div className="bg-sand centered ubicacion" style={{ padding: "1em" }}>
-                <span><span className="script" style={{ lineHeight: "initial" }}>Exclusividad </span>A 20 MINUTOS<br />
-DEL CENTRO DE CANCÚN</span>
-                <button class="outlined-button" style={{ margin: "1em" }}>DESCARGAR MASTER PLAN</button>
+              {props.eng?  <span><span className="script" style={{ lineHeight: "initial" }}>Exclusivity </span> 20 MINUTES AWAY<br />
+           FROM CANCUN'S DOWNTOWN</span>: <span><span className="script" style={{ lineHeight: "initial" }}>Exclusividad </span>A 20 MINUTOS<br />
+DEL CENTRO DE CANCÚN</span>}
+                <button class="outlined-button" style={{ margin: "1em" }}>{props.eng?"download master plan":"DESCARGAR MASTER PLAN"}</button>
             </div>
             <div className="bg-sand circle-map">
                 <img src={map} />

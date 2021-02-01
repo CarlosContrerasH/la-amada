@@ -16,7 +16,7 @@ function checkInputValue(e){
   
   }
   
-const Form = () => {
+const Form = (props) => {
 
     const [ref, percentage] = useScrollPercentage({
         /* Optional options */
@@ -41,7 +41,7 @@ const Form = () => {
         <input type="text" name="mail" onChange={(e) => checkInputValue(e)} /><span>  <span>Mail:</span></span> 
       </label>
       <button type="submit"  style={{    width: "200px",
-    margin:"auto"}} className="outlined-button light">Enviar</button>
+    margin:"auto"}} className="outlined-button light">{props.eng?  "MAKE AN APPOINTMENT":"HACER CITA"}</button>
     </form>
     </div>  );
 }

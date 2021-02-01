@@ -25,7 +25,7 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div>
-            <div className="amenidades-top">
+            <div className="amenidades-top ciclopista-pre">
                     <Link to="/amenidades/playa/spa"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
             <div className="icon-wrapper">
  

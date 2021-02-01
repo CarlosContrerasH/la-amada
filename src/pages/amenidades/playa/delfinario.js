@@ -64,7 +64,7 @@ const Slider = (props) => {
                     <br /><span className="sub">
                         
                
-                     El lugar de los grandes empresarios
+                    The most extraordinary beings a few steps from home
                         
                         </span></> : <>
                         

@@ -81,7 +81,7 @@ const Slider = (props) => {
                     <br /><span className="sub">
                         
                
-                   Los hoteles más exclusivos
+                    The most exclusive hotels.
                         
                         </span></> : <>
                         

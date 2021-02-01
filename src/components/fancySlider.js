@@ -84,7 +84,7 @@ componentWillUnmount(){
                         return <ScrollWrapper id={index}><div key={index} className="fancy-slide"  >{slide}<h3 className="fancy-title"> {this.props.titles[index]}</h3>  </div>
                         
                         
-                       <Link style={{textDecoration:"none"}} to={this.props.links[index]}> <button className="flat-button sand-button centered-button"  >Ver Mas</button></Link></ScrollWrapper>;
+                       <Link style={{textDecoration:"none"}} to={this.props.links[index]}> <button className="flat-button sand-button centered-button"  >{this.props.eng==true?"View":"Ver Mas"}</button></Link></ScrollWrapper>;
                     })}
 
 

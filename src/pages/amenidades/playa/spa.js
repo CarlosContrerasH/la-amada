@@ -69,8 +69,7 @@ const Slider = (props) => {
                     <br /><span className="sub">
                         
                
-                    
-Relaja y reactivar todos los sentidos
+                    Relax and reactivate all the senses
                         
                         </span></> : <>
                         

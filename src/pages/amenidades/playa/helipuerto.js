@@ -142,7 +142,7 @@ const Slider = (props) => {
                 
                 <>
                 
---
+				HELIPORT Take off from the jungle.
 
 
 
@@ -150,7 +150,7 @@ const Slider = (props) => {
                 :
                 
                 <>
-           --    </>
+          Entre palmas y vegetación, se ubica nuestro helipuerto. Aterriza tus sueños en nuestro condominio maestro.   </>
                 }
 
 

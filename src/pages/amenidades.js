@@ -27,8 +27,8 @@ import { Link } from 'gatsby'
 
     <div >
     <span className="header-amenidades">
-  <h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>NUESTRAS</span><br/><span  style={{marginLeft:"1.5em"}}className="script">amenidades</span></h1></span>
- 
+    {props.eng==true?<h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>MEET OUR</span><br/><span  style={{marginLeft:"1.5em"}}className="script">experiences </span></h1>:<h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>NUESTRAS</span><br/><span  style={{marginLeft:"1.5em"}}className="script">amenidades</span></h1>}</span>
+
         
     <HandleImages name="playa"/>
     </div>
@@ -112,8 +112,14 @@ import { Link } from 'gatsby'
   <div>
       <div>
       <span className="wrapped-header">
-  <h2><span  >250 METROS DE </span><br/><span className="script">frente a Playa</span><br/><span >Y MAS AMENIDADES DE LUJO TE ESPERAN.</span></h2></span>
-  <button className="outlined-button light">  Hacer Cita</button>
+
+  
+      {props.eng==true? <h2><span  >820 ft. of</span><br/><span className="script">Beachfront  </span><br/><span >and more experiences are waiting for you</span></h2>:  <h2><span  >250 METROS DE </span><br/><span className="script">frente a Playa</span><br/><span >Y MAS AMENIDADES DE LUJO TE ESPERAN.</span></h2>}
+  
+  
+  
+  </span>
+  <a href="#form"> <button className="outlined-button light"> {props.eng ?"Make an Appointment":"Hacer Cita"}</button></a>
   </div></div>
   </ScrollWrapper>
 
@@ -170,7 +176,7 @@ class Amenidades extends React.Component{
 <Header/>
 <TwoCol/>
 <Blurb/>
-<Video/>
+
              
             </Layout> )}      
 

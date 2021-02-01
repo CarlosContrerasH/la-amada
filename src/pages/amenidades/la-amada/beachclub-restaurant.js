@@ -26,7 +26,7 @@ const Slider = (props) => {
 
             <div>
 
-			<div className="amenidades-top">
+			<div className="amenidades-top rest-pre">
                     <Link to="/amenidades/la-amada/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
             <div className="icon-wrapper">
  
@@ -300,7 +300,7 @@ const Slider = (props) => {
 
                 {props.eng == true ?
                 
-                "Eng"
+                "A taste of paradise. Anyone who has visited our beachclub-restaurante have enjoyed the nourishing and vibrant culinary creations, from traditional mexican dishes to grilled catch of the day. Much of this is down to Chef Octavio				, the master mind behind Mar y Aroma, our beachclub restaurant. "
                 :
                 
                 "Nuestro restaurante Mar y Aroma a cargo del Chef Octavio Santiago, es el único restaurante operado por un Chef dentro de un residencial en Cancún. Nuestro menú incluye desde desayunos contemporaneos mexicanos, hasta pesca del día sazonada con especias y aromas de la región. El Chef O. Santiago ha sido galardonado en diferentes ocasiones por sus diferentes y únicas técnicas en la cocina. Cabe destacar que el Chef es también el responsable de la cocina del restaurante Kiosco Verde, primer restaurante en Cancún con mas de 45 años de trayectoria. Si algo acompaña a nuestro Chef es la tradición y gusto por el buen sabor y servicio. "

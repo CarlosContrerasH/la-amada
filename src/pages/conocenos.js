@@ -15,7 +15,7 @@ import { Link } from 'gatsby'
 
 
 
-let playaSlider =[ <HandleImages name="ludotecaH1"/>, <HandleImages name="ludotecaH2"/>, <HandleImages name="ludotecaH3"/> ]
+let slider =[ <HandleImages name="conocenos1"/>, <HandleImages name="conocenos2"/> ]
 
 
 
@@ -23,16 +23,16 @@ const ConocenosHero = (props)=>{
 return(
     <div className="conocenos-hero bg-sand">
         <div>
-
-            <HandleImages name="conocenos1" />
+        <SimpleSlider slides={slider}/>
+           
 
             <div>
                 <span className="">
                 {props.eng==true?<h1><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>Our</span><br /><span style={{ marginLeft: "1.5em" }} className="script">Team</span></h1>:<h1><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>NUESTRO</span><br /><span style={{ marginLeft: "1.5em" }} className="script">equipo</span></h1>}
                     </span>
                     {props.eng==true?
-                      <p>Meet those in charge of giving life and promotion to our project.             </p>
-                      :  <p>Conoce a los encargados de darle vida y promoción a nuestro proyecto</p>}
+                      <p>Meet those in charge <br/>of giving life and promotion<br/> to our project.             </p>
+                      :  <p>Conoce a los encargados<br/> de darle vida y promoción<br/> a nuestro proyecto</p>}
                   
                     </div>
                    
@@ -71,23 +71,23 @@ const Equipo = (props)=>{
 <div className="personas-wrapper">
     <div className="persona">
    <div className="mug"><HandleImages name="persona1"/></div> 
-    <span>nombre</span><br/>
-    <span>puesto</span>
+    <span>HORACIO MARTINEZ </span><br/>
+    <span>Director Comercial  -   Commercial Director</span>
     </div>
     <div className="persona">
     <div className="mug"><HandleImages name="persona2"/></div> 
-    <span>nombre</span><br/>
-    <span>puesto</span>
+    <span>BEATRÍZ MUÑOZ </span><br/>
+    <span>Asesor Inmobiliario  -  Broker</span>
     </div>
     <div className="persona">
-    <div className="mug"><HandleImages name="persona1"/></div> 
-    <span>nombre</span><br/>
-    <span>puesto</span>
+    <div className="mug"><HandleImages name="persona3"/></div> 
+    <span>RAUL</span><br/>
+    <span>Asesor Inmobiliario  -  Broker</span>
     </div>
     <div className="persona">
-    <div className="mug"><HandleImages name="persona2"/></div> 
-    <span>nombre</span><br/>
-    <span>puesto</span>
+    <div className="mug"><HandleImages name="persona4"/></div> 
+    <span>MARISA</span><br/>
+    <span>Asesor Inmobiliario  -  Broker</span>
     </div>
 </div>
 </ScrollWrapper>)
@@ -97,7 +97,7 @@ const Equipo = (props)=>{
    return( 
 
     <ScrollWrapper classes="asociados bg-sand ">
-    <span className="wrapped-header playa">
+    <span className="wrapped-header asociados">
   <h2>
   {props.eng==true?
                   "Associates "

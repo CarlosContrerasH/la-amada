@@ -24,6 +24,7 @@ let slideLinks = ["/residencias/una-recamara/","/residencias/dos-recamaras/","/r
 let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
 let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
 
+let engTitles=[<><span>One</span><br/><span className='sub'>Bedroom</span></>,<><span>Two</span><br/><span className='sub'>Bedrooms</span></>,<><span>Three</span><br/><span className='sub'>Bedrooms</span></>,<><span>Four</span><br/><span className='sub'>Bedrooms</span></>]
  function regresator(e){
    return e
  }
@@ -95,7 +96,7 @@ const Hero = (props) => {
          
         </div>}</div>
      
-      <Link style={{textDecoration:"none"}}to="/amenidades"> <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
+      <Link style={{textDecoration:"none"}}to="/amenidades"> <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>{props.eng==true?"View":"Ver Mas"}</button></Link>
       </div>
       </ScrollWrapper>
 
@@ -114,7 +115,7 @@ const Hero = (props) => {
             
       <div>
    <h3>{props.eng==true?"Our Residences":"Nuestras Residencias"}</h3>
-        <FancySlider slides={fancySlider} titles={slideTitles} links={slideLinks}/>
+        <FancySlider slides={fancySlider} titles={props.eng?engTitles:slideTitles} links={slideLinks} eng={props.eng}/>
       </div>
       </ResWrapper>
      
@@ -141,8 +142,9 @@ const Hero = (props) => {
       </div>
       <div className="right-col">
           <HandleImages name="logopm"/>
-     {props.eng==true?<p>Texto en Ingles</p> :<p>Entre arena blanca, selva tropical, zonas arqueológicas, laguna, manglar, mar turquesa y a 10 minutos del centro de Cancún, surge Playa Mujeres, exclusivo destino turístico en la zona del Caribe Mexicano que alberga más de 8,200 cuartos en lujosos centros de hospedaje, lo cual lo convierte en el lugar de mayor crecimiento del estado.Exclusiva comunidad turístico residencial cerrada de 376 hectáreas ubicada al norte de la ciudad de Cancún, donde el cuidado y el respeto por la naturaleza del entorno hacen de este desarrollo un lugar mágico que permite la convivencia, privacidad y conectividad que tanto deseas.</p>
-     } <Link to="/amenidades/playa"><button className="flat-button sand-button ">{props.eng==true?"See More":"Ver Mas"}</button></Link>
+     {props.eng==true?<p>An exclusive 930 acres residential tourist community located in the north of Cancún, where the respect and care for the environment and nature makes it a magical residential and hotel community that allows for the kind of cohabitation, privacy, and connectivity that you have been yearning.  
+Its amenities offer unique resort experiences that will transform each one of your days into unforgettable moments that will last forever. </p> :<p>Entre arena blanca, selva tropical, zonas arqueológicas, laguna, manglar, mar turquesa y a 10 minutos del centro de Cancún, surge Playa Mujeres, exclusivo destino turístico en la zona del Caribe Mexicano que alberga más de 8,200 cuartos en lujosos centros de hospedaje, lo cual lo convierte en el lugar de mayor crecimiento del estado.Exclusiva comunidad turístico residencial cerrada de 376 hectáreas ubicada al norte de la ciudad de Cancún, donde el cuidado y el respeto por la naturaleza del entorno hacen de este desarrollo un lugar mágico que permite la convivencia, privacidad y conectividad que tanto deseas.</p>
+     } <Link to="/amenidades/playa"><button className="flat-button sand-button ">{props.eng==true?"View":"Ver Mas"}</button></Link>
       </div></div>
       
       </div>
@@ -152,7 +154,37 @@ const Hero = (props) => {
   }
 
 
+  const Blurb = (props) => {
+  
+   
+    return (
+      <ScrollWrapper classes="blurb home">
+            
+      <div>
+          <div>
+          <span className="wrapped-header">
+      <h2><span className="script">{props.eng==true?"Meet our proyect ":"Conoce nuestro Proyecto"}</span><br/><span>{props.eng==true?"From ":"Desde "} 380,000 USD</span></h2></span>
+      <a href="#form"> <button className="outlined-button light"> {this.props.eng ?"Make an Appointment":"Hacer Cita"}</button></a>
+      </div></div>
+      </ScrollWrapper>
+    )}
 
+
+
+
+
+    const Galeria = (props) => {
+  
+   
+      return(
+      <ScrollWrapper >
+            
+      <div>
+      <SimpleSlider slides={bigSlider}/>
+      <Link style={{textDecoration:"none"}} to="/galeria"> <button className="flat-button sand-button centered-button"  style={{marginTop:"3em"}}>{props.eng==true?"Gallery":"Ver Galeria"}</button></Link>
+     </div>
+      </ScrollWrapper>
+    )}
 
   const ResWrapper = (props) => {
 
@@ -224,15 +256,7 @@ handleVideo=()=>{
             
    <Residences/>
           
-   <ScrollWrapper classes="blurb home">
-            
-            <div>
-                <div>
-                <span className="wrapped-header">
-            <h2><span className="script">Conoce nuestro Proyecto</span><br/><span>Desde 380,000 USD</span></h2></span>
-            <button className="outlined-button light">  Hacer Cita</button>
-            </div></div>
-            </ScrollWrapper>
+<Blurb/>
           <PlayaMujeres/>
             
              { /*<ScrollWrapper classes="bg-sand">
@@ -251,13 +275,7 @@ handleVideo=()=>{
         </ScrollWrapper>*/}
 
 
-            <ScrollWrapper >
-            
-            <div>
-            <SimpleSlider slides={bigSlider}/>
-            <Link style={{textDecoration:"none"}} to="/galeria"> <button className="flat-button sand-button centered-button"  style={{marginTop:"3em"}}>Ver Galeria</button></Link>
-           </div>
-            </ScrollWrapper>
+        <Galeria/>
            
              
             </Layout> )}      

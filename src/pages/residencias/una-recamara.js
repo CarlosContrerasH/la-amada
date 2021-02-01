@@ -113,7 +113,7 @@ const Features = (props) => {
                     <div><img alt="Dormitorio Principal" src={dormP} /><span>41M<sup>2</sup></span><span>441FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
-                    <h4>M<sup>2</sup> Vivienda</h4>
+				{props.eng? <h4>M<sup>2</sup> Housing</h4>:    <h4>M<sup>2</sup> Vivienda</h4>}
                     <div><img alt="Sala Comedor" src={vivienda} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
                 </div>
            
@@ -122,7 +122,7 @@ const Features = (props) => {
 
             <div className="col">
             <div className="feature">
-                <h4>M<sup>2</sup> Terraza</h4>
+               {props.eng? <h4>M<sup>2</sup> Porching</h4>: <h4>M<sup>2</sup> Terraza</h4>}
                     <div><img alt="Sala Comedor" src={salaComedor} /><span>46M<sup>2</sup></span><span>495FT<sup>2</sup></span></div>
                 </div>
             </div>
@@ -1195,8 +1195,11 @@ const Map = (props) => {
 </div>
 
 <div className="map-content">
-    <h4>Conoce la Ubicación Exacta de tu <span>Próximo Hogar</span></h4>
-    <h5>Residencias en Edificio:</h5>
+  
+
+
+	{props.eng?<h4>	Know the exact location of your Next Home</h4>:  <h4>Conoce la Ubicación Exacta de tu <span>Próximo Hogar</span></h4>}
+	{props.eng? <h5>Residences at:</h5>: <h5>Residencias en Edificio:</h5>}
     <div>
 
         
@@ -1231,22 +1234,22 @@ const Buttons = (props) =>{
     return(  <div className="residencias-buttons-wrapper bg-sand">
       <Link to="/residencias/una-recamara">  <button  className="active" >
               <span>1</span>
-              <span>Recámara</span>
+              <span>{props.eng?"Bedroom":"Récamara"}</span>
           </button></Link> 
 
           <Link to="/residencias/dos-recamaras">    <button >
               <span>2</span>
-              <span>Recámaras</span>
+              <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
 
           <Link to="/residencias/tres-recamaras">      <button >
               <span>3</span>
-              <span>Recámaras</span>
+              <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
 
           <Link to="/residencias/cuatro-recamaras">    <button >
               <span>4</span>
-              <span>Recámaras</span>
+              <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
       </div>)
   }

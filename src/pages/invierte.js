@@ -37,7 +37,7 @@ const InvierteHero = (props) => {
 
 
             <span className="invierte-heading">
-                {props.eng == true ? "English" : <h1><span className="script">Somos</span><br /><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>Tu Mejor Opción</span></h1>}
+                {props.eng == true ? <h1><span className="script">Invest</span><br /><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>Wisely</span></h1> : <h1><span className="script">Somos</span><br /><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>Tu Mejor Opción</span></h1>}
             </span>
 
 
@@ -201,11 +201,11 @@ La Amada takes everyone into consideration, and if you do not live here permanen
  
 
 
-const Botones=()=>{
+const Botones=(props)=>{
    return( <div className="invierte-buttons">
         <div>
-        <Link to="/amenidades"> <button className="outlined-button light">AMENIDADES</button></Link>
-        <Link to="/residencias">  <button className="outlined-button light">RESIDENCIAS</button></Link>
+        <Link to="/amenidades"> <button className="outlined-button light">{props.eng?"AMENITIES":"AMENIDADES"}</button></Link>
+        <Link to="/residencias">  <button className="outlined-button light">{props.eng?"RESIDENCES":"RESIDENCIAS"}</button></Link>
         </div>
     </div>)
 }

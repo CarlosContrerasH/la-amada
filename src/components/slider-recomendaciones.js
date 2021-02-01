@@ -24,14 +24,28 @@ const SimpleSlider = class extends React.Component {
 
 
     handleIncrease() {
+
+        if(this.state.active==this.props.slides.length-1){
+            this.setState({
+                active: 0
+            })
+        }
+        else{
         this.setState({
             active: this.state.active + 1
-        })
+        })}
     }
     handleDecrease() {
+
+        if(this.state.active==0){
+            this.setState({
+                active: this.props.slides.length - 1
+            })
+        }
+        else{
         this.setState({
             active: this.state.active - 1
-        })
+        })}
     }
 
     handleButtonClick(e) {
@@ -83,8 +97,8 @@ const SimpleSlider = class extends React.Component {
 
 
 
-                <div className="col-wrapper">
-                    <div className="left-col">
+                <div className="col-wrapper recomendaciones">
+                    <div className="recomendacion left-col">
                         <Swipe
                             onSwipeStart={this.onSwipeStart}
                             onSwipeMove={this.onSwipeMove}
@@ -108,6 +122,7 @@ const SimpleSlider = class extends React.Component {
                             </div>  </Swipe>
                     </div>
                     <div className="recomendacion right-col">
+<div >
                     {this.state.active == 0 ? < >
                         <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
                             <h2> {this.props.eng == true ? <>ISLA MUJERES</> : <>ISLA MUJERES</>}</h2>
@@ -207,8 +222,12 @@ Para muchos buzos principiantes, Cancún es ideal para adquirir su primera certi
                         {this.props.eng == true ? <p>Downtown & Zona Hotelera Cancun offers a contemporary dining scene, with high quality restaurants serving up global fare at a very competitive cost. For those seeking a more authentic local some of our local beachside eateries serve the freshest and most amazing local seafood. We recommend speaking to the front desk to arrange a reservation at that undiscovered local’s place, our favorite is Mar y Aroma, our <a href="/amenidades/la-amada/beachclub-restaurant">Beachclub Restaurant.</a> </p> : <p>El centro de Cancún y malecón de la Zona Hotelera, ofrece una variedad de restaurantes contemporáneos de la mejor calidad a precio razonable. Aquellos que buscan comida más local, podrán encontrar restaurantes en la playa que sirven los más frescos y deliciosos mariscos, sugerimos preguntes a nuestra concierge su recomendación para un restaurante local típico aunque sin lugar a duda nuestro favorito es Mar y Aroma, nuestro <a href="/amenidades/la-amada/beachclub-restaurant">Beachclub Restaurant.</a></p>
                         }
                     </> : ""}
-                    <button className="arrow-button" onClick={()=>this.handleIncrease()} name="Siguiente">⟶</button>
-    <button className='arrow-button' onClick={()=>this.handleDecrease()} name="Anterior">⟵</button>
+                    </div>
+                    <div className="rec-buttons">
+                 
+    <button onClick={()=>this.handleDecrease()} name="Anterior"></button>
+    <button onClick={()=>this.handleIncrease()} name="Siguiente"></button>
+    </div>
                     </div>
  
                     

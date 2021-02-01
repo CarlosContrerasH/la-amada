@@ -20,6 +20,8 @@ let slideLinks = ["/residencias/una-recamara/","/residencias/dos-recamaras/","/r
 
 let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
 
+let engTitles=[<><span>One</span><br/><span className='sub'>Bedroom</span></>,<><span>Two</span><br/><span className='sub'>Bedrooms</span></>,<><span>Three</span><br/><span className='sub'>Bedrooms</span></>,<><span>Four</span><br/><span className='sub'>Bedrooms</span></>]
+
 
  
 const Residences = (props) => {
@@ -30,7 +32,8 @@ const Residences = (props) => {
             
       <div>
    <h3>{props.eng==true?"Our Residences":"Nuestras Residencias"}</h3>
-        <FancySlider slides={fancySlider} titles={slideTitles} links={slideLinks}/>
+   <FancySlider slides={fancySlider} titles={props.eng?engTitles:slideTitles} links={slideLinks} eng={props.eng}/>
+       
       </div>
       </ResWrapper>
      

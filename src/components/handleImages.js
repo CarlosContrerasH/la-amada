@@ -31,7 +31,7 @@ depas:file(relativePath: { eq: "FOTO-HEADER-HOME.jpg" }) {
   }
 }
 
-persona1:file(relativePath: { eq: "conocenos/EJEMPLO-HOMBRE.png" }) {
+persona1:file(relativePath: { eq: "ASESORES/HORACIO.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -39,7 +39,23 @@ persona1:file(relativePath: { eq: "conocenos/EJEMPLO-HOMBRE.png" }) {
   }
 }
 
-persona2:file(relativePath: { eq: "conocenos/EJEMPLO-MUJER.png" }) {
+persona2:file(relativePath: { eq: "ASESORES/BEATRIZ.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+persona3:file(relativePath: { eq: "ASESORES/RAUL.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+persona4:file(relativePath: { eq: "ASESORES/MARISA.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -1120,6 +1136,8 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
 
     persona1: <Img alt="Miembro del Equipo" fluid={data.persona1.childImageSharp.fluid} />,
     persona2: <Img alt="Miembro del Equipo" fluid={data.persona2.childImageSharp.fluid} />,
+    persona3: <Img alt="Miembro del Equipo" fluid={data.persona3.childImageSharp.fluid} />,
+    persona4: <Img alt="Miembro del Equipo" fluid={data.persona4.childImageSharp.fluid} />,
 
 
 

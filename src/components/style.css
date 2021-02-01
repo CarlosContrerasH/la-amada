@@ -24,7 +24,7 @@
     from {transform: scale(1.1);}
     to {transform: scale(1);}
   }
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@100;200;300;400;1,100&display=swap');
 
 
   @font-face {
@@ -1290,6 +1290,7 @@ display: flex;
     text-transform: uppercase;
     font-style: italic;
     font-weight: 200;
+    letter-spacing: .1em;
 }
 .amenidad-detalle>div> a{
     text-decoration: none;
@@ -1308,6 +1309,9 @@ display: flex;
      border: solid 2px var(--dark-green);
      transform: scale(1);
      transition: .3s transform;
+     margin-bottom: .5em;
+     font-family: 'Roboto', sans-serif;
+
  
  }
 
@@ -1513,6 +1517,10 @@ margin: 2em;
     object-position: top center !important;
 }
 
+.rest-pre+div .gatsby-image-wrapper:nth-child(1) *{
+    object-position: top center !important;
+
+}
 
 .slidecontainer{
     margin: 1em auto 4em;
@@ -1718,7 +1726,8 @@ transition: .6s max-height ease-out;
 }
 
 .residencia-accordeon .icons-wrapper img, .icons-map-wrapper .icons-wrapper img{
-width:6em
+width:5em;
+margin:1em;
 }
 
 
@@ -2123,15 +2132,74 @@ fill:#2A5268;
     margin:0
 }
 
+
+.recomendacion.left-col>div,.recomendacion.left-col>div>.slides-wrapper {
+    height: 100%;
+}
+
+
+
+.recomendacion.left-col{
+    max-height: 80vh;
+}
+
 .recomendacion.right-col {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-bottom: 3em;
     align-items: flex-start;
+   
 }
 
- 
+.rec-buttons {
+    display: flex;
+}
+
+ .rec-buttons button{
+     background: var(--sand);
+    ;
+ }
+
+
+ .rec-buttons button{
+     border-radius: 100%;
+     height: 3em;
+     width: 3em;
+     border:none;
+     margin:1em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: .3s transform ease-out;
+     cursor: pointer;
+ }
+
+ .rec-buttons button:hover{
+    transform:scale(1.1);
+
+    transition: .3s transform ease-out;
+ }
+
+ .rec-buttons button:nth-child(1):before{
+     content:"";
+     width:1em;
+     height: 1em;
+     display: block;
+     border-top:1px solid white;
+     border-left:1px solid white;
+     transform: translateX(20%) rotate(-45deg);
+ }
+
+ .rec-buttons button:nth-child(2):before{
+    content:"";
+    width:1em;
+    height: 1em;
+    display: block;
+    border-top:1px solid white;
+    border-right:1px solid white;
+    transform: translateX(-20%)  rotate(45deg);
+}
 
 .centered.ubicacion{
 display: flex;
@@ -2147,8 +2215,11 @@ width:100%
   
   
  .icons-map-wrapper{
+   
      display: flex;
      flex-wrap: wrap;
+     max-width: 1280px;
+     margin: auto;
  }
 
  .icons-map-wrapper .top{
@@ -2166,6 +2237,7 @@ width:100%
      flex:1;
    
      padding:1em;
+     
  }
 
  .icons-map-wrapper .right{
@@ -2249,6 +2321,13 @@ width:100%
     color:var(--dark-green)
   }
 
+  .conocenos-hero h1{
+      transform:translateX(-27%)
+  }
+  .conocenos-hero p{
+      font-size: 1.2em;
+  }
+
 
   .conocenos-hero>div{
     display: flex;
@@ -2256,24 +2335,39 @@ width:100%
       width:100%;
     
   }
-.conocenos-hero>div>div{
+  .conocenos-hero>div>div:nth-child(1){
+    width: 60%;
+height: 100%;}
+.conocenos-hero>div>div:nth-child(2){
     width: 40%;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    padding:1em;
+    padding:2em;
 }
 
 .conocenos-hero .gatsby-image-wrapper{
     width:60%;
-    max-height: 50vh;
+     
 
 }
 
 
 
  @media (max-width: 500px) {
+
+
+  .conocenos-hero h1{
+    transform:translateX(0)
+}
   
+    .conocenos-hero>div{
+        flex-direction: column;
+    }
+
+    .conocenos-hero>div>div{
+        width: calc(100% - 4em) !important;
+    }
 
 
     .map-wrapper{
@@ -2319,6 +2413,8 @@ width:100%
 .personas-wrapper{
     display: flex;
     width: 100%;
+    max-width: 880px;
+    margin:2em auto !important;
     justify-content: space-between;
 }
 
@@ -2326,21 +2422,24 @@ width:100%
     color: var(--dark-green);
 }
 .persona .gatsby-image-wrapper{
-    height: 8em;
-    width: 8em;
-    border-radius: 100%;
-    overflow: hidden;
+    height: 6em;
+    width: 6em;
+   
+  
     
 
 }
 
-.persona .mug{ height: 8em;
-    width: 8em;
-    border-radius: 100%;
-    overflow: hidden;
+.persona .mug{
+    height: 6em;
+    width: 6em;
+   
     margin-bottom: 1em;}
 
-
+    .asociados .wrapped-header{
+        max-width: 880px;
+        margin:auto
+    }
 .asociados .wrapped-header::before,
 .asociados .wrapped-header::after{
 display: none;

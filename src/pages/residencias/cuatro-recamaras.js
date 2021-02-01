@@ -119,29 +119,28 @@ const Features = (props) => {
 
             <div className="col">
             <div className="feature">
-                    <h4>Dormitorio 3</h4>
+			<h4>{props.eng?"Bedroom 3":"Dormitorio 3"}</h4>
                     <div><img alt="Sala Comedor" src={dorm3} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
-                    <h4>Habitación de Servicio</h4>
+				{props.eng? <h4>House Keeping Bedroom</h4>:    <h4>Habitación de Servicio</h4>}
                     <div><img alt="Sala Comedor" src={lavado} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
-                    <h4>M<sup>2</sup> Vivienda</h4>
+				{props.eng? <h4>M<sup>2</sup> Housing</h4>:    <h4>M<sup>2</sup> Vivienda</h4>}
                     <div><img alt="Sala Comedor" src={vivienda} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
-                <h4>M<sup>2</sup> Terraza</h4>
+				{props.eng? <h4>M<sup>2</sup> Porching</h4>: <h4>M<sup>2</sup> Terraza</h4>}
                     <div><img alt="Sala Comedor" src={salaComedor} /><span>46M<sup>2</sup></span><span>495FT<sup>2</sup></span></div>
                 </div>
             </div>
      
         </div>
         <div className="buttons">
-                <button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>Decargar Plano PDF</button>
+		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
 
-                <button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>Tour Virtual</button>
-
+<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
             </div>
 
     </div>)
@@ -1209,8 +1208,9 @@ const Map = (props) => {
 </div>
 
 <div className="map-content">
-    <h4>Conoce la Ubicación Exacta de tu <span>Próximo Hogar</span></h4>
-    <h5>Residencias en Edificio:</h5>
+ 
+{props.eng?<h4>	Know the exact location of your Next Home</h4>:  <h4>Conoce la Ubicación Exacta de tu <span>Próximo Hogar</span></h4>}
+	{props.eng? <h5>Residences at:</h5>: <h5>Residencias en Edificio:</h5>}
     <div>
 
         
@@ -1245,22 +1245,22 @@ const Buttons = (props) =>{
     return(  <div className="residencias-buttons-wrapper bg-sand">
       <Link to="/residencias/una-recamara">  <button  >
               <span>1</span>
-              <span>Recámara</span>
+              <span>{props.eng?"Bedroom":"Récamara"}</span>
           </button></Link> 
 
           <Link to="/residencias/dos-recamaras">    <button   >
               <span>2</span>
-              <span>Recámaras</span>
+              <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
 
           <Link to="/residencias/tres-recamaras">      <button >
               <span>3</span>
-              <span>Recámaras</span>
+              <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
 
           <Link to="/residencias/cuatro-recamaras">    <button  className="active" >
               <span>4</span>
-              <span>Recámaras</span>
+              <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
       </div>)
   }
