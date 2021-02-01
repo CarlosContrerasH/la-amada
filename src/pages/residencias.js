@@ -12,17 +12,15 @@ import mar from "../img/RESIDENCIAS/features/VISTA-MARINA.svg"
 import playa from "../img/RESIDENCIAS/features/VISTA-PLAYA.svg"
 import reserva from "../img/RESIDENCIAS/features/VISTA-RESERVA.svg"
 
-let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="residencesGal1"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
+let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="dosRecamaras"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>,<HandleImages name="penthouse"/>]
+
+
+let slideLinks = ["/residencias/una-recamara/","/residencias/dos-recamaras/","/residencias/tres-recamaras/","/residencias/cuatro-recamaras/","/residencias/penthouse/"]
  
 
-let slideLinks = ["/residencias/una-recamara/","/residencias/dos-recamaras/","/residencias/tres-recamaras/","/residencias/cuatro-recamaras/"]
- 
+let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>,<><span></span><br/><span className='sub'>Penthouse</span></>]
 
-let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
-
-let engTitles=[<><span>One</span><br/><span className='sub'>Bedroom</span></>,<><span>Two</span><br/><span className='sub'>Bedrooms</span></>,<><span>Three</span><br/><span className='sub'>Bedrooms</span></>,<><span>Four</span><br/><span className='sub'>Bedrooms</span></>]
-
-
+let engTitles=[<><span>One</span><br/><span className='sub'>Bedroom</span></>,<><span>Two</span><br/><span className='sub'>Bedrooms</span></>,<><span>Three</span><br/><span className='sub'>Bedrooms</span></>,<><span>Four</span><br/><span className='sub'>Bedrooms</span></>,<><span></span><br/><span className='sub'>Penthouse</span></>]
  
 const Residences = (props) => {
   

@@ -15,16 +15,16 @@ import SimpleSlider from "../components/simpleSlider"
 import FancySlider from "../components/fancySlider"
 import video2 from "../img/video.mp4"
 
-let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="dosRecamaras"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>]
+let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="dosRecamaras"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>,<HandleImages name="penthouse"/>]
 let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/>,<HandleImages name="amenidadespH1" />,
 <HandleImages name="amenidadespH2" />,
 <HandleImages name="amenidadespH3" /> ]
-let slideLinks = ["/residencias/una-recamara/","/residencias/dos-recamaras/","/residencias/tres-recamaras/","/residencias/cuatro-recamaras/"]
- 
-let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
-let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>]
 
-let engTitles=[<><span>One</span><br/><span className='sub'>Bedroom</span></>,<><span>Two</span><br/><span className='sub'>Bedrooms</span></>,<><span>Three</span><br/><span className='sub'>Bedrooms</span></>,<><span>Four</span><br/><span className='sub'>Bedrooms</span></>]
+let slideLinks = ["/residencias/una-recamara/","/residencias/dos-recamaras/","/residencias/tres-recamaras/","/residencias/cuatro-recamaras/","/residencias/penthouse/"]
+let bigSlider =[ <HandleImages name="homeGal1"/>, <HandleImages name="homeGal2"/>, <HandleImages name="homeGal3"/>]
+let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></>,<><span>Dos</span><br/><span className='sub'>Recámaras</span></>,<><span>Tres</span><br/><span className='sub'>Recámaras</span></>,<><span>Cuatro</span><br/><span className='sub'>Recámaras</span></>,<><span></span><br/><span className='sub'>Penthouse</span></>]
+
+let engTitles=[<><span>One</span><br/><span className='sub'>Bedroom</span></>,<><span>Two</span><br/><span className='sub'>Bedrooms</span></>,<><span>Three</span><br/><span className='sub'>Bedrooms</span></>,<><span>Four</span><br/><span className='sub'>Bedrooms</span></>,<><span></span><br/><span className='sub'>Penthouse</span></>]
  function regresator(e){
    return e
  }
