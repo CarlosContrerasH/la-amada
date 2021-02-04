@@ -103,34 +103,39 @@ const Features = (props) => {
                 </div>
                 <div className="feature">
                     <h4>{props.eng?"Kitchen":"Cocina"}</h4>
-                    <div><img alt="Cocina" src={cocina} /><span>8M<sup>2</sup></span><span>86FT<sup>2</sup></span></div>
+                    <div><img alt="Cocina" src={cocina} /><span>25M<sup>2</sup></span><span>269FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                     <h4>{props.eng?"Master Bedroom":"Dormitorio Principal"}</h4>
-                    <div><img alt="Dormitorio Principal" src={dormP} /><span>41M<sup>2</sup></span><span>441FT<sup>2</sup></span></div>
+                    <div><img alt="Dormitorio Principal" src={dormP} /><span>52M<sup>2</sup></span><span>559FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                 <h4>{props.eng?"Bedroom 2":"Dormitorio 2"}</h4>
-                    <div><img alt="Sala Comedor" src={dorm2} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={dorm2} /><span>48M<sup>2</sup></span><span>516FT<sup>2</sup></span></div>
                 </div>
             </div>
 
             <div className="col">
             <div className="feature">
 			<h4>{props.eng?"Bedroom 3":"Dormitorio 3"}</h4>
-                    <div><img alt="Sala Comedor" src={dorm3} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={dorm3} /><span>25M<sup>2</sup></span><span>269FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
 				{props.eng? <h4>House Keeping Bedroom</h4>:    <h4>Habitación de Servicio</h4>}
-                    <div><img alt="Sala Comedor" src={lavado} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={lavado} /><span>9M<sup>2</sup></span><span>87FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
 				{props.eng? <h4>M<sup>2</sup> Housing</h4>:    <h4>M<sup>2</sup> Vivienda</h4>}
-                    <div><img alt="Sala Comedor" src={vivienda} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={vivienda} /><span>56M<sup>2</sup></span><span>602FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
-				{props.eng? <h4>M<sup>2</sup> Porching</h4>: <h4>M<sup>2</sup> Terraza</h4>}
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>46M<sup>2</sup></span><span>495FT<sup>2</sup></span></div>
+				{props.eng? <h4>M<sup>2</sup> Rooftop</h4>: <h4>M<sup>2</sup> Terraza</h4>}
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>285M<sup>2</sup></span><span>3,067FT<sup>2</sup></span></div>
+                </div>
+
+				<div className="feature">
+				{props.eng? <h4>Tower + Lumber Room</h4>: <h4>Torreon + Trastero</h4>}
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>285M<sup>2</sup></span><span>3,067FT<sup>2</sup></span></div>
                 </div>
             </div>
      
