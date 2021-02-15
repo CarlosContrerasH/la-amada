@@ -72,7 +72,7 @@ const Hero = (props) => {
             
       <div>
       <span className="wrapped-header">
-     <h2> {props.eng==true?<>Exclusive <br/>Amenities</>:<>Amenidades <br/>Exclusivas</>}</h2> 
+     <h2> {props.eng==true?<>Meet our property</>:<>Conoce nuestro desarrollo </>}</h2> 
       </span><div className="video-wrapper">
     {props.video? 
     <video  style={{width:"100%"}}controls autoPlay>
@@ -114,10 +114,22 @@ const Hero = (props) => {
       <ResWrapper classes="bg-sand fancy">
             
       <div>
-   <h3>{props.eng==true?"Our Residences":"Nuestras Residencias"}</h3>
+  
+<ScrollWrapper classes="blurb home">
+            
+            <div>
+                <div>
+                <span className="wrapped-header">
+            <h2><span className="script">{props.eng==true?"Our ":"Nuestras "}</span><br/><span>{props.eng==true?"Residences ":"Residencias"} </span></h2></span>
+             
+            </div></div>
+            </ScrollWrapper>
         <FancySlider slides={fancySlider} titles={props.eng?engTitles:slideTitles} links={slideLinks} eng={props.eng}/>
       </div>
       </ResWrapper>
+
+
+
      
    
     )
