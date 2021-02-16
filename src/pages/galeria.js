@@ -20,6 +20,7 @@ let bigSlider =[ <HandleImages name="invierteHeader"/>,
 /*<HandleImages name="persona1"/>,
 <HandleImages name="persona2"/>,*/
 <HandleImages name="ubicacionHeader"/>,
+/*
 <HandleImages name="recomendacion1"/>,
 <HandleImages name="recomendacion2"/>,
 <HandleImages name="recomendacion3"/>,
@@ -28,40 +29,13 @@ let bigSlider =[ <HandleImages name="invierteHeader"/>,
 <HandleImages name="recomendacion6"/>,
 <HandleImages name="recomendacion7"/>,
 <HandleImages name="recomendacion8"/>,
-<HandleImages name="recomendacion9"/>,
+<HandleImages name="recomendacion9"/>,*/
 <HandleImages name="amenidadesH1"/>,
 <HandleImages name="amenidadesH2"/>,
 <HandleImages name="amenidadesH3"/>,
 <HandleImages name="amenidadespH1"/>,
 <HandleImages name="amenidadespH2"/>,
 <HandleImages name="amenidadespH3"/>,
-<HandleImages name="unaRecamara"/>,
-<HandleImages name="unaRecamara1"/>,
-<HandleImages name="unaRecamara2"/>,
-<HandleImages name="unaRecamara3"/>,
-<HandleImages name="unaRecamara4"/>,
-<HandleImages name="dosRecamaras"/>,
-<HandleImages name="dosRecamaras1"/>,
-<HandleImages name="dosRecamaras2"/>,
-<HandleImages name="dosRecamaras3"/>,
-<HandleImages name="dosRecamaras4"/>,
-<HandleImages name="dosRecamaras5"/>,
-<HandleImages name="tresRecamaras"/>,
-<HandleImages name="tresRecamaras1"/>,
-<HandleImages name="tresRecamaras2"/>,
-<HandleImages name="tresRecamaras3"/>,
-<HandleImages name="tresRecamaras4"/>,
-<HandleImages name="tresRecamaras5"/>,
-<HandleImages name="tresRecamaras6"/>,
-
-
-
-<HandleImages name="cuatroRecamaras"/>,
-<HandleImages name="cuatroRecamaras1"/>,
-<HandleImages name="cuatroRecamaras2"/>,
-<HandleImages name="cuatroRecamaras3"/>,
-<HandleImages name="cuatroRecamaras4"/>,
-<HandleImages name="cuatroRecamaras5"/>,
 
 /*
 <HandleImages name="map"/>,
@@ -170,7 +144,35 @@ let bigSlider =[ <HandleImages name="invierteHeader"/>,
 <HandleImages name="conocenos1"/>,
 
 
-<HandleImages name="conocenos2"/>
+<HandleImages name="conocenos2"/>,
+<HandleImages name="unaRecamara"/>,
+<HandleImages name="unaRecamara1"/>,
+<HandleImages name="unaRecamara2"/>,
+<HandleImages name="unaRecamara3"/>,
+<HandleImages name="unaRecamara4"/>,
+<HandleImages name="dosRecamaras"/>,
+<HandleImages name="dosRecamaras1"/>,
+<HandleImages name="dosRecamaras2"/>,
+<HandleImages name="dosRecamaras3"/>,
+<HandleImages name="dosRecamaras4"/>,
+<HandleImages name="dosRecamaras5"/>,
+<HandleImages name="tresRecamaras"/>,
+<HandleImages name="tresRecamaras1"/>,
+<HandleImages name="tresRecamaras2"/>,
+<HandleImages name="tresRecamaras3"/>,
+<HandleImages name="tresRecamaras4"/>,
+<HandleImages name="tresRecamaras5"/>,
+<HandleImages name="tresRecamaras6"/>,
+
+
+
+<HandleImages name="cuatroRecamaras"/>,
+<HandleImages name="cuatroRecamaras1"/>,
+<HandleImages name="cuatroRecamaras2"/>,
+<HandleImages name="cuatroRecamaras3"/>,
+<HandleImages name="cuatroRecamaras4"/>,
+<HandleImages name="cuatroRecamaras5"/>,
+
 ]
 
 const Galeria = (props)=>{

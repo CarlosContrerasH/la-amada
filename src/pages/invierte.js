@@ -214,7 +214,7 @@ const Botones=(props)=>{
 
 const FullImage = () => {
     return (
-        <HandleImages name="conocenos2" />
+        <HandleImages name="invierte4" />
     )
 }
 

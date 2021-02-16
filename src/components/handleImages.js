@@ -1193,6 +1193,18 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
   }
 
 
+  invierte4: file(relativePath: { eq: "invierte/INVERSION-4.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
+
+
+
+
   }`)
 
 
@@ -1214,6 +1226,7 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
     invierte1: <Img alt="Badge" fluid={data.invierte1.childImageSharp.fluid} />,
     invierte2: <Img alt="Badge" fluid={data.invierte2.childImageSharp.fluid} />,
     invierte3: <Img alt="Badge" fluid={data.invierte3.childImageSharp.fluid} />,
+    invierte4: <Img alt="Badge" fluid={data.invierte4.childImageSharp.fluid} />,
     
     beach: <Img alt="Badge" fluid={data.beach.childImageSharp.fluid} />,
      
