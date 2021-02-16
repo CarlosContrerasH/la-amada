@@ -62,11 +62,14 @@ const Blurb = (props) => {
 
 
         {props.eng == true ?
-          <><p>An exclusive 930 acres residential tourist community located in the north of Cancún, where the respect and care for the environment and nature makes it a magical residential and hotel community that allows for the kind of cohabitation, privacy, and connectivity that you have been yearning. </p>
-            <p>Its amenities offer unique resort experiences that will transform each one of your days into unforgettable moments that will last forever.</p></>
+          <><p>While Cancun is a place visited by millions, Playa Mujeres is what fortunate locals and savvy expats have discovered for themselves. This highly livable community offers privacy and security in a beautiful natural environment. When you arrive at Playa Mujeres, it is easy to forget that we are 15 mins away from Cancun. The Laguna de Chacmochuc Preserve acts as a natural buffer between ourselves and the outside world. While the tension and challenges of the outside world are easy to leave at the secure gates of our community, necessities and conveniences are never far away.      </p>
+            <p>  Playa Mujeres is a 930 acre master planned community situated on 3.2 kilometers of white sand beachfront. The community includes our private residences, golf, our marina, and several of Mexico’s top all-inclusive resorts where the respect and care for the environment and nature makes it a magical residential and hotel community that allows for the kind of cohabitation, privacy,and connectivity that you have been yearning. Its amenities offer unique resort experiences that will transform each one  of your days into unforgettable moments that will last forever.</p></>
           :
-          <><p>Playa Mujeres es una exclusiva comunidad turístico residencial cerrada de 376 hectáreas ubicada al norte de la ciudad de Cancún, donde el cuidado y el respeto por la naturaleza del entorno hacen de este desarrollo un lugar mágico que permite la convivencia, privacidad y conectividad que tanto deseas.</p>
-            <p>Las amenidades que lo componen ofrecen experiencias únicas de un resort, que te esperan para hacer cada uno de tus días momentos memorables que perdurarán por siempre.</p></>
+          <><p>Aun cuando Cancún es un destino que recibe millones de turistas al año, Playa Mujeres se mantiene como una joya escondida que solo algunos afortunados locales y expats han descubierto. Esta comunidad, rodeada del más magnífico entorno natural, garantiza privacidad y seguridad.
+          Al llegar a Playa Mujeres, es muy fácil olvidarse que te encuentras a tan solo 15 minutos de Cancún Centro. La Laguna de Chacmochuc anidada a un costado del residencial, actúa como un filtro natural 
+          entre La Amada y el mundo exterior. Aún cuando la presión y el estrés del mundo exterior se siente tan lejano al cruzar las puertas de nuestra comunidad, las necesidades y amenidades de ciudad nunca están lejos.</p>
+            <p>
+Playa Mujeres es una la más exclusiva comunidad turística residencial cerrada de 376 hectáreas, ubicada al norte de la ciudad de Cancún, con 3.2 kilometros de playas de arena blanca donde el cuidado y el respeto por la naturaleza del entorno hacen de este desarrollo un lugar mágico que permite la convivencia, privacidad y conectividad que tanto deseas. Alberga residencias privadas, un campo de golf, una marina y varios de los mejores hoteles todo-incluido del país. Las amenidades que lo componen ofrecen experiencias únicas de un resort, que te esperan para hacer cada uno de tus días momentos memorables que perdurarán por siempre. </p></>
 
         }
 

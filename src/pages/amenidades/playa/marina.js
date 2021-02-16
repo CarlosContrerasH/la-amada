@@ -14,6 +14,8 @@ import { Link } from 'gatsby'
 
  
 
+let bigSlider =[  <HandleImages name="amenidadesP5" />,  <HandleImages name="marinaH1"/> ]
+
 
 const Slider = (props) => {
 
@@ -65,7 +67,9 @@ const Slider = (props) => {
                                      
                      <Link to="/amenidades/playa/seguridad"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
                 </div>
-                     <HandleImages name="marinaH1"/>
+
+                <SimpleSlider slides={bigSlider}/>
+                    
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
@@ -91,7 +95,7 @@ const Slider = (props) => {
                 
                 <>
                 
-                "<a href="https://www.marinavv.com/" target="_blank">The V&V Marina</a> has direct access to the Caribbean Sea, and is the largest yet in Cancún, offering 176 slips to receive luxurious super-yachts of up to 200 feet.
+                "The V&V Marina has direct access to the Caribbean Sea, and is the largest yet in Cancún, offering 176 slips to receive luxurious super-yachts of up to 200 feet.
 It is one of a kind in the area and has customs, immigration, and fuel services, as well as dry dock."
 
 
@@ -101,14 +105,15 @@ It is one of a kind in the area and has customs, immigration, and fuel services,
                 :
                 
                 <>
-               Con acceso directo al Mar Caribe se encuentra la <a href="https://www.marinavv.com/" target="_blank">marina V&V</a>. La marina más grande de Cancún que ofrece 176 posiciones para recibir mega yates hasta de 200 pies; única en la zona, cuenta con servicio de aduana, migración, combustible y marina seca.
+               Con acceso directo al Mar Caribe se encuentra la marina V&V. La marina más grande de Cancún que ofrece 176 posiciones para recibir mega yates hasta de 200 pies; única en la zona, cuenta con servicio de aduana, migración, combustible y marina seca.
                 </>
                 }
 
 
                 </p>
+                <p><a href="https://www.marinavv.com/" target="_blank"> {props.eng == true ?"See More":"Conoce Más"}</a></p>
 
-                <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
             </div>
         </ScrollWrapper>
 

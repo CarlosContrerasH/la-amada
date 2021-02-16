@@ -23,7 +23,9 @@ import secrets from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINO
 import { Link } from 'gatsby'
 
 
- 
+let bigSlider =[ <HandleImages name="amenidadesP8" />,     <HandleImages name="vecinosH1"/> ]
+
+
 
 
 const Slider = (props) => {
@@ -72,7 +74,8 @@ const Slider = (props) => {
                      		                          
                      <Link to="/amenidades/playa/spa"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
                 </div>
-                     <HandleImages name="vecinosH1"/>
+                <SimpleSlider slides={bigSlider}/>
+                   
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
@@ -100,36 +103,38 @@ const Slider = (props) => {
                 
                 <>
                 
-
-                The reserve is made up of 24 acres, and is a space that is home to diverse species of regional mangroves, birds, and
-animals; which added to the surrounding 5,000 acres of the Chacmochuch natural
-reserve, provide spectacular views of nature that you will be able to observe
-from your apartment, rooftop, or viewpoint. It is undoubtedly an exciting trek
-for nature lovers. 
+                Our neighbors are four of Mexico’s top 10 all-inclusive resorts:
 
                 </>
                 :
                 
                 <>
-        <div className="logo-vecinos">
-         
-            <img alt="logo" src={excellence}/>
-            <img alt="logo" src={finest}/>
-            <img alt="logo" src={beloved}/>
-            <img alt="logo" src={atelier}/>
-            <img alt="logo" src={secrets}/>
-            <img alt="logo" src={dreams}/>
-            
-             
-          
-           
-            </div>  </>
+
+Cuatro de nuestros vecinos se encuentran rankeados entre los 10 mejores 
+resorts todo incluido del país. Algunos de los hoteles que conforman 
+nuestra comunidad son:
+
+     </>
                 }
+
+<div className="logo-vecinos">
+         
+         <img alt="logo" src={excellence}/>
+         <img alt="logo" src={finest}/>
+         <img alt="logo" src={beloved}/>
+         <img alt="logo" src={atelier}/>
+         <img alt="logo" src={secrets}/>
+         <img alt="logo" src={dreams}/>
+         
+          
+       
+        
+         </div>
 
 
                 </p>
 
-                <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
             </div>
         </ScrollWrapper>
 

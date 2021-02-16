@@ -12,7 +12,7 @@ import SimpleSlider from "../../../components/simpleSlider"
 import { Link } from 'gatsby'
 
 
-let playaSlider =[ <HandleImages name="ludotecaH1"/>, <HandleImages name="ludotecaH2"/>, <HandleImages name="ludotecaH3"/> ]
+let bigSlider =[  <HandleImages name="amenidadesP2" />,  <HandleImages classes="ciclopista" name="bikeH1"/> ]
 
 
 
@@ -66,8 +66,8 @@ const Slider = (props) => {
                     
                      <Link to="/amenidades/playa/golf"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
                 </div>
-
-                    <HandleImages classes="ciclopista" name="bikeH1"/>
+                <SimpleSlider slides={bigSlider}/>
+                   
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
@@ -113,7 +113,7 @@ const Slider = (props) => {
 
                 </p>
 
-                <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
 
 
        

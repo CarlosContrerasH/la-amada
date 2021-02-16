@@ -39,8 +39,11 @@ let grid =[ <></>,
 
 
 let bigSlider =[ <HandleImages name="amenidadesH1"/>,
-<HandleImages name="amenidadesH2"/>,
- <HandleImages name="amenidadesH3"/>,]
+<HandleImages name="sliderAmada2"/>,
+ <HandleImages name="amenidadesH3"/>,
+<HandleImages name="sliderAmada4"/>,
+
+<HandleImages name="sliderAmada5"/>,]
  
 
  
@@ -98,30 +101,30 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
        <ScrollWrapper  classes="grid-element">    <Link to="/amenidades/la-amada/playa" >     <div  >
 
 
-       <div className="icon-wrapper"><img alt="Playa" src={playa}/><span>{props.eng?"Beach":"Playa"}</span></div> <HandleImages name="amenidadesA9"/>
+       <div className="icon-wrapper"><img alt="Playa" src={playa}/><span>Playa</span></div> <HandleImages name="amenidadesA9"/>
       
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/la-amada/beachclub-restaurant" >    <div >
-        <div className="icon-wrapper"><img alt="Beachclub Restaurant" src={rest} style={{width:"6em",height:"6em"}}/><span>Beachclub Restaurant</span></div> <HandleImages name="amenidadesA2"/>
+        <div className="icon-wrapper"><img alt="Beachclub Restaurant" src={rest} style={{width:"6em",height:"6em"}}/><span>Restaurante</span></div> <HandleImages name="amenidadesA2"/>
          </div></Link></ScrollWrapper>
          
          <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/la-amada/beachclub" >     <div >
-        <div className="icon-wrapper"><img alt="Beachclub" src={bClub}/><span>Beachclub</span></div> <HandleImages name="amenidadesA3"/>
+        <div className="icon-wrapper"><img alt="Beachclub" src={bClub}/><span>Club de Playa</span></div> <HandleImages name="amenidadesA3"/>
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/rooftop-albercas" >    <div >
-         <div className="icon-wrapper"><img alt="Rooftops y Albercas" src={roof}/><span>{props.eng?"Rooftops & Pools":"Rooftops y Albercas"}</span></div> <HandleImages name="amenidadesA10"/>
+         <div className="icon-wrapper"><img alt="Rooftops y Albercas" src={roof}/><span>{props.eng?"Rooftops & Pools":"Rooftops y Terrazas"}</span></div> <HandleImages name="amenidadesA10"/>
       
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element ">  <Link to="/amenidades/la-amada/yoga" >    <div >
-         <div className="icon-wrapper"><img alt="Yoga" src={yoga}/><span>{props.eng?"Yoga and Multipurpose Excercise Room":"Salon de Yoga"}</span></div> <HandleImages name="amenidadesA11"/>
+         <div className="icon-wrapper"><img alt="Yoga" src={yoga}/><span>{props.eng?"Yoga and Multipurpose Excercise Room":"Salón de Yoga"}</span></div> <HandleImages name="amenidadesA11"/>
       
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element big">  <Link to="/amenidades/la-amada/canchas" >      <div >
-         <div className="icon-wrapper"><img alt="Canchas" src={canchas}/><span>{props.eng?"Multipurpose Court":"Canchas"}</span></div> <HandleImages name="amenidadesA4"/>
+         <div className="icon-wrapper"><img alt="Canchas" src={canchas}/><span>Canchas de Usos Múltiples</span></div> <HandleImages name="amenidadesA4"/>
   
 
          </div></Link></ScrollWrapper>
@@ -132,22 +135,22 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/ludoteca" >     <div >
-         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>{props.eng?"Kids Club & Play Center":"Ludoteca y Kids Club"}</span></div> <HandleImages name="amenidadesA7"/>
+         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>Ludoteca, Kids-Club y Salón de Eventos</span></div> <HandleImages name="amenidadesA7"/>
  
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element small">  <Link to="/amenidades/la-amada/gym" >     <div >
-         <div className="icon-wrapper"><img alt="Gym" src={gym}/><span>{props.eng?"Healthclub":"Gym"}</span></div> <HandleImages name="amenidadesA5"/>
+         <div className="icon-wrapper"><img alt="Gym" src={gym}/><span>Gym</span></div> <HandleImages name="amenidadesA5"/>
        
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element small">  <Link to="/amenidades/la-amada/lobby" >     <div >
-         <div className="icon-wrapper"><img alt="Lobby" src={concierge}/><span>{props.eng?"Motor Lobby, LOBBY & Concierge":"Lobby, Motor Lobby Y Concierge"}</span></div> <HandleImages name="amenidadesA6"/>
+         <div className="icon-wrapper"><img alt="Lobby" src={concierge}/><span>Lobby, Motor Lobby y Concierge</span></div> <HandleImages name="amenidadesA6"/>
    
          </div></Link></ScrollWrapper>
 
            <ScrollWrapper classes="grid-element small" >  <Link to="/amenidades/la-amada/areas-verdes" >    <div  >
-           <div className="icon-wrapper"><img alt="Areas Verdes" src={aVerdes}/><span>{props.eng?"Green Areas":"Areas Verdes"}</span></div> <HandleImages name="amenidadesA1"/>
+           <div className="icon-wrapper"><img alt="Areas Verdes" src={aVerdes}/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA1"/>
       
          </div></Link></ScrollWrapper>
 
@@ -172,7 +175,7 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
  
 
           <Link to="/amenidades/playa"   >   
- <div className="logo"> <HandleImages name="logopm"/></div>
+ <div className="logo"> <HandleImages name="logopmb"/></div>
      <div className="bg">
  <HandleImages name="bicis"/></div>
          </Link>

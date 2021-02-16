@@ -112,11 +112,11 @@ const Icons = (props) => {
         <div className="icons">
             <div className="icon-wrapper">
                 <img src={playa} />
-                <span>{props.eng?"Beach":"Playa"}</span>
+                <span>Playa</span>
             </div>
             <div className="icon-wrapper">
                 <img src={concierge} />
-                <span>{props.eng?"Beach":"Playa"}</span>
+                <span>Playa</span>
             </div>
             <div className="icon-wrapper">
                 <img src={beachclub} />

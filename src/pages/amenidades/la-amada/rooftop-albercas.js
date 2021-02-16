@@ -13,7 +13,7 @@ import { Link } from 'gatsby'
 
 
   
-let bigSlider =[ <HandleImages name="roofH1"/>, <HandleImages name="roofH2"/>, <HandleImages name="roofH3"/>]
+let bigSlider =[<HandleImages name="amenidadesA10"/>, <HandleImages name="roofH1"/>, <HandleImages name="roofH2"/>, <HandleImages name="roofH3"/>]
  
 
 const Slider = (props) => {
@@ -83,7 +83,7 @@ const Slider = (props) => {
 
                 </p>
 
-                <Link to="/amenidades/la-amada"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button>
             </div>
         </ScrollWrapper>
 

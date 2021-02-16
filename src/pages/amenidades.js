@@ -114,7 +114,7 @@ import { Link } from 'gatsby'
       <span className="wrapped-header">
 
   
-      {props.eng==true? <h2><span  >820 ft. of</span><br/><span className="script">Beachfront  </span><br/><span >and more experiences are waiting for you</span></h2>:  <h2><span  >250 METROS DE </span><br/><span className="script">frente a Playa</span><br/><span >Y MAS AMENIDADES DE LUJO TE ESPERAN.</span></h2>}
+      {props.eng==true? <h2><span className="script">Fall in love </span><br/><span >with our luxury amenities</span></h2>:  <h2><span className="script">Conoce Nuestras</span><br/><span >amenidades de lujo</span></h2>}
   
   
   

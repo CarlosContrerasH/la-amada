@@ -11,6 +11,8 @@ import SimpleSlider from "../../../components/simpleSlider"
 
 import { Link } from 'gatsby'
 
+let bigSlider =[  <HandleImages name="amenidadesP6" />,     <HandleImages name="seguridadH2"/> ]
+
 
  
 
@@ -54,9 +56,11 @@ const Slider = (props) => {
                                               
                      <Link to="/amenidades/playa/helipuerto"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
                 </div>
-                     <HandleImages name="seguridadH1"/>
+                <SimpleSlider slides={bigSlider}/>
+                    
+                   
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>
+                    <h2> {props.eng == false ? <>
                     
                         Seguridad máxima
                     
@@ -72,7 +76,7 @@ const Slider = (props) => {
                     <br /><span className="sub">
                         
                     
-Único residencial con doble control de acceso
+                    Both of these gates are actively guarded 24 hours per day, every day. 
                         
                         </span></>}</h2>
                 </span>
@@ -82,8 +86,12 @@ const Slider = (props) => {
                 
                 <>
                 
-                This is the only community in the area that has double-access control and first-class
-security, giving you the peace of mind and safety that you deserve. 
+                This is the only community in the area that has double-access control 
+and first-class security active 24 hours, giving you the peace of mind and safety that 
+you deserve. La Amada is a double gated property. An outer security gate controls 
+access to the entire community. A second residents’ security gate 
+ensures that only homeowners and their guests are able to access the La 
+Amada Residence buildings and their amenities.
 
 
 
@@ -91,13 +99,15 @@ security, giving you the peace of mind and safety that you deserve.
                 :
                 
                 <>
-              Única comunidad que cuenta con doble control de acceso al desarrollo y un sistema de seguridad de primera clase, logrando que vivas con la tranquilidad y seguridad que mereces.     </>
+            Única comunidad que cuenta con doble control de acceso al desarrollo y 
+un sistema de seguridad de primera clase las 24 horas, logrando que vivas con la 
+tranquilidad y seguridad que mereces.       </>
                 }
 
 
                 </p>
 
-                <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
             </div>
         </ScrollWrapper>
 

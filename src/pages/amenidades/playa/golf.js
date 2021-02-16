@@ -12,7 +12,9 @@ import SimpleSlider from "../../../components/simpleSlider"
 import { Link } from 'gatsby'
 
 
- 
+let bigSlider =[  <HandleImages name="amenidadesP1" />,   <HandleImages name="golfH1"/> ]
+
+
 
 
 const Slider = (props) => {
@@ -58,7 +60,9 @@ const Slider = (props) => {
                                      
                      <Link to="/amenidades/playa/marina"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
                 </div>
-                     <HandleImages name="golfH1"/>
+
+      <SimpleSlider slides={bigSlider}/>
+                    
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
@@ -84,8 +88,7 @@ const Slider = (props) => {
                 
                 <>
                 
-                For those who have active lifestyles, our 2.4 mile bike and running path winds through the whole complex in an environment surrounded by nature, and most importantly, is totally safe so that you can relax knowing that you and your family are in a closed and controlled area. 
-
+                For those who love this sport, our 18-hole par 72 course, designed by the renowned golfer Greg Norman, is surrounded by astonishing landscapes in the heart of nature, including two holes that boast spectacular views of the Caribbean Sea. Without a doubt the best golf course in the area that invites you to challenge yourself with each visit.
 
 
 
@@ -96,15 +99,14 @@ const Slider = (props) => {
                 
                 <>
                 
-                Para los que gustan de una vida activa, la ciclopista de 3.8 km recorre todo el complejo en un entorno rodeado de naturaleza, pero sobre todo seguro, para que tengas la tranquilidad absoluta de que tú y tu familia están en un lugar cerrado y controlado.
-
+                Para los amantes de este deporte, nuestro campo de 18 hoyos, par 72 y diseñado por el profesional Greg Norman, está rodeado de bellos paisajes inmersos en naturaleza y dos hoyos con espectaculares vistas al Mar Caribe, sin duda el mejor campo de la región que te invita a desafiar tus propios retos.
                 </>
                 }
 
 
                 </p>
 
-                <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
             </div>
         </ScrollWrapper>
 

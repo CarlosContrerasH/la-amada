@@ -13,7 +13,7 @@ import { Link } from 'gatsby'
 
 
 
-let playaSlider =[ <HandleImages name="beachH1"/>, <HandleImages name="beachH2"/>, <HandleImages name="beachH3"/>, <HandleImages name="beachH4"/>]
+let playaSlider =[<HandleImages name="amenidadesA3"/>, <HandleImages name="beachH1"/>, <HandleImages name="beachH2"/>, <HandleImages name="beachH3"/>, <HandleImages name="beachH4"/>]
 
 
 
@@ -60,7 +60,7 @@ const Slider = (props) => {
                  
                  <span>
                      
-                     Beachclub
+                     Club de Playa
                      
                      </span></div> 
                      <Link to="/amenidades/la-amada/rooftop-albercas"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
@@ -84,7 +84,7 @@ const Slider = (props) => {
 
                 </p>
 
-                <Link to="/amenidades/la-amada"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button>
             </div>
         </ScrollWrapper>
 

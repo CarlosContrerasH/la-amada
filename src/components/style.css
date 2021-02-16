@@ -453,6 +453,13 @@ transition: .3s opacity, .3s transform;
     transition: .3s background;
 }
 
+.col-wrapper.amenidades .logo>*{
+    width: 7.5em !important;
+    fill: white;
+    
+    object-fit: contain !important;
+}
+
 .col-wrapper.amenidades a:hover .logo{
     background-color: rgba(83, 30, 30, .5);
     transition: .3s background;

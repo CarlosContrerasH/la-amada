@@ -14,7 +14,7 @@ import { Link } from 'gatsby'
 
 
 
-let playaSlider =[ <HandleImages name="ludotecaH1"/>, <HandleImages name="ludotecaH2"/>, <HandleImages name="ludotecaH3"/> ]
+let bigSlider =[  <HandleImages name="amenidadesA1" />,  <HandleImages name="areasVerdes" /> ]
 
 
 
@@ -53,7 +53,7 @@ const Slider = (props) => {
                      </span></div> 
                      <Link to="/amenidades/la-amada/playa"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
                 </div>
-                <HandleImages name="amenidadesA1" />
+                <SimpleSlider slides={bigSlider}/>   
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
@@ -97,8 +97,9 @@ In this space of natural connection, harmony with the environment will lead you 
 
 
                 </p>
+            
 
-                <Link to="/amenidades/la-amada"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button>
             </div>
         </ScrollWrapper>
 

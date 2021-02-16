@@ -12,7 +12,8 @@ import SimpleSlider from "../../../components/simpleSlider"
 import { Link } from 'gatsby'
 
 
- 
+let bigSlider =[ <HandleImages name="amenidadesP7" />,     <HandleImages name="spaH1"/> ]
+
 
 
 const Slider = (props) => {
@@ -60,7 +61,7 @@ const Slider = (props) => {
                      </span></div> 
                      <Link to="/amenidades/playa/ciclopista"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
                 </div>
-                     <HandleImages name="spaH1"/>
+                <SimpleSlider slides={bigSlider}/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
@@ -92,7 +93,7 @@ Relaja y reactivar todos los sentidos
 
  
 
-Without a doubt this is a space of absolute wellness and unforgettable experiences, where you can relax and reactivate all your senses with an amazing variety of treatments. Operated by the <a href="https://www.belovedhotels.com/cancun/beloved-playa-mujeres/offers/category/spa/">Beloved Hotel</a> and providing services for La Amada owners, this SPA, which is more than 30,000 sqf in size, has every single service for you to feel relaxed and pampered. From massage cabins with every imaginable massage style, to please even the most demanding customers, to hydrotherapy circuits that will bring you a day full of unique experiences. 
+Without a doubt this is a space of absolute wellness and unforgettable experiences, where you can relax and reactivate all your senses with an amazing variety of treatments. Operated by the Beloved Hotel and providing services for La Amada owners, this SPA, which is more than 30,000 sqf in size, has every single service for you to feel relaxed and pampered. From massage cabins with every imaginable massage style, to please even the most demanding customers, to hydrotherapy circuits that will bring you a day full of unique experiences. 
 Screen reader support enabled.
  
  
@@ -103,13 +104,14 @@ Screen reader support enabled.
                 :
                 
                 <>
-    Sin lugar a duda un espacio de bienestar absoluto, donde relajarse y reactivar todos los sentidos con la variedad de tratamientos que se ofrecen, son algunas de las inolvidables experiencias que forman parte de este magnífico lugar. Operado por el <a href="https://www.belovedhotels.com/cancun/beloved-playa-mujeres/offers/category/spa/">Hotel Beloved</a> y con servicio a los propietarios de La Amada, el SPA de más de 3,000 m2, cuenta con todos los servicios para consentirte y relajarte, desde cabinas de masaje con todos los estilos para los más exigentes, hasta circuitos de hidroterapia que te harán pasar un día lleno de experiencias únicas.  </>
+    Sin lugar a duda un espacio de bienestar absoluto, donde relajarse y reactivar todos los sentidos con la variedad de tratamientos que se ofrecen, son algunas de las inolvidables experiencias que forman parte de este magnífico lugar. Operado por el Hotel Beloved y con servicio a los propietarios de La Amada, el SPA de más de 3,000 m2, cuenta con todos los servicios para consentirte y relajarte, desde cabinas de masaje con todos los estilos para los más exigentes, hasta circuitos de hidroterapia que te harán pasar un día lleno de experiencias únicas.  </>
                 }
 
 
                 </p>
+                <p><a href="https://www.belovedhotels.com/cancun/beloved-playa-mujeres/offers/category/spa/" target="_blank"> {props.eng == true ?"See More":"Conoce Más"}</a></p>
 
-                <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
             </div>
         </ScrollWrapper>
 

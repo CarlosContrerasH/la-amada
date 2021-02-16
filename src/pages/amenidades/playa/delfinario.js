@@ -12,6 +12,9 @@ import SimpleSlider from "../../../components/simpleSlider"
 import { Link } from 'gatsby'
 
 
+let bigSlider =[ <HandleImages name="amenidadesP3" />,     <HandleImages name="delfinesH1"/> ]
+
+
  
 
 
@@ -55,7 +58,7 @@ const Slider = (props) => {
                      </span></div> 		                          
                      <Link to="/amenidades/playa/vecinos"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
                 </div>
-                     <HandleImages name="delfinesH1"/>
+                <SimpleSlider slides={bigSlider}/>
                 <span className="wrapped-header playa">
                     <h2> {props.eng == true ? <>
                     
@@ -84,7 +87,7 @@ const Slider = (props) => {
                 <>
                 
 
-                Located within the luxurious <a href="https://www.delphinusworld.com.mx/donde-nadar-con-delfines-en-cancun/delphinus-playa-mujeres" target="blank">Dreams Playa Mujeres Golf & Spa Resort.</a>  Surrounded by white beaches, the clear waters of the Caribbean Sea and the best facilities, this habitat offers the wonderful experience of  interacting with dolphins in a 100% natural habitat.  
+                Located within the luxurious Dreams Playa Mujeres Golf & Spa Resort. Surrounded by white beaches, the clear waters of the Caribbean Sea and the best facilities, this habitat offers the wonderful experience of  interacting with dolphins in a 100% natural habitat.  
 
 
 
@@ -92,13 +95,14 @@ const Slider = (props) => {
                 :
                 
                 <>
-                Nuestro hábitat se encuentra en un área aun virgen y en pleno desarrollo, que forma parte del espacio continental del municipio de Isla Mujeres y se localiza dentro del lujoso hotel <a href="https://www.delphinusworld.com.mx/donde-nadar-con-delfines-en-cancun/delphinus-playa-mujeres" target="blank">Dreams Playa Mujeres Golf & Spa Resort.</a></>
+                Nuestro hábitat se encuentra en un área aun virgen y en pleno desarrollo, que forma parte del espacio continental del municipio de Isla Mujeres y se localiza dentro del lujoso hotel Dreams Playa Mujeres Golf & Spa Resort.
+                </>
                 }
 
 
                 </p>
-
-                <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button></Link>
+                <p><a href="https://www.delphinusworld.com.mx/donde-nadar-con-delfines-en-cancun/delphinus-playa-mujeres" target="_blank"> {props.eng == true ?"See More":"Conoce Más"}</a></p>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
             </div>
         </ScrollWrapper>
 

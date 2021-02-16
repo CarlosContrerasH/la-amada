@@ -72,22 +72,13 @@ const Equipo = (props)=>{
     <div className="persona">
    <div className="mug"><HandleImages name="persona1"/></div> 
     <span>HORACIO MARTINEZ </span><br/>
-    <span>Director Comercial  -   Commercial Director</span>
+    <span>{props.eng==true?" Commercial Director":"Director Comercial" }</span>
     </div>
-    <div className="persona">
-    <div className="mug"><HandleImages name="persona2"/></div> 
-    <span>BEATRÍZ MUÑOZ </span><br/>
-    <span>Asesor Inmobiliario  -  Broker</span>
-    </div>
-    <div className="persona">
-    <div className="mug"><HandleImages name="persona3"/></div> 
-    <span>RAUL</span><br/>
-    <span>Asesor Inmobiliario  -  Broker</span>
-    </div>
+ 
     <div className="persona">
     <div className="mug"><HandleImages name="persona4"/></div> 
     <span>MARISA</span><br/>
-    <span>Asesor Inmobiliario  -  Broker</span>
+    <span>{props.eng==true?"Broker":"Asesor Inmobiliario" } </span>
     </div>
 </div>
 </ScrollWrapper>)

@@ -8,6 +8,32 @@ export function HandleImages(name){
 
   const data = useStaticQuery(graphql`
   query {
+
+    sliderAmada2:file(relativePath: { eq: "SLIDER HOME HEADER/2.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+    sliderAmada4:file(relativePath: { eq: "SLIDER HOME HEADER/4.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+    sliderAmada5:file(relativePath: { eq: "SLIDER HOME HEADER/5.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+
     video:file(relativePath: { eq: "VIDEO.jpg" }) {
       childImageSharp {
     
@@ -683,7 +709,7 @@ gymH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-1.jpg" }) 
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-gymH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-3.jpg" }) {
+gymH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-2.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -730,7 +756,13 @@ seguridadH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/SEGURIDAD/SEGUR
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
+seguridadH2:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/SEGURIDAD/SEGURIDAD2.jpg" }) {
+  childImageSharp {
 
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
 helipuertoH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/HELIPUERTO/HELIPUERTO.jpg" }) {
   childImageSharp {
 
@@ -762,9 +794,17 @@ spaH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/SPA/HEADER-SPA.jpg" }
  
  
 
+ 
 
 
 
+areasVerdes:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/AREAS VERDES/areas-verdes2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
 
 
 
@@ -1158,6 +1198,14 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
 
    
   const images = {
+
+    areasVerdes:<Img alt="Map" fluid={data.areasVerdes.childImageSharp.fluid} />,
+
+    sliderAmada2:<Img alt="Map" fluid={data.sliderAmada2.childImageSharp.fluid} />,
+    sliderAmada4:<Img alt="Map" fluid={data.sliderAmada4.childImageSharp.fluid} />,
+    sliderAmada5:<Img alt="Map" fluid={data.sliderAmada5.childImageSharp.fluid} />,
+
+
   video: <Img alt="Video" fluid={data.video.childImageSharp.fluid} />,
 
 
@@ -1299,6 +1347,7 @@ gymH3:<Img alt="Amenidades" fluid={data.gymH3.childImageSharp.fluid} />,
  golfH1:<Img alt="Amenidades" fluid={data.golfH1.childImageSharp.fluid} />,
  marinaH1:<Img alt="Amenidades" fluid={data.marinaH1.childImageSharp.fluid} />,
  seguridadH1:<Img alt="Amenidades" fluid={data.seguridadH1.childImageSharp.fluid} />,
+ seguridadH2:<Img alt="Amenidades" fluid={data.seguridadH2.childImageSharp.fluid} />,
 helipuertoH1:<Img alt="Amenidades" fluid={data.helipuertoH1.childImageSharp.fluid} />,
 
 delfinesH1:<Img alt="Amenidades" fluid={data.delfinesH1.childImageSharp.fluid} />,
