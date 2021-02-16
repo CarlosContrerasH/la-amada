@@ -9,6 +9,7 @@ import { HandleImages } from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
 import promecap from "../img/conocenos/PROMECAP-LOGO.svg"
 import hamak from "../img/conocenos/HAMAK-HOTELS-LOGO.svg"
+import sonneil from "../img/conocenos/logo-soneil.png"
 
 import { Link } from 'gatsby'
 
@@ -118,6 +119,16 @@ const Equipo = (props)=>{
                     <p>Hamak Hotels is an expert at creating lifelong memories. Hamak manages the renovation and amenity improvements at the La Amada Residences.  Hamak designs and operates some of the premier hotel and resort experiences in Latin America. Whether designing new resorts or managing existing hotel operations, Hamak focuses on top tier quality guest experiences.
                     </p>
                       :   <p>Hamak Hotels es experto creando recuerdos para toda la vida. Hamak administra la renovación, así como las mejoras de las instalaciones del residencial La Amada. Hamak diseña y opera varios hoteles Premier y experiencias tipo resort en Latinoamérica. Tanto en el diseño de nuevos resorts como en la administración de hoteles. El enfoque de Hamak está en brindar experiencias de lujo. 
+                      </p>}
+</div>
+
+<div className="asociado">
+<a href="https://www.sonneil.com/" target="_blank"><div className="logo"><img src={sonneil}/></div> </a>
+
+{props.eng==true?
+                    <p>Sonneil con presencia en México y en España, es una proptech inmobiliaria especializada en lograr la mejor experiencia de compra para nuestros clientes a través del uso intensivo de la tecnología y del marketing online; nuestra principal preocupación es agilizar el proceso de compra, brindando seguridad y confianza a nuestros clientes.   Comprometidos con el servicio al cliente y con la transparencia, Sonneil esta regulado por la institución internacional independiente más prestigiosa del sector inmobiliario, que vela por fomentar las mejores prácticas en la industria, entre ellas transparencia, seguridad, profesionalidad y servicio; la Royal Institution of Chartered Surveyors con sus siglas RICS.
+                    </p>
+                      :   <p>Sonneil con presencia en México y en España, es una proptech inmobiliaria especializada en lograr la mejor experiencia de compra para nuestros clientes a través del uso intensivo de la tecnología y del marketing online; nuestra principal preocupación es agilizar el proceso de compra, brindando seguridad y confianza a nuestros clientes.   Comprometidos con el servicio al cliente y con la transparencia, Sonneil esta regulado por la institución internacional independiente más prestigiosa del sector inmobiliario, que vela por fomentar las mejores prácticas en la industria, entre ellas transparencia, seguridad, profesionalidad y servicio; la Royal Institution of Chartered Surveyors con sus siglas RICS.
                       </p>}
 </div>
 

@@ -26,19 +26,24 @@ const Form = (props) => {
         
     <form id="form"  name="contact" method="POST"  data-netlify="true" data-netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="language" value={props.eng?"EN":"ES"} />
       <label >
     
-        <input  type="text" name="name" onChange={(e) => checkInputValue(e)}  /> <span>  <span>Nombre:</span></span> 
+        <input  type="text" name="firstName" onChange={(e) => checkInputValue(e)}  /> <span>  <span>{props.eng?"Name":"Nombre"}:</span></span> 
       </label>
+      <label >
+    
+    <input  type="text" name="lastName" onChange={(e) => checkInputValue(e)}  /> <span>  <span>{props.eng?"Last Name":"Apellido"}:</span></span> 
+  </label>
 
       <label  >
      
-     <input type="tel" name="phone" onChange={(e) => checkInputValue(e)} /><span>  <span>Telefono:</span></span> 
+     <input type="tel" name="phone" onChange={(e) => checkInputValue(e)} /><span>  <span>{props.eng?"Phone Number":"Telefono"}:</span></span> 
    </label>
 
       <label  >
      
-        <input type="text" name="mail" onChange={(e) => checkInputValue(e)} /><span>  <span>Mail:</span></span> 
+        <input type="text" name="email" onChange={(e) => checkInputValue(e)} /><span>  <span>Mail:</span></span> 
       </label>
       <button type="submit"  style={{    width: "200px",
     margin:"auto"}} className="outlined-button light">{props.eng?  "MAKE AN APPOINTMENT":"HACER CITA"}</button>
