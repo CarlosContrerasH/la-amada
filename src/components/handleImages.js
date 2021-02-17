@@ -121,63 +121,72 @@ ubicacionHeader:file(relativePath: { eq: "UBICACION/HEADER.jpg" }) {
 
 
 
-recomendacion4:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ARRECIFES.jpg" }) {
+
+
+recomendacion5:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ISLA-MUJERES.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion3:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/CHICHEN-ITZA.jpg" }) {
+
+
+recomendacion8:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/YUCATAN.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion9:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/FOOD.jpg" }) {
+
+recomendacion9:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/CHICHEN-ITZA.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion6:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/GOLF.jpg" }) {
+recomendacion1:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ARRECIFES.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion1:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ISLA-MUJERES.jpg" }) {
+
+
+recomendacion7:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/PESCA.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion5:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/PESCA.jpg" }) {
+
+recomendacion2:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/GOLF.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion7:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SHOPPING.jpg" }) {
+recomendacion4:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SHOPPING.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion8:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SPA.jpg" }) {
+recomendacion3:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SPA.jpg" }) {
   childImageSharp {
 
     fluid {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
-recomendacion2:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/YUCATAN.jpg" }) {
+
+recomendacion6:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/FOOD.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -237,6 +246,14 @@ amenidadespH3:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADE
   }
 }
 
+
+unaRecamarah:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/HEADER-1REC.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
 
 
 unaRecamara:file(relativePath: { eq: "RESIDENCIAS/UNA-RECAMARAS.jpg" }) {
@@ -934,6 +951,14 @@ amenidadesP6:file(relativePath: { eq: "AMENIDADES/PLAYA/SEGURIDAD.jpg" }) {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
+
+caseta:file(relativePath: { eq: "AMENIDADES/PLAYA/DOBLE-CASETA.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
 amenidadesP7:file(relativePath: { eq: "AMENIDADES/PLAYA/SPA.jpg" }) {
   childImageSharp {
 
@@ -1073,7 +1098,7 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
     }
   }
 
-  floorPlan1h: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/1-RECAMARA-HORIZONTAL.png" }) {
+  floorPlan1h: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/1-RECAMARA-HORIZONTAL.jpg" }) {
     childImageSharp {
   
       fluid {
@@ -1081,6 +1106,21 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
     }
   }
 
+  lock: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
+lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
   
 
   floorPlan2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/PLANO-2REC.jpg" }) {
@@ -1267,10 +1307,14 @@ amenidadespH3:<Img alt="Amenidades" fluid={data.amenidadespH3.childImageSharp.fl
 
 
 unaRecamara:<Img alt="Una Recamara" fluid={data.unaRecamara.childImageSharp.fluid} />,
+unaRecamarah:<Img alt="Una Recamara" fluid={data.unaRecamarah.childImageSharp.fluid} />,
 unaRecamara1:<Img alt="Una Recamara" fluid={data.unaRecamara1.childImageSharp.fluid} />,
 unaRecamara2:<Img alt="Una Recamara" fluid={data.unaRecamara2.childImageSharp.fluid} />,
 unaRecamara3:<Img alt="Una Recamara" fluid={data.unaRecamara3.childImageSharp.fluid} />,
 unaRecamara4:<Img alt="Una Recamara" fluid={data.unaRecamara4.childImageSharp.fluid} />,
+
+lock:<Img alt="Dos Recamaras" fluid={data.lock.childImageSharp.fluid} />,
+lock2:<Img alt="Dos Recamaras" fluid={data.lock2.childImageSharp.fluid} />,
 
 dosRecamaras:<Img alt="Dos Recamaras" fluid={data.dosRecamaras.childImageSharp.fluid} />,
 dosRecamaras1:<Img alt="Dos Recamaras" fluid={data.dosRecamaras1.childImageSharp.fluid} />,
@@ -1391,7 +1435,7 @@ spaH1:<Img alt="Amenidades" fluid={data.spaH1.childImageSharp.fluid} />,
     amenidadesP7:<Img alt="Amenidades" fluid={data.amenidadesP7.childImageSharp.fluid} />,
     amenidadesP8:<Img alt="Amenidades" fluid={data.amenidadesP8.childImageSharp.fluid} />,
 
-
+    caseta:<Img alt="Amenidades" fluid={data.caseta.childImageSharp.fluid} />,
 
     logopm: <Img alt="Playa Mujeres" fluid={data.logopm.childImageSharp.fluid} />,
 

@@ -766,6 +766,7 @@ font-weight: 200;}
     margin:0 !important;
     width:100% !important;
     max-height: calc(90vh - 8em);
+    overflow: hidden;
 }
 
 .amenidades-top{
@@ -1828,6 +1829,39 @@ transition: .3s background, .3s color;
     font-weight: bold;
     text-transform: uppercase;
 
+}
+
+
+.residencias-tabs-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.residencias-tabs-wrapper button{
+    color:white;
+}
+
+
+.residencias-tabs-wrapper button.inactive{
+    border: solid 2px var(--dark-green);
+    background-color: transparent;
+    color:var(--dark-green);
+    transition: .3s background-color, .3s color;
+}
+
+ 
+
+.residencias-tabs-wrapper button.inactive:hover{
+    cursor:pointer;
+    border: solid 2px var(--dark-green);
+    background-color: var(--dark-green);
+    color:white;
+    border-radius:3em;
+    padding: .5em 1.25em;
+    transition: .3s background-color, .3s color;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+     
 }
 
 

@@ -123,7 +123,57 @@ const SimpleSlider = class extends React.Component {
                     </div>
                     <div className="recomendacion right-col">
 <div >
-                    {this.state.active == 0 ? < >
+                
+
+
+
+
+
+                    {this.state.active == 0 ? <>
+                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
+                            <h2> {this.props.eng == true ? <>Explora los arrecifes de coral</> : <>Explora los arrecifes de coral</>}</h2>
+                        </span>
+                        {this.props.eng == true ? <> <p>Whether you are a novice or a seasoned diver, the coast off La Amada offers many ideal snorkeling locations. Explore vibrant coral reefs in the warm Caribbean waters and spot sea turtles, playful dolphins and gentle whale sharks. Our nearby beaches and lagoons are ideal for snorkeling, but you can also head for offshore reefs in guided boat tours, some of which leave directly from our marina.</p><p>
+                            For many aspiring divers, the Cancun area offers the perfect training grounds to achieve their first dive certification. Six PADI certified dive shops in the region introduce divers to the warm and clear Caribbean waters, where divers enjoy excellent visibility and the opportunity to spot a diverse range of colorful aquatic life.  For more experienced divers, our coastline offers unique dive attractions and the challenge of freshwater cenote diving.
+</p></> : <> <p>Explora los arrecifes de coral en las cálidas aguas caribeñas, podrás ver tortugas, delfines y dóciles tiburones ballena. Aún cuando muchas playas y lagunas cercanas son ideales para esnorquelear, muchos prefieren la emoción de tomar un excursión guiada a los arrecifes en aguas más lejanas de la costa. Muchas de estas excursiones se pueden encontrar directamente en la Marina V&V.  </p><p>
+Para muchos buzos principiantes, Cancún es ideal para adquirir su primera certificación. Seis tiendas de buceo certificadas por PADI ofrecen excursiones a las cristalinas aguas caribeñas para observar la gran variedad y colorida vida marina. Para los más experimentados, están las atracciones únicas de la costa, y el reto de bucear en un cenote.
+</p></>
+                        }
+                    </> : ""}
+
+
+                    {this.state.active == 1 ? <>
+                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
+                            <h2> {this.props.eng == true ? <>Golf</> : <>Golf</>}</h2>
+                        </span>
+                        {this.props.eng == true ? <p>Beyond our own Greg Norman Signature Golf Course, Quintana Roo also offers 16 other golf courses to explore.</p> : <p>Además de nuestro campo de golf Greg Norman, hay otros 16 campos a descubrir en Quintana Roo.</p>
+                        }
+                    </> : ""}
+
+
+                    {this.state.active == 2 ? <>
+                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
+                            <h2> {this.props.eng == true ? <>Spa</> : <>Spa</>}</h2>
+                        </span>
+                        {this.props.eng == true ? <p>If pampered relaxation is your top priority, there are countless nearby spa options to choose from. We recommend the experience of a cenote spa. The surroundings of pure water and ancient limestone are the perfect complement to a massage treatment.</p> : <p>Si relajarte y consentirte es tu prioridad, existen incontables opciones. Recomendamos la experiencia del Spa en un cenote. Rodearse de agua pura y piedra caliza es el complemento perfecto para un masaje.</p>
+                        }
+                    </> : ""}
+
+
+
+
+
+
+                    {this.state.active == 3 ? < >
+                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
+                            <h2> {this.props.eng == true ? <>Compras</> : <>Compras</>}</h2>
+                        </span>
+                        {this.props.eng == true ? <p>When you arrive at La Amada, it is easy to forget that Cancun is just 30 minutes away. Cancun is well served for cutting edge fashions and familiar conveniences, with no fewer than eight major shopping malls and many large scale North American retailers.For those who are looking for a more distinctly Mexican experience, bustling local markets sell mementos and artisan handicrafts to savvy purchasers and casual tourists alike.</p> : <p>Al llegar a La Amada, es fácil olvidar que Cancún Centro está a solo 12km. La ciudad cuenta con una gran variedad de tiendas de moda nacionales y extranjeras así como tiendas departamentales establecidas en ocho grandes centros comerciales. </p>
+                        }
+                    </ > : ""}
+
+
+                    {this.state.active == 4 ? < >
                         <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
                             <h2> {this.props.eng == true ? <>ISLA MUJERES</> : <>ISLA MUJERES</>}</h2>
                         </span>
@@ -132,8 +182,30 @@ const SimpleSlider = class extends React.Component {
                     </> : ""}
 
 
+             
 
-                    {this.state.active == 1 ? <>
+
+
+                    {this.state.active == 5 ? <>
+                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
+                            <h2> {this.props.eng == true ? <>Cocina</> : <>Cocina</>}</h2>
+                        </span>
+                        {this.props.eng == true ? <p>Downtown & Zona Hotelera Cancun offers a contemporary dining scene, with high quality restaurants serving up global fare at a very competitive cost. For those seeking a more authentic local some of our local beachside eateries serve the freshest and most amazing local seafood. We recommend speaking to the front desk to arrange a reservation at that undiscovered local’s place, our favorite is Mar y Aroma, our <a href="/amenidades/la-amada/beachclub-restaurant">Beachclub Restaurant.</a> </p> : <p>El centro de Cancún y malecón de la Zona Hotelera, ofrece una variedad de restaurantes contemporáneos de la mejor calidad a precio razonable. Aquellos que buscan comida más local, podrán encontrar restaurantes en la playa que sirven los más frescos y deliciosos mariscos, sugerimos preguntes a nuestra concierge su recomendación para un restaurante local típico aunque sin lugar a duda nuestro favorito es Mar y Aroma, nuestro <a href="/amenidades/la-amada/beachclub-restaurant">Beachclub Restaurant.</a></p>
+                        }
+                    </> : ""}
+
+
+                    {this.state.active == 6 ? <>
+                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
+                            <h2> {this.props.eng == true ? <>Pesca en alta mar</> : <>Pesca en alta mar</>}</h2>
+                        </span>
+                        {this.props.eng == true ? <p>Beyond the shallow coastal waters, experienced fishing guides are ready to take you on a deep sea fishing adventure. Local species include sailfish, bonita, tuna, and even record breaking blue and white marlin. After your fishing adventure, we recommend asking your guide to arrange a seaside restaurant reservation, where a chef will prepare your catch of the day in the finest local tradition. Charters are based all along the Costa Maya and may also depart from our marina.</p> : <p>El pez vela, bonita, atún, e incluso el marlín son algunas especies locales que podrás encontrar. Después de tu aventura, recomendamos pedirle a tu guía que haga los preparativos necesarios con un restaurante a la orilla del mar, para que el chef cocine tu pesca del día con el sazón local. Encontrarás muchos excursiones de este tipo a lo largo de toda la Costa Maya, con la opción de salir desde nuestra marina.</p>
+                        }
+                    </> : ""}
+
+
+
+                    {this.state.active == 7? <>
                         <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
                             <h2> {this.props.eng == true ? <>PENÍNSULA DE YUCATÁN</> : <>PENÍNSULA DE YUCATÁN</>}</h2>
                         </span>
@@ -148,7 +220,7 @@ const SimpleSlider = class extends React.Component {
 
 
 
-                    {this.state.active == 2 ? <>
+                    {this.state.active == 8 ? <>
                         <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
                             <h2> {this.props.eng == true ? <>Chichen Itza</> : <>Chichen Itza</>}</h2>
                         </span>
@@ -156,72 +228,11 @@ const SimpleSlider = class extends React.Component {
                         }
                     </> : ""}
 
-                    {this.state.active == 3 ? <>
-                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
-                            <h2> {this.props.eng == true ? <>Explora los arrecifes de coral</> : <>Explora los arrecifes de coral</>}</h2>
-                        </span>
-                        {this.props.eng == true ? <> <p>Whether you are a novice or a seasoned diver, the coast off La Amada offers many ideal snorkeling locations. Explore vibrant coral reefs in the warm Caribbean waters and spot sea turtles, playful dolphins and gentle whale sharks. Our nearby beaches and lagoons are ideal for snorkeling, but you can also head for offshore reefs in guided boat tours, some of which leave directly from our marina.</p><p>
-                            For many aspiring divers, the Cancun area offers the perfect training grounds to achieve their first dive certification. Six PADI certified dive shops in the region introduce divers to the warm and clear Caribbean waters, where divers enjoy excellent visibility and the opportunity to spot a diverse range of colorful aquatic life.  For more experienced divers, our coastline offers unique dive attractions and the challenge of freshwater cenote diving.
-</p></> : <> <p>Explora los arrecifes de coral en las cálidas aguas caribeñas, podrás ver tortugas, delfines y dóciles tiburones ballena. Aún cuando muchas playas y lagunas cercanas son ideales para esnorquelear, muchos prefieren la emoción de tomar un excursión guiada a los arrecifes en aguas más lejanas de la costa. Muchas de estas excursiones se pueden encontrar directamente en la Marina V&V.  </p><p>
-Para muchos buzos principiantes, Cancún es ideal para adquirir su primera certificación. Seis tiendas de buceo certificadas por PADI ofrecen excursiones a las cristalinas aguas caribeñas para observar la gran variedad y colorida vida marina. Para los más experimentados, están las atracciones únicas de la costa, y el reto de bucear en un cenote.
-</p></>
-                        }
-                    </> : ""}
 
 
-
-                    {this.state.active == 4 ? <>
-                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
-                            <h2> {this.props.eng == true ? <>Pesca en alta mar</> : <>Pesca en alta mar</>}</h2>
-                        </span>
-                        {this.props.eng == true ? <p>Beyond the shallow coastal waters, experienced fishing guides are ready to take you on a deep sea fishing adventure. Local species include sailfish, bonita, tuna, and even record breaking blue and white marlin. After your fishing adventure, we recommend asking your guide to arrange a seaside restaurant reservation, where a chef will prepare your catch of the day in the finest local tradition. Charters are based all along the Costa Maya and may also depart from our marina.</p> : <p>El pez vela, bonita, atún, e incluso el marlín son algunas especies locales que podrás encontrar. Después de tu aventura, recomendamos pedirle a tu guía que haga los preparativos necesarios con un restaurante a la orilla del mar, para que el chef cocine tu pesca del día con el sazón local. Encontrarás muchos excursiones de este tipo a lo largo de toda la Costa Maya, con la opción de salir desde nuestra marina.</p>
-                        }
-                    </> : ""}
+                
 
 
-
-
-                    {this.state.active == 5 ? <>
-                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
-                            <h2> {this.props.eng == true ? <>Golf</> : <>Golf</>}</h2>
-                        </span>
-                        {this.props.eng == true ? <p>Beyond our own Greg Norman Signature Golf Course, Quintana Roo also offers 16 other golf courses to explore.</p> : <p>Además de nuestro campo de golf Greg Norman, hay otros 16 campos a descubrir en Quintana Roo.</p>
-                        }
-                    </> : ""}
-
-
-
-
-
-
-                    {this.state.active == 6 ? < >
-                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
-                            <h2> {this.props.eng == true ? <>Compras</> : <>Compras</>}</h2>
-                        </span>
-                        {this.props.eng == true ? <p>When you arrive at La Amada, it is easy to forget that Cancun is just 30 minutes away. Cancun is well served for cutting edge fashions and familiar conveniences, with no fewer than eight major shopping malls and many large scale North American retailers.For those who are looking for a more distinctly Mexican experience, bustling local markets sell mementos and artisan handicrafts to savvy purchasers and casual tourists alike.</p> : <p>Al llegar a La Amada, es fácil olvidar que Cancún Centro está a solo 12km. La ciudad cuenta con una gran variedad de tiendas de moda nacionales y extranjeras así como tiendas departamentales establecidas en ocho grandes centros comerciales. </p>
-                        }
-                    </ > : ""}
-
-
-
-                    {this.state.active == 7 ? <>
-                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
-                            <h2> {this.props.eng == true ? <>Spa</> : <>Spa</>}</h2>
-                        </span>
-                        {this.props.eng == true ? <p>If pampered relaxation is your top priority, there are countless nearby spa options to choose from. We recommend the experience of a cenote spa. The surroundings of pure water and ancient limestone are the perfect complement to a massage treatment.</p> : <p>Si relajarte y consentirte es tu prioridad, existen incontables opciones. Recomendamos la experiencia del Spa en un cenote. Rodearse de agua pura y piedra caliza es el complemento perfecto para un masaje.</p>
-                        }
-                    </> : ""}
-
-
-
-
-                    {this.state.active == 8 ? <>
-                        <span className="wrapped-header ubicacion" style={{ marginLeft: "0" }}>
-                            <h2> {this.props.eng == true ? <>Cocina</> : <>Cocina</>}</h2>
-                        </span>
-                        {this.props.eng == true ? <p>Downtown & Zona Hotelera Cancun offers a contemporary dining scene, with high quality restaurants serving up global fare at a very competitive cost. For those seeking a more authentic local some of our local beachside eateries serve the freshest and most amazing local seafood. We recommend speaking to the front desk to arrange a reservation at that undiscovered local’s place, our favorite is Mar y Aroma, our <a href="/amenidades/la-amada/beachclub-restaurant">Beachclub Restaurant.</a> </p> : <p>El centro de Cancún y malecón de la Zona Hotelera, ofrece una variedad de restaurantes contemporáneos de la mejor calidad a precio razonable. Aquellos que buscan comida más local, podrán encontrar restaurantes en la playa que sirven los más frescos y deliciosos mariscos, sugerimos preguntes a nuestra concierge su recomendación para un restaurante local típico aunque sin lugar a duda nuestro favorito es Mar y Aroma, nuestro <a href="/amenidades/la-amada/beachclub-restaurant">Beachclub Restaurant.</a></p>
-                        }
-                    </> : ""}
                     </div>
                     <div className="rec-buttons">
                  

@@ -249,6 +249,10 @@ return(    <div className="centered">
               <span>4</span>
               <span>Recámaras</span>
           </button></Link> 
+          <Link to="/residencias/penthouse">    <button   >
+              <span>PH</span>
+              <span>Penthouse</span>
+          </button></Link> 
       </div>)
   }
 

@@ -26,6 +26,9 @@ import SimpleSlider from "../../components/simpleSlider"
 
 let bigSlider =[ <HandleImages name="dosRecamaras1"/>, <HandleImages name="dosRecamaras2"/>, <HandleImages name="dosRecamaras3"/>, <HandleImages name="dosRecamaras4"/>, <HandleImages name="dosRecamaras5"/>]
 
+
+let lockSlider =[ <HandleImages name="lock"/>, <HandleImages name="lock2"/>, ]
+
 let iniciales=["BW","BC","SC","RT","RT","C","MD","SY","G","KC","SE","L","CP","CP","VV","KP","S","H","F","BW","BW","P","P","KZ","AV","AV","SC","CM","F","A1","A2","A3","A4","A5","A6","A7","E"]
 
 let descriptions=["Beachwalk","Beachclub","Sales Center","Rooftop","Rooftop","Concierge","Market Deli","Yoga Salon","Gym","Kids Club","Event's Room","Resident's Lounge","Bike & Running Path","Bike & Running Path","V&V Marina Marina","Kayac & Paddel Board","Spa","Heliport","Viewpoint","Beachwalk","Beachwalk","Palapas","Palapas","Kids Zone","Green Areas","Green Areas","Sales Center",
@@ -63,7 +66,7 @@ const Detalle = (props) => {
 <h2>{props.eng?"Two Bedrooms":"Dos Recámaras"}</h2>
         <div className="content">
             <h3>{props.eng?"From $555,000.00 USD":"Desde $555,000.00 USD"}</h3>
-<h3>{props.eng?"Enjoy a view of the marina from an expansive terrace in these two bedroom homes. These two-bedroom homes offer an outstanding opportunity for a value conscious purchaser or savvy investor.":"Nuestra unidad de dos habitaciones es una gran oportunidad de inversión."}</h3>
+<h3>{props.eng?"These two bedroom marina facing homes offer airy and spacious layouts.":"Nuestros departamentos de lujo de dos recámaras ofrecen amplios espacios y maravillosas vistas hacia la laguna y marina. "}</h3>
 
             <div className="icons-wrapper">
 
@@ -106,7 +109,7 @@ const Features = (props) => {
             <div className="col">
                 <div className="feature">
                     <h4>{props.eng?"Living Room":"Sala Comedor"}</h4>
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>29M<sup>2</sup></span><span>31FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>29M<sup>2</sup></span><span>312FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                     <h4>{props.eng?"Kitchen":"Cocina"}</h4>
@@ -147,6 +150,60 @@ const Features = (props) => {
 
     </div>)
 }
+
+
+
+const LockFeatures = (props) => {
+    return (<div className="features">
+        <div className="wrapper">
+            <div className="col">
+                <div className="feature">
+                    <h4>{props.eng?"Living Room":"Sala Comedor"}</h4>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>37M<sup>2</sup></span><span>398FT<sup>2</sup></span></div>
+                </div>
+                <div className="feature">
+                    <h4>{props.eng?"Kitchen":"Cocina"}</h4>
+                    <div><img alt="Cocina" src={cocina} /><span>9M<sup>2</sup></span><span>96FT<sup>2</sup></span></div>
+                </div>
+                <div className="feature">
+                    <h4>{props.eng?"Master Bedroom":"Dormitorio Principal"}</h4>
+                    <div><img alt="Dormitorio Principal" src={dormP} /><span>41M<sup>2</sup></span><span>441FT<sup>2</sup></span></div>
+                </div>
+              
+            </div>
+
+            <div className="col">
+			<div className="feature">
+                <h4>{props.eng?"Bedroom 2":"Dormitorio 2"}</h4>
+                    <div><img alt="Sala Comedor" src={dorm2} /><span>41M<sup>2</sup></span><span>441FT<sup>2</sup></span></div>
+                </div>
+         
+                <div className="feature">
+				{props.eng? <h4>M<sup>2</sup> Housing</h4>:    <h4>M<sup>2</sup> Vivienda</h4>}
+                    <div><img alt="Sala Comedor" src={vivienda} /><span>172M<sup>2</sup></span><span>1,851FT<sup>2</sup></span></div>
+                </div>
+                <div className="feature">
+				{props.eng? <h4>M<sup>2</sup> Porching</h4>: <h4>M<sup>2</sup> Terraza</h4>}
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>66M<sup>2</sup></span><span>710FT<sup>2</sup></span></div>
+                </div>
+            </div>
+     
+        </div>
+        <div className="buttons">
+        <button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
+
+                <button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
+            </div>
+
+    </div>)
+}
+
+
+
+
+
+
+
 
 
 function getIndex(child){
@@ -1232,7 +1289,14 @@ const Map = (props) => {
 
 
 
-
+const LockImagen = (props) => {
+    return (
+         
+<div className="single-image">
+<SimpleSlider slides={lockSlider}/></div>
+        
+     )
+}
 
 const Imagen = (props) => {
     return (
@@ -1265,10 +1329,18 @@ const Buttons = (props) =>{
               <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
 
-		  <Link to="/residencias/cuatro-recamaras">    <button   >
+		  <Link to="/residencias/penthouse">    <button   >
               <span>PH</span>
               <span>Penthouse</span>
           </button></Link> 
+      </div>)
+  }
+
+
+  const Tabs = (props) =>{
+    return(  <div className="residencias-tabs-wrapper">
+       <button name="2 Bedrooms + LockOff" onClick={props.lockTrue}className={props.lock?"active flat-button  centered-button":"inactive flat-button  centered-button"} style={{ margin: "2em" }}>{props.eng?"2 Bedrooms + LockOff":"2 Récamaras + LockOff"}</button>
+	   <button name="2 Bedrooms"  onClick={props.lockFalse} className={!props.lock?"active flat-button centered-button":"inactive flat-button centered-button"}  style={{ margin: "2em" }}>{props.eng?"2 Bedrooms":"2 Récamaras"}</button>
       </div>)
   }
 
@@ -1282,11 +1354,19 @@ class Residencias extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-mapa:30
+mapa:35,
+lock:false
         }
 
 
     }
+
+	lockTrue=()=>{
+		this.setState({lock:true,mapa:37})
+	}
+	lockFalse=()=>{
+		this.setState({lock:false,mapa:35})
+	}
 
 
     mapClick=(e)=>{
@@ -1320,10 +1400,12 @@ mapa:30
             <Layout>
                 <div className="detalle-hero"> <HandleImages name="dosRecamaras" /></div>
                 <Detalle />
+				<Tabs lock={this.state.lock} lockTrue={this.lockTrue} lockFalse={this.lockFalse}/>
                 <FloorPlan />
-                <Features />
+				{this.state.lock?<LockFeatures/>:<Features />}
                 <Map active={this.state.mapa} increase={this.increase} decrease={this.decrease} click={this.mapClick}/>
-                <Imagen/>
+				{this.state.lock? <LockImagen/>: <Imagen/>}
+                 
                 <Buttons/>
             </Layout>)
     }

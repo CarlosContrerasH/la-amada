@@ -8,6 +8,8 @@ import Layout from '../../components/Layout'
 import { useScrollPercentage } from 'react-scroll-percentage'
 import FancySlider from "../../components/fancySlider"
 import lock from "../../img/RESIDENCIAS/features/LOCK-OFF.svg"
+import vistamar from "../../img/RESIDENCIAS/3 RECAMARAS/VISTA-AL-MAR.svg"
+import condo from "../../img/RESIDENCIAS/3 RECAMARAS/VISTA-AL-CONDO.svg"
 import mar from "../../img/RESIDENCIAS/features/VISTA-MARINA.svg"
 import playa from "../../img/RESIDENCIAS/features/VISTA-PLAYA.svg"
 import reserva from "../../img/RESIDENCIAS/features/VISTA-RESERVA.svg"
@@ -71,14 +73,25 @@ const Detalle = (props) => {
 { /* 
 
 <div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
-<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
-<div><img alt="Marinafront view" src={mar}/><span>{props.eng?"Marinafront view":"Vista a la Marina"}</span></div>
+<div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
 
 
 <div>
 <img alt="Beachfront view" src={playa}/>
 <span>{props.eng?"Beachfront view":"Frente a Playa"}</span></div>
+
+
+
+
+<div>
+<img alt="Condo view" src={condo}/>
+<span>{props.eng?"Condo view":"Vista al condominio"}</span></div>
+
+
+
 </div>
+
+
 
 
 
@@ -122,7 +135,7 @@ const Features = (props) => {
             <div className="col">
             <div className="feature">
 			<h4>{props.eng?"Bedroom 3":"Dormitorio 3"}</h4>
-                    <div><img alt="Sala Comedor" src={dorm3} /><span>26M<sup>2</sup></span><span>280FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={dorm3} /><span>38M<sup>2</sup></span><span>409FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
 				{props.eng? <h4>House Keeping Bedroom</h4>:    <h4>Habitación de Servicio</h4>}
@@ -131,11 +144,11 @@ const Features = (props) => {
                 </div>
                 <div className="feature">
 				{props.eng? <h4>M<sup>2</sup> Housing</h4>:    <h4>M<sup>2</sup> Vivienda</h4>}
-                    <div><img alt="Sala Comedor" src={vivienda} /><span>351M<sup>2</sup></span><span>1,151.57FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={vivienda} /><span>271M<sup>2</sup></span><span>2,917FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
 				{props.eng? <h4>M<sup>2</sup> Porching</h4>: <h4>M<sup>2</sup> Terraza</h4>}
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>72M<sup>2</sup></span><span>236.22FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>60M<sup>2</sup></span><span>626FT<sup>2</sup></span></div>
                 </div>
             </div>
      
@@ -1266,7 +1279,7 @@ const Buttons = (props) =>{
               <span>{props.eng?"Bedrooms":"Récamaras"}</span>
           </button></Link> 
 
-		  <Link to="/residencias/cuatro-recamaras">    <button   >
+		  <Link to="/residencias/penthouse">    <button   >
               <span>PH</span>
               <span>Penthouse</span>
           </button></Link> 
@@ -1283,7 +1296,7 @@ class Residencias extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-mapa:30
+mapa:33
         }
 
 

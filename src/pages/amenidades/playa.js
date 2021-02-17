@@ -111,7 +111,7 @@ const Grid = (props) => {
       </div></Link></ScrollWrapper>
 
       <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/playa/seguridad" >    <div >
-        <div className="icon-wrapper"><img alt="Doble Caseta de Seguridad" src={seguridad} /><span>{props.eng == true ? "Gated Community" : "DOBLE CASETA DE SEGURIDAD"}</span></div> <HandleImages name="amenidadesP6" />
+        <div className="icon-wrapper"><img alt="Doble Caseta de Seguridad" src={seguridad} /><span>{props.eng == true ? "Gated Community" : "DOBLE CASETA DE SEGURIDAD"}</span></div> <HandleImages name="caseta" />
 
       </div></Link></ScrollWrapper>
 

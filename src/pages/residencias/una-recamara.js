@@ -67,9 +67,11 @@ const Detalle = (props) => {
 
             <div className="icons-wrapper">
 
- <div>
-<img alt="lock" src={lock}/>
-<span>Lock-off</span></div>
+			<div><img alt="Marinafront view" src={mar}/><span>{props.eng?"Marinafront view":"Vista a la Marina"}</span></div>
+
+
+
+
 <div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
 
 
@@ -114,7 +116,7 @@ const Features = (props) => {
                 </div>
                 <div className="feature">
 				{props.eng? <h4>M<sup>2</sup> Housing</h4>:    <h4>M<sup>2</sup> Vivienda</h4>}
-                    <div><img alt="Sala Comedor" src={vivienda} /><span>54M<sup>2</sup></span><span>581FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={vivienda} /><span>123M<sup>2</sup></span><span>1324FT<sup>2</sup></span></div>
                 </div>
            
                
@@ -1253,7 +1255,7 @@ const Buttons = (props) =>{
           </button></Link> 
 
 
-		  <Link to="/residencias/cuatro-recamaras">    <button   >
+		  <Link to="/residencias/penthouse">    <button   >
               <span>PH</span>
               <span>Penthouse</span>
           </button></Link> 
@@ -1270,7 +1272,7 @@ class Residencias extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-mapa:30
+mapa:37
         }
 
 
@@ -1306,7 +1308,7 @@ mapa:30
         return (
 
             <Layout>
-                <div className="detalle-hero"> <HandleImages name="unaRecamara" /></div>
+                <div className="detalle-hero"> <HandleImages name="unaRecamarah" /></div>
                 <Detalle />
                 <FloorPlan />
                 <Features />
