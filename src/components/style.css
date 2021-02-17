@@ -2270,7 +2270,7 @@ width:100%
   }
 
   .centered.ubicacion *{color:var(--dark-green)}
-  .centered.ubicacion>*{line-height: initial; max-width: 500px; text-align: center;color:var(--dark-green)}
+  .centered.ubicacion>*{line-height: initial; max-width: 610px; text-align: center;color:var(--dark-green)}
   
   
   
