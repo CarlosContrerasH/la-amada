@@ -15,7 +15,7 @@ import SimpleSlider from "../components/simpleSlider"
 import FancySlider from "../components/fancySlider"
 import video2 from "../img/video.mp4"
 
-let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="dosRecamaras"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>,<HandleImages name="penthouse"/>]
+let fancySlider =[ <HandleImages name="unaRecamarah" />,<HandleImages name="dosRecamaras"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>,<HandleImages name="penthouse"/>]
 let playaSlider =[ <HandleImages name="playaGal1"/>, <HandleImages name="playaGal2"/>,<HandleImages name="amenidadespH1" />,
 <HandleImages name="amenidadespH2" />,
 <HandleImages name="amenidadespH3" /> ]

@@ -1088,8 +1088,20 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
   }
 }
 
+floorPlanl: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lockV.jpg" }) {
+  childImageSharp {
 
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+floorPlanlh: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lockH.jpg" }) {
+  childImageSharp {
 
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
   floorPlan1: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/PLANO-1-REC.jpg" }) {
     childImageSharp {
   
@@ -1358,7 +1370,8 @@ floorPlan3:<Img alt="Floor Plan" fluid={data.floorPlan3.childImageSharp.fluid} /
 floorPlan3h:<Img alt="Floor Plan" fluid={data.floorPlan3h.childImageSharp.fluid} />,
 floorPlan4:<Img alt="Floor Plan" fluid={data.floorPlan4.childImageSharp.fluid} />,
 floorPlan4h:<Img alt="Floor Plan" fluid={data.floorPlan4h.childImageSharp.fluid} />,
-
+floorPlanl:<Img alt="Floor Plan" fluid={data.floorPlanl.childImageSharp.fluid} />,
+floorPlanlh:<Img alt="Floor Plan" fluid={data.floorPlanlh.childImageSharp.fluid} />,
 
 
 playaH1:<Img alt="Amenidades" fluid={data.playaH1.childImageSharp.fluid} />,

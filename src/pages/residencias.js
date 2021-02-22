@@ -12,7 +12,7 @@ import mar from "../img/RESIDENCIAS/features/VISTA-MARINA.svg"
 import playa from "../img/RESIDENCIAS/features/VISTA-PLAYA.svg"
 import reserva from "../img/RESIDENCIAS/features/VISTA-RESERVA.svg"
 
-let fancySlider =[ <HandleImages name="unaRecamara"/>,<HandleImages name="dosRecamaras"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>,<HandleImages name="penthouse"/>]
+let fancySlider =[ <HandleImages name="unaRecamarah" />,<HandleImages name="dosRecamaras"/>,<HandleImages name="residencesGal2"/>,<HandleImages name="residencesGal3"/>,<HandleImages name="penthouse"/>]
 
 
 let slideLinks = ["/residencias/una-recamara/","/residencias/dos-recamaras/","/residencias/tres-recamaras/","/residencias/cuatro-recamaras/","/residencias/penthouse/"]

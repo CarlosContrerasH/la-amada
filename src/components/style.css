@@ -659,7 +659,9 @@ span.script{
 .blurb>div{
     display: grid;
     place-items: center;
+    
 }
+
 
 
 .blurb>div>div{
@@ -670,9 +672,15 @@ span.script{
 
 font-weight: 200;}
 
+
+
+.blurb.amenidades>div{
+    margin: 2em;
+}
+
 .blurb.amenidades h2 span:first-child{
     font-weight:200;
-    letter-spacing:.1em;
+     
     font-style:italic;
     display: inline-block;
          width: 100%;
@@ -694,6 +702,9 @@ font-weight: 200;}
       margin:2em 0 ;
     }
 
+
+
+ 
 
     @media (max-width: 627px) {
         .blurb.amenidades h2 span:first-child{

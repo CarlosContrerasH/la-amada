@@ -103,6 +103,15 @@ const FloorPlan = (props) => {
 }
 
 
+const LockFloorPlan = (props) => {
+    return (<div className="bg-sand floor-plan">
+
+        <HandleImages name="floorPlanl" />
+		<HandleImages name="floorPlanlh" />
+    </div>)
+}
+
+
 const Features = (props) => {
     return (<div className="features">
         <div className="wrapper">
@@ -1401,7 +1410,7 @@ lock:false
                 <div className="detalle-hero"> <HandleImages name="dosRecamaras" /></div>
                 <Detalle />
 				<Tabs lock={this.state.lock} lockTrue={this.lockTrue} lockFalse={this.lockFalse}/>
-                <FloorPlan />
+				{this.state.lock?<LockFloorPlan />:<FloorPlan />} 
 				{this.state.lock?<LockFeatures/>:<Features />}
                 <Map active={this.state.mapa} increase={this.increase} decrease={this.decrease} click={this.mapClick}/>
 				{this.state.lock? <LockImagen/>: <Imagen/>}
