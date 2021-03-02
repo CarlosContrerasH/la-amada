@@ -99,7 +99,7 @@ const Features = (props) => {
             <div className="col">
                 <div className="feature">
                     <h4>{props.eng?"Living Room":"Sala Comedor"}</h4>
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>70M<sup>2</sup></span><span>752FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>70M<sup>2</sup></span><span>753FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
                     <h4>{props.eng?"Kitchen":"Cocina"}</h4>

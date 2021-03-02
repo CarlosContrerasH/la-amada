@@ -128,7 +128,7 @@ const Features = (props) => {
                 </div>
                 <div className="feature">
                 <h4>{props.eng?"Bedroom 2":"Dormitorio 2"}</h4>
-                    <div><img alt="Sala Comedor" src={dorm2} /><span>38M<sup>2</sup></span><span>409FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={dorm2} /><span>26M<sup>2</sup></span><span>280FT<sup>2</sup></span></div>
                 </div>
             </div>
 

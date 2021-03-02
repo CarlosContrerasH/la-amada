@@ -108,7 +108,8 @@ return(    <div className="centered">
 
    </div>
    <HandleImages name="unaRecamara"/>
-   <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+   <Link to="/residencias/una-recamara"> 
+   <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 
    
    </div>
@@ -136,7 +137,8 @@ return(    <div className="centered">
 <span>Lock-off</span></div>
    </div>
    <HandleImages name="dosRecamaras"/>
-   <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+   <Link to="/residencias/dos-recamaras"> 
+   <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 
    </div>
    </div>)
@@ -162,7 +164,8 @@ return(    <div className="centered">
 <span>Lock-off</span></div>
 </div>
 <HandleImages name="tresRecamaras"/>
-<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+<Link to="/residencias/tres-recamaras">  
+<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 </div>
    </div>)
   }
@@ -190,7 +193,8 @@ return(    <div className="centered">
 
 </div>
 <HandleImages name="cuatroRecamaras"/>
-<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+<Link to="/residencias/cuatro-recamaras">
+<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 </div>
    </div>)
   }
@@ -220,7 +224,8 @@ return(    <div className="centered">
 
 </div>
 <HandleImages name="penthouse"/>
-<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button>
+<Link to="/residencias/penthouse">  
+<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 </div>
    </div>)
   }

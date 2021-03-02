@@ -187,13 +187,12 @@ DEL CENTRO DE CANCÚN</span>}
             {props.eng?<div className="centered ubicacion">
                 <span className="script">The best of Mexico at your front door
 </span>
-                <p>Whether you are interested in outdoor adventure, culture, nightlife, or relaxation, La Amada is an ideal basecamp for recreation.</p><p>
-                    Nuestra perfecta ubicación nos permite disfrutar de las siguientes atracciones:</p>
+                <p>Whether you are interested in outdoor adventure, culture, nightlife, or relaxation, La Amada is an ideal basecamp for recreation.</p>
             </div>:<div className="centered ubicacion">
                 <span className="script">Lo mejor del Caribe Mexicano
 a tu puerta</span>
                 <p>Ya sea que prefieras aventuras al aire libre, cultura, vida nocturna o relajación,
-La Amada es el lugar ideal para empezar a disfrutarlo.</p><p>
+La Amada es el lugar ideal para empezar a disfrutarlo.<br/>
                     Nuestra perfecta ubicación nos permite disfrutar de las siguientes atracciones:</p>
             </div>
             }

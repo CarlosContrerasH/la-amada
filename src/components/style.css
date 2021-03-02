@@ -656,6 +656,13 @@ span.script{
     font-weight: 300;
 }
 
+
+.blurb.amenidades .wrapped-header {
+    margin: 1em 0 1em 0;
+}
+
+
+
 .blurb>div{
     display: grid;
     place-items: center;
@@ -1318,6 +1325,7 @@ button.for-mobile{
 .amenidad-detalle .back{text-align: center;
     cursor: pointer;
 margin-top: 2em;
+margin-bottom: 2em;
 border:none;
 background: transparent;
 display: flex;
@@ -1680,7 +1688,7 @@ position: relative;
  
 
 }
-
+.residencia-accordeon a{text-decoration: none;}
 
 .residencia-accordeon h2{
     display: flex;
@@ -1751,7 +1759,7 @@ background: url("../img/RESIDENCIAS/flecha-expand.svg");
 }
 
 .residencia-accordeon.expanded .content{
-max-height: 890px;
+max-height: 932px;
 transition: .6s max-height ease-out;
  
 }
