@@ -2385,7 +2385,7 @@ width:100%
 
   .google-map{
       display:block;
-      width:min(800px,100%);
+      width:100%;
       margin: 0 auto 4em;
   }
 

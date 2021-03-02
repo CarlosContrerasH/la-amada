@@ -1088,6 +1088,15 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
   }
 }
 
+mapa2: file(relativePath: { eq: "UBICACION/MAPA.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
 floorPlanl: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lockV.jpg" }) {
   childImageSharp {
 
@@ -1361,6 +1370,8 @@ penthouse5:<Img alt="Penthouse" fluid={data.penthouse5.childImageSharp.fluid} />
 
 map:<Img alt="Map" fluid={data.map.childImageSharp.fluid} />,
 mapa:<Img alt="Map" fluid={data.mapa.childImageSharp.fluid} />,
+
+mapa2:<Img alt="Map" fluid={data.mapa2.childImageSharp.fluid} />,
 
 floorPlan1:<Img alt="Floor Plan" fluid={data.floorPlan1.childImageSharp.fluid} />,
 floorPlan1h:<Img alt="Floor Plan" fluid={data.floorPlan1h.childImageSharp.fluid} />,

@@ -64,10 +64,8 @@ const TwoCol = (props) => {
     return (
 
         <ScrollWrapper>
-            <div className="col-wrapper joya">
-            <div className=" left-col"><HandleImages name="mapa2"/></div>
-            <div className=" right-col">
-            <div  >
+            <div className="single-wide ubicacion">
+                <div  >
                     <span className="wrapped-header ubicacion">
                         <h2> {props.eng == true ? <>EXCLUSIVENESS<br/>IN EVERY CORNER<br /><span className="sub">WE ARE THE ONLY RESIDENCES<br/>
 INSIDE PLAYA MUJERES
@@ -92,7 +90,7 @@ o para vacacionar; momentos de tranquilidad, convivencia familiar, seguridad y p
 recuerdos que atesorarás por siempre.</p><p>
                         Conoce las áreas que nos rodean:</p>
                 </div>}
-                </div> 
+                
                 
                 </div>
         </ScrollWrapper>
@@ -121,17 +119,45 @@ const Mapa = (props) => {
 
     return (
        <div className="icons-map-wrapper">
-         
-         <div className="bg-sand centered ubicacion" style={{ padding: "1em" }}>
-              {props.eng?  <span><span className="script" style={{ lineHeight: "initial" }}>Exclusivity </span> 20 MINUTES AWAY<br />
-           FROM CANCUN'S DOWNTOWN</span>: <span><span className="script" style={{ lineHeight: "initial" }}>Exclusividad </span>A 20 MINUTOS<br />
-DEL CENTRO DE CANCÚN</span>}
-                <button class="outlined-button" style={{ margin: "1em" }}>{props.eng?"download master plan":"DESCARGAR MASTER PLAN"}</button>
-            </div>
-           <div className="botom">
+           <div className="top">
+           <div className="icons-wrapper">
 
-           <HandleImages name="mapa"/>
+{ /* 
+
+<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
+
+<div><img alt="Marinafront view" src={pm}/><span>{props.eng == true ? "Main entrance Playa Mujeres Resort & Golf":"Entrada principal Playa Mujeres Resort & Golf"}</span></div>
+
+<div><img alt="Lagoon View" src={marina}/><span>V&V Marina</span></div>
+
+<div><img alt="Lagoon View" src={delfinario}/><span>{props.eng == true ? "Dolphinarium Playa Mujeres":"Delfinario Playa Mujeres"}</span></div>
+
+
+<div><img alt="Lagoon View" src={golf}/><span>{props.eng == true ? "Club-House Playa Mujeres Golf Club":"Casa Club Playa Mujeres Golf Club"}</span></div>
+
+
+<div><img alt="Lagoon View" src={hotels}/><span>{props.eng == true ? "Resorts & Hotels":"Resorts y Hoteles"}</span></div>
+
+ 
+</div>
            </div>
+           <div className="left"><HandleImages name="mapa"/></div>
+           <div className="right"><ul>
+               <li><span>1</span><span>{props.eng == true ?<>Main Entrance Playa Mujeres Resort & Golf</>:<>Entrada Principal Playa Mujeres Resort & Golf</>}</span></li>
+               <li><span>2</span><span>V&V Marina</span></li>
+               <li><span>3</span><span>{props.eng == true ?"Paradisus Playa Mujeres Hotel":"Hotel Paradisus Playa Mujeres"}</span></li>
+               <li><span>4</span><span>LA AMADA RESIDENCES</span></li>
+               <li><span>5</span><span>The Beloved Hotel & Spa</span></li>
+               <li><span>6</span><span>{props.eng == true ?"Excellence Hotel ":"Hotel Excellence"}</span></li>
+               <li><span>7</span><span>{props.eng == true ?"Finest Hotel ":"Hotel Finest"}</span></li>
+               <li><span>8</span><span>{props.eng == true ?"Fista Americana Aqua Hotel ":"Hotel Fiesta Americana Aqua"}</span></li>
+               <li><span>9</span><span>{props.eng == true ?"Atelier Studio Hotel ":"Hotel Atelier"}</span></li>
+               <li><span>10</span><span>Naa'y Estate Homes Community</span></li>
+               <li><span>11</span><span>{props.eng == true ?"Dreams Playa Mujeres Hotel  ":"Hotel Dreams Playa Mujeres"}</span></li>
+               <li><span>12</span><span>{props.eng == true ?"Secrets Playa Mujeres Hotel  ":"Hotel Secrets Playa Mujeres"}</span></li>
+               <li><span>13</span><span>{props.eng == true ?"Grand Palladium Hotel ":"Hotel Grand Palladium"}</span></li>
+               <li><span>14</span><span>Playa Mujeres Golf Club</span></li>
+               </ul></div>
        </div>
 
 
@@ -149,8 +175,15 @@ const CircleMap = (props) => {
         <ScrollWrapper>
 
 
-  
-        
+            <div className="bg-sand centered ubicacion" style={{ padding: "1em" }}>
+              {props.eng?  <span><span className="script" style={{ lineHeight: "initial" }}>Exclusivity </span> 20 MINUTES AWAY<br />
+           FROM CANCUN'S DOWNTOWN</span>: <span><span className="script" style={{ lineHeight: "initial" }}>Exclusividad </span>A 20 MINUTOS<br />
+DEL CENTRO DE CANCÚN</span>}
+                <button class="outlined-button" style={{ margin: "1em" }}>{props.eng?"download master plan":"DESCARGAR MASTER PLAN"}</button>
+            </div>
+            <div className="bg-sand circle-map">
+                <img src={map} />
+            </div>
             {props.eng?<div className="centered ubicacion">
                 <span className="script">The best of Mexico at your front door
 </span>
