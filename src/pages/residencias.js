@@ -56,7 +56,7 @@ const Residences = (props) => {
       catch{}
     }
     
-    return (<div ref={ref} className={percentage > .35 ? "visible component " + (props.classes ? props.classes : "") : "component " + (props.classes ? props.classes : "")}>
+    return (<div ref={ref} className={percentage > .20 && percentage<.9 ? "visible component " + (props.classes ? props.classes : "") : "component " + (props.classes ? props.classes : "")}>
       {
   
       

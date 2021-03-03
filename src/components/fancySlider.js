@@ -6,9 +6,16 @@ import logo from '../img/logo.svg'
 import { HandleImages } from "../components/handleImages"
 import Swipe from 'react-easy-swipe';
 
+import { useScrollPercentage } from 'react-scroll-percentage'
+
 import ScrollWrapper from "../components/scrollwrapper"
 import pin from "../img/location-pin.svg"
 import Logo from "./logo"
+
+
+
+
+
 const SimpleSlider = class extends React.Component {
     constructor(props) {
         super(props)
@@ -22,8 +29,10 @@ this.handleScroll = this.handleScroll.bind(this);
     }
 
     handlePrev() {
-        var temp = parseInt(document.getElementsByClassName('in-screen')[0].id, 10);
+        var temp = document.getElementsByClassName('in-screen')[0]?parseInt(document.getElementsByClassName('in-screen')[0].id, 10):undefined;
 
+
+        if (temp !==undefined){
         var element = document.getElementById((temp - 1).toString())
    
         
@@ -33,12 +42,14 @@ this.handleScroll = this.handleScroll.bind(this);
                 active:temp-1
             })
         }
-        console.log(this.state.active)
+    }
     }
 
     handleNext() {
-        var temp = parseInt(document.getElementsByClassName('in-screen')[0].id, 10);
+        var temp = document.getElementsByClassName('in-screen')[0]?parseInt(document.getElementsByClassName('in-screen')[0].id, 10):undefined;
 
+
+if (temp  !==undefined){
         var element = document.getElementById((temp + 1).toString())
 
    
@@ -50,7 +61,10 @@ this.handleScroll = this.handleScroll.bind(this);
                 active:temp+1
             })
         }
-        console.log(this.state.active)
+         
+}
+
+
     }
 
 
