@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { HandleImages } from "../../components/handleImages"
 import Layout from '../../components/Layout'
 
-import vistamar from "../../img/RESIDENCIAS/3 RECAMARAS/VISTA-AL-MAR.svg"
+import vistamar from "../../img/RESIDENCIAS/features/FRENTE-A-PLAYA.svg"
 import { useScrollPercentage } from 'react-scroll-percentage'
 import FancySlider from "../../components/fancySlider"
 import lock from "../../img/RESIDENCIAS/features/LOCK-OFF.svg"
@@ -88,8 +88,8 @@ const Detalle = (props) => {
 const FloorPlan = (props) => {
     return (<div className="bg-sand floor-plan">
 
-        <HandleImages name="floorPlan4" />
-		<HandleImages name="floorPlan4h" />
+        <HandleImages name="floorPlanP" />
+		<HandleImages name="floorPlanPh" />
     </div>)
 }
 

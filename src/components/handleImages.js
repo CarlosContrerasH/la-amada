@@ -1195,6 +1195,26 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   }
 
 
+  floorPlanPh: file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/PENTHOUSEL.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
+  floorPlanP: file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/PLANO-MOVIL.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
+
+  
+  
+
+
 
 
  
@@ -1383,6 +1403,8 @@ floorPlan4:<Img alt="Floor Plan" fluid={data.floorPlan4.childImageSharp.fluid} /
 floorPlan4h:<Img alt="Floor Plan" fluid={data.floorPlan4h.childImageSharp.fluid} />,
 floorPlanl:<Img alt="Floor Plan" fluid={data.floorPlanl.childImageSharp.fluid} />,
 floorPlanlh:<Img alt="Floor Plan" fluid={data.floorPlanlh.childImageSharp.fluid} />,
+floorPlanP:<Img alt="Floor Plan" fluid={data.floorPlanP.childImageSharp.fluid} />,
+floorPlanPh:<Img alt="Floor Plan" fluid={data.floorPlanPh.childImageSharp.fluid} />,
 
 
 playaH1:<Img alt="Amenidades" fluid={data.playaH1.childImageSharp.fluid} />,

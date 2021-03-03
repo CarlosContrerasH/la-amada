@@ -8,7 +8,7 @@ import Layout from '../../components/Layout'
 import { useScrollPercentage } from 'react-scroll-percentage'
 import FancySlider from "../../components/fancySlider"
 import lock from "../../img/RESIDENCIAS/features/LOCK-OFF.svg"
-import vistamar from "../../img/RESIDENCIAS/3 RECAMARAS/VISTA-AL-MAR.svg"
+import vistamar from "../../img/RESIDENCIAS/features/FRENTE-A-PLAYA.svg"
 import condo from "../../img/RESIDENCIAS/3 RECAMARAS/VISTA-AL-CONDO.svg"
 import mar from "../../img/RESIDENCIAS/features/VISTA-MARINA.svg"
 import playa from "../../img/RESIDENCIAS/features/VISTA-PLAYA.svg"
