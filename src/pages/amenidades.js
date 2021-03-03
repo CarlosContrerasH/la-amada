@@ -23,7 +23,7 @@ import { Link } from 'gatsby'
     return (
         <ScrollWrapper>
             
-        <div className="full">
+        <div className="full" style={{maxHeight:"100%"}}>
 
     <div >
     <span className="header-amenidades">
