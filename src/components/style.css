@@ -1589,7 +1589,7 @@ margin: 2em;
 
 .slidecontainer input[value="2"] {
    
-    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 33.3%, var(--sand) 33.3%,var(--sand) 100%) ;
+    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 25%, var(--sand) 25%,var(--sand) 100%) ;
 
     
      
@@ -1598,13 +1598,23 @@ margin: 2em;
 
 .slidecontainer input[value="3"] {
    
-    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 66.6%,var(--sand) 66.6%,var(--sand) 100%) ;
+    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 50%,var(--sand) 50%,var(--sand) 100%) ;
 
     
      
 }
 
+
 .slidecontainer input[value="4"] {
+   
+    background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 75%,var(--sand) 75%,var(--sand) 100%) ;
+
+    
+     
+}
+
+
+.slidecontainer input[value="5"] {
    
     background: linear-gradient(90deg, var(--dark-green) 0%, var(--dark-green) 100%) ;
 
@@ -1665,15 +1675,22 @@ position: relative;
     background-color: var(--dark-green);
 }
 .slidecontainer .pos2{
-    transform:translateX(calc((100% / 3) - 8.5px));
+    transform:translateX(calc((100% / 4) - 6.5px));
     transition: .3s transform ease-out;
 }
 
 .slidecontainer .pos3{
-    transform:translateX(   calc( ((100% / 3) * 2 ) - 16.5px )     );
+    transform:translateX(   calc( ((100% / 4) * 2 ) - 13px )     );
     transition: .3s transform ease-out;
 }
+
 .slidecontainer .pos4{
+    transform:translateX(   calc( ((100% / 4) * 3 ) - 18px )     );
+    transition: .3s transform ease-out;
+}
+
+
+.slidecontainer .pos5{
     transform:translateX(   calc( (100% - 24.5px ) )   );
     transition: .3s transform ease-out;
 }

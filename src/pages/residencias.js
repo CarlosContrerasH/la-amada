@@ -80,8 +80,8 @@ return(    <div className="centered">
  const Range = (props) =>{
    return( <div class="slidecontainer">
       
-    <input onChange={(event)=>props.change(event.target.value)} value={props.precio} type="range" min="1" max="4"   class="slider" id="myRange"/>
-<div class={"pos"+props.precio}><span >{props.precio==1?"$380,000.00 USD":props.precio==2?"$555,000.00 USD":props.precio==3?"$875,000.00 USD":"$1780, 000.00 USD"}</span></div> 
+    <input onChange={(event)=>props.change(event.target.value)} value={props.precio} type="range" min="1" max="5"   class="slider" id="myRange"/>
+<div class={"pos"+props.precio}><span >{props.precio==1?"$380,000.00 USD":props.precio==2?"$555,000.00 USD":props.precio==3?"$875,000.00 USD":props.precio==4?"$1,150,000.00 USD":"$1780, 000.00 USD"}</span></div> 
   </div>)
  }
 
@@ -317,7 +317,7 @@ this.handleRange=this.handleRange.bind(this)
             this.setState({
                 precio:e,
                 expanded1:false,
-                expanded2:true,
+                expanded2:false,
                 expanded3:true,
                 expanded4:false,
                 expanded5:false,
@@ -333,10 +333,21 @@ this.handleRange=this.handleRange.bind(this)
                 expanded2:false,
                 expanded3:false,
                 expanded4:true,
-                expanded5:true,
+                expanded5:false,
             })
     
         }
+        if(e==5){
+          this.setState({
+              precio:e,
+              expanded1:false,
+              expanded2:false,
+              expanded3:false,
+              expanded4:false,
+              expanded5:true,
+          })
+  
+      }
     }
 
  componentDidMount(){
