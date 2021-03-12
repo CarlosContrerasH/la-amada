@@ -60,7 +60,10 @@ const Blurb = (props) => {
 
       <div className="centered">
 
-
+      <div style={{display:"none"}}>
+         {props.eng?<h1>Playa Mujeres Amenities</h1>:
+         <h1>Amenidades Playa Mujeres</h1>}
+       </div>
         {props.eng == true ?
           <><p>While Cancun is a place visited by millions, Playa Mujeres is what fortunate locals and savvy expats have discovered for themselves. This highly livable community offers privacy and security in a beautiful natural environment. When you arrive at Playa Mujeres, it is easy to forget that we are 15 mins away from Cancun. The Laguna de Chacmochuc Preserve acts as a natural buffer between ourselves and the outside world. While the tension and challenges of the outside world are easy to leave at the secure gates of our community, necessities and conveniences are never far away.      </p>
             <p>  Playa Mujeres is a 930 acre master planned community situated on 3.2 kilometers of white sand beachfront. The community includes our private residences, golf, our marina, and several of Mexico’s top all-inclusive resorts where the respect and care for the environment and nature makes it a magical residential and hotel community that allows for the kind of cohabitation, privacy,and connectivity that you have been yearning. Its amenities offer unique resort experiences that will transform each one  of your days into unforgettable moments that will last forever.</p></>

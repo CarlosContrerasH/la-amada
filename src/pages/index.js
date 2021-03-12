@@ -39,7 +39,7 @@ const Hero = (props) => {
   
   <div className="hero">
      
-   <div className={"logo-wrapper "+(percentage>.25?"fade":"")}><Logo/>{props.eng==true?<h3>ONLY CONDO IN PLAYA MUJERES, CANCUN.</h3>:<h3>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h3>}</div>
+   <div className={"logo-wrapper "+(percentage>.25?"fade":"")}><Logo/>{props.eng==true?<h1>ONLY CONDO IN PLAYA MUJERES, CANCUN.</h1>:<h1>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h1>}</div>
     <div className="screen first"></div>
     <div className="screen second" ref={ref} ></div>
     <div className="bg-wrapper" style={{transform:"translateY(min("+ (percentage.toPrecision(2)) * 200+"%,var(--transformHero)))"}} >
@@ -75,7 +75,7 @@ const Hero = (props) => {
      <h2> {props.eng==true?<>Meet our property</>:<>Conoce nuestro desarrollo </>}</h2> 
       </span><div className="video-wrapper">
     {props.video? 
-    <video  style={{width:"100%"}}controls autoPlay>
+    <video  style={{width:"100%"}}controls autoPlay loop>
   <source src={video2} type="video/mp4"/>
    
   

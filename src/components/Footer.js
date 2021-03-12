@@ -17,9 +17,7 @@ const Footer = class extends React.Component {
               src={pin}
               alt="Location"
               style={{ width: '2em', height: '2em' }}
-            /> CALLE VIALIDAD, ISLA MUJERES MZA. 1, 1
-77400 CANCÚN, QUINTANA ROO.
-MÉXICO</span>
+            /> Calle Vialidad, Playa Mujeres Mza. 1 Lote 1. <br/>   C.P. 77400 Cancún  <br/>           Quintana Roo, México.</span>
           </div>
           <div >
             <a title="llamada" href="tel:998 313 3667">

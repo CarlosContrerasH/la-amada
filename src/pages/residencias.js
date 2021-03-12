@@ -5,6 +5,7 @@ import { Link } from 'gatsby'
 import {HandleImages} from "../components/handleImages"
 import Layout from '../components/Layout'
 
+import vistamar from "../img/RESIDENCIAS/features/FRENTE-A-PLAYA.svg"
 import { useScrollPercentage } from 'react-scroll-percentage'
 import FancySlider from "../components/fancySlider"
 import lock from "../img/RESIDENCIAS/features/LOCK-OFF.svg"
@@ -22,6 +23,12 @@ let slideTitles=[<><span>Una</span><br/><span className='sub'>Recámara</span></
 
 let engTitles=[<><span>One</span><br/><span className='sub'>Bedroom</span></>,<><span>Two</span><br/><span className='sub'>Bedrooms</span></>,<><span>Three</span><br/><span className='sub'>Bedrooms</span></>,<><span>Four</span><br/><span className='sub'>Bedrooms</span></>,<><span></span><br/><span className='sub'>Penthouse</span></>]
  
+
+
+ 
+
+
+
 const Residences = (props) => {
   
    
@@ -29,7 +36,17 @@ const Residences = (props) => {
       <ResWrapper classes="bg-sand fancy">
             
       <div>
-   <h3>{props.eng==true?"Our Residences":"Nuestras Residencias"}</h3>
+   <h1>{props.eng==true?"Our Residences":"Nuestras Residencias"}</h1>
+   <br/>
+   {props.eng?<div className="centered ubicacion">
+              <span className="script">La Amada
+</span>
+              <p>With a surface area of 13 acres, La Amada features 215 luxurious apartments with 1, 2, 3, 4 bedrooms and Penthousedistributed throughout 8 buildings, with either beach-front, ocean, marina, or natural reserve views. They have been carefully planned, with spacious bedrooms, ample terraces and covered parking, designed taking care of every single detail, while offering spaces to share, create, and build new memories that you will treasure forever.</p>
+          </div>:<div className="centered ubicacion">
+              <span className="script">La Amada</span>
+              <p>Con una superficie de terreno de 5.2 hectáreas, La Amada cuenta con 215 lujosos departamentos de 1, 2, 3, 4 recámaras y Penthouse distribuidos en 8 edificios, en la playa, con vista al mar, a la marina o a la reserva natural, todos cuidadosamente diseñados y planificados con amplias terrazas, estacionamientos cubiertos, dando la mayor importancia a cada uno de sus detalles, ofreciendo espacios para compartir, crear y construir nuevos recuerdos que atesorarás por siempre.</p>
+          </div>
+          }
    <FancySlider slides={fancySlider} titles={props.eng?engTitles:slideTitles} links={slideLinks} eng={props.eng}/>
        
       </div>
@@ -130,8 +147,7 @@ return(    <div className="centered">
  
 <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
-<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
-
+ 
 <div>
 <img alt="lock" src={lock}/>
 <span>Lock-off</span></div>
@@ -157,11 +173,8 @@ return(    <div className="centered">
  
    <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
-<div><img alt="Beachfront Residences" src={playa}/>{props.eng==true?<span>Beachfront<br/>Residences</span>: <span>Vista<br/> al mar</span>}</div>
-
-<div>
-<img alt="lock" src={lock}/>
-<span>Lock-off</span></div>
+ 
+ 
 </div>
 <HandleImages name="tresRecamaras"/>
 <Link to="/residencias/tres-recamaras">  
@@ -211,15 +224,12 @@ return(    <div className="centered">
       
    <div className="icons-wrapper">
 
- 
- 
-   <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
-
- 
-<div><img alt="Beachfront Residences" src={playa}/>{props.eng==true?<span>Beachfront<br/>Residences</span>: <span>Vista<br/> al mar</span>}</div>
+   <div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
 
 
-<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
+<div>
+<img alt="Beachfront view" src={playa}/>
+<span>{props.eng?"Beachfront view":"Frente a Playa"}</span></div>
 
 
 </div>

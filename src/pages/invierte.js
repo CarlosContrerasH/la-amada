@@ -21,6 +21,11 @@ import deli from "../img/invierte/ICONOS/MARKET-DELI.svg"
 import ludoteca from "../img/invierte/ICONOS/KIDSCLUB.svg"
 import beachclubres from "../img/invierte/ICONOS/BEACHCLUB-REST.svg"
 
+import ciclopista from "../img/AMENIDADES/PLAYA/ICONOS/BICI-BLANCO.svg"
+import golf from "../img/AMENIDADES/PLAYA/ICONOS/GOLF-BLANCO-01.svg"
+import marina from "../img/AMENIDADES/PLAYA/ICONOS/MARINA-BLANCO-01.svg"
+import seguridad from "../img/AMENIDADES/PLAYA/ICONOS/SEGURIDAD-BLANCO-01.svg"
+
 import { useScrollPercentage } from 'react-scroll-percentage'
 import { Link } from 'gatsby'
 
@@ -116,11 +121,11 @@ const Icons = (props) => {
             </div>
             <div className="icon-wrapper">
                 <img src={concierge} />
-                <span>Playa</span>
+                <span>{props.eng?"Lobby, motor lobby & Concierge":"Lobby, motor lobby y Concierge"}</span>
             </div>
             <div className="icon-wrapper">
                 <img src={beachclub} />
-                <span>{props.eng?"Lobby, motor lobby & Concierge":"Lobby, motor lobby y Concierge"}</span>
+                <span>{props.eng?"Beach":"Playa"}</span>
             </div>
             <div className="icon-wrapper">
                 <img src={rooftop} />
@@ -149,6 +154,32 @@ const Icons = (props) => {
             <div className="icon-wrapper">
                 <img src={beachclubres} />
                 <span>BeachClub Restaurant</span>
+            </div>
+
+
+            <div className="icon-wrapper">
+                <img src={beachclubres} />
+                <span>Mar</span>
+            </div>
+
+            <div className="icon-wrapper">
+                <img src={marina} />
+                <span>Marina</span>
+            </div>
+
+            <div className="icon-wrapper">
+                <img src={golf} />
+                <span>Campo de Golf</span>
+            </div>
+
+            <div className="icon-wrapper">
+                <img src={ciclopista} />
+                <span>Ciclopista</span>
+            </div>
+
+            <div className="icon-wrapper">
+                <img src={seguridad} />
+                <span>Seguridad 24 Hrs</span>
             </div>
 
         </div>

@@ -129,7 +129,7 @@ top:0;left:0;
  }
 nav svg{
     fill:var(--sand);
-    height: 1.7em;
+    height: 2.25em;
     margin: 0 ;
     width:auto;
 }
@@ -217,7 +217,7 @@ object-position: bottom;
 .hero svg{
     fill:var(--dark-green);
 }
-.hero h3{
+.hero h3, .hero h1{
     color:var(--dark-green);
     font-style: italic;
     font-size: 1.5em;
@@ -1117,7 +1117,7 @@ button.arrow-button:nth-of-type(2):hover{
    
 }
 
-.fancy>div>h3{
+.fancy>div>h3,.fancy>div>h1{
     width: 100%;
     text-align: center;
     color:var(--dark-green);
@@ -1532,12 +1532,14 @@ display: flex;
 }
 
 
-.centered h3{
+.centered h3,
+.centered h1{
 text-align: center;
 font-weight: 200;
 text-transform: uppercase;
 color:var(--dark-green);
 margin: 2em;
+font-size: 1.17em;
 
 }
 
@@ -1707,7 +1709,7 @@ position: relative;
 }
 .residencia-accordeon a{text-decoration: none;}
 
-.residencia-accordeon h2{
+.residencia-accordeon h2,.residencia-accordeon h1{
     display: flex;
     cursor: pointer;
     font-size: 2em;
@@ -2564,8 +2566,8 @@ display: none;
 
  
 .asociado .logo img{
-    height: 3em;
-    width:auto;
+    height: auto;
+    width:120px;
     display: inline-block;
     
 }

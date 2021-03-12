@@ -76,8 +76,8 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
             
        
        <div className="centered">
-         {props.eng?<h3>Explore our exclusives amenities for owners and guests</h3>:
-         <h3>Conoce las amenidades de uso exclusivo para residentes y sus invitados</h3>}
+         {props.eng?<h1>Explore our exclusives amenities for owners and guests</h1>:
+         <h1>Conoce las amenidades de uso exclusivo para residentes y sus invitados</h1>}
        </div>
       
         </ScrollWrapper>
