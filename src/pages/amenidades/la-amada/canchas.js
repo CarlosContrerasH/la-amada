@@ -33,7 +33,8 @@ const Slider = (props) => {
  
  
  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
-      viewBox="0 0 150 150" enable-background="new 0 0 150 150" >
+      viewBox="0 0 150 150" 
+enableBackground="new 0 0 150 150" >
 
 
 <g>
@@ -59,7 +60,7 @@ const Slider = (props) => {
 
                      <SimpleSlider slides={bigSlider}/>
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>
+                    <h1> {props.eng == true ? <>
                     
                     Multipurpose courts
                     
@@ -75,7 +76,7 @@ const Slider = (props) => {
                         
                     Paddel, Tennis, BasketBall y más
                         
-                        </span></>}</h2>
+                        </span></>}</h1>
                 </span>
                 <p>
 

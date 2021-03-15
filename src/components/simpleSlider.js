@@ -85,7 +85,7 @@ const SimpleSlider = class extends React.Component {
 
                     {this.props.slides.map((slide, index) => {
 
-                        return <div key={index} className="slide" id={index == this.state.active ? "active" : ""}>{slide}</div>;
+                        return <div key={"b"+index} className="slide" id={index == this.state.active ? "active" : ""}>{slide}</div>;
                     })}
 
 
@@ -93,7 +93,7 @@ const SimpleSlider = class extends React.Component {
                     <div className="slider-buttons">
                         {this.props.slides.map((slide, index) => {
                            
-                            return <button key={index} onClick={(event) => { this.handleButtonClick(event.target.id) }} id={index} className={index == this.state.active ? "active" : ""}></button>;
+                            return <button key={"a"+index} onClick={(event) => { this.handleButtonClick(event.target.id) }} id={index} className={index == this.state.active ? "active" : ""}></button>;
                         })}
                     </div>
 

@@ -30,7 +30,8 @@ const Slider = (props) => {
  
  
  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
-      viewBox="0 0 150 150" enable-background="new 0 0 150 150" >
+      viewBox="0 0 150 150" 
+enableBackground="new 0 0 150 150" >
  
 <g>
 	<path fill="#FFFFFF" d="M131.1,123.3l-7.3-21.9h-15.1v-7.5h14.9V77.4c0-13.6-3.9-23-11.8-28.8c-6-4.3-14-6.5-25.5-6.9v-7.5h-7.5
@@ -53,7 +54,7 @@ const Slider = (props) => {
 
                 <HandleImages name="amenidadesA6" />
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>
+                    <h1> {props.eng == true ? <>
                     
                         Motor Lobby, LOBBY & Concierge  
                     
@@ -68,7 +69,7 @@ const Slider = (props) => {
                         
          Servicio premium para residentes
                         
-                        </span></>}</h2>
+                        </span></>}</h1>
                 </span>
                 <p>
 

@@ -33,7 +33,8 @@ const Slider = (props) => {
 
 
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 viewBox="0 0 165.1 130.9" enable-background="new 0 0 165.1 130.9" >
+	 viewBox="0 0 165.1 130.9" 
+enableBackground="new 0 0 165.1 130.9" >
 <path fill="#FFFFFF" d="M133.8,39.8l-3.3-1.6c-1.2-3.2-4.8-10-13.9-13c-6.2-2.1-22.3-7.4-38.9-2.1c-7.7-6.1-13.5-6.5-25-5
 	c-2.6,0.3-3.7,1.7-4.1,2.8c-1.8,5,6.8,7.2,8,15.8c-5.4,4.4-11.8,11.1-15.3,18c-8.2,16.5-5.9,30.8-4.4,36.5
 	c-5.3,4.1-8.6,10.2-9.8,18.3c-0.4,2.8,2.5,4.8,5,3.6l15.8-7.9l12.3,6.2c2.1,1.1,4.7-0.3,5-2.6c1.2-8.6-0.6-15.6-9-19.3
@@ -60,7 +61,7 @@ const Slider = (props) => {
                 </div>
                 <SimpleSlider slides={bigSlider}/>
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>
+                    <h1> {props.eng == true ? <>
                     
                         Delphinus Playa Mujeres 
                     
@@ -78,7 +79,7 @@ const Slider = (props) => {
                     
                     Playa Mujeres  Los seres más extraorinarios a unos pasos de casa
                         
-                        </span></>}</h2>
+                        </span></>}</h1>
                 </span>
                 <p>
 

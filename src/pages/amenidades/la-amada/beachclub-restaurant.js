@@ -32,7 +32,8 @@ const Slider = (props) => {
  
  
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 viewBox="0 0 268.4 228.9" enable-background="new 0 0 268.4 228.9" >
+	 viewBox="0 0 268.4 228.9" 
+enableBackground="new 0 0 268.4 228.9" >
 <g>
 	<path fill="#FFFFFF" d="M165.7,166.7h-3.4l-2-2.7h-0.1l0-0.2c0-0.2,0-0.4,0-0.5c-0.1-0.6-0.1-1.2-0.2-1.8c-0.1-0.6-0.1-1.1-0.2-1.7
 		c0-0.5-0.1-1.1-0.2-1.6c-0.1-1.2-0.2-2.4-0.4-3.6c-0.2-1.5-0.3-3.1-0.5-4.6c-0.1-1.2-0.2-2.4-0.4-3.7c-0.1-0.6-0.1-1.2-0.2-1.7
@@ -294,7 +295,7 @@ const Slider = (props) => {
                 </div>
 				 <SimpleSlider slides={playaSlider}/>
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>Mar y Aroma Beachclub Restaurant <br /><span className="sub">By Chef Octavio Santiago</span></> : <>Mar y Aroma Beachclub Restaurant <br /><span className="sub">By Chef Octavio Santiago</span></> }</h2>
+                    <h1> {props.eng == true ? <>Mar y Aroma Beachclub Restaurant <br /><span className="sub">By Chef Octavio Santiago</span></> : <>Mar y Aroma Beachclub Restaurant <br /><span className="sub">By Chef Octavio Santiago</span></> }</h1>
                 </span>
                 <p>
 

@@ -2854,6 +2854,7 @@ padding:2em;
     color:var(--dark-green);
     text-align: center;
     font-size: 1.5em;
+    text-transform: capitalize;
 
 }
 

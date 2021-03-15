@@ -32,7 +32,8 @@ const Slider = (props) => {
  
  
  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
-      viewBox="0 0 150 150" enable-background="new 0 0 150 150" >
+      viewBox="0 0 150 150" 
+enableBackground="new 0 0 150 150" >
 <path fill="#FFFFFF" d="M133.2,102.1L133.2,102.1c-3.4-3.4-7.3-6.2-11.6-8.3c8-8.8,11.2-19.4,11.2-21.1c0-1.7-1.1-3.1-2.7-3.4
 	c-5.7-1.5-11.7-2-17.6-1.4c0.2-1.1,0.4-2.2,0.6-3.3c0.9-6.8,0.4-13.6-1.3-20.2c-0.5-2-2.5-3-4.3-2.5c-6.7,1.8-12.9,4.9-18.3,9.1
 	c-3.6-10-9.2-16.4-12.5-19.7c-0.7-0.7-1.6-1-2.5-1s-1.8,0.4-2.5,1c-3.3,3.3-8.9,9.7-12.5,19.7c-5.4-4.2-11.7-7.3-18.3-9.1
@@ -64,7 +65,7 @@ const Slider = (props) => {
                 </div>
                      <SimpleSlider slides={bigSlider}/>
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>Namaste<br /><span className="sub"> Yoga & Multipurpose Exercise Room  </span></> : <>Namasté<br /><span className="sub">Salón de yoga</span></>}</h2>
+                    <h1> {props.eng == true ? <>Namaste<br /><span className="sub"> Yoga & Multipurpose Exercise Room  </span></> : <>Namasté<br /><span className="sub">Salón de yoga</span></>}</h1>
                 </span>
                 <p>
 

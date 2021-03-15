@@ -31,7 +31,8 @@ const Slider = (props) => {
  
  
  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
-      viewBox="0 0 150 150" enable-background="new 0 0 150 150" >
+      viewBox="0 0 150 150" 
+enableBackground="new 0 0 150 150" >
 <g>
 	<path fill="#F6F4F2" d="M21.7,33.5c-7,9-10.8,20.3-10.6,31.7c0,0.5,0.2,0.8,0.3,1.1l5.7,8.4c1.1,1.6,3.1,2.3,4.9,1.8l19.2-5.1
 		c1.9-0.5,3.2-2.1,3.3-4.1l0.3-4.5l2.5,3.7c1.1,1.6,3.1,2.3,4.9,1.8l7.7-2.1l10.6,39.5l-15.8,0h0c-0.9,0-1.7-0.4-2.3-1L38.7,91
@@ -68,7 +69,7 @@ const Slider = (props) => {
                 </div>
                      <SimpleSlider slides={bigSlider}/>
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>ROOFTOPS & POOLS<br /><span className="sub">Ideal spot to get away</span></> : <>Lujo en albercas <br /><span className="sub">Conoce nuestras exclusivas áreas de albercas</span></>}</h2>
+                    <h1> {props.eng == true ? <>ROOFTOPS & POOLS<br /><span className="sub">Ideal spot to get away</span></> : <>Lujo en albercas <br /><span className="sub">Conoce nuestras exclusivas áreas de albercas</span></>}</h1>
                 </span>
                 <p>
 

@@ -31,7 +31,8 @@ const Slider = (props) => {
  
  
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 viewBox="0 0 455.6 172.2" enable-background="new 0 0 455.6 172.2"  style={{height:"5em", width:"12em"}}>
+	 viewBox="0 0 455.6 172.2" 
+enableBackground="new 0 0 455.6 172.2"  style={{height:"5em", width:"12em"}}>
 <g>
 	<polygon fill="#FFFFFF" points="28,29.9 24.7,29.9 24.7,81.6 61.2,81.6 61.2,78.3 28,78.3 	"/>
 	<polygon fill="#FFFFFF" points="86.1,81.6 94.1,81.6 90.1,72.2 	"/>
@@ -118,7 +119,7 @@ const Slider = (props) => {
                 </div>
                      <SimpleSlider slides={playaSlider}/>
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>
+                    <h1> {props.eng == true ? <>
                     
                         La Amada Express 
                     
@@ -134,7 +135,7 @@ const Slider = (props) => {
                         
                     Deli to Go con Starbucks, Aldo's y La Europea Express
                         
-                        </span></>}</h2>
+                        </span></>}</h1>
                 </span>
                 <p>
 

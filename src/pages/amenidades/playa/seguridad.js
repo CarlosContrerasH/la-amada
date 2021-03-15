@@ -30,7 +30,8 @@ const Slider = (props) => {
                     <Link to="/amenidades/playa/marina"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
             <div className="icon-wrapper">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
-	 viewBox="0 0 165.1 130.9" enable-background="new 0 0 165.1 130.9" >
+	 viewBox="0 0 165.1 130.9" 
+enableBackground="new 0 0 165.1 130.9" >
 <g>
 	<path fill="#4A7871" d="M137.4,36.7l-50-20.6c-1.7-0.7-3.6-0.9-4.8-0.9c-1.3,0-3.1,0.1-4.8,0.9l-50,20.6c-3.6,1.5-5.5,5.6-4.3,9.4
 		l8.7,26.6v10.9c0,8.2,0,16.6,7.1,22.8c7.3,6.4,20.7,9.2,43.4,9.2c22.8,0,36.2-2.8,43.4-9.2c7.1-6.2,7.1-14.6,7.1-22.8V72.7
@@ -60,7 +61,7 @@ const Slider = (props) => {
                     
                    
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == false ? <>
+                    <h1> {props.eng == false ? <>
                     
                         Seguridad máxima
                     
@@ -78,7 +79,7 @@ const Slider = (props) => {
                     
                     Both of these gates are actively guarded 24 hours per day, every day. 
                         
-                        </span></>}</h2>
+                        </span></>}</h1>
                 </span>
                 <p>
 

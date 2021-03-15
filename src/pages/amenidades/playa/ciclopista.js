@@ -31,7 +31,8 @@ const Slider = (props) => {
  
  
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 viewBox="0 0 165.1 130.9" enable-background="new 0 0 165.1 130.9"  >
+	 viewBox="0 0 165.1 130.9" 
+enableBackground="new 0 0 165.1 130.9"  >
 <g>
 	<path fill="#FFFFFF" d="M99.7,61.4c-0.9-0.8-2.3-0.7-3,0.2l-7.7,9.1c-1.6-0.9-3.4-1.4-5.3-1.4c-0.3,0-0.6,0-0.9,0l-1.5,0.1
 		L66.4,35.4H68c4.4,0,8-3.6,8-8c0-2.7-2.2-4.9-5-4.9H55.7c-2.7,0-5,2.2-5,4.9c0,4.4,3.6,8,8,8h3l4.1,9.3l-12.2,12
@@ -69,7 +70,7 @@ const Slider = (props) => {
                 <SimpleSlider slides={bigSlider}/>
                    
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>
+                    <h1> {props.eng == true ? <>
                     
                         Bike & Running Path
                     
@@ -85,7 +86,7 @@ const Slider = (props) => {
                         
                  Pedalea, corre o camina rodeado de naturaleza.
                         
-                        </span></>}</h2>
+                        </span></>}</h1>
                 </span>
                 <p>
 

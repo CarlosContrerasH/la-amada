@@ -3,7 +3,7 @@ module.exports = {
     title: 'La Amada',
     description:
       'ONLY CONDO IN PLAYA MUJERES, CANCUN.| ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.',
-      image:'/img/chemex.jpg',
+      image:'/img/laamada.jpg',
       url:'https://la-amada.com'
   },
   plugins: [
@@ -32,7 +32,26 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-minify-html',
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-favicons',
+      options: {
+        logo: './src/img/icon.svg',
+        appName: 'My Website',
+        background: '#fff',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {

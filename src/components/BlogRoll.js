@@ -22,6 +22,12 @@ const breakpointColumnsObj = {
 };
 
 class BlogRoll extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+ 
+    }}
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -65,7 +71,7 @@ class BlogRoll extends React.Component {
                       <h3>{post.frontmatter.title}</h3>
                     </Link>
                     <Link className="read-more" to={post.fields.slug}>
-                    Read More
+                 Read More 
                   </Link>
                    
                   </div>

@@ -61,7 +61,8 @@ import { Link } from 'gatsby'
 
           <div className="logo">   
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
-	 viewBox="0 0 330.6 76.4" enable-background="new 0 0 330.6 76.4" >
+	 viewBox="0 0 330.6 76.4" 
+enableBackground="new 0 0 330.6 76.4" >
 <g>
 	<polygon fill="#DDD3CA" points="20.8,19 17.3,19 17.3,56.2 43.9,56.2 43.9,52.6 20.8,52.6 	"/>
 	<polygon fill="#DDD3CA" points="59.5,56.2 67.2,56.2 63.4,47.4 	"/>
@@ -169,7 +170,7 @@ class Amenidades extends React.Component{
 
 
     render(){
-
+console.log("amenidades")
         return (
         
            <Layout>

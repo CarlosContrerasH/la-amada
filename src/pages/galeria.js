@@ -270,6 +270,7 @@ this.setState({
         return (
 
             <Layout scroll={false}>
+                <h1 style={{display:"none"}}> Galeria</h1>
                  <Swipe
                 onSwipeStart={this.onSwipeStart}
                 onSwipeMove={this.onSwipeMove}

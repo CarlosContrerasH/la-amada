@@ -18,25 +18,25 @@ const Layout = class extends React.Component {
       eng: false
 
     }
-    this.handleLanguageChange = this.handleLanguageChange.bind(this)
+    
   }
 
-  handleLanguageChange() {
+  handleLanguageChange=()=> {
     this.setState({
       eng: !this.state.eng
     }, () => {
       // Save data to sessionStorage
-      sessionStorage.setItem('eng', this.state.eng);
+     sessionStorage.setItem('eng', this.state.eng.toString);
     })
   }
 
-  componentDidMount() {
-
-
+  componentDidMount(){
+   
+    
     // Get saved data from sessionStorage
     let data = sessionStorage.getItem('eng');
   
-
+    console.log("lay!!!!!",sessionStorage)
 
     if (data) {
       this.setState({
@@ -44,8 +44,11 @@ const Layout = class extends React.Component {
       }, () => {
         // Save data to sessionStorage
         sessionStorage.setItem('eng', data);
-        console.log('mount', data, this.state.eng);
+        
       })
+    }
+    else{
+      sessionStorage.setItem('eng', false);
     }
 
 
@@ -70,7 +73,9 @@ const Layout = class extends React.Component {
 <Seo title={this.props.title} description={this.props.description}/>
         <Navbar langToggle={this.handleLanguageChange} eng={this.state.eng} />
        { this.props.scroll==false?"":<Scroll/>}
+  
         {temp}
+       
         <Form eng={this.state.eng}/>
         <Footer />
       </div>

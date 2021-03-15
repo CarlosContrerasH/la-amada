@@ -84,7 +84,8 @@ const Hero = (props) => {
          
          <HandleImages name="video" />      
  <svg  className="play-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 viewBox="0 0 372.4 369.9" enable-background="new 0 0 372.4 369.9"  >
+	 viewBox="0 0 372.4 369.9" 
+enableBackground="new 0 0 372.4 369.9"  >
 <g>
 	<polygon fill="#DDD3CA" points="307.6,189.1 226.3,235.4 145,281.7 145.6,188.1 146.1,94.5 226.9,141.8 	"/>
 	<path fill="#DDD3CA" d="M189.3,347.9c-89.5,0-162.4-72.8-162.4-162.4S99.8,23.1,189.3,23.1c89.5,0,162.4,72.8,162.4,162.4

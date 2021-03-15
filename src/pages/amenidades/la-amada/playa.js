@@ -29,7 +29,8 @@ const Slider = (props) => {
  
  
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
-	 viewBox="0 0 150 150" enable-background="new 0 0 150 150"  ß>
+	 viewBox="0 0 150 150" 
+enableBackground="new 0 0 150 150"  ß>
 <g>
 	<g>
 		<g>
@@ -64,7 +65,7 @@ const Slider = (props) => {
                 </div>
                 <SimpleSlider slides={playaSlider}/>
                 <span className="wrapped-header playa">
-                    <h2> {props.eng == true ? <>Exclusive Beach<br /><span className="sub">275 linear yards of white sandy beach</span></> : <>250 metros lineales de frente de playa<br /><span className="sub">Residencias Frente a Playa</span></>}</h2>
+                    <h1> {props.eng == true ? <>Exclusive Beach<br /><span className="sub">275 linear yards of white sandy beach</span></> : <>250 metros lineales de frente de playa<br /><span className="sub">Residencias Frente a Playa</span></>}</h1>
                 </span>
                 <p>
 
