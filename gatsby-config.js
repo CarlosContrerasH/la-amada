@@ -4,7 +4,8 @@ module.exports = {
     description:
       'ONLY CONDO IN PLAYA MUJERES, CANCUN.| ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.',
       image:'/img/laamada.jpg',
-      url:'https://la-amada.com'
+      url:'https://la-amada.com',
+      siteUrl: 'https://la-amada.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
