@@ -61,7 +61,8 @@ const Detalle = (props) => {
 <h1>{props.eng?"Penthouse":"Penthouse"}</h1>
         <div className="content">
             <h3>{props.eng?"From $1,780,000.00 USD":"Desde $1,780,000.00 USD"}</h3>
-<h3>{props.eng?"Our penthouse with private terrace and ocean view, is the best opportunity to invest.":"Nuestro penthouse con terraza privada y vista al mar es la mejor oprtunidad para invertir."}</h3>
+<h3>{props.eng?"Our penthouse with private terrace and ocean view, is the best opportunity to invest.":
+"Con una espectacular terraza al aire libre, jacuzzi, 3 habitaciones y vista directa al mar turquesa, nuestra unidad penthouse presenta el más alto estándar del lujo en arquitectura habitacional."}</h3>
 
             <div className="icons-wrapper">
 

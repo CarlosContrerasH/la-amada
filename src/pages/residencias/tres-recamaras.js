@@ -66,7 +66,8 @@ const Detalle = (props) => {
 <h1>{props.eng?"Three Bedrooms":"Tres Recámaras"}</h1>
         <div className="content">
             <h3>{props.eng?"From $875,000.00 USD":"Desde $875,000.00 USD"}</h3>
-<h3>{props.eng?"Walk straight to the beach club from your ground floor, ocean facing home.		":"Nuestra unidad de tres recámaras es una gran oportunidad de inversión."}</h3>
+<h3>{props.eng?"Walk straight to the beach club from your ground floor, ocean facing home.		":
+"Nuestra unidad de tres recámaras es una gran oportunidad de inversión para familias y parejas que gozan de tener invitados continuamente. Cada departamento cuenta con más de 270m2 de vivienda."}</h3>
 
             <div className="icons-wrapper">
 

@@ -198,11 +198,7 @@ return(    <div className="centered">
    <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
  
-<div><img alt="Beachfront Residences" src={playa}/>{props.eng==true?<span>Beachfront<br/>Residences</span>: <span>Vista<br/> al mar</span>}</div>
-
-
-<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
-
+ 
 
 </div>
 <HandleImages name="cuatroRecamaras"/>

@@ -52,7 +52,7 @@ beach: file(relativePath: { eq: "beach.jpeg" }) {
 depas:file(relativePath: { eq: "FOTO-HEADER-HOME.jpg" }) {
   childImageSharp {
 
-    fluid {
+    fluid (quality: 60){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }

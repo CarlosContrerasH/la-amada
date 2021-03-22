@@ -34,7 +34,7 @@ import { Link } from 'gatsby'
     </div>
 
     <div className="component">
-    <div className="centered">{props.eng==true?
+    <div className="centered amenidades">{props.eng==true?
     
     <><p> Fun, recreation, and exclusivity are a must, which is why amenities and activity areas have been created for all kinds of ages and interests.</p></>
 
@@ -47,7 +47,7 @@ import { Link } from 'gatsby'
     )
   }
 
-
+  
 
   const TwoCol = (props) => {
   

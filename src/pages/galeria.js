@@ -12,7 +12,7 @@ let bigSlider =[ <HandleImages name="invierteHeader"/>,
 <HandleImages name="invierte1"/>,
 <HandleImages name="invierte2"/>,
 <HandleImages name="invierte3"/>,
-<HandleImages name="beach"/>,
+
 <HandleImages name="playa"/>,
 <HandleImages name="depas"/>,
 <HandleImages name="tenis"/>,

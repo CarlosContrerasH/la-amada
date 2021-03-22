@@ -21,10 +21,10 @@ import deli from "../img/invierte/ICONOS/MARKET-DELI.svg"
 import ludoteca from "../img/invierte/ICONOS/KIDSCLUB.svg"
 import beachclubres from "../img/invierte/ICONOS/BEACHCLUB-REST.svg"
 
-import ciclopista from "../img/AMENIDADES/PLAYA/ICONOS/BICI-BLANCO.svg"
-import golf from "../img/AMENIDADES/PLAYA/ICONOS/GOLF-BLANCO-01.svg"
-import marina from "../img/AMENIDADES/PLAYA/ICONOS/MARINA-BLANCO-01.svg"
-import seguridad from "../img/AMENIDADES/PLAYA/ICONOS/SEGURIDAD-BLANCO-01.svg"
+import ciclopista from "../img/invierte/ICONOS/CICLOPISTA.svg"
+import golf from "../img/invierte/ICONOS/GOLF.svg"
+import marina from "../img/invierte/ICONOS/MARINA.svg"
+import seguridad from "../img/invierte/ICONOS/SEGURIDAD.svg"
 
 import { useScrollPercentage } from 'react-scroll-percentage'
 import { Link } from 'gatsby'
@@ -115,72 +115,72 @@ const Icons = (props) => {
     return (<div className="invierte-icons-wrapper">
         <h3>{props.eng?"Residence’s experiences":"Amenidades dentro del residencial"}</h3>
         <div className="icons">
-            <div className="icon-wrapper">
+            <a href="/amenidades/la-amada/playa" className="icon-wrapper">
                 <img src={playa} />
                 <span>Playa</span>
-            </div>
-            <div className="icon-wrapper">
+            </a>
+            <a href="/amenidades/la-amada/lobby" className="icon-wrapper">
                 <img src={concierge} />
                 <span>{props.eng?"Lobby, motor lobby & Concierge":"Lobby, motor lobby y Concierge"}</span>
-            </div>
-            <div className="icon-wrapper">
+            </a>
+            <a href="/amenidades/la-amada/playa"className="icon-wrapper">
                 <img src={beachclub} />
                 <span>{props.eng?"Beach":"Playa"}</span>
-            </div>
-            <div className="icon-wrapper">
+            </a>
+            <a href="/amenidades/la-amada/beachclub" className="icon-wrapper">
                 <img src={rooftop} />
                 <span>Beachclub</span>
-            </div>
-            <div className="icon-wrapper">
+            </a>
+            <a href="/amenidades/la-amada/yoga" className="icon-wrapper">
                 <img src={yoga} />
                 <span>{props.eng?"Yoga Studio":"Salón de yoga"}</span>
-            </div>
-            <div className="icon-wrapper">
+            </a>
+            <a href="/amenidades/la-amada/canchas"className="icon-wrapper">
                 <img src={canchas} />
                 <span>{props.eng?"Multipurpose Courts":"Canchas Multiusos" }</span>
-            </div>
-            <div className="icon-wrapper">
+            </a>
+            <a href="/amenidades/la-amada/gym"className="icon-wrapper">
                 <img src={gym} />
                 <span>Gym</span>
-            </div>
-            <div className="icon-wrapper">
+            </a>
+            <a href="/amenidades/la-amada/market" className="icon-wrapper">
                 <img src={deli} />
                 <span>Market Deli</span>
-            </div>
-            <div className="icon-wrapper">
+            </a>
+            <a href="/amenidades/la-amada/ludoteca" className="icon-wrapper">
                 <img src={ludoteca} />
                 <span>{props.eng?"Resident’s Lounge & KidsClub":"Ludoteca y KidsClub " }</span>
-            </div>
-            <div className="icon-wrapper">
+            </a>
+            <a href="/amenidades/la-amada/beachclub-restaurant"className="icon-wrapper">
                 <img src={beachclubres} />
                 <span>BeachClub Restaurant</span>
-            </div>
+            </a>
 
 
-            <div className="icon-wrapper">
+            <a href="/amenidades/la-amada/playa" className="icon-wrapper">
                 <img src={beachclubres} />
                 <span>Mar</span>
-            </div>
+            </a>
 
-            <div className="icon-wrapper">
+            <a href="/amenidades/playa/marina"className="icon-wrapper">
                 <img src={marina} />
                 <span>Marina</span>
-            </div>
+            </a>
 
-            <div className="icon-wrapper">
+            <a href="/amenidades/playa/golf" className="icon-wrapper">
                 <img src={golf} />
                 <span>Campo de Golf</span>
-            </div>
+            </a>
 
-            <div className="icon-wrapper">
+            <a href="/amenidades/playa/ciclopista"className="icon-wrapper">
                 <img src={ciclopista} />
                 <span>Ciclopista</span>
-            </div>
+            </a>
 
-            <div className="icon-wrapper">
+            <a href="/amenidades/playa/seguridad" className="icon-wrapper">
                 <img src={seguridad} />
                 <span>Seguridad 24 Hrs</span>
-            </div>
+            </a>
 
         </div>
     </div>)

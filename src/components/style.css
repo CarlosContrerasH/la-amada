@@ -218,9 +218,11 @@ object-position: bottom;
     fill:var(--dark-green);
 }
 .hero h3, .hero h1{
+    text-align: center;
     color:var(--dark-green);
     font-style: italic;
     font-size: 1.5em;
+   
 }
 .vid-click{
     position: relative;
@@ -1097,13 +1099,14 @@ button.arrow-button:nth-of-type(2):hover{
     height:16px;
     margin:1em;
     border-radius: 100%;
-    background: #00000055;
+   border:2px solid var(--sand);
+   background: transparent;
     transition: .3s background;
     cursor: pointer;
 }
 .slider-buttons button.active{
      
-    
+    border:2px solid transparent;
     background: var(--sand);
     transition: .3s background;
 }
@@ -1160,6 +1163,17 @@ position: relative;
     width: 100% !important;
     margin:0 !important;
     max-height: calc(100vh - 240px);
+    display: flex;
+    flex-direction: column;
+}
+
+.fancy-slide>a{
+   
+position: relative;
+    height: 100%;
+    width: 100% !important;
+    margin:0 !important;
+height: calc(100vh - 240px);
     display: flex;
     flex-direction: column;
 }
@@ -1533,7 +1547,8 @@ display: flex;
 
 
 .centered h3,
-.centered h1{
+.centered h1,
+.centered.amenidades p{
 text-align: center;
 font-weight: 200;
 text-transform: uppercase;
@@ -2420,7 +2435,8 @@ width:100%
   }
 
   .conocenos-hero h1{
-      transform:translateX(-27%)
+      transform:translateX(-27%);
+   
   }
   .conocenos-hero p{
       font-size: 1.2em;
@@ -2514,6 +2530,7 @@ height: 100%;}
     max-width: 880px;
     margin:2em auto !important;
     justify-content: space-between;
+    display: none;
 }
 
 .persona{
@@ -2624,6 +2641,7 @@ justify-content: center;
     font-style: italic;
     font-weight: 200;
     letter-spacing: 0.1em;
+    color:var(--dark-green)
 }
 
 .invierte-icons-wrapper .icons{
@@ -2643,6 +2661,8 @@ justify-content: center;
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-decoration: none;
+    color:var(--dark-green)
 
 }
 
