@@ -301,10 +301,10 @@ enableBackground="new 0 0 268.4 228.9" >
 
                 {props.eng == true ?
                 
-                "A taste of paradise. Anyone who has visited our beachclub-restaurante have enjoyed the nourishing and vibrant culinary creations, from traditional mexican dishes to grilled catch of the day. Much of this is down to Chef Octavio				, the master mind behind Mar y Aroma, our beachclub restaurant. "
+                "It is a must to indulge in the exquisite delicacies created by Chef Octavio Santiago, at Mar y Aroma, the restaurant at La Amada. Mar y Aroma is the only residential restaurant in Cancun that is operated by an in-house chef. Among other things, our menu offers scrumptious breakfasts, fresh, same-day caught seafood seasoned with native herbs from the region, and private barbecues and exclusive catering for both tenants and guests. Award wining Chef Octavio is well known for the unique and different techniques he uses in the kitchen, and he is also famous for being the masterhands behind the restaurant Kiosco Verde. Chef Octavio truly knows what culture, taste and excellent customer service looks like! "
                 :
                 
-                "Nuestro restaurante Mar y Aroma a cargo del Chef Octavio Santiago, es el único restaurante operado por un Chef dentro de un residencial en Cancún. Nuestro menú incluye desde desayunos contemporaneos mexicanos, hasta pesca del día sazonada con especias y aromas de la región. El Chef O. Santiago ha sido galardonado en diferentes ocasiones por sus diferentes y únicas técnicas en la cocina. Cabe destacar que el Chef es también el responsable de la cocina del restaurante Kiosco Verde, primer restaurante en Cancún con mas de 45 años de trayectoria. Si algo acompaña a nuestro Chef es la tradición y gusto por el buen sabor y servicio. "
+                "Nuestro restaurante Mar y Aroma a cargo del Chef Octavio Santiago, es el único restaurante operado por un Chef dentro de un residencial en Cancún. Nuestro menú incluye desde desayunos contemporáneos mexicanos, hasta pesca del día sazonada con especias y aromas de la región; catering y parrilladas privadas exclusivas para propietarios e invitados. El Chef ha sido galardonado en diferentes ocasiones por sus diferentes y únicas técnicas en la cocina, además de operar también la cocina del restaurante Kiosco Verde. Si algo acompaña a nuestro Chef es la tradición y el gusto por el buen sabor y servicio. "
                 }
 
 

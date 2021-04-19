@@ -68,7 +68,7 @@ enableBackground="new 0 0 165.1 130.9" >
                     <br /><span className="sub">
                         
                
-                    The most extraordinary beings a few steps from home
+                    Playa Mujeres 
                         
                         </span></> : <>
                         
@@ -77,7 +77,7 @@ enableBackground="new 0 0 165.1 130.9" >
                     <br /><span className="sub">
                         
                     
-                    Playa Mujeres  Los seres más extraorinarios a unos pasos de casa
+                    Playa Mujeres   
                         
                         </span></>}</h1>
                 </span>
@@ -88,15 +88,14 @@ enableBackground="new 0 0 165.1 130.9" >
                 <>
                 
 
-                Located within the luxurious Dreams Playa Mujeres Golf & Spa Resort. Surrounded by white beaches, the clear waters of the Caribbean Sea and the best facilities, this habitat offers the wonderful experience of  interacting with dolphins in a 100% natural habitat.  
-
+                Walking seven minutes down the beach, you will come across the luxurious Resort Dreams Playa Mujeres Golf & Spa. It is here where you will find our dolphin center Delphinus Playa Mujeres.  
 
 
                 </>
                 :
                 
                 <>
-                Nuestro hábitat se encuentra en un área aun virgen y en pleno desarrollo, que forma parte del espacio continental del municipio de Isla Mujeres y se localiza dentro del lujoso hotel Dreams Playa Mujeres Golf & Spa Resort.
+             Caminando por la playa, a tan sólo 7 minutos, se encuentra el lujoso hotel Dreams Playa Mujeres Golf & Spa Resort, donde se alberga Delphinus Playa Mujeres. 
                 </>
                 }
 

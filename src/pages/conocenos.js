@@ -56,17 +56,17 @@ const Equipo = (props)=>{
     
     <br /><span className="sub" style={{fontStyle:"italic",fontWeight:"200",letterSpacing:".1em"}}>
     {props.eng==true?
-                  "a team built by the best  "
-                      :  "Un equipo contrsuido por los mejores"}
+                  "Only the best in our team!"
+                      :  "¡Un equipo construido por los mejores!"}
 
         
         </span></h2>
         
 </span>
 {props.eng==true?
-                 <p>Our residential is characterized by its prime location and luxurious amenities, but this would not be possible without the great team behind this great project. Meet our team in the sales and project management area, a team that we are undoubtedly proud to be part of.
+                 <p>Our residential complex is well known for its privileged location and luxurious amenities, but none of this would be possible without the work of our passionate team who are behind this project. Come meet the people in charge of our sales and admin department. They make us proud every day!
                  </p>
-                      :  <p>Nuestro residencial se caracteriza por su privilegiada ubicación y por sus lujosas amenidades, pero esto no sería posible sin el grandioso equipo que está detrás de este gran proyecto. Conoce a nuestro equipo de trabajo en el área de ventas y administración de proyecto, un equipo que sin lugar a dudas estamos orgullosos de formar parte de él.</p>}
+                      :  <p>Nuestro residencial se caracteriza por su privilegiada ubicación y por sus lujosas amenidades, pero esto no sería posible sin el grandioso equipo que está detrás de este proyecto. Conoce los responsables del trabajo en el área de ventas y administración de proyecto, un equipo que sin lugar a dudas estamos orgullosos de formar parte de él.</p>}
 
 
 <div className="personas-wrapper">
@@ -93,7 +93,7 @@ const Equipo = (props)=>{
   <h2>
   {props.eng==true?
                   "Associates "
-                      :  "Asociados"}
+                      :  "Equipo"}
 
   
   <br /><span className="sub" style={{fontStyle:"italic",fontWeight:"200",letterSpacing:".1em"}}>

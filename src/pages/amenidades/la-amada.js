@@ -114,17 +114,17 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/rooftop-albercas" >    <div >
-         <div className="icon-wrapper"><img alt="Rooftops y Albercas" src={roof}/><span>{props.eng?"Rooftops & Pools":"Rooftops y Terrazas"}</span></div> <HandleImages name="amenidadesA10"/>
+         <div className="icon-wrapper"><img alt="Rooftops y Albercas" src={roof}/><span>{props.eng?"Rooftops & Pools":"Rooftops y Albercas"}</span></div> <HandleImages name="amenidadesA10"/>
       
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element ">  <Link to="/amenidades/la-amada/yoga" >    <div >
-         <div className="icon-wrapper"><img alt="Yoga" src={yoga}/><span>{props.eng?"Yoga and Multipurpose Excercise Room":"Salón de Yoga"}</span></div> <HandleImages name="amenidadesA11"/>
+         <div className="icon-wrapper"><img alt="Yoga" src={yoga}/><span>{props.eng?"Yoga and Multipurpose Excercise Room":"Salón de Yoga y usos múltiples."}</span></div> <HandleImages name="amenidadesA11"/>
       
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element big">  <Link to="/amenidades/la-amada/canchas" >      <div >
-         <div className="icon-wrapper"><img alt="Canchas" src={canchas}/><span>Canchas de Usos Múltiples</span></div> <HandleImages name="amenidadesA4"/>
+         <div className="icon-wrapper"><img alt="Canchas" src={canchas}/><span>Canchas</span></div> <HandleImages name="amenidadesA4"/>
   
 
          </div></Link></ScrollWrapper>

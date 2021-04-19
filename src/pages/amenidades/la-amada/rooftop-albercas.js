@@ -75,10 +75,10 @@ enableBackground="new 0 0 150 150" >
 
                 {props.eng == true ?
                 
-                "We have two rooftops located in different buildings. Each one has a pool, Jacuzzi, chaise lounges, hammock area, lounge, and grills where you can make the most of the amazing views of the Caribbean Sea, the Marina and the ecologic reserve as well as astonishing sunsets. This is the ideal spot to get away, read a book, chill and relax on your own or with your family or friends."
+                "Each of our two separate rooftops are fitted with a swimming pool, a jacuzzi, hammocks, lawn chairs, lounge rooms and barbecues where you can enjoy spectacular views of the Caribbean Sea, the marine and the neighbouring natural reserve, and the breathtaking sunsets that only the Riviera Maya offers. It is the perfect place to take in the sea breeze, break away from everything, read a good book, enjoy quality time with your friends and family, and ultimately relax. "
                 :
                 
-                "Contamos con dos rooftops situados en diferentes edificios, cada uno con alberca y jacuzzi, camastros, área de hamacas, salas y asadores; donde podrás disfrutar increíbles vistas al mar Caribe, la marina y la reserva ecológica, así como, espectaculares atardeceres. Sin duda un lugar ideal para desconectarte un momento, para leer un libro, escaparse a descansar u organizar reuniones familiares y disfrutar con amigos. "
+                "Contamos con dos rooftops situados en diferentes edificios; cada uno equipados con alberca, jacuzzi, camastros, área de hamacas, salas y asadores; donde podrás disfrutar increíbles vistas al Mar Caribe, la marina y la reserva ecológica; así como, espectaculares atardeceres. Sin duda un lugar ideal para desconectarse un momento, leer un libro, escaparse a descansar u organizar reuniones familiares y disfrutar con amigos.  "
                 }
 
 

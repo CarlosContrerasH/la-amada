@@ -65,7 +65,7 @@ enableBackground="new 0 0 150 150" >
                 </div>
                      <SimpleSlider slides={bigSlider}/>
                 <span className="wrapped-header playa">
-                    <h1> {props.eng == true ? <>Namaste<br /><span className="sub"> Yoga & Multipurpose Exercise Room  </span></> : <>Namasté<br /><span className="sub">Salón de yoga</span></>}</h1>
+                    <h1> {props.eng == true ? <>Namaste<br /><span className="sub"> Yoga & Multipurpose Exercise Room  </span></> : <>Namasté<br /><span className="sub">Salón de Yoga y usos múltiples.</span></>}</h1>
                 </span>
                 <p>
 

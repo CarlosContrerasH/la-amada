@@ -185,6 +185,12 @@ transition: .3s opacity;
 }
 
 
+.hero .logo-wrapper h1{
+
+    text-transform: uppercase;
+}
+
+
   .hero .bg-wrapper{
     position: fixed;
    bottom:0;
@@ -222,6 +228,7 @@ object-position: bottom;
     color:var(--dark-green);
     font-style: italic;
     font-size: 1.5em;
+
    
 }
 .vid-click{
@@ -952,7 +959,9 @@ select:-webkit-autofill:focus {
     border-radius:3em;
     padding: .5em .75em;
     transition: .3s background-color, .3s color;
+   
 }
+
 
 .outlined-button.light{
     
@@ -977,7 +986,7 @@ select:-webkit-autofill:focus {
     
 }
 .flat-button{
-    
+     
     cursor:pointer;
     border: solid 2px var(--dark-green);
     background-color: var(--dark-green);
@@ -1009,6 +1018,10 @@ select:-webkit-autofill:focus {
     border: solid 2px var(--sand);
     background-color: transparent;
     color:var(--sand);
+}
+
+button.mas{
+    font-size: 1.3em;
 }
 
  /*SIMPLE SLIDER*/
@@ -1103,6 +1116,7 @@ button.arrow-button:nth-of-type(2):hover{
    background: transparent;
     transition: .3s background;
     cursor: pointer;
+    box-shadow: 0 0 9px black;
 }
 .slider-buttons button.active{
      
@@ -1237,7 +1251,7 @@ height: calc(100vh - 240px);
  
 .fancy-slide .gatsby-image-wrapper{
     height: 100%;
-    width:100%;
+    width:80%;
     margin:auto;
     clip-path: inset(20% 20% 20% 20%);
      transform:scale(1.1);
@@ -1257,12 +1271,17 @@ transition: .3s opacity;
 }
 .fancy-wrapper .in-screen .fancy-slide .gatsby-image-wrapper{
    
-    clip-path: inset(0% 0% 0% 0%);
+    clip-path: inset(0% 0 0 0);
     transform:scale(1);
     transition: .3s clip-path ease-out, .3s transform ease-out;
 }
 
-
+@media (max-width: 880px) {
+    .fancy-slide .gatsby-image-wrapper{
+         
+        width:100%;}
+ }
+  
  
 
 .fancy-title{
@@ -3070,6 +3089,7 @@ form label input {
 .slider-buttons button {
     width:22px;
     height:22px;
+  
 }
 
 

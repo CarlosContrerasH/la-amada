@@ -62,8 +62,8 @@ const Detalle = (props) => {
 <h1>{props.eng?"Four Bedrooms":"Cuatro Recámaras"}</h1>
         <div className="content">
             <h3>{props.eng?"Desde $1,150,000.00 USD":"Desde $1,150,000.00 USD"}</h3>
-<h3>{props.eng?"This new layout boasts 4 spacious bedrooms, each with an ensuite bath and generous closet, as well as an oversized living area, a den/office with private door, and an additional guest bath. A well-appointed kitchen with Miele appliances and conveniently located service quarters off one of the home’s 3 terraces make this a residence that’s perfect for entertaining.":
-"Estilo contemporáneo, privacidad y elegancia conviviendo en más de 325m2, nuestra unidad de 4 recámaras es la inversión ideal para aquellos que buscan una residencia de lujo en la playa."}</h3>
+<h3>{props.eng?"Our four bedroom unit offers a spacious living room with a private den/office and a half bathroom. Additionally, the four large bedrooms have each an ensuite bathroom and ample fitted wardrobes. The kitchen has been carefully fitted with Miele appliances and is conveniently located next to one of the home’s three terraces; making this a residence that is perfect for entertaining.":
+"Nuestra unidad de 4 recámaras es la inversión ideal para aquellas familias que buscan una residencia de lujo en la playa. Nuestro estilo contemporáneo, privacidad y elegancia conviven en más de 325m2."}</h3>
 
             <div className="icons-wrapper">
 

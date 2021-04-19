@@ -125,15 +125,14 @@ enableBackground="new 0 0 455.6 172.2"  style={{height:"5em", width:"12em"}}>
                     
                     <br /><span className="sub">
                         
-                    Deli to Go with Starbucks, Aldo's & La Europea Express
-                        
+					Groceries, Snacks, Pastries, Starbucks Coffee & La Europea Express
                         </span></> : <>
                         
                         La Amada Express 
 
                     <br /><span className="sub">
                         
-                    Deli to Go con Starbucks, Aldo's y La Europea Express
+					Encontrarás alimentos, snacks, postres, Café Starbucks y La Europea Express.
                         
                         </span></>}</h1>
                 </span>

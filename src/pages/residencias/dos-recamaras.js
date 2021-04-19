@@ -65,8 +65,8 @@ const Detalle = (props) => {
 <h1>{props.eng?"Two Bedrooms":"Dos Recámaras"}</h1>
         <div className="content">
             <h3>{props.eng?"From $555,000.00 USD":"Desde $555,000.00 USD"}</h3>
-<h3>{props.eng?"These two bedroom marina facing homes offer airy and spacious layouts.":
-"Nuestros departamentos de lujo de dos recámaras con y sin lock-off ofrecen amplios espacios y maravillosas vistas hacia la laguna del Manatí, reserva natural y hacia la marina. El espacio ideal para vivir en el paraíso."}</h3>
+<h3>{props.eng?"Our luxury two bedroom apratments (with lock-off options) are spacious and offer stunning views of our lagoon, natural reserve, and marina. Fall asleep to the sounds of the ocean in your own piece of heaven.":
+"Nuestros departamentos de lujo de dos recámaras con y sin lock-off ofrecen amplios espacios y maravillosas vistas hacia la laguna, reserva natural y hacia la marina. El espacio ideal para vivir en el paraíso."}</h3>
 
             <div className="icons-wrapper">
 

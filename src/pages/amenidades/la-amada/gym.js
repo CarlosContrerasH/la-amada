@@ -68,7 +68,7 @@ enableBackground="new 0 0 150 150" >
                     
                     <br /><span className="sub">
                         
-                    Equipped with the latest gym equipment
+                    Everything you need for a perfect workout routine. 
                         
                         </span></> : <>
                         
@@ -76,7 +76,7 @@ enableBackground="new 0 0 150 150" >
 
                     <br /><span className="sub">
                         
-                  Único residencial con un equipamento de alto nivel
+                    Todo lo necesario para tu rutina de ejercicio.
                         
                         </span></>}</h1>
                 </span>

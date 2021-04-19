@@ -80,12 +80,16 @@ DENTRO DE PLAYA MUJERES</span></>}</h2>
 
              {props.eng?   <div  >
                     <p>There is a place that meets all the expectations that you have been looking for in your daily life or when on vacation. Peaceful moments, family time, security, and privacy; these are just some of the experiences that can be found when living at La Amada.</p><p>
-                    Surrounded by white sands, tropical rainforest, archeological sites, lagoons, mangroves, and turquoise waters, and only 10 minutes away from downtown Cancun, lies Playa Mujeres, an exclusive tourist destination in the Mexican Caribbean that hosts more than 8,200 hotel rooms and luxurious residences, which makes it the region that boasts the greatest growth in the state.</p><p>
+                    Surrounded by white sands, rain forests, archaeological sites, lagoons, mangroves, turquoise sea and only 15 minutes away from Cancun’s downtown, you will find Playa Mujeres. It is an exclusive touristic destination in the Mexican Caribbean that hosts more than 8000 rooms in luxurious lodging centers. Playa Mujeres is the place with the highest economic growth in the province. </p><p>
                         Discover our surrounding areas:</p>
                 </div>:  <div  >
-                    <p>Existe un lugar que sin duda reúne todas las expectativas que buscas en tu vida diaria
-o para vacacionar; momentos de tranquilidad, convivencia familiar, seguridad y privacidad; son solo algunos de los sentimientos que te ofrecemos al vivir en La Amada.</p><p>
-Entre arena blanca, selva tropical, zonas arqueológicas, laguna, manglar, mar turquesa y a 10 minutos del centro de Cancún, surge Playa Mujeres, exclusivo destino turístico en la zona del Caribe Mexicano que alberga más de 8,200 cuartos en lujosos centros de hospedaje, lo cual lo convierte en el lugar de mayor crecimiento del estado.</p><p>
+                    <p>Existe un lugar que sin duda reúne todas las expectativas que buscas en tu vida diaria o para vacacionar. Momentos de tranquilidad, convivencia familiar, seguridad y privacidad; son solo algunos de los sentimientos que te ofrecemos al vivir en La Amada.</p>
+                    
+                    <p>Entre arena blanca, selva tropical, zonas arqueológicas, laguna, 
+manglar, mar turquesa y a 15 minutos del centro de Cancún, surge Playa 
+Mujeres, exclusivo destino turístico en la zona del Caribe Mexicano que 
+alberga más de 8,200 cuartos en lujosos centros de hospedaje, lo cual lo
+ convierte en el lugar de mayor crecimiento del estado.</p><p>
                         Conoce las áreas que nos rodean:</p>
                 </div>}
                 </div> 

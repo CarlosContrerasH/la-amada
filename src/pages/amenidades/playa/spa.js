@@ -70,8 +70,7 @@ enableBackground="new 0 0 165.1 130.9"  >
                     
                     <br /><span className="sub">
                         
-               
-                    Relax and reactivate all the senses
+                    Relax and reactivate your senses 
                         
                         </span></> : <>
                         
@@ -81,7 +80,7 @@ enableBackground="new 0 0 165.1 130.9"  >
                         
                     
                 
-Relaja y reactivar todos los sentidos
+Relaja y reactiva todos los sentidos
                         
                         </span></>}</h1>
                 </span>

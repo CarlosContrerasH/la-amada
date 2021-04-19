@@ -76,29 +76,27 @@ const TwoCol = (props) => {
 
         </span>
         {props.eng == true ?
-                         <p>All of our units are ready to be immediately delivered, so you can enjoy your new home from the very beginning with fully functioning amenities; and for those who are looking for profitability, our units can be rented on an extended basis or per vacation period. Being a beach community, the property offers good occupation and rates with attractive capital returns for the investor, all made easier by the option of being operated by our staff.
-
+                         <p>There is no safer investment than to invest in La Amada. Our location, amenities, architecture, and sumptuous interiors are living proof. We have units available for immediate delivery. They come fully equipped so you do not have to wait to start enjoying the magic of your new home. We also have rental units for those who prefer to rent on an annual or seasonal basis.
                          </p>
         
-                        : <p>Invertir en La Amada es invertir seguro dada la ubicación, amenidades y arquitectura e interiorismo de lujo con el que se cuenta. Con nuestras unidades de entrega inmediata podrás gozar desde el primer momento , tu nuevo hogar con todas las amenidades que ofrecemos funcionando; o bien para los que buscan rentabilidad, nuestras unidades se pueden rentar anual o vacacionalmente, que al ser una comunidad en la playa ofrece buenas ocupaciones con rendimientos muy atractivos para el inversionista y con la facilidad de ser operada por el mismo desarrollo.</p>}
+                        : <p>Invertir en La Amada es invertir seguro dada la ubicación, amenidades, arquitectura e interiorismo de lujo con el que se cuenta. Con nuestras unidades de entrega inmediata podrás gozar desde el primer momento de tu nuevo hogar con todas las amenidades que ofrecemos funcionando; o bien para los que buscan rentabilidad, nuestras unidades se pueden rentar anual o vacacionalmente.</p>}
           
 
         </div>
         <div>
 
         {props.eng == true ?
-                         <p>Playa Mujeres is the only gated community within Costa Mujeres, the area with the greatest hotel growth in the state, which will simultaneously generate capital gains for your property and investment.
-
+                         <p>Playa Mujeres is a the only private, enclosed community within Costa Mujeres. It is also the area with the highest economic growth in the region, which means a higher return on your property value and investment. If you decided to let your unit, the occupancy rate and return of investment would be high due to its prime coastal location. You can let out your property worry free, as our team of experts will deal with that.
                          </p>
         
-                        : <p>Playa Mujeres es la única comunidad cerrada dentro de Costa Mujeres, la zona con mayor crecimiento hotelero del estado, mismo que generará una alta plusvalía para tu propiedad e inversión.</p>}
+                        : <p>Playa Mujeres es la única comunidad cerrada dentro de Costa Mujeres, la zona con mayor crecimiento hotelero del estado, mismo que generará una alta plusvalía para tu propiedad e inversión. Al ser una comunidad en la playa, ofrece buenas ocupaciones con rendimientos muy atractivos para el inversionista y con la facilidad de ser operada por el mismo desarrollo.</p>}
           
           {props.eng == true ?
                          <p>We have given great thought to meeting your every need, which is why we offer an area that functions as a reception, where you can receive your guests with an elite service that gives support regardless of the activity, whether inside or outside the complex. This way you, your family, and friends can enjoy all the experiences that the destination has to offer.
 
                          </p>
         
-                        : <p>Pensando en que vivas con todas las comodidades resueltas, en el centro de todas las amenidades ponemos tu disposición un espacio que funge como recepción, donde podrás recibir a tus huéspedes con un servicio élite para apoyarte en cualquier actividad, tanto dentro del desarrollo como fuera de él, para que tú y tu familia o invitados gocen de todas las experiencias que ofrece el destino.
+                        : <p>Your peace of mind worry free stay is our main priority. With that in mind, we have put at your service our main reception and lounge which are located at the centre of our facilities. These areas can be used as a main venue reception for your guests where they will be greeted with the highest customer service. La Amada is here to help you with any event, both within and outside of our facilities, so you, your family and your guests can fully enjoy the experience this amazing destination offers.
                         </p>}
           
 
@@ -204,9 +202,8 @@ const TwoPic = (props) => {
         </div>
 
         <div className="invierte-centered">
- <h3>{props.eng?"Resident’s Only Services":"Servicions exclusivos para Residentes"}</h3>
- {props.eng?<p>
-La Amada takes everyone into consideration, and if you do not live here permanently, we can help you keep your property in the best condition. We take care of all the expenses and fees making your life easier, so that when you come back, everything will be working perfectly in a safe and professional way, ask for our Property Management program.</p>:<p>En La Amada Residences pensamos en todos, por ello te ayudamos a mantener tu propiedad en las mejores condiciones y realizamos el pago de todos los gastos y cuotas derivadas de la misma, haciéndote la vida más fácil y cuando uses la propiedad todo funcione al 100% de una forma segura y profesional con nuestro programa de Property Management y Rental Management.</p>}
+ <h3>{props.eng?"Exlusive services for our property owners":"Servicios extras exclusivos para Propietarios"}</h3>
+ {props.eng?<p>Our Property Management and Rental Management programs are here to help you take care of your unit keeping it in the best conditions as if brand new. We manage all the payments and services needed, making your life easier and worry free. Forget about making any advance arrangements before coming in to enjoy your home, with our management programs we do that for you.</p>:<p>Con nuestro programa de Property Management y Rental Management te ayudamos a mantener tu propiedad en las mejores condiciones y realizamos el pago de todos los gastos y cuotas derivadas de la misma, haciéndote la vida más fácil y cuando uses la propiedad todo funcione al 100% de una forma segura y profesional.</p>}
         </div>
 
 

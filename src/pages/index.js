@@ -39,7 +39,7 @@ const Hero = (props) => {
   
   <div className="hero">
      
-   <div className={"logo-wrapper "+(percentage>.25?"fade":"")}><Logo/>{props.eng==true?<h1>ONLY CONDO IN PLAYA MUJERES, CANCUN.</h1>:<h1>ÚNICO CONDOMINIO DENTRO DE PLAYA MUJERES, CANCÚN.</h1>}</div>
+   <div className={"logo-wrapper "+(percentage>.25?"fade":"")}><Logo/>{props.eng==true?<h1>Luxury Beachfront Residences</h1>:<h1>Residencias de Lujo frente a Playa </h1>}</div>
     <div className="screen first"></div>
     <div className="screen second" ref={ref} ></div>
     <div className="bg-wrapper" style={{transform:"translateY(min("+ (percentage.toPrecision(2)) * 200+"%,var(--transformHero)))"}} >
@@ -63,6 +63,27 @@ const Hero = (props) => {
   }
 
 
+const Texto =(props)=>{
+ return(
+  <div className="component bg-sand fancy"> 
+  <div  > 
+  <h1>{props.eng==true?"Welcome to":"Bienvenido a"}</h1>
+  <br/>
+  {props.eng?<div className="centered ubicacion">
+             <span className="script">La Amada Residences
+</span>
+             <p>Situated just15 minutes away from Cancun's downtown, La Amada's13 acres of paradise offer a unique combination of privacy and harmony. Our luxurious apartments range from one to four bedrooms and a Penthouse which are distributed throughout 8 buildings. Each unit offers exclusive, uninterrupted views of either our private beach, the ocean, the marina, or the neighbouring natural reserves. The design of our apartments has been carefully thought of to offer you spacious bedrooms, ample terraces, and sheltered parking. At La Amada we have taken care of every single detail to offer you the perfect space to create new memories and share special moments that you and your loved ones will treasure forever.</p>
+         </div>:<div className="centered ubicacion">
+             <span className="script">La Amada Residences</span>
+             <p>a tan sólo 15 minutos del centro de Cancún.     Con una superficie de terreno de 5.2 hectáreas, La Amada cuenta con 215 lujosos departamentos de 1, 2, 3, 4 recámaras y Penthouse distribuidos en 8 edificios, en la playa, con vista al mar, a la marina o a la reserva natural, todos cuidadosamente diseñados y planificados con amplias terrazas, estacionamientos cubiertos, dando la mayor importancia a cada uno de sus detalles, ofreciendo espacios para compartir, crear y construir nuevos recuerdos que atesorarás por siempre.</p>
+         </div>
+         }
+
+     </div></div>
+ ) 
+}
+
+
   const Amenidades = (props) => {
  
    
@@ -73,6 +94,8 @@ const Hero = (props) => {
       <div>
       <span className="wrapped-header">
      <h2> {props.eng==true?<>Meet our property</>:<>Conoce nuestro desarrollo </>}</h2> 
+
+     
       </span><div className="video-wrapper">
     {props.video? 
     <video  style={{width:"100%"}}controls autoPlay loop>
@@ -97,7 +120,7 @@ enableBackground="new 0 0 372.4 369.9"  >
          
         </div>}</div>
      
-      <Link style={{textDecoration:"none"}}to="/amenidades"> <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>{props.eng==true?"View":"Ver Mas"}</button></Link>
+      <Link style={{textDecoration:"none"}}to="/amenidades"> <button name="ver mas" className="flat-button sand-button centered-button mas" style={{marginTop:"3em"}}>{props.eng==true?"View":"Ver Mas"}</button></Link>
       </div>
       </ScrollWrapper>
 
@@ -157,7 +180,7 @@ enableBackground="new 0 0 372.4 369.9"  >
           <HandleImages name="logopm"/>
      {props.eng==true?<p>An exclusive 930 acres residential tourist community located in the north of Cancún, where the respect and care for the environment and nature makes it a magical residential and hotel community that allows for the kind of cohabitation, privacy, and connectivity that you have been yearning.  
 Its amenities offer unique resort experiences that will transform each one of your days into unforgettable moments that will last forever. </p> :<p>Entre arena blanca, selva tropical, zonas arqueológicas, laguna, manglar, mar turquesa y a 10 minutos del centro de Cancún, surge Playa Mujeres, exclusivo destino turístico en la zona del Caribe Mexicano que alberga más de 8,200 cuartos en lujosos centros de hospedaje, lo cual lo convierte en el lugar de mayor crecimiento del estado.Exclusiva comunidad turístico residencial cerrada de 376 hectáreas ubicada al norte de la ciudad de Cancún, donde el cuidado y el respeto por la naturaleza del entorno hacen de este desarrollo un lugar mágico que permite la convivencia, privacidad y conectividad que tanto deseas.</p>
-     } <Link to="/amenidades/playa"><button className="flat-button sand-button ">{props.eng==true?"View":"Ver Mas"}</button></Link>
+     } <Link to="/amenidades/playa"><button className="flat-button sand-button mas">{props.eng==true?"View":"Ver Mas"}</button></Link>
       </div></div>
       
       </div>
@@ -264,6 +287,7 @@ handleVideo=()=>{
               <button className='outlined-button'>Lorem Ipsum</button>
               <button className="flat-button"> Lorem Ipsum</button>
             </div>*/}
+            <Texto/>
             
           <Amenidades video={this.state.video} handleVideo={this.handleVideo}/>
             

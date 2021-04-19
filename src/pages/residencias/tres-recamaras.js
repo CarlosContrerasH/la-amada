@@ -88,6 +88,7 @@ const Detalle = (props) => {
 <img alt="Condo view" src={condo}/>
 <span>{props.eng?"Condo view":"Vista al condominio"}</span></div>*/}
 
+<div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
 
 <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 

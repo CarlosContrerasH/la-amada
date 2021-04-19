@@ -47,7 +47,7 @@ const Residences = (props) => {
               <p>Con una superficie de terreno de 5.2 hectáreas, La Amada cuenta con 215 lujosos departamentos de 1, 2, 3, 4 recámaras y Penthouse distribuidos en 8 edificios, en la playa, con vista al mar, a la marina o a la reserva natural, todos cuidadosamente diseñados y planificados con amplias terrazas, estacionamientos cubiertos, dando la mayor importancia a cada uno de sus detalles, ofreciendo espacios para compartir, crear y construir nuevos recuerdos que atesorarás por siempre.</p>
           </div>
           }
-   <FancySlider slides={fancySlider} titles={props.eng?engTitles:slideTitles} links={slideLinks} eng={props.eng}/>
+  {/* <FancySlider slides={fancySlider} titles={props.eng?engTitles:slideTitles} links={slideLinks} eng={props.eng}/>*/}
        
       </div>
       </ResWrapper>
@@ -126,7 +126,7 @@ return(    <div className="centered">
    </div>
    <HandleImages name="unaRecamara"/>
    <Link to="/residencias/una-recamara"> 
-   <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
+   <button name="ver mas" className="flat-button sand-button centered-button mas" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 
    
    </div>
@@ -154,7 +154,7 @@ return(    <div className="centered">
    </div>
    <HandleImages name="dosRecamaras"/>
    <Link to="/residencias/dos-recamaras"> 
-   <button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
+   <button name="ver mas" className="flat-button sand-button centered-button mas" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 
    </div>
    </div>)
@@ -178,7 +178,7 @@ return(    <div className="centered">
 </div>
 <HandleImages name="tresRecamaras"/>
 <Link to="/residencias/tres-recamaras">  
-<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
+<button name="ver mas" className="flat-button sand-button centered-button mas" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 </div>
    </div>)
   }
@@ -203,7 +203,7 @@ return(    <div className="centered">
 </div>
 <HandleImages name="cuatroRecamaras"/>
 <Link to="/residencias/cuatro-recamaras">
-<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
+<button name="ver mas" className="flat-button sand-button centered-button mas" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 </div>
    </div>)
   }
@@ -231,7 +231,7 @@ return(    <div className="centered">
 </div>
 <HandleImages name="penthouse"/>
 <Link to="/residencias/penthouse">  
-<button name="ver mas" className="flat-button sand-button centered-button" style={{marginTop:"3em"}}>Ver Mas</button></Link>
+<button name="ver mas" className="flat-button sand-button centered-button mas" style={{marginTop:"3em"}}>Ver Mas</button></Link>
 </div>
    </div>)
   }
