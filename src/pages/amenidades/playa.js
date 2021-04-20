@@ -106,7 +106,7 @@ const Grid = (props) => {
       </div></Link></ScrollWrapper>
 
       <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/playa/golf" >    <div >
-        <div className="icon-wrapper"><img alt="Campo de Golf" src={golf}  /><span>{props.eng == true ? "Golf Course" : "CAMPO DE GOLF"}</span></div> <HandleImages name="amenidadesP1" />
+        <div className="icon-wrapper"><img alt="Campo de Golf" src={golf}  /><span>{props.eng == true ? "Golf Course" : "CAMPO DE GOLF"}</span></div> <HandleImages name="golfS" />
       </div></Link></ScrollWrapper>
 
       <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/playa/marina" >     <div >

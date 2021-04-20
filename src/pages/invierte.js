@@ -26,6 +26,9 @@ import golf from "../img/invierte/ICONOS/GOLF.svg"
 import marina from "../img/invierte/ICONOS/MARINA.svg"
 import seguridad from "../img/invierte/ICONOS/SEGURIDAD.svg"
 
+
+import salon from "../img/invierte/ICONOS/SALON-DE-RESIDENTES.svg"
+
 import { useScrollPercentage } from 'react-scroll-percentage'
 import { Link } from 'gatsby'
 
@@ -92,11 +95,11 @@ const TwoCol = (props) => {
                         : <p>Playa Mujeres es la única comunidad cerrada dentro de Costa Mujeres, la zona con mayor crecimiento hotelero del estado, mismo que generará una alta plusvalía para tu propiedad e inversión. Al ser una comunidad en la playa, ofrece buenas ocupaciones con rendimientos muy atractivos para el inversionista y con la facilidad de ser operada por el mismo desarrollo.</p>}
           
           {props.eng == true ?
-                         <p>We have given great thought to meeting your every need, which is why we offer an area that functions as a reception, where you can receive your guests with an elite service that gives support regardless of the activity, whether inside or outside the complex. This way you, your family, and friends can enjoy all the experiences that the destination has to offer.
+                         <p>Your peace of mind worry free stay is our main priority. With that in mind, we have put at your service our main reception and lounge which are located at the centre of our facilities. These areas can be used as a main venue reception for your guests where they will be greeted with the highest customer service. La Amada is here to help you with any event, both within and outside of our facilities, so you, your family and your guests can fully enjoy the experience this amazing destination offers.
 
                          </p>
         
-                        : <p>Your peace of mind worry free stay is our main priority. With that in mind, we have put at your service our main reception and lounge which are located at the centre of our facilities. These areas can be used as a main venue reception for your guests where they will be greeted with the highest customer service. La Amada is here to help you with any event, both within and outside of our facilities, so you, your family and your guests can fully enjoy the experience this amazing destination offers.
+                        : <p>Pensando en que vivas con todas las comodidades resueltas, en el centro de todas las amenidades ponemos tu disposición un espacio que funge como recepción, donde podrás recibir a tus huéspedes con un servicio premium para apoyarte en cualquier actividad, tanto dentro del desarrollo como fuera de él, para que tú, tu familia o invitados gocen de todas las experiencias que ofrece nuestro destino de lujo.
                         </p>}
           
 
@@ -155,9 +158,11 @@ const Icons = (props) => {
             </a>
 
 
-            <a href="/amenidades/la-amada/playa" className="icon-wrapper">
-                <img src={beachclubres} />
-                <span>Mar</span>
+            <a href="/amenidades/la-amada/salon" className="icon-wrapper">
+                <img src={salon} />
+
+                <span>{props.eng?"RESIDENTIAL LOUNGE":"Salón de Residentes" }</span>
+           
             </a>
 
             <a href="/amenidades/playa/marina"className="icon-wrapper">

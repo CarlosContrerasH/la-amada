@@ -93,7 +93,7 @@ let bigSlider =[ <HandleImages name="invierteHeader"/>,
 <HandleImages name="golfH1"/>,
 <HandleImages name="marinaH1"/>,
 <HandleImages name="seguridadH1"/>,
-<HandleImages name="helipuertoH1"/>,
+/*<HandleImages name="helipuertoH1"/>,*/
 
 <HandleImages name="delfinesH1"/>,
 <HandleImages name="vecinosH1"/>,

@@ -45,7 +45,7 @@ const Hero = (props) => {
     <div className="bg-wrapper" style={{transform:"translateY(min("+ (percentage.toPrecision(2)) * 200+"%,var(--transformHero)))"}} >
    
       <div>
-    <HandleImages name="depas"/>
+    <HandleImages name="depas"/><HandleImages name="desktopHero" />
     <video src={video} muted={true} autoPlay={true} playsInline = {true } loop={true} /></div>
     </div>
     {/*

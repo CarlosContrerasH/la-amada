@@ -12,9 +12,9 @@ import SimpleSlider from "../../../components/simpleSlider"
 import { Link } from 'gatsby'
 
 
-let playaSlider =[<HandleImages name="amenidadesA7"/>, <HandleImages name="ludotecaH3"/> ,<HandleImages name="ludotecaH1"/>, <HandleImages name="ludotecaH2"/>, ]
+let playaSlider =[<HandleImages name="juegos"/>,<HandleImages name="amenidadesA7"/>, <HandleImages name="ludotecaH3"/> ,<HandleImages name="ludotecaH1"/>]
 
-
+ {/*<HandleImages name="ludotecaH2"/>*/}
 
 const Slider = (props) => {
 
@@ -31,34 +31,26 @@ const Slider = (props) => {
             <div className="icon-wrapper">
  
  
- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
-      viewBox="0 0 150 150" 
-enableBackground="new 0 0 150 150" >
-
+            <svg version="1.1" id="Layer_1"   x="0px" y="0px"
+	 viewBox="0 0 150 150"  >
+ 
 <g>
-	<g>
-		<path fill="#FFFFFF" d="M92.5,44.2c-5.3-5.1-12.2-7.7-19.5-7.4c-14.1,0.6-25.5,12.5-25.6,26.5c0,6.2,2.2,12.3,6.2,17.1
-			c5.8,6.9,8.9,15.7,8.9,24.6c0,0-0.6,4.1,2.3,4.1h18.4c3,0,2.3-4.1,2.3-4.1c0-8.8,3.2-17.4,9.3-25.1c3.8-4.8,5.8-10.5,5.8-16.6
-			C100.6,56.1,97.7,49.3,92.5,44.2L92.5,44.2z M91.2,77.1c-6.6,8.3-10.2,17.8-10.3,27.4H67.1c-0.1-9.9-3.7-19.4-10-27.1
-			c-3.3-4-5.1-9-5.1-14.1c0-11.6,9.5-21.4,21.1-21.9c6.1-0.2,11.8,1.9,16.1,6.1c4.4,4.2,6.8,9.8,6.8,15.8
-			C96,68.4,94.3,73.2,91.2,77.1z"/>
-		<path fill="#FFFFFF" d="M104.7,28.9c-0.9-0.9-2.4-0.9-3.3,0l-5.7,5.7c-0.9,0.9-0.9,2.4,0,3.3c0.9,0.9,2.4,0.9,3.3,0l5.7-5.7
-			C105.6,31.3,105.6,29.9,104.7,28.9z"/>
-		<path fill="#FFFFFF" d="M83.3,112.3H64.7c-1.3,0-2.3,1.1-2.3,2.3c0,1.3,1.1,2.3,2.3,2.3h18.6c1.3,0,2.3-1.1,2.3-2.3
-			C85.6,113.4,84.6,112.3,83.3,112.3z"/>
-		<path fill="#FFFFFF" d="M79.8,121.1H68.2c-1.3,0-2.3,1.1-2.3,2.3c0,1.3,1.1,2.3,2.3,2.3h11.6c1.3,0,2.3-1.1,2.3-2.3
-			C82.1,122.2,81.1,121.1,79.8,121.1z"/>
-		<path fill="#FFFFFF" d="M74,28.9c1.3,0,2.3-1.1,2.3-2.3v-8c0-1.3-1.1-2.3-2.3-2.3s-2.3,1.1-2.3,2.3v8C71.7,27.9,72.7,28.9,74,28.9
-			z"/>
-		<path fill="#FFFFFF" d="M52.3,37.9c0.9-0.9,0.9-2.4,0-3.3L46.6,29c-0.9-0.9-2.4-0.9-3.3,0c-0.9,0.9-0.9,2.4,0,3.3l5.7,5.7
-			C49.9,38.8,51.4,38.8,52.3,37.9z"/>
-		<path fill="#FFFFFF" d="M115,57.3h-8c-1.3,0-2.3,1.1-2.3,2.3c0,1.3,1.1,2.3,2.3,2.3h8c1.3,0,2.3-1.1,2.3-2.3
-			C117.4,58.3,116.3,57.3,115,57.3z"/>
-		<path fill="#FFFFFF" d="M41,57.3h-8c-1.3,0-2.3,1.1-2.3,2.3c0,1.3,1.1,2.3,2.3,2.3h8c1.3,0,2.3-1.1,2.3-2.3
-			C43.3,58.3,42.3,57.3,41,57.3z"/>
-	</g>
+	<path class="st0" d="M58.7,86.9c6.7,0,12.1-5.4,12.1-12.1c0-6.7-5.4-12.1-12.1-12.1S46.5,68,46.5,74.7C46.5,81.4,52,86.9,58.7,86.9
+		z M58.7,66.5c4.5,0,8.2,3.7,8.2,8.2s-3.7,8.2-8.2,8.2c-4.5,0-8.2-3.7-8.2-8.2S54.1,66.5,58.7,66.5z"/>
+	<path class="st0" d="M137.5,112.9h-6c-3,0-5.8-1.8-7.1-4.5l-13-27.6c-1.9-4.1-6.1-6.7-10.6-6.7H86.7V51c0,0,0,0,0-0.1
+		c0,0,0,0,0-0.1c0-0.1,0-0.2,0-0.2c0,0,0,0,0,0c0-0.1,0-0.2-0.1-0.3c0,0,0,0,0,0c0-0.1-0.1-0.2-0.1-0.2c0,0,0,0,0,0
+		c0-0.1-0.1-0.1-0.1-0.2c0,0,0,0,0,0c-0.1-0.1-0.1-0.1-0.2-0.2v0L80.5,44l0,0l-13-12.9l0,0L61,24.6c-1.3-1.3-3.4-1.3-4.7,0l-25.1,25
+		l0,0c-0.1,0.1-0.1,0.1-0.2,0.2c0,0,0,0,0,0C31,49.9,31,50,30.9,50.1c0,0,0,0,0,0c0,0.1-0.1,0.1-0.1,0.2c0,0,0,0,0,0
+		c0,0.1-0.1,0.2-0.1,0.3c0,0,0,0,0,0c0,0.1,0,0.2,0,0.2c0,0,0,0,0,0.1c0,0,0,0,0,0.1v23.1H15.3c-4.6,0-8.3,3.7-8.3,8.3v45.9
+		c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2v-5.4h19.8v3.8c0,1.8,1.5,3.3,3.3,3.3h10.8c1.8,0,3.3-1.5,3.3-3.3v-26.4h21.3v3.7v2.6v12.1v3.4
+		v4.5c0,1.8,1.5,3.3,3.3,3.3h10.8c1.8,0,3.3-1.5,3.3-3.3V98.4v-6.3h1.7c3.1,0,5.9,1.8,7.1,4.6l12.2,26.7c1.9,4.2,6.1,6.9,10.7,6.9
+		h19.1c1.8,0,3.3-1.5,3.3-3.3v-10.9C140.8,114.3,139.3,112.9,137.5,112.9z M30.7,119H10.9v-7.3h19.8V119z M30.7,107.7H10.9v-7.3
+		h19.8V107.7z M30.7,96.5H10.9v-7.3h19.8V96.5z M30.7,85.2H10.9v-2.8c0-2.4,2-4.4,4.4-4.4h15.4V85.2z M58.7,27.8l6.8,6.8v0l9.5,9.5
+		c0,0,0,0,0,0l5,5H37.4L58.7,27.8z M44.1,126.1h-9.5v-25.7h9.5V126.1z M82.7,126.1h-9.5v-3.9v-3.4v-12.1v-2.6v-3.7h9.5V126.1z
+		 M82.7,76v14.2v6.3H71.3H46H34.6V52.9h48.1V76z M136.9,126.3L136.9,126.3h-18.5c-3.1,0-5.9-1.8-7.1-4.6L99.1,95.1
+		c-1.9-4.2-6.1-6.9-10.7-6.9h-1.7V78h14.1c3,0,5.8,1.8,7.1,4.5l13,27.6c1.9,4.1,6.1,6.7,10.6,6.7h5.3V126.3z"/>
 </g>
- </svg>
+</svg>
  
  
                  
@@ -79,7 +71,7 @@ enableBackground="new 0 0 150 150" >
                     
                     <br /><span className="sub">
                         
-                    & Play Center Let's have a nice time with friends & neighbors 
+                    An exclusive space for the little ones.
                         
                         </span></> : <>
                         
@@ -87,7 +79,7 @@ enableBackground="new 0 0 150 150" >
 
                     <br /><span className="sub">
                         
-                    Un lugar seguro y tranquilo para hacer reuniones 
+                    Un espacio exclusivo para los más pequeños. 
                         
                         </span></>}</h1>
                 </span>
@@ -97,14 +89,12 @@ enableBackground="new 0 0 150 150" >
                 
                 <>
                 
-                An elegant and quiet space set up so you can have a good time with your friends or neighbors, where you can play board games, watch a movie or football game while feeling right at home. In this room you can also host work meetings if required.<br/>Created exclusively for the little ones, we can guarantee fun and entertainment with activities that stimulate their physical and mental development.<br/>This space is strategically located next to the Residents’ Lounge, with hidden windows, so that while the kids play, their parents can observe them while enjoying their own peace and quiet. 
-
+                Kidsclub is our play centre/ playroom exclusively created for the little ones! Children are guaranteed cheerful joy and entertainment with the carefully planned activities that aim to help in their intellectual and psychomotor development. This space is strategically located next to the residential lounge, with insulated windows that allow the parents to watch over their kids while they play, whilst offering moments of peace and tranquility. We also have an open air playground that your kids will love.
                 </>
                 :
                 
                 <>
-                
-                Espacio tranquilo y elegante, ambientado para convivir con tus amigos o vecinos, donde te desconectes con juegos, puedas ver una película o un buen partido sintiéndote en la comodidad de tu hogar. En este espacio también podrás tener reuniones de trabajo si así lo requieres.<br/>Creado exclusivamente para los más pequeños del hogar, garantizando la diversión y entretenimiento con actividades infantiles que estimulan su desarrollo físico y mental.<br/>Este espacio está ubicado estratégicamente junto al salón de residentes, con ventanas ocultas, para que mientras los pequeños juegan, los papas puedan verlos y disfrutar de un momento de paz y tranquilidad para ellos.<br/>La Amada cuenta con un salón totalmente equipado con barra, cocina y baños, que se puede integrar a una de las albercas para hacer eventos cerrados con capacidad para 50 personas.
+              Nuestra Ludoteca - Kidsclub dentro de nuestro edificio E fué creado exclusivamente para los más pequeños del hogar, garantizando la diversión y entretenimiento con actividades infantiles que estimulan su desarrollo físico y mental.Este espacio está ubicado estratégicamente junto al salón de residentes, con ventanas ocultas, para que mientras los pequeños juegan, los padres y tutores puedan verlos y disfrutar de un momento de paz y tranquilidad para ellos.Además contamos con un área de juegos infantiles en el exterior. Tus hijos amarán nuestras áreas diseñadas para ellos. 
 
                 </>
                 }

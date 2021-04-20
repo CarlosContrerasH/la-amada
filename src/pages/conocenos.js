@@ -8,7 +8,7 @@ import ScrollWrapper from "../components/scrollwrapper"
 import { HandleImages } from "../components/handleImages"
 import SimpleSlider from "../components/simpleSlider"
 import promecap from "../img/conocenos/PROMECAP-LOGO.svg"
-import hamak from "../img/conocenos/HAMAK-HOTELS-LOGO.svg"
+import hamak from "../img/conocenos/HAMAK-LOGO.svg"
 import sonneil from "../img/conocenos/logo-soneil.png"
 
 import { Link } from 'gatsby'
@@ -139,7 +139,7 @@ const Equipo = (props)=>{
 
  const FullImage=()=>{
      return(
-         <HandleImages name="conocenos2"/>
+         <HandleImages name="conocenos"/>
      )
  }
 

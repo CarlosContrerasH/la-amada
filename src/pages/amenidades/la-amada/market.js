@@ -12,7 +12,7 @@ import SimpleSlider from "../../../components/simpleSlider"
 import { Link } from 'gatsby'
 
 
-let playaSlider =[<HandleImages name="marketH2"/>,  <HandleImages name="marketH1"/>, <HandleImages name="marketH3"/> ]
+let playaSlider =[<HandleImages name="marketH2"/>, <HandleImages name="market2"/>,  <HandleImages name="marketH1"/> ]
 
 
 const Slider = (props) => {

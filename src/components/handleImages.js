@@ -9,6 +9,103 @@ export function HandleImages(name){
   const data = useStaticQuery(graphql`
   query {
 
+
+
+    desktopHero:file(relativePath: { eq: "desktop-hero.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+
+
+
+   market2:file(relativePath: { eq: "AMENIDADES/LA AMADA/MARKET.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+
+    isla:file(relativePath: { eq: "UBICACION/isla.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+
+
+   golf:file(relativePath: { eq: "AMENIDADES/LA AMADA/GOLF.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+    golfS:file(relativePath: { eq: "AMENIDADES/LA AMADA/golf-home.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+
+    areasVerdes0:file(relativePath: { eq: "AMENIDADES/LA AMADA/areas-verdes.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+    areasVerdes1:file(relativePath: { eq: "AMENIDADES/LA AMADA/areasverdes.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+    areasVerdes2:file(relativePath: { eq: "AMENIDADES/LA AMADA/areasverdes2.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+    areasVerdes3:file(relativePath: { eq: "AMENIDADES/LA AMADA/areasverdes3.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+
+    lobbyN:file(relativePath: { eq: "AMENIDADES/LA AMADA/lobbynew.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+
+    lobbyNS:file(relativePath: { eq: "AMENIDADES/LA AMADA/lobby-home-new.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+
     sliderAmada2:file(relativePath: { eq: "SLIDER HOME HEADER/2.jpg" }) {
       childImageSharp {
     
@@ -89,7 +186,13 @@ persona4:file(relativePath: { eq: "ASESORES/MARISA.jpg" }) {
   }
 }
 
+conocenos:file(relativePath: { eq: "conocenos/conocenos.jpg" }) {
+  childImageSharp {
 
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
 
 conocenos1:file(relativePath: { eq: "conocenos/FOTO-EJEMPLO-HEADER.jpg" }) {
   childImageSharp {
@@ -522,6 +625,23 @@ playaH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/HEADER-PLAYA
 }
 
 playaH4:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/BEACHCLUB-2.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+beachClub:file(relativePath: { eq: "AMENIDADES/LA AMADA/HEADER-BEACHCLUB.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+
+beachClubC:file(relativePath: { eq: "AMENIDADES/LA AMADA/beahcclub-cuadrito.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -1282,6 +1402,13 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
     }
   }
 
+  juegos: file(relativePath: { eq: "AMENIDADES/LA AMADA/JUEGOS-INFANTILES.jpg" }) {
+    childImageSharp {
+  
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp }
+    }
+  }
 
 
 
@@ -1293,6 +1420,31 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   const images = {
 
     areasVerdes:<Img alt="Map" fluid={data.areasVerdes.childImageSharp.fluid} />,
+
+    isla:<Img alt="Map" fluid={data.isla.childImageSharp.fluid} />,
+   market2:<Img alt="Map" fluid={data.market2.childImageSharp.fluid} />,
+
+    beachClub:<Img alt="Map" fluid={data.beachClub.childImageSharp.fluid} />,
+
+    beachClubC:<Img alt="Map" fluid={data.beachClubC.childImageSharp.fluid} />,
+   juegos:<Img alt="Map" fluid={data.juegos.childImageSharp.fluid} />,
+  lobbyN:<Img alt="Map" fluid={data.lobbyN.childImageSharp.fluid} />,
+
+  lobbyNS:<Img alt="Map" fluid={data.lobbyNS.childImageSharp.fluid} />,
+
+
+  golf:<Img alt="Map" fluid={data.golf.childImageSharp.fluid} />,
+  golfS:<Img alt="Map" fluid={data.golfS.childImageSharp.fluid} />,
+
+
+  areasVerdes0:<Img alt="Map" fluid={data.areasVerdes0.childImageSharp.fluid} />,
+  areasVerdes1:<Img alt="Map" fluid={data.areasVerdes1.childImageSharp.fluid} />,
+  areasVerdes2:<Img alt="Map" fluid={data.areasVerdes2.childImageSharp.fluid} />,
+  areasVerdes3:<Img alt="Map" fluid={data.areasVerdes3.childImageSharp.fluid} />,
+
+
+    desktopHero:<Img alt="Map" fluid={data.desktopHero.childImageSharp.fluid} />,
+
 
     sliderAmada2:<Img alt="Map" fluid={data.sliderAmada2.childImageSharp.fluid} />,
     sliderAmada4:<Img alt="Map" fluid={data.sliderAmada4.childImageSharp.fluid} />,
@@ -1499,6 +1651,7 @@ spaH1:<Img alt="Amenidades" fluid={data.spaH1.childImageSharp.fluid} />,
     homeGal2: <Img alt="Badge" fluid={data.homeGal2.childImageSharp.fluid} />,
     homeGal3: <Img alt="Badge" fluid={data.homeGal3.childImageSharp.fluid} />,
 
+    conocenos: <Img alt="La Amada" fluid={data.conocenos.childImageSharp.fluid} />,
 
     conocenos1: <Img alt="La Amada" fluid={data.conocenos1.childImageSharp.fluid} />,
 

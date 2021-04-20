@@ -13,7 +13,7 @@ import { Link } from 'gatsby'
 
 
 
-let playaSlider =[<HandleImages name="amenidadesA3"/>, <HandleImages name="beachH1"/>, <HandleImages name="beachH2"/>, <HandleImages name="beachH3"/>, <HandleImages name="beachH4"/>]
+let playaSlider =[<HandleImages name="beachClub"/>,<HandleImages name="amenidadesA3"/>, <HandleImages name="beachH1"/>, <HandleImages name="beachH2"/>, <HandleImages name="beachH3"/>, <HandleImages name="beachH4"/>]
 
 
 

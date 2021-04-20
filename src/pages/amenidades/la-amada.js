@@ -135,7 +135,12 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/ludoteca" >     <div >
-         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>Ludoteca, Kids-Club y Salón de Eventos</span></div> <HandleImages name="amenidadesA7"/>
+         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>Ludotecay Kids-Club </span></div> <HandleImages name="amenidadesA7"/>
+ 
+         </div></Link></ScrollWrapper>
+
+         <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/la-amada/salon" >     <div >
+         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>Salón de Residentes</span></div><HandleImages name="ludotecaH2"/>
  
          </div></Link></ScrollWrapper>
 
@@ -144,13 +149,13 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
        
          </div></Link></ScrollWrapper>
 
-         <ScrollWrapper  classes="grid-element small">  <Link to="/amenidades/la-amada/lobby" >     <div >
-         <div className="icon-wrapper"><img alt="Lobby" src={concierge}/><span>Lobby, Motor Lobby y Concierge</span></div> <HandleImages name="amenidadesA6"/>
+         <ScrollWrapper  classes="grid-element big">  <Link to="/amenidades/la-amada/lobby" >     <div >
+         <div className="icon-wrapper"><img alt="Lobby" src={concierge}/><span>Lobby, Motor Lobby y Concierge</span></div> <HandleImages name="lobbyN"/>
    
          </div></Link></ScrollWrapper>
 
            <ScrollWrapper classes="grid-element small" >  <Link to="/amenidades/la-amada/areas-verdes" >    <div  >
-           <div className="icon-wrapper"><img alt="Areas Verdes" src={aVerdes}/><span>Areas Verdes</span></div> <HandleImages name="amenidadesA1"/>
+           <div className="icon-wrapper"><img alt="Areas Verdes" src={aVerdes}/><span>Areas Verdes</span></div> <HandleImages name="areasVerdes0"/>
       
          </div></Link></ScrollWrapper>
 
