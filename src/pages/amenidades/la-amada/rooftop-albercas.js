@@ -13,7 +13,7 @@ import { Link } from 'gatsby'
 
 
   
-let bigSlider =[<HandleImages name="amenidadesA10"/>, <HandleImages name="roofH1"/>, <HandleImages name="roofH2"/>, <HandleImages name="roofH3"/>]
+let bigSlider =[<HandleImages name="amenidadesA10"/>, <HandleImages name="rooftop"/>, <HandleImages name="roofH2"/>, <HandleImages name="roofH3"/>]
  
 
 const Slider = (props) => {

@@ -976,6 +976,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.12.5":
+  version "7.13.16"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.16.tgz#673e7b84c1f6287d96d483fa65cd3db792d53e22"
+  integrity sha512-7VsWJsI5USRhBLE/3of+VU2DDNWtYHQlq2IHu2iL15+Yx4qVqP8KllR6JMHQlTKWRyDk9Tw6unkqSusaHXt//A==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.10.2":
   version "7.11.3"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.11.3.tgz#043e6ff3b12226e41ed2013418b9a4c055d9c21e"
@@ -7302,6 +7309,14 @@ gatsby-plugin-favicons@^2.0.0:
   dependencies:
     favicons-webpack-plugin "^4.2.0"
     superstruct "^0.10.12"
+
+gatsby-plugin-google-gtag@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-3.3.0.tgz#78cee75ad8061003bce5a0740dd0bdd3619aaac4"
+  integrity sha512-cm8epDF9fWGULEnZwEsVbnSRUVi2JrOAgzR2PSt28ayKdIKjJzd1ssQb/V0ZqoaZq7dHMdjTq0g9wFuXwSX/Tw==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    minimatch "^3.0.4"
 
 gatsby-plugin-minify-html@^1.0.4:
   version "1.0.4"

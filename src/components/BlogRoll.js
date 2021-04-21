@@ -28,18 +28,37 @@ class BlogRoll extends React.Component {
     this.state = {
  
     }}
+
+
+    componentDidMount(){
+
+      window.addEventListener("storage",(e) => {
+        console.log('roll-mount!',window.localStorage.eng)
+     });
+     
+    }
+
+
+    componentWillUnmount(){
+      window.removeEventListener("storage",(e) => {
+        console.log('roll-mount!',window.localStorage.eng)
+     });
+     
+    }
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
+    console.log('!',window.localStorage.eng)
     return (
-      <Masonry
+      window.localStorage.eng=='false'?  <Masonry
       breakpointCols={breakpointColumnsObj}
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column">
-        {posts &&
+      {posts &&
           posts.map(({ node: post }) => (
+            !post.frontmatter.tags.includes('espanol')?
             <div className="post" key={post.id}>
+             
               <article
                 className={`blog-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -78,7 +97,56 @@ class BlogRoll extends React.Component {
                 </header>
             
               </article>
-            </div>
+            </div>:""
+          ))}
+      </Masonry>: <Masonry
+      breakpointCols={breakpointColumnsObj}
+      className="my-masonry-grid"
+      columnClassName="my-masonry-grid_column">
+      {posts &&
+          posts.map(({ node: post }) => (
+            post.frontmatter.tags.includes('espanol')?
+            <div className="post" key={post.id}>
+             
+              <article
+                className={`blog-list-item tile is-child box notification ${
+                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                }`}
+              >
+                <header>
+                  {post.frontmatter.featuredimage ? (
+                    <div className="featured-thumbnail">
+                      <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    > <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.featuredimage,
+                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                        }}
+                      /></Link> 
+                    </div>
+                  ) : null}
+                  <div className="post-meta">
+                  <div className="date">
+                    
+                      {GetFormattedDate(new Date(post.frontmatter.date))}
+                    </div>
+                    <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    >
+                      <h3>{post.frontmatter.title}</h3>
+                    </Link>
+                    <Link className="read-more" to={post.fields.slug}>
+                Ver Mas
+                  </Link>
+                   
+                  </div>
+                </header>
+            
+              </article>
+            </div>:""
           ))}
       </Masonry>
     )
@@ -93,8 +161,9 @@ BlogRoll.propTypes = {
   }),
 }
 
-export default () => (
-  <StaticQuery
+export default (props) => (
+  <StaticQuery 
+  eng={props.eng}
     query={graphql`
       query BlogRollQuery {
         allMarkdownRemark(
@@ -111,6 +180,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
+                tags
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {

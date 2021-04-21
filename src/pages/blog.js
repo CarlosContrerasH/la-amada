@@ -4,14 +4,25 @@ import React from 'react'
 import Layout from '../components/Layout'
 import BlogRoll from "../components/BlogRoll"
 
+ 
 
+  const Wrapper = (props) =>{
+  
+    return(  
 
-  const Tester = (props) =>{
-    return(  <div className="residencias-buttons-wrapper bg-sand">
-      {props.eng?"eng":"span"}
+  
+      <div className="bg-sand editorial">
+      <h1>Editorial</h1>
+      <BlogRoll />
+     
+      </div>
       
-      </div>)
+      
+    )
   }
+
+
+
 
 class Test extends React.Component {
 
@@ -27,21 +38,15 @@ class Test extends React.Component {
     }
 
 
- componentDidMount(){
-    console.log("test")
- }
-
+ 
 
     render() {
 
         return (
 
             <Layout>
-
-<div className="bg-sand editorial">
-<h1>Editorial</h1>
-<BlogRoll />
-</div>
+            
+ <Wrapper/>
 
                 
 

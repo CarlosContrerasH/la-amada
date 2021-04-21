@@ -20,6 +20,15 @@ export function HandleImages(name){
     }
 
 
+    rooftop:file(relativePath: { eq: "AMENIDADES/LA AMADA/rooftop2.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
+
 
 
    market2:file(relativePath: { eq: "AMENIDADES/LA AMADA/MARKET.jpg" }) {
@@ -1422,6 +1431,9 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
     areasVerdes:<Img alt="Map" fluid={data.areasVerdes.childImageSharp.fluid} />,
 
     isla:<Img alt="Map" fluid={data.isla.childImageSharp.fluid} />,
+
+   rooftop:<Img alt="Map" fluid={data.rooftop.childImageSharp.fluid} />,
+
    market2:<Img alt="Map" fluid={data.market2.childImageSharp.fluid} />,
 
     beachClub:<Img alt="Map" fluid={data.beachClub.childImageSharp.fluid} />,

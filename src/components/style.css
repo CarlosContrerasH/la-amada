@@ -2630,7 +2630,10 @@ display: none;
     display: inline-block;
     
 }
-
+.asociado:nth-child(3)  .logo img{
+    height: 5em;
+    width: auto;
+}
 
 .asociado .logo .gatsby-image-wrapper *{
     object-fit: contain !important;

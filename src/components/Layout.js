@@ -24,33 +24,12 @@ const Layout = class extends React.Component {
   handleLanguageChange=()=> {
     this.setState({
       eng: !this.state.eng
-    }, () => {
-      // Save data to sessionStorage
-     sessionStorage.setItem('eng', this.state.eng.toString);
-    })
+    },()=> {localStorage.setItem('eng', this.state.eng)})
   }
 
   componentDidMount(){
    
-    
-    // Get saved data from sessionStorage
-    let data = sessionStorage.getItem('eng');
-  
-    console.log("lay!!!!!",sessionStorage)
-
-    if (data) {
-      this.setState({
-        eng: data=="true"?true:false
-      }, () => {
-        // Save data to sessionStorage
-        sessionStorage.setItem('eng', data);
-        
-      })
-    }
-    else{
-      sessionStorage.setItem('eng', false);
-    }
-
+    localStorage.setItem('eng', this.state.eng)
 
 
 
