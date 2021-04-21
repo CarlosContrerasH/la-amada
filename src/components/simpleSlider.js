@@ -22,6 +22,32 @@ const SimpleSlider = class extends React.Component {
     }
 
 
+
+
+ carousel=()=> {
+    
+   if(this.state.active==(this.props.slides.length -1)){
+    this.setState({active:0})
+   }
+   else{
+       this.setState({active:this.state.active+1})
+    
+    }
+     
+        setTimeout(this.carousel, 5000); // Change image every 5 seconds
+      }
+
+    componentDidMount=()=>{
+     this.carousel()
+    }
+
+
+    componentWillUnmount(){
+
+    }
+
+    
+
     handleIncrease() {
         this.setState({
             active: this.state.active + 1
