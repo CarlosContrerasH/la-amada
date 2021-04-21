@@ -101,10 +101,9 @@ class BlogRoll extends React.Component {
       </div>:
       
       
-      <Masonry
-      breakpointCols={breakpointColumnsObj}
+      <div
       className="my-masonry-grid"
-      columnClassName="my-masonry-grid_column">
+      >
       {posts &&
           posts.map(({ node: post }) => (
             post.frontmatter.tags.includes('espanol')?
@@ -150,7 +149,7 @@ class BlogRoll extends React.Component {
               </article>
             </div>:""
           ))}
-      </Masonry>
+      </div>
     )
   }
 }
