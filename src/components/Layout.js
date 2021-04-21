@@ -13,9 +13,13 @@ import Seo from "./seo"
 
 const Layout = class extends React.Component {
   constructor(props) {
+
+
+
+ 
     super(props)
     this.state = {
-      eng: false
+    
 
     }
     
@@ -24,13 +28,25 @@ const Layout = class extends React.Component {
   handleLanguageChange=()=> {
     this.setState({
       eng: !this.state.eng
-    },()=> {localStorage.setItem('eng', this.state.eng)})
+    },()=> {console.log(this.state.eng);localStorage.setItem('eng', this.state.eng)})
   }
 
   componentDidMount(){
-   
-    localStorage.setItem('eng', this.state.eng)
 
+
+    if(window.localStorage.eng===undefined){
+      console.log('if')
+     
+      this.setState({
+        eng: (window.localStorage.eng == 'true')
+      },()=> {localStorage.setItem('eng', this.state.eng);console.log('if',this.state.eng,window.localStorage.eng)})
+
+    }
+    else{
+
+    
+      this.setState({eng: (window.localStorage.eng == 'true')},()=>  console.log('else',this.state.eng,window.localStorage.eng))
+    }
 
 
 

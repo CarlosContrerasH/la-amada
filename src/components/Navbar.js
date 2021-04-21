@@ -11,12 +11,21 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
-      eng:this.props.eng
+      eng:this.props.eng,
+      toggle:true,
      
     }
   }
 
-
+componentDidMount(){
+ 
+  if(window.location.pathname=='/blog'){
+this.setState({toggle:false})
+  }
+  else{
+    this.setState({toggle:true})
+  }
+}
 
   render() {
     return (
@@ -98,7 +107,7 @@ const Navbar = class extends React.Component {
            <li>   <Link to="/amenidades">{this.props.eng ?"Amenities":"AMENIDADES"} </Link></li>
              <li> <Link to="/residencias">{this.props.eng ?"Residences ":"RESIDENCIAS"} </Link></li>
              <li> <Link to="/ubicacion">{this.props.eng ?"Location":"UBICACIÓN"} </Link></li>
-             <li> <Link to="/galeria">GALERIA </Link></li>
+             <li> <Link to="/galeria">{this.props.eng ?"GALLERY":"GALERIA"} </Link></li>
              <li> <Link to="/conocenos">{this.props.eng ?"Our Team":"Conócenos"} </Link></li>
              <li> <Link to="/invierte"> {this.props.eng ?"Investment":"inversión"} </Link></li>
              <li> <Link to="/blog"> EDITORIAL </Link></li>
@@ -107,13 +116,13 @@ const Navbar = class extends React.Component {
 
               <label>
           
-          <select value={this.props.eng ?"Eng":"Esp"} onChange={(event)=>{
+       {this.state.toggle&&   <select value={this.props.eng ?"Eng":"Esp"} onChange={(event)=>{
            if( event.target.value!==this.props.eng){this.props.langToggle()}
             }}>
             <option value="Eng">Eng</option>
             <option value="Esp">Esp</option>
             
-          </select>
+          </select>}
         </label>
               </li>
 

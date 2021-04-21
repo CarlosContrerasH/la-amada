@@ -2890,19 +2890,7 @@ padding:2em;
     color: var(--dark-green);
     margin-bottom: 2em;
 }
-.my-masonry-grid {
-    display: -webkit-box; /* Not needed if autoprefixing */
-    display: -ms-flexbox; /* Not needed if autoprefixing */
-    display: flex;
-    margin-left: -30px; /* gutter size offset */
-    width: auto;
-  }
-  .my-masonry-grid_column {
-    padding-left: 30px; /* gutter size */
-    background-clip: padding-box;
-  }
-   
- 
+
 
 
 
@@ -3227,3 +3215,36 @@ form label input {
 }
 
  }
+
+
+ .my-masonry-grid{
+     display: flex;
+     flex-wrap: wrap;
+  
+ }
+
+
+ .my-masonry-grid .post{
+     width:calc(50% - 1em );
+     margin:.5em
+ }
+
+
+.post .featured-thumbnail{
+    height: 25vw;
+    overflow: hidden;
+}
+
+
+@media (max-width: 800px) {
+    .my-masonry-grid .post{
+        width:calc(100% - 1em );
+        margin:.5em
+    }
+    .post .featured-thumbnail{
+        height: auto;
+        overflow: hidden;
+    }
+
+
+}

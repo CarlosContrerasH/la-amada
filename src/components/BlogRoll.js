@@ -31,29 +31,28 @@ class BlogRoll extends React.Component {
 
 
     componentDidMount(){
+      
 
-      window.addEventListener("storage",(e) => {
-        console.log('roll-mount!',window.localStorage.eng)
-     });
+ 
+      this.setState({
+        eng:window.localStorage.eng
+      })
      
     }
 
+   
 
-    componentWillUnmount(){
-      window.removeEventListener("storage",(e) => {
-        console.log('roll-mount!',window.localStorage.eng)
-     });
-     
-    }
+ 
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-   
+ 
     return (
-      window.localStorage.eng=='false'?  <Masonry
-      breakpointCols={breakpointColumnsObj}
+      this.state.eng=='true'?
+      
+      <div
       className="my-masonry-grid"
-      columnClassName="my-masonry-grid_column">
+      >
       {posts &&
           posts.map(({ node: post }) => (
             !post.frontmatter.tags.includes('espanol')?
@@ -90,7 +89,7 @@ class BlogRoll extends React.Component {
                       <h3>{post.frontmatter.title}</h3>
                     </Link>
                     <Link className="read-more" to={post.fields.slug}>
-                 Read More 
+                    Read More
                   </Link>
                    
                   </div>
@@ -99,7 +98,10 @@ class BlogRoll extends React.Component {
               </article>
             </div>:""
           ))}
-      </Masonry>: <Masonry
+      </div>:
+      
+      
+      <Masonry
       breakpointCols={breakpointColumnsObj}
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column">
@@ -139,7 +141,7 @@ class BlogRoll extends React.Component {
                       <h3>{post.frontmatter.title}</h3>
                     </Link>
                     <Link className="read-more" to={post.fields.slug}>
-                Ver Mas
+                 Ver Mas
                   </Link>
                    
                   </div>
