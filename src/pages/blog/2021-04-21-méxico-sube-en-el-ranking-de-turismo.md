@@ -1,13 +1,16 @@
 ---
 templateKey: blog-post
-title: MÉXICO SUBE EN EL RANKING DE TURISMO
-date: 2018-04-18T11:17:17.840Z
+title: GRAN INAUGURACIÓN DEL CLUB DE PLAYA
+date: 2018-06-18T11:17:17.840Z
 description: " "
 featuredpost: false
-featuredimage: /img/cancunbeach.jpg
+featuredimage: /img/2018-06-08-19.52-1-1000x675.jpg
 tags:
   - espanol
 ---
-La industria turística de México sigue creciendo, producto de muchos años de arduo trabajo. Cada vez llegan más vacacionistas a Cancún de todo el mundo. En el último artículo de “Travel Weekly”, del 8° lugar el año pasado, México se ha colocado en la 6° posición mundial como destino turístico.
+Gracias a todos los que fueron a la inauguración del Club de Playa. Casi 150 invitados disfrutaron junto a los desarrolladores y arquitectos de una hermosa velada con música en vivo, cocteles y aperitivos.
 
-Lee el artículo completo [aquí](https://www.travelweekly.com/Mexico-Travel/Big-year-pushes-Mexico-up-tourism-ranking).
+
+
+Las nuevas instalaciones son hermosas, y nos dará mucho gusto conocer nuevos vecinos y amigos en el área de alberca próximamente.\
+Aquí hay más fotos del evento:
