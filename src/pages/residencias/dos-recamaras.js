@@ -1315,7 +1315,7 @@ class Residencias extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-mapa:34,
+mapa:33,
 lock:false
         }
 
@@ -1326,27 +1326,43 @@ lock:false
 		this.setState({lock:true,mapa:36})
 	}
 	lockFalse=()=>{
-		this.setState({lock:false,mapa:34})
+		this.setState({lock:false,mapa:33})
 	}
 
 
     mapClick=(e)=>{
-        this.setState({
-            mapa:e
-        },()=>console.log(this.state.mapa))
+
+if(!this.state.lock){
+	this.setState({
+		mapa:e
+	},()=>console.log(this.state.mapa))
+}
+
+      
     }
 
     increase = ()=>{
-        this.setState({
-            mapa:this.state.mapa==36?1:this.state.mapa+1
-        })
+
+		if(!this.state.lock){
+			this.setState({
+				mapa:this.state.mapa==36?33:this.state.mapa+1
+			})
+		}
+		
+
+      
     }
 
 
     decrease=()=>{
-        this.setState({
-            mapa:this.state.mapa==1?36:this.state.mapa-1
-        })
+
+		if(!this.state.lock){
+			this.setState({
+				mapa:this.state.mapa==33?36:this.state.mapa-1
+			})
+		}
+		
+      
     }
 
 
