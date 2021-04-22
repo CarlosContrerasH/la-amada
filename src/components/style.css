@@ -1131,8 +1131,8 @@ button.arrow-button:nth-of-type(2):hover{
 
 .slider-buttons button{
     border:none;
-    width:16px;
-    height:16px;
+    width:20px;
+    height:20px;
     margin:1em;
     border-radius: 100%;
    border:2px solid var(--sand);

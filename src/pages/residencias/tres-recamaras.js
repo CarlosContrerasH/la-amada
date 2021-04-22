@@ -1254,7 +1254,7 @@ class Residencias extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-mapa:32
+mapa:29
         }
 
 
@@ -1269,14 +1269,14 @@ mapa:32
 
     increase = ()=>{
         this.setState({
-            mapa:this.state.mapa==36?1:this.state.mapa+1
+            mapa:this.state.mapa==32?29:this.state.mapa+1
         })
     }
 
 
     decrease=()=>{
         this.setState({
-            mapa:this.state.mapa==1?36:this.state.mapa-1
+            mapa:this.state.mapa==32?29:this.state.mapa-1
         })
     }
 
