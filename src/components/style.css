@@ -225,6 +225,14 @@ transition: .3s opacity;
 
 @media (max-width: 627px) {
 
+    .bg-wrapper .gatsby-image-wrapper:nth-child(1){
+   
+    
+        display:block
+           
+      
+      }
+
     .bg-wrapper .gatsby-image-wrapper:nth-child(2){
    
     
@@ -3018,14 +3026,26 @@ nav>div{
         display: block;
         position: absolute;
         top:50px;
+        height: calc(100vh - 50px);
         left:0;
         width: 100%;background: var(--dark-green);
         margin:0;
         animation: fade-from-left .3s ease-out   both;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        
     }
 
+
     .open  ul li{
+        margin: 0;
         display: block;
+        border-bottom: 1px solid var(--sand);
+        width: calc(100% - 4em);
+        padding: 1em 0;
     }
 .first{
     display:none;
@@ -3131,7 +3151,7 @@ form label input {
 
 .amenidades-grid.amada .grid-element:nth-child(2){
     order: 3;
-    width:100vw !important;
+     
   
 }
 
