@@ -1245,22 +1245,16 @@ mapa:34
 
 
     mapClick=(e)=>{
-        this.setState({
-            mapa:e
-        },()=>console.log(this.state.mapa))
+        return null
     }
 
     increase = ()=>{
-        this.setState({
-            mapa:this.state.mapa==36?1:this.state.mapa+1
-        })
+        return null
     }
 
 
     decrease=()=>{
-        this.setState({
-            mapa:this.state.mapa==1?36:this.state.mapa-1
-        })
+		return null
     }
 
 

@@ -117,11 +117,11 @@ return(    <div className="centered">
 <img alt="lock" src={lock}/>
 <span>Lock-off</span></div>
 
+<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
      <div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
 
 <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
-<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
 
    </div>
    <HandleImages name="unaRecamara"/>
@@ -147,10 +147,15 @@ return(    <div className="centered">
  
 <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
- 
+<div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
 <div>
 <img alt="lock" src={lock}/>
 <span>Lock-off</span></div>
+
+
+<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
+
+
    </div>
    <HandleImages name="dosRecamaras"/>
    <Link to="/residencias/dos-recamaras"> 
@@ -171,9 +176,7 @@ return(    <div className="centered">
    <div className="icons-wrapper">
 
  
-   <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
-
- 
+   <div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
  
 </div>
 <HandleImages name="tresRecamaras"/>
@@ -223,9 +226,9 @@ return(    <div className="centered">
    <div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
 
 
-<div>
+{/*<div>
 <img alt="Beachfront view" src={playa}/>
-<span>{props.eng?"Beachfront view":"Frente a Playa"}</span></div>
+<span>{props.eng?"Beachfront view":"Frente a Playa"}</span></div>*/}
 
 
 </div>

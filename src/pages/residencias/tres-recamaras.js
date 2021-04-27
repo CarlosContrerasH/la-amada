@@ -81,6 +81,7 @@ const Detalle = (props) => {
 <img alt="Beachfront view" src={playa}/>
 <span>{props.eng?"Beachfront view":"Frente a Playa"}</span></div>
 
+<div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
 
 
@@ -90,7 +91,6 @@ const Detalle = (props) => {
 
 <div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
 
-<div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
 
 </div>
@@ -1276,7 +1276,7 @@ mapa:29
 
     decrease=()=>{
         this.setState({
-            mapa:this.state.mapa==32?29:this.state.mapa-1
+            mapa:this.state.mapa==29?32:this.state.mapa-1
         })
     }
 

@@ -5,6 +5,7 @@ import { Link } from 'gatsby'
 import { HandleImages } from "../../components/handleImages"
 import Layout from '../../components/Layout'
 
+import vistamar from "../../img/RESIDENCIAS/features/FRENTE-A-PLAYA.svg"
 import { useScrollPercentage } from 'react-scroll-percentage'
 import FancySlider from "../../components/fancySlider"
 import lock from "../../img/RESIDENCIAS/features/LOCK-OFF.svg"
@@ -74,13 +75,20 @@ const Detalle = (props) => {
 
 {/*<div><img alt="lock" src={mar}/><span>Vista<br/> al mar</span></div>*/}
 
-<div>
+{props.lock?<div>
 <img alt="lock" src={lock}/>
-<span>Lock-off</span></div>
+<span>Lock-off</span></div>:<div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
+}
+
+
+
 
 <div><img alt="Marinafront view" src={mar}/><span>{props.eng?"Marinafront view":"Vista a la Marina"}</span></div>
 
- 
+{props.lock?<div>
+<img alt="lock" src={reserva}/>
+<span>{props.eng?"Lagoon View":"Vista a la Laguna"}</span></div>:""
+}
 
 </div>
 
@@ -1376,7 +1384,7 @@ if(!this.state.lock){
 
             <Layout>
                 <div className="detalle-hero"> <HandleImages name="dosRecamaras" /></div>
-                <Detalle />
+                <Detalle lock={this.state.lock}/>
 				<Tabs lock={this.state.lock} lockTrue={this.lockTrue} lockFalse={this.lockFalse}/>
 				{this.state.lock?<LockFloorPlan />:<FloorPlan />} 
 				{this.state.lock?<LockFeatures/>:<Features />}

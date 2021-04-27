@@ -73,10 +73,11 @@ const Detalle = (props) => {
 
 
 
-<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
-
 
 {/*<div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
+
+<div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
+
 <div><img alt="Vista al mar" src={mar}/><span>Vista<br/> al mar</span></div>
 <div><img alt="Lagoon View" src={reserva}/>{props.eng==true?<span>Lagoon<br/>View</span>: <span>Vista<br/> a la reserva</span>}</div>
 */}
@@ -1236,22 +1237,16 @@ mapa:36
 
 
     mapClick=(e)=>{
-        this.setState({
-            mapa:e
-        },()=>console.log(this.state.mapa))
+        return null
     }
 
     increase = ()=>{
-        this.setState({
-            mapa:this.state.mapa==36?1:this.state.mapa+1
-        })
+		return null
     }
 
 
     decrease=()=>{
-        this.setState({
-            mapa:this.state.mapa==1?36:this.state.mapa-1
-        })
+      return null
     }
 
 
