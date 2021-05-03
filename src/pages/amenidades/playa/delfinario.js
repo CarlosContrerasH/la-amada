@@ -27,7 +27,7 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div><div className="amenidades-top">
-                    <Link to="/amenidades/playa/helipuerto"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
+                    <Link to="/amenidades/playa/helipuerto"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
             <div className="icon-wrapper">
 
 
@@ -102,7 +102,7 @@ enableBackground="new 0 0 165.1 130.9" >
 
                 </p>
                 <p><a href="https://www.delphinusworld.com.mx/donde-nadar-con-delfines-en-cancun/delphinus-playa-mujeres" target="_blank"> {props.eng == true ?"See More":"Conoce Más"}</a></p>
-                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Heliport" : "Volver a Helipuerto"}</button>
             </div>
         </ScrollWrapper>
 

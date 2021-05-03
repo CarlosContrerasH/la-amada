@@ -25,7 +25,7 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div><div className="amenidades-top">
-                    <Link to="/amenidades/playa/vecinos"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
+                    <Link to="/amenidades/playa/vecinos"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
             <div className="icon-wrapper">
 
 
@@ -111,7 +111,7 @@ Screen reader support enabled.
                 </p>
                 <p><a href="https://www.belovedhotels.com/cancun/beloved-playa-mujeres/offers/category/spa/" target="_blank"> {props.eng == true ?"See More":"Conoce Más"}</a></p>
 
-                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Luxury Hotels as Neighbors" : "Volver a Nuestros Vecinos"}</button>
             </div>
         </ScrollWrapper>
 

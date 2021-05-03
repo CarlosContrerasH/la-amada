@@ -25,7 +25,7 @@ const Slider = (props) => {
             <div>
 
             <div className="amenidades-top">
-                    <Link to="/amenidades/la-amada/gym"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
+                    <Link to="/amenidades/la-amada/gym"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
             <div className="icon-wrapper">
  
  
@@ -100,7 +100,7 @@ experiencias que ofrece el destino.
 
                 </p>
 
-                <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "LA AMADA Amenities" : "AMENIDADES LA AMADA"}</button>
+                <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Gym" : "Volver a Gym"}</button>
             </div>
         </ScrollWrapper>
 

@@ -27,7 +27,7 @@ const Slider = (props) => {
 
             <div>
             <div className="amenidades-top">
-                    <Link to="/amenidades/playa/marina"  ><button className="back"><span><span className="arrow-back"></span></span><br />PREV</button></Link>
+                    <Link to="/amenidades/playa/marina"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
             <div className="icon-wrapper">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px"
 	 viewBox="0 0 165.1 130.9" 
@@ -108,7 +108,7 @@ tranquilidad y seguridad que mereces.       </>
 
                 </p>
 
-                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Playa Mujeres Amenities" : "AMENIDADES Playa Mujeres"}</button>
+                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Marina" : "Volver a Marina"}</button>
             </div>
         </ScrollWrapper>
 

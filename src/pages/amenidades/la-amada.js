@@ -110,7 +110,7 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
          </div></Link></ScrollWrapper>
          
          <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/la-amada/beachclub" >     <div >
-        <div className="icon-wrapper"><img alt="Beachclub" src={bClub}/><span>Club de Playa</span></div> <HandleImages name="amenidadesA3"/>
+        <div className="icon-wrapper"><img alt="Beachclub" src={bClub}/><span>{props.eng?"Beach Club":"Club de Playa"}</span></div> <HandleImages name="amenidadesA3"/>
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/rooftop-albercas" >    <div >
@@ -124,7 +124,7 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper  classes="grid-element big">  <Link to="/amenidades/la-amada/canchas" >      <div >
-         <div className="icon-wrapper"><img alt="Canchas" src={canchas}/><span>Canchas</span></div> <HandleImages name="amenidadesA4"/>
+         <div className="icon-wrapper"><img alt="Canchas" src={canchas}/><span>{props.eng?"Multipurpose Courts":"Canchas"}</span></div> <HandleImages name="amenidadesA4"/>
   
 
          </div></Link></ScrollWrapper>
@@ -135,12 +135,12 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element " >  <Link to="/amenidades/la-amada/ludoteca" >     <div >
-         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>Ludotecay Kids-Club </span></div> <HandleImages name="amenidadesA7"/>
+         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>Ludoteca y Kids-Club </span></div> <HandleImages name="amenidadesA7"/>
  
          </div></Link></ScrollWrapper>
 
          <ScrollWrapper classes="grid-element big" >  <Link to="/amenidades/la-amada/salon" >     <div >
-         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>Salón de Residentes</span></div><HandleImages name="ludotecaH2"/>
+         <div className="icon-wrapper"><img alt="Ludoteca" src={ludoteca}/><span>{props.eng?"Residential Lounge":"Salón de Residentes"}</span></div><HandleImages name="ludotecaH2"/>
  
          </div></Link></ScrollWrapper>
 
