@@ -59,7 +59,7 @@ html.snap{
   
     font-family: 'Roboto', sans-serif;
  
-
+    -webkit-overflow-scrolling: touch;
     margin:0;
  }
  
@@ -841,6 +841,16 @@ font-weight: 200;}
 .amenidades-top button{
     margin:0!important;
 }
+.amenidades-top>*{
+    width: 200px;
+ }
+@media (max-width: 880px) {
+    .amenidades-top>*{
+       width: 33%;
+    }
+ }
+
+
 /*AMENIDADES*/
 
 
@@ -1400,6 +1410,7 @@ display: flex;
     font-style: italic;
     font-weight: 200;
     letter-spacing: .1em;
+    width: 100%;
 }
 .amenidad-detalle>div> a{
     text-decoration: none;
@@ -1544,6 +1555,16 @@ display: flex;
 }
 
 
+@media (max-width: 880px) {
+    .amenidades-grid .grid-element .icon-wrapper img{
+        height: 4em;
+        width: 4em;
+        margin:auto;
+        
+    }
+}
+
+
 .amenidad-detalle>div> .gatsby-image-wrapper{
     max-height: 70vh;
 }
@@ -1583,7 +1604,9 @@ display: flex;
     fill:var(--dark-green);
     width: 3em;
     height: 3em;
+    max-width: 24vw;
 }
+ 
 
 .amenidad-detalle .icon-wrapper svg *{
     fill:var(--dark-green)
@@ -1595,7 +1618,13 @@ display: flex;
     width: 100vw;
 }
 
-
+ 
+.amenidades-header.amada .slide:nth-child(2) .gatsby-image-wrapper *{
+   object-position: left center !important;
+}
+.amenidades-header.amada .slide:nth-child(5) .gatsby-image-wrapper *{
+    object-position: 30% center !important;
+ }
 .centered h3,
 .centered h1,
 .centered.amenidades p{
@@ -1892,6 +1921,7 @@ margin:1em;
     justify-content: center;
     align-items: center;
     padding:2em;
+    flex-wrap: wrap;
 }
 
 
@@ -2520,7 +2550,13 @@ height: 100%;}
 
  @media (max-width: 500px) {
 
+    .conocenos-hero {
+        padding: 0;
+    }
 
+    .conocenos-hero .slides-wrapper  {
+        width:100vw
+    }
   .conocenos-hero h1{
     transform:translateX(0)
 }
@@ -2576,10 +2612,11 @@ height: 100%;}
 }
 .personas-wrapper{
     display: flex;
-    width: 100%;
+    
     max-width: 880px;
     margin:2em auto !important;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
@@ -2609,6 +2646,22 @@ height: 100%;}
    
     margin-bottom: 1em;}
 
+
+
+
+    @media (max-width: 800px) {
+        .personas-wrapper{
+            
+            justify-content: center;
+            width: 100%  !important;
+            
+        }
+        .persona{
+            margin:.5em
+        }
+        
+    }
+
     .asociados .wrapped-header{
         max-width: 880px;
         margin:auto
@@ -2619,7 +2672,8 @@ display: none;
 }
 .asociado {
     margin: 0 auto 4em !important;
-    max-width: 80ch;}
+    max-width: 80ch;
+    width: 100% !important;}
 
     .asociado::before {
         
@@ -2655,10 +2709,18 @@ display: none;
     object-fit: contain !important;
 }
 
+
+
 .invierte-hero{
+    
     position: relative;
     max-height: 80vh;
     overflow: hidden;
+}
+@media (max-width: 800px) {
+.invierte-hero .image-wrapper{
+    height: 50vh;
+}
 }
 
 .invierte-hero .gatsby-image-wrapper{
@@ -2992,7 +3054,8 @@ padding:2em;
 
     .hero .bg-wrapper {
         position: absolute;
-        bottom: calc(100vh - 50px);}
+        bottom: calc(100vh - 50px);
+        transition: .3s transform;}
 
 
    
@@ -3118,7 +3181,7 @@ form label input {
 
     .wrapped-header{
       font-size:1.5em;
-         margin: 1em ;
+         margin: 1em !important;
 }
 .fancy-title{
     font-size: 3.6em ;
@@ -3130,7 +3193,13 @@ form label input {
     top:10%;
     font-size: .75em;
 }
+.header-amenidades +.image-wrapper{
+    height: 50vh;
+}
 
+.header-amenidades+ .image-wrapper .gatsby-image-wrapper{
+    height: 100%;
+}
 .slider-buttons button {
     width:22px;
     height:22px;
@@ -3230,14 +3299,7 @@ form label input {
 }
 
 
-.invierte-heading{
-    position: absolute;
-    bottom:10%;
-    top:auto;
-   right:10%;
-   left:auto;
-    color:var(--dark-green)
-}
+
 .invierte-heading h1{
     font-size: 1.3em;
 }

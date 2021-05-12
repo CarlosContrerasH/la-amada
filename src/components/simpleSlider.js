@@ -33,7 +33,7 @@ const SimpleSlider = class extends React.Component {
        this.setState({active:this.state.active+1})
     
     }
-     
+     console.log('carousel', this.state.active)
         setTimeout(this.carousel, 5000); // Change image every 5 seconds
       }
 
@@ -61,7 +61,7 @@ const SimpleSlider = class extends React.Component {
 
     handleButtonClick(e) {
         this.setState({
-            active: e
+            active:parseInt(e)
         })
     }
  

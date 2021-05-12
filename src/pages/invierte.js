@@ -40,10 +40,10 @@ const InvierteHero = (props) => {
     return (
         <div className="invierte-hero bg-sand">
 
-
+<div className='image-wrapper'>
             <HandleImages name="invierteHeader" />
 
-
+</div>
             <span className="invierte-heading">
                 {props.eng == true ? <h1><span className="script">Invest</span><br /><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>Wisely</span></h1> : <h1><span className="script">Somos</span><br /><span style={{ fontSize: "1.5em", fontWeight: "200", letterSpacing: ".1em" }}>Tu Mejor Opción</span></h1>}
             </span>

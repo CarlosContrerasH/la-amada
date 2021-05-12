@@ -36,15 +36,14 @@ let grid =[ <></>,
 <><HandleImages name="amenidadesA10Icon"/><HandleImages name="amenidadesA10"/></>,
 <><HandleImages name="amenidadesA11Icon"/><HandleImages name="amenidadesA11"/></>,]
    
+   let bigSlider =[ <HandleImages name="amenidadesH1"/>,
+   <HandleImages name="sliderAmada2"/>,
+    <HandleImages name="amenidadesH3"/>,
+   <HandleImages name="sliderAmada4"/>,
+   
+   <HandleImages name="sliderAmada5"/>,]
 
 
-let bigSlider =[ <HandleImages name="amenidadesH1"/>,
-<HandleImages name="sliderAmada2"/>,
- <HandleImages name="amenidadesH3"/>,
-<HandleImages name="sliderAmada4"/>,
-
-<HandleImages name="sliderAmada5"/>,]
- 
 
  
   const Slider = (props) => {
@@ -53,7 +52,7 @@ let bigSlider =[ <HandleImages name="amenidadesH1"/>,
     return (
   
     
-        <ScrollWrapper classes="   amenidades-header">
+        <ScrollWrapper classes="   amenidades-header amada">
             
        
         <SimpleSlider slides={bigSlider}/>

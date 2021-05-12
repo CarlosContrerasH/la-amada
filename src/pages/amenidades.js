@@ -23,14 +23,14 @@ import { Link } from 'gatsby'
     return (
         <ScrollWrapper>
             
-        <div className="full" style={{maxHeight:"100%"}}>
+        <div className="full" >
 
     <div >
     <span className="header-amenidades">
     {props.eng==true?<h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>SUBMERGE IN </span><br/><span  style={{marginLeft:"1.5em"}}className="script">our experiences</span></h1>:<h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>NUESTRAS</span><br/><span  style={{marginLeft:"1.5em"}}className="script">amenidades</span></h1>}</span>
 
-        
-    <HandleImages name="playa"/>
+     <div className='image-wrapper'>
+    <HandleImages name="playa"/></div>   
     </div>
 
     <div className="component">

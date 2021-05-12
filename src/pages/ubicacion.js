@@ -128,10 +128,7 @@ const Mapa = (props) => {
 DEL CENTRO DE CANCÚN</span>}
                 <button class="outlined-button" style={{ margin: "1em" }}>{props.eng?"download master plan":"DESCARGAR MASTER PLAN"}</button>
             </div>
-           <div className="botom">
-
-           <HandleImages name="mapa"/>
-           </div>
+           
        </div>
 
 
