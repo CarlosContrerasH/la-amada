@@ -54,7 +54,7 @@ enableBackground="new 0 0 165.1 130.9" >
                  
                  <span>
                      
-                 Delphinus Playa Mujeres   
+                 {props.eng == true ?  "Delphinus Playa Mujeres":'Delfinario'}   
                      
                      </span></div> 		                          
                      <Link to="/amenidades/playa/vecinos"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>

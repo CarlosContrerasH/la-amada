@@ -10,6 +10,14 @@ export function HandleImages(name){
   query {
 
 
+    equipo:file(relativePath: { eq: "ASESORES/EQUIPO.jpg" }) {
+      childImageSharp {
+    
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp }
+      }
+    }
+
 
     desktopHero:file(relativePath: { eq: "desktop-hero.jpg" }) {
       childImageSharp {
@@ -1021,7 +1029,7 @@ amenidadesA9:file(relativePath: { eq: "AMENIDADES/LA AMADA/PLAYA.jpg" }) {
 amenidadesA10:file(relativePath: { eq: "AMENIDADES/LA AMADA/ROOFTOPS-ALBERCAS.png" }) {
   childImageSharp {
 
-    fluid {
+    fluid(maxWidth: 1280, webpQuality: 50) {
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1427,6 +1435,8 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
 
    
   const images = {
+
+    equipo:<Img alt="Map" fluid={data.equipo.childImageSharp.fluid} />,
 
     areasVerdes:<Img alt="Map" fluid={data.areasVerdes.childImageSharp.fluid} />,
 

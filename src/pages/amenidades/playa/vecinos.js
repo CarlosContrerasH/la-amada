@@ -69,7 +69,7 @@ enableBackground="new 0 0 165.1 130.9"  >
                  
                  <span>
                      
-                 Playa Mujeres Resorts  
+                 {props.eng == true ? 'Playa Mujeres Resorts':'Nuestros vecinos, hoteles de lujo'}  
                      
                      </span></div> 
                      		                          

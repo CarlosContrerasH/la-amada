@@ -112,7 +112,7 @@ enableBackground="new 0 0 165.1 130.9" >
                  
                  <span>
                      
-                 Heliport
+                 {props.eng == true ? "Heliport":'Helipuerto'}
                      
                      </span></div> 
 					                          

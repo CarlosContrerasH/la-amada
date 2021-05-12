@@ -55,7 +55,7 @@ enableBackground="new 0 0 100.4 130.9" >
                  
                  <span>
                      
-                 Golf Course  
+                 {props.eng == true ?   "Golf Course ":'Campo de Golf'} 
                      
                      </span></div> 
                                      

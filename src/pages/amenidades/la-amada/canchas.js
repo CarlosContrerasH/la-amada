@@ -52,7 +52,7 @@ enableBackground="new 0 0 150 150" >
                  
                  <span>
                      
-                  Multipurpose Courts
+                 {props.eng == true ?  'Multipurpose Courts':'Canchas'}
                      
                      </span></div> 
                      <Link to="/amenidades/la-amada/market"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>

@@ -51,7 +51,7 @@ enableBackground="new 0 0 165.1 130.9" >
                  
                  <span>
                      
-                 Gated Community 
+                 {props.eng == true ?   'Gated Community ':'Doble Caseta de Seguridad'}
                      
                      </span></div> 
                                               

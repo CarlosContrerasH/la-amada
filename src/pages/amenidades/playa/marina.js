@@ -61,7 +61,7 @@ enableBackground="new 0 0 165.1 130.9" >
                  
                  <span>
                      
-                 V&V Marina  
+               Marina  
                      
                      </span></div> 
 

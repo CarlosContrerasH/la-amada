@@ -118,7 +118,7 @@ const Icons = (props) => {
         <div className="icons">
             <a href="/amenidades/la-amada/playa" className="icon-wrapper">
                 <img src={playa} />
-                <span>Playa</span>
+                <span>{props.eng?"Beach":"Playa"}</span>
             </a>
             <a href="/amenidades/la-amada/lobby" className="icon-wrapper">
                 <img src={concierge} />
@@ -126,7 +126,7 @@ const Icons = (props) => {
             </a>
             <a href="/amenidades/la-amada/playa"className="icon-wrapper">
                 <img src={beachclub} />
-                <span>{props.eng?"Beach":"Playa"}</span>
+                <span>{props.eng?"Rooftops & Pools":"Rooftops y Albercas"}</span>
             </a>
             <a href="/amenidades/la-amada/beachclub" className="icon-wrapper">
                 <img src={rooftop} />

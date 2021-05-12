@@ -72,7 +72,7 @@ const Layout = class extends React.Component {
         {temp}
        
         <Form eng={this.state.eng}/>
-        <Footer />
+        <Footer eng={this.state.eng}/>
       </div>
     )
   }

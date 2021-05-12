@@ -16,7 +16,7 @@ import { Link } from 'gatsby'
 
 
 
-let slider =[ <HandleImages name="conocenos1"/>, <HandleImages name="conocenos2"/> ]
+let slider =[ <HandleImages name="equipo"/>, <HandleImages name="conocenos1"/>]
 
 
 
@@ -72,14 +72,32 @@ const Equipo = (props)=>{
 <div className="personas-wrapper">
     <div className="persona">
    <div className="mug"><HandleImages name="persona1"/></div> 
-    <span>HORACIO MARTINEZ </span><br/>
-    <span>{props.eng==true?" Commercial Director":"Director Comercial" }</span>
+    <div><span>HORACIO MARTINEZ </span><br/>
+    <span>{props.eng==true?" Commercial Director":"Director Comercial" }</span></div>
     </div>
  
     <div className="persona">
     <div className="mug"><HandleImages name="persona4"/></div> 
-    <span>MARISA</span><br/>
-    <span>{props.eng==true?"Broker":"Asesor Inmobiliario" } </span>
+   <div><span>MARISA MARTINEZ</span><br/>
+    <span>{props.eng==true?"Broker":"Asesora Inmobiliario" } </span></div> 
+    </div>
+
+    <div className="persona">
+   <div className="mug"><HandleImages name="persona1"/></div> 
+   <div><span>YAEL R. ALONSO </span><br/>
+    <span>{props.eng==true?"Broker":"Asesor Inmobiliario" } </span></div> 
+    </div>
+
+    <div className="persona">
+   <div className="mug"><HandleImages name="persona1"/></div> 
+   <div><span>Estefanía Azuara </span><br/>
+    <span>{props.eng==true?"Broker":"Asesora Inmobiliario" } </span></div> 
+    </div>
+
+    <div className="persona">
+   <div className="mug"><HandleImages name="persona1"/></div> 
+   <div><span>Angélica Hernándes  </span><br/>
+    <span>{props.eng==true?" Assistant":"Asistente" }</span></div> 
     </div>
 </div>
 </ScrollWrapper>)

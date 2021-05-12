@@ -199,7 +199,7 @@ Its amenities offer unique resort experiences that will transform each one of yo
       <div>
           <div>
           <span className="wrapped-header">
-      <h2><span className="script">{props.eng==true?"Meet our proyect ":"Conoce nuestro Proyecto"}</span><br/><span>{props.eng==true?"From ":"Desde "} 380,000 USD</span></h2></span>
+      <h2><span className="script">{props.eng==true?"Get to know our projects ":"Conoce nuestro Proyecto"}</span><br/><span>{props.eng==true?"From ":"Desde "} 380,000 USD</span></h2></span>
       <a href="#form"> <button className="outlined-button light"> {props.eng ?"Make an Appointment":"Hacer Cita"}</button></a>
       </div></div>
       </ScrollWrapper>

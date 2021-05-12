@@ -27,7 +27,7 @@ import { Link } from 'gatsby'
 
     <div >
     <span className="header-amenidades">
-    {props.eng==true?<h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>MEET OUR</span><br/><span  style={{marginLeft:"1.5em"}}className="script">experiences </span></h1>:<h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>NUESTRAS</span><br/><span  style={{marginLeft:"1.5em"}}className="script">amenidades</span></h1>}</span>
+    {props.eng==true?<h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>SUBMERGE IN </span><br/><span  style={{marginLeft:"1.5em"}}className="script">our experiences</span></h1>:<h1><span style={{fontSize:"1.5em",fontWeight:"200",letterSpacing:".1em"}}>NUESTRAS</span><br/><span  style={{marginLeft:"1.5em"}}className="script">amenidades</span></h1>}</span>
 
         
     <HandleImages name="playa"/>
@@ -36,7 +36,7 @@ import { Link } from 'gatsby'
     <div className="component">
     <div className="centered amenidades">{props.eng==true?
     
-    <><p> Fun, recreation, and exclusivity are a must, which is why amenities and activity areas have been created for all kinds of ages and interests.</p></>
+    <><p> FUN, RECREATION, AND EXCLUSIVITY ARE A MUST. THUS WHY WE HAVE DIFFERENT AMENITIES AND ACTIVITY AREAS TO SUIT EVERYONE'S NEEDS AND INTERESTS.</p></>
 
 
     :<><p>Como parte esencial para la diversión, esparcimiento y exclusividad, se crearon diversas amenidades y áreas de actividades para todos los gustos y edades.</p></>}</div></div>
