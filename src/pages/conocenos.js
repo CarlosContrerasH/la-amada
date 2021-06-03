@@ -77,25 +77,25 @@ const Equipo = (props)=>{
     </div>
  
     <div className="persona">
-    <div className="mug"><HandleImages name="persona4"/></div> 
+    <div className="mug"><HandleImages name="persona2"/></div> 
    <div><span>MARISA MARTINEZ</span><br/>
     <span>{props.eng==true?"Broker":"Asesora Inmobiliario" } </span></div> 
     </div>
 
     <div className="persona">
-   <div className="mug"><HandleImages name="persona1"/></div> 
+   <div className="mug"><HandleImages name="persona3"/></div> 
    <div><span>YAEL R. ALONSO </span><br/>
     <span>{props.eng==true?"Broker":"Asesor Inmobiliario" } </span></div> 
     </div>
 
     <div className="persona">
-   <div className="mug"><HandleImages name="persona1"/></div> 
+   <div className="mug"><HandleImages name="persona4"/></div> 
    <div><span>Estefanía Azuara </span><br/>
     <span>{props.eng==true?"Broker":"Asesora Inmobiliario" } </span></div> 
     </div>
 
     <div className="persona">
-   <div className="mug"><HandleImages name="persona1"/></div> 
+   <div className="mug"><HandleImages name="persona5"/></div> 
    <div><span>Angélica Hernándes  </span><br/>
     <span>{props.eng==true?" Assistant":"Asistente" }</span></div> 
     </div>

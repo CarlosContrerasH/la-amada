@@ -179,7 +179,7 @@ persona1:file(relativePath: { eq: "ASESORES/HORACIO.jpg" }) {
   }
 }
 
-persona2:file(relativePath: { eq: "ASESORES/BEATRIZ.jpg" }) {
+persona2:file(relativePath: { eq: "ASESORES/MARISA.jpg"  }) {
   childImageSharp {
 
     fluid {
@@ -187,7 +187,7 @@ persona2:file(relativePath: { eq: "ASESORES/BEATRIZ.jpg" }) {
   }
 }
 
-persona3:file(relativePath: { eq: "ASESORES/RAUL.jpg" }) {
+persona3:file(relativePath: { eq: "ASESORES/yael.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -195,7 +195,15 @@ persona3:file(relativePath: { eq: "ASESORES/RAUL.jpg" }) {
   }
 }
 
-persona4:file(relativePath: { eq: "ASESORES/MARISA.jpg" }) {
+persona4:file(relativePath: { eq: "ASESORES/estef.jpg" }) {
+  childImageSharp {
+
+    fluid {
+      ...GatsbyImageSharpFluid_withWebp }
+  }
+}
+
+persona5:file(relativePath: { eq: "ASESORES/angelica.jpg" }) {
   childImageSharp {
 
     fluid {
@@ -1496,6 +1504,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
     persona2: <Img alt="Miembro del Equipo" fluid={data.persona2.childImageSharp.fluid} />,
     persona3: <Img alt="Miembro del Equipo" fluid={data.persona3.childImageSharp.fluid} />,
     persona4: <Img alt="Miembro del Equipo" fluid={data.persona4.childImageSharp.fluid} />,
+    persona5: <Img alt="Miembro del Equipo" fluid={data.persona5.childImageSharp.fluid} />,
 
 
 
