@@ -3326,6 +3326,28 @@ form label input {
 }
 
 
+
+.map-zoom-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.map-zoom-wrapper{
+    display: inline-flex;
+}
+
+.map-text{
+    max-width: 75ch;
+    margin-left: 1em;
+}
+
+.map-text .wrapped-header{
+    margin-left:0;
+
+}
+
+
 @media (max-width: 800px) {
     .my-masonry-grid .post{
         width:calc(100% - 1em );
@@ -3334,6 +3356,10 @@ form label input {
     .post .featured-thumbnail{
         height: auto;
         overflow: hidden;
+    }
+
+    .map-text{
+        padding-left: 0
     }
 
 

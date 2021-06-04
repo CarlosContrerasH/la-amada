@@ -20,7 +20,7 @@ import golf from "../img/UBICACION/ICONOS/ICON-GOLF.svg"
 import hotels from "../img/UBICACION/ICONOS/ICON-HOTELS.svg"
 import marina from "../img/UBICACION/ICONOS/ICON-MARINA.svg"
 import pm from "../img/UBICACION/ICONOS/ICON-PM.svg"
-
+import ZoomMap from "../components/zoom-map"
 
 
 
@@ -64,9 +64,9 @@ const TwoCol = (props) => {
     return (
 
         <ScrollWrapper>
-            <div className="col-wrapper joya">
-            <div className=" left-col"><HandleImages name="mapa2"/></div>
-            <div className=" right-col">
+            <div className="map-zoom-row">
+            <div className="map-zoom-wrapper">{/*<HandleImages name="mapa2"/>*/}<ZoomMap/></div>
+            <div className="map-text">
             <div  >
                     <span className="wrapped-header ubicacion">
                         <h2> {props.eng == true ? <>EXCLUSIVENESS<br/>IN EVERY CORNER<br /><span className="sub">WE ARE THE ONLY RESIDENCES<br/>
@@ -120,7 +120,7 @@ const Mapa = (props) => {
 
 
     return (
-       <div className="icons-map-wrapper">
+       <div  >
          
          <div className="bg-sand centered ubicacion" style={{ padding: "1em" }}>
               {props.eng?  <span><span className="script" style={{ lineHeight: "initial" }}>Exclusivity </span> 20 MINUTES AWAY<br />
