@@ -1659,10 +1659,7 @@ font-size: 1.17em;
     object-position: top center !important;
 }
 
-.rest-pre+div .gatsby-image-wrapper:nth-child(1) *{
-    object-position: top center !important;
-
-}
+ 
 
 .slidecontainer{
     margin: 1em auto 4em;
@@ -1872,7 +1869,7 @@ background: url("../img/RESIDENCIAS/flecha-expand.svg");
 }
 
 .residencia-accordeon.expanded .content{
-max-height: 932px;
+max-height: 952px;
 transition: .6s max-height ease-out;
  
 }
@@ -2044,6 +2041,7 @@ transition: .3s background, .3s color;
 .features .feature h4{
     color: var(--dark-green);
     text-transform: uppercase;
+    height: 22px;
 }
 
 .features .feature>div{
@@ -2602,6 +2600,11 @@ height: 100%;}
     .blurb.home h2 span:nth-child(3){font-size: .3em;}
  }
 
+
+.equipo-wrapper{
+    max-width: 880px;
+    margin: auto !important;
+}
 
 
 .equipo, .asociados{
@@ -3199,6 +3202,12 @@ form label input {
 
 .header-amenidades+ .image-wrapper .gatsby-image-wrapper{
     height: 100%;
+
+}
+
+.header-amenidades+ .image-wrapper .gatsby-image-wrapper *{
+object-position: left bottom  !important;
+    
 }
 .slider-buttons button {
     width:22px;
@@ -3364,3 +3373,43 @@ form label input {
 
 
 }
+
+
+
+/*object positions*/
+
+.leftBottom *{
+    object-position: left bottom !important;
+}
+
+.leftTop *{
+    object-position: left top !important;
+}
+
+.centerLeft *{
+    object-position: center left !important;
+}
+
+
+.centerBottom *{
+    object-position: center bottom !important;
+}
+
+.centerTop *{
+    object-position: center top !important;
+}
+
+
+.rightTop *{
+    object-position: right top !important;
+}
+
+.rightCenter *{
+    object-position: right center !important;
+}
+
+.rightBottom *{
+    object-position: right bottom !important;
+}
+
+

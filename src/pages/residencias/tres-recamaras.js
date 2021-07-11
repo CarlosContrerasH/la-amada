@@ -144,7 +144,7 @@ const Features = (props) => {
                 <div className="feature">
 				{props.eng? <h4>House Keeping Bedroom</h4>:    <h4>Habitación de Servicio</h4>}
                   
-                    <div><img alt="Sala Comedor" src={lavado} /><span>8M<sup>2</sup></span><span>861FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={lavado} /><span>8M<sup>2</sup></span><span>86FT<sup>2</sup></span></div>
                 </div>
                 <div className="feature">
 				{props.eng? <h4>M<sup>2</sup> Housing</h4>:    <h4>M<sup>2</sup> Vivienda</h4>}
@@ -152,16 +152,24 @@ const Features = (props) => {
                 </div>
                 <div className="feature">
 				{props.eng? <h4>M<sup>2</sup> Porching</h4>: <h4>M<sup>2</sup> Terraza</h4>}
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>60M<sup>2</sup></span><span>626FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>60M<sup>2</sup></span><span>646FT<sup>2</sup></span></div>
                 </div>
             </div>
      
         </div>
         <div className="buttons">
-		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
+	
+		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/img/MasterPlan_LA_AMADA.jpg">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
+					</button>
 
-<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
-            </div>
+					<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="https://my.matterport.com/show/?m=CUXeR6Gmb1R&brand=0&play=0&dh=0&mls=1&mt=0&lang=es">
+					{props.eng?"Virtual Tour":"Tour Virtual"}</a>
+					</button> 
+		  
+		  
+		    </div>
 
     </div>)
 }

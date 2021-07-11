@@ -61,7 +61,7 @@ const Detalle = (props) => {
     return (<div className={"residencia-accordeon expanded detalle"}>
 <h1>{props.eng?"Four Bedrooms":"Cuatro Recámaras"}</h1>
         <div className="content">
-            <h3>{props.eng?"Desde $1,150,000.00 USD":"Desde $1,150,000.00 USD"}</h3>
+            <h3>{props.eng?"Desde $1,250,000.00 USD":"Desde $1,250,000.00 USD"}</h3>
 <h3>{props.eng?"Our four bedroom unit offers a spacious living room with a private den/office and a half bathroom. Additionally, the four large bedrooms have each an ensuite bathroom and ample fitted wardrobes. The kitchen has been carefully fitted with Miele appliances and is conveniently located next to one of the home’s three terraces; making this a residence that is perfect for entertaining.":
 "Nuestra unidad de 4 recámaras es la inversión ideal para aquellas familias que buscan una residencia de lujo en la playa. Nuestro estilo contemporáneo, privacidad y elegancia conviven en más de 325m2."}</h3>
 
@@ -114,6 +114,14 @@ const Features = (props) => {
                 <h4>{props.eng?"Bedroom 2":"Dormitorio 2"}</h4>
                     <div><img alt="Sala Comedor" src={dorm2} /><span>25M<sup>2</sup></span><span>269FT<sup>2</sup></span></div>
                 </div>
+				<div className="feature">
+                    <h4>{props.eng?"Family Room":"Cuarto familiar"}</h4>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>10M<sup>2</sup></span><span>107FT<sup>2</sup></span></div>
+                </div>
+				<div className="feature">
+                    <h4>{props.eng?"Garden":"Jardin"}</h4>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>224M<sup>2</sup></span><span>2,411FT<sup>2</sup></span></div>
+                </div>
             </div>
 
             <div className="col">
@@ -135,16 +143,24 @@ const Features = (props) => {
                 </div>
                 <div className="feature">
 				{props.eng? <h4>M<sup>2</sup> Porching</h4>: <h4>M<sup>2</sup> Terraza</h4>}
-                    <div><img alt="Sala Comedor" src={salaComedor} /><span>73M<sup>2</sup></span><span>785FT<sup>2</sup></span></div>
+                    <div><img alt="Sala Comedor" src={salaComedor} /><span>70M<sup>2</sup></span><span>753FT<sup>2</sup></span></div>
                 </div>
             </div>
      
         </div>
         <div className="buttons">
-		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
 
-<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
-            </div>
+		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/img/MasterPlan_LA_AMADA.jpg">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
+					</button>
+
+					<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/residencias/cuatro-recamaras/video">
+					{props.eng?"Virtual Tour":"Tour Virtual"}</a>
+					</button>
+		  
+		  
+		    </div>
 
     </div>)
 }

@@ -45,6 +45,7 @@ return(
 
 const Equipo = (props)=>{
   return(   <ScrollWrapper classes="equipo">
+      <div className="equipo-wrapper">
       <span className="wrapped-header playa">
     <h2>
 
@@ -68,7 +69,7 @@ const Equipo = (props)=>{
                  </p>
                       :  <p>Nuestro residencial se caracteriza por su privilegiada ubicación y por sus lujosas amenidades, pero esto no sería posible sin el grandioso equipo que está detrás de este proyecto. Conoce los responsables del trabajo en el área de ventas y administración de proyecto, un equipo que sin lugar a dudas estamos orgullosos de formar parte de él.</p>}
 
-
+</div>
 <div className="personas-wrapper">
     <div className="persona">
    <div className="mug"><HandleImages name="persona1"/></div> 
@@ -79,25 +80,25 @@ const Equipo = (props)=>{
     <div className="persona">
     <div className="mug"><HandleImages name="persona2"/></div> 
    <div><span>MARISA MARTINEZ</span><br/>
-    <span>{props.eng==true?"Broker":"Asesora Inmobiliario" } </span></div> 
+    <span>{props.eng==true?"Broker":"Asesor Inmobiliario" } </span></div> 
     </div>
 
     <div className="persona">
    <div className="mug"><HandleImages name="persona3"/></div> 
-   <div><span>YAEL R. ALONSO </span><br/>
+   <div><span>YAEL RAPHAEL</span><br/>
     <span>{props.eng==true?"Broker":"Asesor Inmobiliario" } </span></div> 
     </div>
 
     <div className="persona">
    <div className="mug"><HandleImages name="persona4"/></div> 
-   <div><span>Estefanía Azuara </span><br/>
-    <span>{props.eng==true?"Broker":"Asesora Inmobiliario" } </span></div> 
+   <div><span>ESTEFANÍA AZUARA </span><br/>
+    <span>{props.eng==true?"Broker":"Asesor Inmobiliario" } </span></div> 
     </div>
 
     <div className="persona">
    <div className="mug"><HandleImages name="persona5"/></div> 
-   <div><span>Angélica Hernándes  </span><br/>
-    <span>{props.eng==true?" Assistant":"Asistente" }</span></div> 
+   <div><span>ANGÉLICA HERNÁNDEZ </span><br/>
+    <span>{props.eng==true?" Assistant":"Asistente de Ventas" }</span></div> 
     </div>
 </div>
 </ScrollWrapper>)

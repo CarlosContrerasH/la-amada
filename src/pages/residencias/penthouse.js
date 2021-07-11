@@ -141,10 +141,14 @@ const Features = (props) => {
      
         </div>
         <div className="buttons">
-		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
 
-<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
-            </div>
+
+		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/img/MasterPlan_LA_AMADA.jpg">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
+					</button>
+		  
+		  
+		    </div>
 
     </div>)
 }

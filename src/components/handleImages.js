@@ -13,7 +13,7 @@ export function HandleImages(name){
     equipo:file(relativePath: { eq: "ASESORES/EQUIPO.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -22,7 +22,7 @@ export function HandleImages(name){
     desktopHero:file(relativePath: { eq: "desktop-hero.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -31,7 +31,7 @@ export function HandleImages(name){
     rooftop:file(relativePath: { eq: "AMENIDADES/LA AMADA/rooftop2.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -42,7 +42,7 @@ export function HandleImages(name){
    market2:file(relativePath: { eq: "AMENIDADES/LA AMADA/MARKET.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -51,7 +51,7 @@ export function HandleImages(name){
     isla:file(relativePath: { eq: "UBICACION/isla.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -61,7 +61,7 @@ export function HandleImages(name){
    golf:file(relativePath: { eq: "AMENIDADES/LA AMADA/GOLF.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -69,7 +69,7 @@ export function HandleImages(name){
     golfS:file(relativePath: { eq: "AMENIDADES/LA AMADA/golf-home.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -78,28 +78,28 @@ export function HandleImages(name){
     areasVerdes0:file(relativePath: { eq: "AMENIDADES/LA AMADA/areas-verdes.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
     areasVerdes1:file(relativePath: { eq: "AMENIDADES/LA AMADA/areasverdes.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
     areasVerdes2:file(relativePath: { eq: "AMENIDADES/LA AMADA/areasverdes2.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
     areasVerdes3:file(relativePath: { eq: "AMENIDADES/LA AMADA/areasverdes3.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -108,7 +108,7 @@ export function HandleImages(name){
     lobbyN:file(relativePath: { eq: "AMENIDADES/LA AMADA/lobbynew.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -117,7 +117,7 @@ export function HandleImages(name){
     lobbyNS:file(relativePath: { eq: "AMENIDADES/LA AMADA/lobby-home-new.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -126,7 +126,7 @@ export function HandleImages(name){
     sliderAmada2:file(relativePath: { eq: "SLIDER HOME HEADER/2.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -134,7 +134,7 @@ export function HandleImages(name){
     sliderAmada4:file(relativePath: { eq: "SLIDER HOME HEADER/4.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -142,7 +142,7 @@ export function HandleImages(name){
     sliderAmada5:file(relativePath: { eq: "SLIDER HOME HEADER/5.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
@@ -151,14 +151,14 @@ export function HandleImages(name){
     video:file(relativePath: { eq: "VIDEO.jpg" }) {
       childImageSharp {
     
-        fluid {
+         fluid(maxWidth: 1280, webpQuality: 50){
           ...GatsbyImageSharpFluid_withWebp }
       }
     }
 beach: file(relativePath: { eq: "beach.jpeg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -174,7 +174,7 @@ depas:file(relativePath: { eq: "FOTO-HEADER-HOME.jpg" }) {
 persona1:file(relativePath: { eq: "ASESORES/HORACIO.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -182,7 +182,7 @@ persona1:file(relativePath: { eq: "ASESORES/HORACIO.jpg" }) {
 persona2:file(relativePath: { eq: "ASESORES/MARISA.jpg"  }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -190,7 +190,7 @@ persona2:file(relativePath: { eq: "ASESORES/MARISA.jpg"  }) {
 persona3:file(relativePath: { eq: "ASESORES/yael.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -198,7 +198,7 @@ persona3:file(relativePath: { eq: "ASESORES/yael.jpg" }) {
 persona4:file(relativePath: { eq: "ASESORES/estef.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -206,7 +206,7 @@ persona4:file(relativePath: { eq: "ASESORES/estef.jpg" }) {
 persona5:file(relativePath: { eq: "ASESORES/angelica.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -214,7 +214,7 @@ persona5:file(relativePath: { eq: "ASESORES/angelica.jpg" }) {
 conocenos:file(relativePath: { eq: "conocenos/conocenos.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -222,7 +222,7 @@ conocenos:file(relativePath: { eq: "conocenos/conocenos.jpg" }) {
 conocenos1:file(relativePath: { eq: "conocenos/FOTO-EJEMPLO-HEADER.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -230,7 +230,7 @@ conocenos1:file(relativePath: { eq: "conocenos/FOTO-EJEMPLO-HEADER.jpg" }) {
 conocenos2:file(relativePath: { eq: "conocenos/FOTO-INVIERTE.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -242,7 +242,7 @@ conocenos2:file(relativePath: { eq: "conocenos/FOTO-INVIERTE.jpg" }) {
 ubicacionHeader:file(relativePath: { eq: "UBICACION/HEADER.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -254,7 +254,7 @@ ubicacionHeader:file(relativePath: { eq: "UBICACION/HEADER.jpg" }) {
 recomendacion5:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ISLA-MUJERES.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -263,7 +263,7 @@ recomendacion5:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ISLA-MU
 recomendacion8:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/YUCATAN.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -271,14 +271,14 @@ recomendacion8:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/YUCATAN
 recomendacion9:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/CHICHEN-ITZA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 recomendacion1:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ARRECIFES.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -287,7 +287,7 @@ recomendacion1:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/ARRECIF
 recomendacion7:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/PESCA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -295,21 +295,21 @@ recomendacion7:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/PESCA.j
 recomendacion2:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/GOLF.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 recomendacion4:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SHOPPING.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 recomendacion3:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SPA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -317,7 +317,7 @@ recomendacion3:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/SPA.jpg
 recomendacion6:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/FOOD.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -329,21 +329,21 @@ recomendacion6:file(relativePath: { eq: "UBICACION/RECOMENDACIONES FOTOS/FOOD.jp
 amenidadesH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/AMENIDADES-HEADER-1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesH2:file(relativePath: { eq: "AMENIDADES/LA AMADA/AMENIDADES-HEADER-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/AMENIDADES-HEADER-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -353,7 +353,7 @@ amenidadesH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/AMENIDADES-HEADER-3.j
 amenidadespH1:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADES-PLAYAMUJERES.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -361,7 +361,7 @@ amenidadespH1:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADE
 amenidadespH2:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADES-PLAYAMUJERES-2.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -369,7 +369,7 @@ amenidadespH2:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADE
 amenidadespH3:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADES-PLAYAMUJERES-3.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -378,7 +378,7 @@ amenidadespH3:file(relativePath: { eq: "AMENIDADES/PLAYA/HEADER/HEADER-AMENIDADE
 unaRecamarah:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/HEADER-1REC.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -387,7 +387,7 @@ unaRecamarah:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/HEADER-1REC.jpg" }
 unaRecamara:file(relativePath: { eq: "RESIDENCIAS/UNA-RECAMARAS.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -395,28 +395,28 @@ unaRecamara:file(relativePath: { eq: "RESIDENCIAS/UNA-RECAMARAS.jpg" }) {
 unaRecamara1:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/GALERIA-FOTOS-1REC/UNA-RECAMARA-GALERIA1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 unaRecamara2:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/GALERIA-FOTOS-1REC/UNA-RECAMARA-GALERIA2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 unaRecamara3:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/GALERIA-FOTOS-1REC/UNA-RECAMARA-GALERIA3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 unaRecamara4:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/GALERIA-FOTOS-1REC/UNA-RECAMARA-GALERIA4.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -425,7 +425,7 @@ unaRecamara4:file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/GALERIA-FOTOS-1REC
 dosRecamaras:file(relativePath: { eq: "RESIDENCIAS/DOS-RECAMARAS.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -434,7 +434,7 @@ dosRecamaras:file(relativePath: { eq: "RESIDENCIAS/DOS-RECAMARAS.jpg" }) {
 dosRecamaras1:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -442,7 +442,7 @@ dosRecamaras1:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2R
 dosRecamaras2:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -450,7 +450,7 @@ dosRecamaras2:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2R
 dosRecamaras3:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -458,7 +458,7 @@ dosRecamaras3:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2R
 dosRecamaras4:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-4.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -466,7 +466,7 @@ dosRecamaras4:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2R
 dosRecamaras5:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2REC/DOS-RECAMARAS-5.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -476,7 +476,7 @@ dosRecamaras5:file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/GALERIA-FOTOS-2R
 tresRecamaras:file(relativePath: { eq: "RESIDENCIAS/TRES-RECAMARAS.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -486,42 +486,42 @@ tresRecamaras:file(relativePath: { eq: "RESIDENCIAS/TRES-RECAMARAS.jpg" }) {
 tresRecamaras1:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 tresRecamaras2:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 tresRecamaras3:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 tresRecamaras4:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-4.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 tresRecamaras5:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-5.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 tresRecamaras6:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3REC/3-RECAMARAS-6.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -531,42 +531,42 @@ tresRecamaras6:file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/GALERIA-FOTOS-3
 cuatroRecamaras:file(relativePath: { eq: "RESIDENCIAS/CUATRO-RECAMARAS.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 cuatroRecamaras1:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 cuatroRecamaras2:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 cuatroRecamaras3:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 cuatroRecamaras4:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-4.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 cuatroRecamaras5:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS-4REC/4-RECAMARAS-5.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -575,7 +575,7 @@ cuatroRecamaras5:file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/GALERIA-FOTOS
 penthouse:file(relativePath: { eq: "RESIDENCIAS/PH.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -583,7 +583,7 @@ penthouse:file(relativePath: { eq: "RESIDENCIAS/PH.jpg" }) {
 penthouse1:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/ph1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -591,7 +591,7 @@ penthouse1:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/ph1.jpg" }) {
 penthouse2:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -600,7 +600,7 @@ penthouse2:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH2.jpg" }) {
 penthouse3:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -608,7 +608,7 @@ penthouse3:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH3.jpg" }) {
 penthouse4:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH4.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -616,7 +616,7 @@ penthouse4:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH4.jpg" }) {
 penthouse5:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH5.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -629,7 +629,7 @@ penthouse5:file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/GALERIA/PH5.jpg" }) {
 playaH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/HEADER-PLAYA1.jpg"}) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -637,14 +637,14 @@ playaH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/HEADER-PLAYA
 playaH2:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/HEADER-PLAYA2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 playaH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/HEADER-PLAYA3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -652,7 +652,7 @@ playaH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/HEADER-PLAYA
 playaH4:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/BEACHCLUB-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -660,7 +660,7 @@ playaH4:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/PLAYA/BEACHCLUB-2.
 beachClub:file(relativePath: { eq: "AMENIDADES/LA AMADA/HEADER-BEACHCLUB.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -669,7 +669,7 @@ beachClub:file(relativePath: { eq: "AMENIDADES/LA AMADA/HEADER-BEACHCLUB.jpg" })
 beachClubC:file(relativePath: { eq: "AMENIDADES/LA AMADA/beahcclub-cuadrito.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -679,7 +679,7 @@ beachClubC:file(relativePath: { eq: "AMENIDADES/LA AMADA/beahcclub-cuadrito.jpg"
 resH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/RESTAURANT/RESTAURANTE.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -688,7 +688,7 @@ resH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/RESTAURANT/RESTAURAN
 resH2:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/RESTAURANT/RESTAURANTE-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -697,7 +697,7 @@ resH2:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/RESTAURANT/RESTAURAN
 resH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/RESTAURANT/RESTAURANTE-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -706,7 +706,7 @@ resH3:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/RESTAURANT/RESTAURAN
 beachH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCLUB-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -715,7 +715,7 @@ beachH1:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCLU
 beachH2:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCLUB-4.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -724,7 +724,7 @@ beachH2:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCL
 beachH3:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCLUB-5.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -732,7 +732,7 @@ beachH3:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCL
 beachH4:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCLUB-6.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -742,7 +742,7 @@ beachH4:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/BEACHCLUB/BEACHCL
 roofH1:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/ROOFTOPS-ALBERCAS/ROOFTOP-1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -751,7 +751,7 @@ roofH1:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/ROOFTOPS-ALBERCAS/
 roofH2:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/ROOFTOPS-ALBERCAS/ROOFTOP-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -760,7 +760,7 @@ roofH2:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/ROOFTOPS-ALBERCAS/
 roofH3:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/ROOFTOPS-ALBERCAS/ROOFTOP.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -768,7 +768,7 @@ roofH3:file(relativePath: { eq:  "AMENIDADES/LA AMADA/SLIDERS/ROOFTOPS-ALBERCAS/
 yogaH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/SALON DE YOGA/YOGA-1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -776,7 +776,7 @@ yogaH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/SALON DE YOGA/YOG
 yogaH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/SALON DE YOGA/YOGA-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -784,7 +784,7 @@ yogaH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/SALON DE YOGA/YOG
 yogaH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/SALON DE YOGA/YOGA-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -793,7 +793,7 @@ yogaH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/SALON DE YOGA/YOG
 canchaH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/CANCHAS/CANCHAS-1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -801,7 +801,7 @@ canchaH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/CANCHAS/CANCHAS
 canchaH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/CANCHAS/CANCHAS-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -809,7 +809,7 @@ canchaH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/CANCHAS/CANCHAS
 canchaH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/CANCHAS/CANCHAS-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -819,7 +819,7 @@ canchaH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/CANCHAS/CANCHAS
 marketH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/MARKET DELI/MARKET-DELI1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -827,7 +827,7 @@ marketH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/MARKET DELI/MAR
 marketH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/MARKET DELI/MARKET-DELI2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -835,7 +835,7 @@ marketH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/MARKET DELI/MAR
 marketH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/MARKET DELI/MARKET-DELI3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -844,21 +844,21 @@ marketH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/MARKET DELI/MAR
 ludotecaH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/LUDOTECA/LUDOTECA-1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 ludotecaH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/LUDOTECA/LUDOTECA-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 ludotecaH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/LUDOTECA/KIDSCLUB-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -867,21 +867,21 @@ ludotecaH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/LUDOTECA/KIDS
 gymH1:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-1.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 gymH2:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 gymH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-3.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -889,7 +889,7 @@ gymH3:file(relativePath: { eq:   "AMENIDADES/LA AMADA/SLIDERS/GYM/GYM-3.jpg" }) 
 bikeH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/CICLOPISTA/HEADER-CICLOPISTA.JPG" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -897,7 +897,7 @@ bikeH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/CICLOPISTA/HEADER-CI
 golfH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/CAMPO DE GOLF/HEADER-PCAMPO-DE-GOLF.JPG" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -905,7 +905,7 @@ golfH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/CAMPO DE GOLF/HEADER
 marinaH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/MARINA/HEADER-MARINA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -914,42 +914,42 @@ marinaH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/MARINA/HEADER-MARI
 seguridadH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/SEGURIDAD/SEGURIDAD.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 seguridadH2:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/SEGURIDAD/SEGURIDAD2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 helipuertoH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/HELIPUERTO/HELIPUERTO.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 delfinesH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/DELFINARIO/HEADER-DELFINARIO.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 vecinosH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/VECINOS/HEADER-VECINOS.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 spaH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/SPA/HEADER-SPA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -963,7 +963,7 @@ spaH1:file(relativePath: { eq:   "AMENIDADES/PLAYA/SLIDERS/SPA/HEADER-SPA.jpg" }
 areasVerdes:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/AREAS VERDES/areas-verdes2.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -973,7 +973,7 @@ areasVerdes:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/AREAS VERDES/a
 amenidadesA1:file(relativePath: { eq: "AMENIDADES/LA AMADA/AREAS-VERDES.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -981,56 +981,56 @@ amenidadesA1:file(relativePath: { eq: "AMENIDADES/LA AMADA/AREAS-VERDES.png" }) 
 amenidadesA2:file(relativePath: { eq: "AMENIDADES/LA AMADA/BEACHCLUB-RESTAURANT.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesA3:file(relativePath: { eq: "AMENIDADES/LA AMADA/BEACHCLUB.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesA4:file(relativePath: { eq: "AMENIDADES/LA AMADA/CANCHAS.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesA5:file(relativePath: { eq: "AMENIDADES/LA AMADA/GYM.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesA6:file(relativePath: { eq: "AMENIDADES/LA AMADA/motor-lobby.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesA7:file(relativePath: { eq: "AMENIDADES/LA AMADA/ludoteca.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesA8:file(relativePath: { eq: "AMENIDADES/LA AMADA/MARKET-DELI.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesA9:file(relativePath: { eq: "AMENIDADES/LA AMADA/PLAYA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1044,7 +1044,7 @@ amenidadesA10:file(relativePath: { eq: "AMENIDADES/LA AMADA/ROOFTOPS-ALBERCAS.pn
 amenidadesA11:file(relativePath: { eq: "AMENIDADES/LA AMADA/SALON-DE-YOGA.png" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1057,42 +1057,42 @@ amenidadesA11:file(relativePath: { eq: "AMENIDADES/LA AMADA/SALON-DE-YOGA.png" }
 amenidadesP1:file(relativePath: { eq: "AMENIDADES/PLAYA/CAMPO-DE-GOLF.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesP2:file(relativePath: { eq: "AMENIDADES/PLAYA/CICLOPISTA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesP3:file(relativePath: { eq: "AMENIDADES/PLAYA/DELFINARIO.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesP4:file(relativePath: { eq: "AMENIDADES/PLAYA/HELIPUERTO.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesP5:file(relativePath: { eq: "AMENIDADES/PLAYA/MARINA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesP6:file(relativePath: { eq: "AMENIDADES/PLAYA/SEGURIDAD.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1100,21 +1100,21 @@ amenidadesP6:file(relativePath: { eq: "AMENIDADES/PLAYA/SEGURIDAD.jpg" }) {
 caseta:file(relativePath: { eq: "AMENIDADES/PLAYA/DOBLE-CASETA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesP7:file(relativePath: { eq: "AMENIDADES/PLAYA/SPA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 amenidadesP8:file(relativePath: { eq: "AMENIDADES/PLAYA/VECINOS-GALARDONADOS.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1128,7 +1128,7 @@ amenidadesP8:file(relativePath: { eq: "AMENIDADES/PLAYA/VECINOS-GALARDONADOS.jpg
 playa:file(relativePath: { eq: "AMENIDADES/HEADER-AMENIDADES.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1137,7 +1137,7 @@ playa:file(relativePath: { eq: "AMENIDADES/HEADER-AMENIDADES.jpg" }) {
 tenis:file(relativePath: { eq: "AMENIDADES/LA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1146,7 +1146,7 @@ tenis:file(relativePath: { eq: "AMENIDADES/LA.jpg" }) {
 bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1157,14 +1157,14 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
   logopm: file(relativePath: { eq: "logo-playa-muejeres.png" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
   logopmb: file(relativePath: { eq: "logo-playa-muejeres-bco.png" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1173,7 +1173,7 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
   playaGal1: file(relativePath: { eq: "SLIDER PLAYA MUJERES/PLAYAMUJERES-1.png" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1181,7 +1181,7 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
   playaGal2: file(relativePath: { eq: "SLIDER PLAYA MUJERES/PLAYAMUJERES-2.png" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1192,7 +1192,7 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
   residencesGal1: file(relativePath: { eq: "SLIDER BANNER RESIDENCES/DOS-RECAMARAS.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1201,7 +1201,7 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
   residencesGal2: file(relativePath: { eq: "SLIDER BANNER RESIDENCES/TRES-RECAMARAS.jpg" }) {
     childImageSharp {
   
-      fluid {
+      fluid(maxWidth: 1280, webpQuality: 100){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1211,7 +1211,7 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
   residencesGal3: file(relativePath: { eq: "SLIDER BANNER RESIDENCES/CUATRO-RECAMARAS.jpg" }) {
     childImageSharp {
   
-      fluid {
+      fluid(maxWidth: 1280, webpQuality: 100) {
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1220,7 +1220,7 @@ bicis:file(relativePath: { eq: "AMENIDADES/PM.jpg" }) {
 map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1228,7 +1228,7 @@ map: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/MAPA-UBICACION-LAAMADA.jpg
 mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1236,7 +1236,7 @@ mapa: file(relativePath: { eq: "UBICACION/MAPA-PLAYAMUJERES-icons.jpg" }) {
 mapa2: file(relativePath: { eq: "UBICACION/MAPA.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
@@ -1245,21 +1245,21 @@ mapa2: file(relativePath: { eq: "UBICACION/MAPA.jpg" }) {
 floorPlanl: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lockV.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
 floorPlanlh: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lockH.jpg" }) {
   childImageSharp {
 
-    fluid {
+     fluid(maxWidth: 1280, webpQuality: 50){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }
   floorPlan1: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/PLANO-1-REC.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1267,7 +1267,7 @@ floorPlanlh: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lockH.jpg" }) {
   floorPlan1h: file(relativePath: { eq: "RESIDENCIAS/1 RECAMARA/1-RECAMARA-HORIZONTAL.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1275,7 +1275,7 @@ floorPlanlh: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lockH.jpg" }) {
   lock: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1283,7 +1283,7 @@ floorPlanlh: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lockH.jpg" }) {
 lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1292,14 +1292,14 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   floorPlan2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/PLANO-2REC.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
   floorPlan2h: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/2-RECAMARA-HORIZONTAL.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1308,7 +1308,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   floorPlan3: file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/PLANO-3-REC.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1317,7 +1317,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   floorPlan3h: file(relativePath: { eq: "RESIDENCIAS/3 RECAMARAS/3-RECAMARA-HORIZONTAL.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1326,7 +1326,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   floorPlan4: file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/PLANO-4-REC.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1334,7 +1334,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   floorPlan4h: file(relativePath: { eq: "RESIDENCIAS/4 RECAMARAS/4-RECAMARA-HORIZONTAL.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1343,7 +1343,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   floorPlanPh: file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/PENTHOUSEL.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1351,7 +1351,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   floorPlanP: file(relativePath: { eq: "RESIDENCIAS/PENTHOUSE/PLANO-MOVIL.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1366,7 +1366,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   homeGal1: file(relativePath: { eq: "SLIDER GALERIA/GALERIA-1.png" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 70){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1375,7 +1375,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   homeGal2: file(relativePath: { eq: "SLIDER GALERIA/GALERIA-2.png" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 70){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1384,7 +1384,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   homeGal3: file(relativePath: { eq: "SLIDER GALERIA/GALERIA-3.png" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 70){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1392,28 +1392,28 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
  invierteHeader: file(relativePath: { eq: "invierte/INVERSION-HEADER.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
   invierte1: file(relativePath: { eq: "invierte/INVERSION-1.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
   invierte2: file(relativePath: { eq: "invierte/INVERSION-2.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
   invierte3: file(relativePath: { eq: "invierte/INVERSION-3.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1422,7 +1422,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   invierte4: file(relativePath: { eq: "invierte/INVERSION-4.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }
@@ -1430,7 +1430,7 @@ lock2: file(relativePath: { eq: "RESIDENCIAS/2 RECAMARAS/lock2.jpg" }) {
   juegos: file(relativePath: { eq: "AMENIDADES/LA AMADA/JUEGOS-INFANTILES.jpg" }) {
     childImageSharp {
   
-      fluid {
+       fluid(maxWidth: 1280, webpQuality: 50){
         ...GatsbyImageSharpFluid_withWebp }
     }
   }

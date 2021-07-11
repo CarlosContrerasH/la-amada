@@ -14,7 +14,7 @@ import { Link } from 'gatsby'
 
 
 
-let bigSlider =[<HandleImages name="areasVerdes3" />,   <HandleImages name="areasVerdes1" />, <HandleImages name="areasVerdes2" />,  <HandleImages name="amenidadesA1" />]
+let bigSlider =[<HandleImages name="areasVerdes3"  class="rightBottom"/>,   <HandleImages name="areasVerdes1" class="leftBottom"/>, <HandleImages name="areasVerdes2"  class="centerTop" />,  <HandleImages name="amenidadesA1" class="centerTop" />]
 
 
 

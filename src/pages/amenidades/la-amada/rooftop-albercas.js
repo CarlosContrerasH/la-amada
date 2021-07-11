@@ -66,7 +66,7 @@ enableBackground="new 0 0 150 150"  >
                  
                  <span>
                      
-                     ROOFTOPS & POOLS
+                 {props.eng == true ?   "ROOFTOPS & POOLS":"ROOFTOPS Y ALBERCAS"}
                      
                      </span></div> 
 

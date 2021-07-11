@@ -110,8 +110,8 @@ const SimpleSlider = class extends React.Component {
                 <div className="slides-wrapper">
 
                     {this.props.slides.map((slide, index) => {
-
-                        return <div key={"b"+index} className="slide" id={index == this.state.active ? "active" : ""}>{slide}</div>;
+console.log('test',slide.props.class)
+                        return <div key={"b"+index} className={"slide "+(slide.props.class?slide.props.class:'')} id={index == this.state.active ? "active" : ""}>{slide}</div>;
                     })}
 
 

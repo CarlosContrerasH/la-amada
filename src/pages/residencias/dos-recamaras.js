@@ -63,9 +63,9 @@ let descripciones=["Playa","Club de Playa","Rooftop","Rooftop","Lobby y Concierg
 const Detalle = (props) => {
     return (<div className={"residencia-accordeon expanded detalle"}>
 
-<h1>{props.eng?"Two Bedrooms":"Dos Recámaras"}</h1>
+<h1>{props.eng?(props.lock?"One Bedroom + LockOff":"Two Bedrooms"):(props.lock?"Una Récamara + LockOff":"Dos Recámaras")}</h1>
         <div className="content">
-            <h3>{props.eng?"From $555,000.00 USD":"Desde $555,000.00 USD"}</h3>
+            <h3>{props.eng?"From ":"Desde "}{props.lock?"$535,000.00 USD":"$540,000.00 USD"}</h3>
 <h3>{props.eng?"Our luxury two bedroom apratments (with lock-off options) are spacious and offer stunning views of our lagoon, natural reserve, and marina. Fall asleep to the sounds of the ocean in your own piece of heaven.":
 "Nuestros departamentos de lujo de dos recámaras con y sin lock-off ofrecen amplios espacios y maravillosas vistas hacia la laguna, reserva natural y hacia la marina. El espacio ideal para vivir en el paraíso."}</h3>
 
@@ -158,9 +158,15 @@ const Features = (props) => {
      
         </div>
         <div className="buttons">
-        <button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
+		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/img/MasterPlan_LA_AMADA.jpg">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
+					</button>
 
-                <button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
+
+                <button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="https://my.matterport.com/show/?m=CUXeR6Gmb1R&brand=0&play=0&dh=0&mls=1&mt=0&lang=es">
+					{props.eng?"Virtual Tour":"Tour Virtual"}</a>
+					</button>
             </div>
 
     </div>)
@@ -1308,7 +1314,7 @@ const Buttons = (props) =>{
 
   const Tabs = (props) =>{
     return(  <div className="residencias-tabs-wrapper">
-       <button name="2 Bedrooms + LockOff" onClick={props.lockTrue}className={props.lock?"active flat-button  centered-button":"inactive flat-button  centered-button"} style={{ margin: "2em" }}>{props.eng?"2 Bedrooms + LockOff":"2 Récamaras + LockOff"}</button>
+       <button name="2 Bedrooms + LockOff" onClick={props.lockTrue}className={props.lock?"active flat-button  centered-button":"inactive flat-button  centered-button"} style={{ margin: "2em" }}>{props.eng?"2 Bedrooms + LockOff":"1 Récamara + LockOff"}</button>
 	   <button name="2 Bedrooms"  onClick={props.lockFalse} className={!props.lock?"active flat-button centered-button":"inactive flat-button centered-button"}  style={{ margin: "2em" }}>{props.eng?"2 Bedrooms":"2 Récamaras"}</button>
       </div>)
   }

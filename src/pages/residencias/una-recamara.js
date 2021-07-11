@@ -62,7 +62,7 @@ const Detalle = (props) => {
 
         <h1>{props.eng?"One Bedroom":"Una Recámara"}</h1>
         <div className="content">
-            <h3>{props.eng?"From $380,000.00 USD":"Desde $380,000.00 USD"}</h3>
+            <h3>{props.eng?"From $385,000.00 USD":"Desde $385,000.00 USD"}</h3>
 <h3>{props.eng?"These one-bedroom homes offer an outstanding opportunity for a value conscious purchaser or savvy investor.		":
 "Nuestro departamento de una habitación es una gran oportunidad de inversión para empresarios y parejas que buscan la comodidad del lujo y privacidad de nuestro residencial.	"}</h3>
 
@@ -133,7 +133,14 @@ const Features = (props) => {
      
         </div>
         <div className="buttons">
-                <button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
+                <button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/img/MasterPlan_LA_AMADA.jpg">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
+					</button>
+
+					<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/residencias/una-recamara/video">
+					{props.eng?"Virtual Tour":"Tour Virtual"}</a>
+					</button>
 
           
             </div>

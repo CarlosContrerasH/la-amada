@@ -36,8 +36,8 @@ let grid =[ <></>,
 <><HandleImages name="amenidadesA10Icon"/><HandleImages name="amenidadesA10"/></>,
 <><HandleImages name="amenidadesA11Icon"/><HandleImages name="amenidadesA11"/></>,]
    
-   let bigSlider =[ <HandleImages name="amenidadesH1"/>,
-   <HandleImages name="sliderAmada2"/>,
+   let bigSlider =[ <HandleImages name="amenidadesH1" class='leftTop'/>,
+   <HandleImages name="sliderAmada2" class='leftBottom'/>,
     <HandleImages name="amenidadesH3"/>,
    <HandleImages name="sliderAmada4"/>,
    

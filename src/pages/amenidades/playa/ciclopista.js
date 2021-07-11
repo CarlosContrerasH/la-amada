@@ -12,7 +12,7 @@ import SimpleSlider from "../../../components/simpleSlider"
 import { Link } from 'gatsby'
 
 
-let bigSlider =[  <HandleImages name="amenidadesP2" />,  <HandleImages classes="ciclopista" name="bikeH1"/> ]
+let bigSlider =[  <HandleImages name="amenidadesP2" class="centerTop" />,  <HandleImages classes="ciclopista" name="bikeH1"/> ]
 
 
 
@@ -61,7 +61,7 @@ enableBackground="new 0 0 165.1 130.9"  >
                  
                  <span>
                      
-                 Bike & Running Path
+              {props.eng == true ?"Bike & Running Path":"Ciclopista"}
                      
                      </span></div> 
                     
