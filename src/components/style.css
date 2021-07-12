@@ -3057,7 +3057,7 @@ padding:2em;
     :root{
   
      
-    --transformHero:100%;}
+  }
     .hero .logo-wrapper {
         width:80vw;
     }
@@ -3069,7 +3069,7 @@ padding:2em;
     }
 
     .hero .bg-wrapper {
-        position: absolute;
+        position: fixed;
         bottom: calc(100vh - 50px);
         transition: .3s transform;}
 
