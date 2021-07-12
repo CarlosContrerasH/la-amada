@@ -224,6 +224,11 @@ transition: .3s opacity;
 
 
 @media (max-width: 627px) {
+    nav svg{
+       
+        height: 1.5em;
+      
+    }
 
     .bg-wrapper .gatsby-image-wrapper:nth-child(1){
    
@@ -1910,6 +1915,14 @@ margin:1em;
     margin-bottom: 2em;
 } 
 
+@media (max-width: 880px) {
+    .residencia-accordeon .icons-wrapper img, .icons-map-wrapper .icons-wrapper img{
+        width:3em;
+        margin:.5em;
+        }
+        
+
+}
 
 
 .residencias-buttons-wrapper{

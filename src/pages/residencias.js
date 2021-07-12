@@ -147,7 +147,7 @@ return(    <div className="centered">
  
 <div><img alt="Marinafront view" src={mar}/><span>Marinafront view</span></div>
 
-<div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
+<div><img  alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
 <div>
 <img alt="lock" src={lock}/>
 <span>Lock-off</span></div>
@@ -176,7 +176,7 @@ return(    <div className="centered">
    <div className="icons-wrapper">
 
  
-   <div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
+   <div><img   alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
  
 </div>
 <HandleImages name="tresRecamaras"/>
@@ -223,7 +223,7 @@ return(    <div className="centered">
       
    <div className="icons-wrapper">
 
-   <div><img style={{width:"80px", height:"80px"}} alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
+   <div><img  alt="Ocean view" src={vistamar}/><span>{props.eng?"Ocean view":"Vista al Mar"}</span></div>
 
 
 {/*<div>
