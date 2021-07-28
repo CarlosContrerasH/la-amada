@@ -37,7 +37,7 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div><div className="amenidades-top">
-                    <Link to="/amenidades/playa/delfinario"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
+                    <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
             <div className="icon-wrapper">
 
 
@@ -134,9 +134,9 @@ nuestra comunidad son:
 
 
                 </p>
-
-                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ? "Back to Dolphinarium" : "Volver a Delfinario"}</button>
-            </div>
+                <Link to="/amenidades/playa/delfinario"  >
+                             <button className="back"  ><span><span className="arrow-back"></span></span><br />{props.eng ? "Back to Dolphinarium" : "Volver a Delfinario"}</button>
+         </Link>   </div>
         </ScrollWrapper>
 
 

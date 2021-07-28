@@ -26,7 +26,7 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div> <div className="amenidades-top">
-                    <Link to="/amenidades/playa/golf"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
+                    <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
             <div className="icon-wrapper">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
 	 viewBox="0 0 165.1 130.9" 
@@ -113,9 +113,9 @@ It is one of a kind in the area and has customs, immigration, and fuel services,
 
                 </p>
                 <p><a href="https://www.marinavv.com/" target="_blank"> {props.eng == true ?"See More":"Conoce Más"}</a></p>
-
-                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Golf Course" : "Volver a Campo de Golf"}</button>
-            </div>
+                <Link to="/amenidades/playa/golf"  >
+                             <button className="back"  ><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Golf Course" : "Volver a Campo de Golf"}</button>
+           </Link> </div>
         </ScrollWrapper>
 
 

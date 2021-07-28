@@ -26,7 +26,7 @@ const Slider = (props) => {
 
             <div>
             <div className="amenidades-top ciclopista-pre">
-                    <Link to="/amenidades/playa/spa"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
+                    <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
             <div className="icon-wrapper">
  
  
@@ -113,10 +113,10 @@ enableBackground="new 0 0 165.1 130.9"  >
 
 
                 </p>
+                <Link to="/amenidades/playa/spa"  >
+                             <button className="back"  ><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Spa" : "Volver a Spa"}</button>
 
-                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Spa" : "Volver a Spa"}</button>
-
-
+</Link>
        
 
             </div>

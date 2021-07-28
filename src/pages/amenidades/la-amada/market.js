@@ -25,7 +25,7 @@ const Slider = (props) => {
 
             <div>
 			<div className="amenidades-top">
-                    <Link to="/amenidades/la-amada/canchas"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
+                    <Link to="/amenidades/la-amada"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
 
             <div className="icon-wrapper">
  
@@ -148,9 +148,9 @@ enableBackground="new 0 0 455.6 172.2"  style={{height:"5em", width:"12em"}}>
 
 
                 </p>
-
-                <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Multipurpose Courts" : "Volver a Canchas"}</button>
-            </div>
+				<Link to="/amenidades/la-amada/canchas"  >
+            <button className="back"  ><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Multipurpose Courts" : "Volver a Canchas"}</button>
+			</Link>  </div>
         </ScrollWrapper>
 
 

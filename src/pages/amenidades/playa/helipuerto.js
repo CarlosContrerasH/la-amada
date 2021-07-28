@@ -27,7 +27,7 @@ const Slider = (props) => {
         <ScrollWrapper classes="bg-sand amenidad-detalle">
 
             <div><div className="amenidades-top">
-                    <Link to="/amenidades/playa/seguridad"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
+                    <Link to="/amenidades/playa"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
             <div className="icon-wrapper">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
 	 viewBox="0 0 165.1 130.9" 
@@ -161,9 +161,9 @@ enableBackground="new 0 0 165.1 130.9" >
 
 
                 </p>
-
-                             <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Gated Community" : "Volver a Doble Caseta de Seguridad"}</button>
-            </div>
+				<Link to="/amenidades/playa/seguridad"  >
+                             <button className="back"  ><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Gated Community" : "Volver a Doble Caseta de Seguridad"}</button>
+         </Link>   </div>
         </ScrollWrapper>
 
 

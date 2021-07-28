@@ -26,7 +26,7 @@ const Slider = (props) => {
 
             <div>
             <div className="amenidades-top">
-                    <Link to="/amenidades/la-amada/market"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
+                    <Link to="/amenidades/la-amada"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
 
             <div className="icon-wrapper">
  
@@ -60,7 +60,7 @@ const Slider = (props) => {
                      
                      </span></div> 
 
-                     <Link to="/amenidades/la-amada/gym"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
+                     <Link to="/amenidades/la-amada/salon"  ><button className="back"><span><span className="arrow"></span></span><br />Next</button></Link>
                 </div>
 
                      <SimpleSlider slides={playaSlider}/>
@@ -101,9 +101,9 @@ const Slider = (props) => {
 
 
                 </p>
-
-                <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Market Deli" : "Volver a  Market Deli"}</button>
-            </div>
+                <Link to="/amenidades/la-amada/market"  >
+                <button className="back"  ><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Market Deli" : "Volver a  Market Deli"}</button>
+                </Link>   </div>
         </ScrollWrapper>
 
 

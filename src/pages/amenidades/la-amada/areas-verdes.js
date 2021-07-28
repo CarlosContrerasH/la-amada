@@ -28,7 +28,7 @@ const Slider = (props) => {
 
             <div>
             <div className="amenidades-top">
-                    <Link to="/amenidades/la-amada/lobby"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
+                    <Link to="/amenidades/la-amada"  ><button className="back"><span><span className="arrow-back"></span></span><br />Volver a Amenidades</button></Link>
             <div className="icon-wrapper">
  
  
@@ -99,9 +99,9 @@ In this space of natural connection, harmony with the environment will lead you 
 
                 </p>
             
-
-                <button className="back" onClick={()=>window.history.back()}><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Lobby" : "Volver a Lobby"}</button>
-            </div>
+                <Link to="/amenidades/la-amada/lobby"  >
+                <button className="back"  ><span><span className="arrow-back"></span></span><br />{props.eng ?  "Back to Lobby" : "Volver a Lobby"}</button>
+        </Link>    </div>
         </ScrollWrapper>
 
 
