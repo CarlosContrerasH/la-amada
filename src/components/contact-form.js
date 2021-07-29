@@ -29,21 +29,21 @@ const Form = (props) => {
     <input type="hidden" name="language" value={props.eng?"EN":"ES"} />
       <label >
     
-        <input  type="text" name="firstName" onChange={(e) => checkInputValue(e)}  /> <span>  <span>{props.eng?"Name":"Nombre"}:</span></span> 
+        <input  type="text" name="firstName" onChange={(e) => checkInputValue(e)}  required='true'/> <span>  <span>{props.eng?"Name":"Nombre"}:</span></span> 
       </label>
       <label >
     
-    <input  type="text" name="lastName" onChange={(e) => checkInputValue(e)}  /> <span>  <span>{props.eng?"Last Name":"Apellido"}:</span></span> 
+    <input  type="text" name="lastName" onChange={(e) => checkInputValue(e)} required='true' /> <span>  <span>{props.eng?"Last Name":"Apellido"}:</span></span> 
   </label>
 
       <label  >
      
-     <input type="tel" name="phone" onChange={(e) => checkInputValue(e)} /><span>  <span>{props.eng?"Phone Number":"Telefono"}:</span></span> 
+     <input type="tel" name="phone" onChange={(e) => checkInputValue(e)} required='true'/><span>  <span>{props.eng?"Phone Number":"Telefono"}:</span></span> 
    </label>
 
       <label  >
      
-        <input type="text" name="email" onChange={(e) => checkInputValue(e)} /><span>  <span>Mail:</span></span> 
+        <input type="text" name="email" onChange={(e) => checkInputValue(e)} required='true'/><span>  <span>Mail:</span></span> 
       </label>
       <button type="submit"  style={{    width: "200px",
     margin:"auto"}} className="outlined-button light">{props.eng?  "MAKE AN APPOINTMENT":"HACER CITA"}</button>
