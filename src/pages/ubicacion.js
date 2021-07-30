@@ -126,7 +126,14 @@ const Mapa = (props) => {
               {props.eng?  <span><span className="script" style={{ lineHeight: "initial" }}>Exclusivity </span> 20 MINUTES AWAY<br />
            FROM CANCUN'S DOWNTOWN</span>: <span><span className="script" style={{ lineHeight: "initial" }}>Exclusividad </span>A 20 MINUTOS<br />
 DEL CENTRO DE CANCÚN</span>}
-                <button class="outlined-button" style={{ margin: "1em" }}>{props.eng?"download master plan":"DESCARGAR MASTER PLAN"}</button>
+                <button class="outlined-button" style={{ margin: "1em" }}>
+                    
+                <a style={{textDecoration:"none",color:"inherit"}} href="/img/MasterPlan_LA_AMADA.jpg" target='_blank'>
+                    {props.eng?"download master plan":"DESCARGAR MASTER PLAN"}
+
+                    </a> 
+                    
+                    </button>
             </div>
            
        </div>

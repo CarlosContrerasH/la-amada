@@ -144,7 +144,7 @@ const Features = (props) => {
 
 
 		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
-					<a style={{textDecoration:"none",color:"inherit"}} href="/img/MasterPlan_LA_AMADA.jpg">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/img/planos/PH/plano.jpg"  target="_blank">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
 					</button>
 		  
 		  

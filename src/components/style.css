@@ -850,6 +850,11 @@ font-weight: 200;}
     width: 200px;
  }
 @media (max-width: 880px) {
+    .header-amenidades h1{
+        min-width: 300px;
+    } .header-amenidades .script{
+        font-size: 1.5em;
+    }
     .amenidades-top>*{
        width: 33%;
     }

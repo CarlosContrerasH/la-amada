@@ -973,7 +973,7 @@ areasVerdes:file(relativePath: { eq: "AMENIDADES/LA AMADA/SLIDERS/AREAS VERDES/a
 amenidadesA1:file(relativePath: { eq: "AMENIDADES/LA AMADA/AREAS-VERDES.png" }) {
   childImageSharp {
 
-     fluid(maxWidth: 1280, webpQuality: 50){
+     fluid(maxWidth: 1280, webpQuality: 60){
       ...GatsbyImageSharpFluid_withWebp }
   }
 }

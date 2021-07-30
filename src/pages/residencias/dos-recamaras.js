@@ -159,7 +159,7 @@ const Features = (props) => {
         </div>
         <div className="buttons">
 		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
-					<a style={{textDecoration:"none",color:"inherit"}} href="/img/MasterPlan_LA_AMADA.jpg">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/img/planos/2/plano.jpg"  target="_blank">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
 					</button>
 
 
@@ -211,10 +211,17 @@ const LockFeatures = (props) => {
      
         </div>
         <div className="buttons">
-        <button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</button>
-
-                <button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>{props.eng?"Virtual Tour":"Tour Virtual"}</button>
-            </div>
+		<button name="Descargar Plano" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="/img/planos/2/lock.jpg"  target="_blank">{props.eng?"DOWNLOAD FLOORPLAN":"Decargar Plano PDF"}</a>
+					</button>
+              
+			  
+					<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
+					<a style={{textDecoration:"none",color:"inherit"}} href="https://my.matterport.com/show/?m=CUXeR6Gmb1R&brand=0&play=0&dh=0&mls=1&mt=0&lang=es">
+					{props.eng?"Virtual Tour":"Tour Virtual"}</a>
+					</button>
+			  
+			        </div>
 
     </div>)
 }
