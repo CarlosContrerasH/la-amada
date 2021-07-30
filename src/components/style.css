@@ -3059,10 +3059,7 @@ padding:2em;
 
  @media (max-width: 800px) {
 
-    :root{
-  
-     
-  }
+ 
     .hero .logo-wrapper {
         width:80vw;
     }
@@ -3192,7 +3189,7 @@ form label input {
     .component>div{
         --margin:0;
         margin-bottom: 2em;
-        width:100vw;
+        width:calc(100vw - 4em);
     }
     .single-wide.ubicacion{
         margin:1em;
