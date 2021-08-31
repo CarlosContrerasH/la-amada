@@ -14,7 +14,7 @@ import { Link } from 'gatsby'
 
  
 
-let bigSlider =[  <HandleImages name="amenidadesP5" />,  <HandleImages name="marinaH1"/> ]
+let bigSlider =[    <HandleImages name="marinaH1"/> ]
 
 
 const Slider = (props) => {

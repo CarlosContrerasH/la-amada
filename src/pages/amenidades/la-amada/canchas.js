@@ -11,7 +11,7 @@ import SimpleSlider from "../../../components/simpleSlider"
 
 import { Link } from 'gatsby'
   
-let bigSlider =[<HandleImages name="amenidadesA4" class="rightCenter"/>, <HandleImages name="canchaH1"/>, <HandleImages name="canchaH2"/>, <HandleImages name="canchaH3"/>]
+let bigSlider =[  <HandleImages name="canchaH1"/>, <HandleImages name="canchaH2"/>, <HandleImages name="canchaH3"/>]
  
 
 

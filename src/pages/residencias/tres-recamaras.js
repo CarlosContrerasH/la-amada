@@ -164,7 +164,7 @@ const Features = (props) => {
 					</button>
 
 					<button name="Tour Virtual" className="flat-button sand-button centered-button" style={{ margin: "2em" }}>
-					<a style={{textDecoration:"none",color:"inherit"}} href="https://my.matterport.com/show/?m=CUXeR6Gmb1R&brand=0&play=0&dh=0&mls=1&mt=0&lang=es">
+					<a style={{textDecoration:"none",color:"inherit"}} href=" https://my.matterport.com/show/?m=DPbuewgk5Rq&brand=0&play=0&dh=1&mls=1&mt=0&lang=es " target="_blank">
 					{props.eng?"Virtual Tour":"Tour Virtual"}</a>
 					</button> 
 		  

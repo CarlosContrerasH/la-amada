@@ -23,7 +23,7 @@ import secrets from "../../..//img/AMENIDADES/PLAYA/SLIDERS/VECINOS/LOGOS VECINO
 import { Link } from 'gatsby'
 
 
-let bigSlider =[ <HandleImages name="amenidadesP8" />,     <HandleImages name="vecinosH1"/> ]
+let bigSlider =[     <HandleImages name="vecinosH1"/> ]
 
 
 

@@ -11,7 +11,7 @@ import SimpleSlider from "../../../components/simpleSlider"
 
 import { Link } from 'gatsby'
 
-let playaSlider =[   <HandleImages name="lobbyN"  class="centerLeft"/>, <HandleImages name="amenidadesA6" class="centerLeft" />]
+let playaSlider =[    <HandleImages name="amenidadesA6" class="centerLeft" />]
 
 
 const Slider = (props) => {
